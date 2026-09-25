@@ -60,3 +60,11 @@ Saat memodifikasi naskah atau tabel, Anda **WAJIB** mematuhi:
   - Halaman ganjil di kanan (rekto), halaman genap di kiri (verso).
   - Judul bab baru selalu dimulai pada halaman ganjil (rekto).
 - **Font Utama**: Menggunakan keluarga font yang tersedia di `assets/fonts/` (Myriad Pro / Liberation Sans / Arial).
+
+---
+
+## 5. Rujukan Dokumen Resmi (Single Source of Truth)
+
+Sebelum membuat atau merefaktor tata letak tabel, grafik, maupun naskah publikasi, konsultasikan ke dokumen rujukan resmi yang tersedia di repositori ini:
+- [`docs/PEDOMAN_PUBLIKASI_BPS_2023.md`](docs/PEDOMAN_PUBLIKASI_BPS_2023.md): *Single Source of Truth (SSOT)* Standar Desain, Tata Letak, Tipografi, Margin Cermin (*Mirror Margins*), dan Penomoran Naskah Publikasi BPS RI (Edisi 2023 / Rilis DDS BPS RI).
+- [`docs/QNA_PEDOMAN_KCDA.md`](docs/QNA_PEDOMAN_KCDA.md): Tanya-Jawab (QnA) Resmi Direktorat Diseminasi Statistik (DDS) BPS RI terkait batas halaman minimal (49 hal), prioritas ISSN, format judul, dan kaidah penyusunan KCDA.

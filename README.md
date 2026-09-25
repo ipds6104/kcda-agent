@@ -128,8 +128,10 @@ kcda-agent/
 ├── data/
 │   └── raw_tables/             # Cache data tabel terstruktur dalam format JSON
 ├── docs/
-│   ├── ARCHITECTURE.md         # Dokumentasi arsitektur sistem
-│   └── GOOGLE_SHEETS_GUIDE.md  # Panduan format Google Sheets untuk operator data
+│   ├── ARCHITECTURE.md                 # Dokumentasi arsitektur sistem
+│   ├── GOOGLE_SHEETS_GUIDE.md          # Panduan format Google Sheets untuk operator data
+│   ├── PEDOMAN_PUBLIKASI_BPS_2023.md   # Single Source of Truth (SSOT) standar desain & tata letak BPS
+│   └── QNA_PEDOMAN_KCDA.md             # Tanya jawab resmi DDS BPS RI seputar KCDA
 ├── outputs/                    # Folder output hasil kompilasi berkas Typst & PDF
 ├── scripts/
 │   ├── kcda.py                 # Unified Command-Line Interface (CLI)
@@ -137,6 +139,15 @@ kcda-agent/
 ├── GEMINI.md                   # Aturan & protokol operasi coding agent (AGY)
 └── README.md
 ```
+
+---
+
+## 📚 Pedoman Resmi & Single Source of Truth (SSOT)
+
+Seluruh tata letak, ukuran margin cermin (*facing pages*), tipografi, dan penomoran buku dalam repositori ini sepenuhnya bersandar pada regulasi resmi BPS RI yang didokumentasikan lengkap di folder [`docs/`](docs/):
+- 📖 [**Pedoman Pembuatan Publikasi BPS Edisi 2023**](docs/PEDOMAN_PUBLIKASI_BPS_2023.md): Rujukan utama tata letak, ukuran buku (A5), penomoran recto/verso, running header/footer, aturan margin jilid lem panas, dan pembakuan tipografi.
+- 💬 [**Tanya Jawab (QnA) Resmi Pedoman KCDA**](docs/QNA_PEDOMAN_KCDA.md): Kompilasi tanya-jawab resmi Direktorat Diseminasi Statistik (DDS) BPS RI mengenai ketentuan ISSN vs ISBN, batas minimal ketebalan buku (49 halaman), format baku judul, dan penulisan sumber data.
+
 
 ---
 
