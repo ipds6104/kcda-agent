@@ -1,0 +1,503 @@
+{
+  "no": "2.1.6",
+  "nama": "Status Desa berdasarkan Indeks Desa Membangun di Kecamatan XXX, 2024",
+  "sumber": "REKOMENDASI_IDM_PROVINSI_61_KALBAR-2023",
+  "disediakan_ipds": true,
+  "sheet_id": "1qdrqJe5xgh2JW0A1RiIQdHgSSawMMdcNXZpsnSNE9EU",
+  "spreadsheet_title": "Status Desa berdasarkan Indeks Desa Membangun di Kecamatan XXX, 2024",
+  "updated_at": "2026-09-22 08:29:00",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Tanjung",
+          "–"
+        ],
+        [
+          "2",
+          "Kuala Secapah",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Tengah",
+          "–"
+        ],
+        [
+          "4",
+          "Terusan",
+          "–"
+        ],
+        [
+          "5",
+          "Pasir",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Penibung",
+          "Mandiri"
+        ],
+        [
+          "7",
+          "Sengkubang",
+          "Mandiri"
+        ],
+        [
+          "8",
+          "Malikian",
+          "Mandiri"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Sambora",
+          "Mandiri"
+        ],
+        [
+          "2",
+          "Benuang",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Pak Utan",
+          "Berkembang"
+        ],
+        [
+          "4",
+          "Sepang",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Pak Laheng",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Terap",
+          "Mandiri"
+        ],
+        [
+          "7",
+          "Kecurit",
+          "Mandiri"
+        ],
+        [
+          "8",
+          "Toho Ilir",
+          "Mandiri"
+        ],
+        [
+          "9",
+          "Kecamatan  Toho",
+          "–"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Sungai Purun Kecil",
+          "Mandiri"
+        ],
+        [
+          "2",
+          "Peniraman",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Nusapati",
+          "Mandiri"
+        ],
+        [
+          "4",
+          "Galang",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Sungai Rasau",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Sungai Pinyuh",
+          "–"
+        ],
+        [
+          "7",
+          "Sungai Batang",
+          "Mandiri"
+        ],
+        [
+          "8",
+          "Sungai Bakau Besar Laut",
+          "Mandiri"
+        ],
+        [
+          "9",
+          "Sungai Bakau Besar Darat",
+          "Mandiri"
+        ],
+        [
+          "10",
+          "Kecamatan  Sungai Pinyuh",
+          "–"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Sungai Nipah",
+          "Mandiri"
+        ],
+        [
+          "2",
+          "Jungkat",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Wajok Hilir",
+          "Mandiri"
+        ],
+        [
+          "4",
+          "Wajok Hulu",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Peniti Luar",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Kecamatan Jongkat",
+          "–"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Semudun",
+          "Mandiri"
+        ],
+        [
+          "2",
+          "Semparong Parit Raden",
+          "Maju"
+        ],
+        [
+          "3",
+          "Mendalok",
+          "Mandiri"
+        ],
+        [
+          "4",
+          "Sungai Dungun",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Sungai Limau",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Sungai Kunyit Laut",
+          "Mandiri"
+        ],
+        [
+          "7",
+          "Sungai Kunyit Dalam",
+          "Mandiri"
+        ],
+        [
+          "8",
+          "Sungai Kunyit Hulu",
+          "Mandiri"
+        ],
+        [
+          "9",
+          "Bukit Batu",
+          "Mandiri"
+        ],
+        [
+          "10",
+          "Sungai Bundung Laut",
+          "Mandiri"
+        ],
+        [
+          "11",
+          "Sungai Duri I",
+          "Mandiri"
+        ],
+        [
+          "12",
+          "Sungai Duri Ii",
+          "Mandiri"
+        ],
+        [
+          "13",
+          "Kecamatan Sungai Kunyit",
+          "–"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Peniti Dalam I",
+          "Mandiri"
+        ],
+        [
+          "2",
+          "Sungai Burung",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Sungai Purun Besar",
+          "Mandiri"
+        ],
+        [
+          "4",
+          "Parit Bugis",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Peniti Besar",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Peniti Dalam Ii",
+          "Mandiri"
+        ],
+        [
+          "7",
+          "Kecamatan Segedong",
+          "–"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Pentek",
+          "Maju"
+        ],
+        [
+          "2",
+          "Sekabuk",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Bum-Bun",
+          "Maju"
+        ],
+        [
+          "4",
+          "Amawang",
+          "Maju"
+        ],
+        [
+          "5",
+          "Ansiap",
+          "Berkembang"
+        ],
+        [
+          "6",
+          "Suak Barangan",
+          "Berkembang"
+        ],
+        [
+          "7",
+          "Kecamatan Sadaniang",
+          "–"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Anjungan Melancar",
+          "–"
+        ],
+        [
+          "2",
+          "Anjungan Dalam",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Pak Bulu",
+          "Mandiri"
+        ],
+        [
+          "4",
+          "Dema",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Kepayang",
+          "Mandiri"
+        ],
+        [
+          "6",
+          "Kecamatan Anjongan",
+          "–"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No ",
+          "Desa/Kelurahan\nVillage/Subdistrict\n",
+          "Status Indeks Desa Mandiri\nIndependent Village Index Status21\n"
+        ],
+        [
+          "1",
+          "Pasir Wan Salim",
+          "–"
+        ],
+        [
+          "2",
+          "Sungai Bakau Kecil",
+          "Mandiri"
+        ],
+        [
+          "3",
+          "Pasir Panjang",
+          "Mandiri"
+        ],
+        [
+          "4",
+          "Pasir Palembang",
+          "Mandiri"
+        ],
+        [
+          "5",
+          "Pulau Pedalaman",
+          "–"
+        ],
+        [
+          "6",
+          "Antibar",
+          "Mandiri"
+        ],
+        [
+          "7",
+          "Sejegi",
+          "Mandiri"
+        ],
+        [
+          "8",
+          "Parit Banjar",
+          "Mandiri"
+        ],
+        [
+          "9",
+          "Kecamatan Mempawah Timur",
+          "–"
+        ]
+      ]
+    }
+  }
+}

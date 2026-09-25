@@ -1,0 +1,521 @@
+{
+  "no": "1.4.",
+  "nama": "Jarak Kantor Camat XXX Dengan Kota dan Tempat Penting Lainnya (km)",
+  "sumber": "KCDA 2025 + Kantor Camat",
+  "disediakan_ipds": false,
+  "sheet_id": "10DAiZQaRpS7-w0qfA6OO_D6oIPCLzmVODciMRdu5Guo",
+  "spreadsheet_title": "Jarak Kantor Camat XXX Dengan Kota dan Tempat Penting Lainnya (km)",
+  "updated_at": "2026-09-22 08:28:48",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "63,00"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "2,80"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "82,60"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "35,50"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "67 km"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "19,7 km"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "28,10"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "47,90"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "94,00"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "19,00"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "42,10"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "40,30"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "73,90"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "32,80"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "99,00"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "36,10"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Nama Kota dan Tempat Penting Lainnya\n Other Importance Place",
+          "Jarak\n Distance (km)"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Ibukota Provinsi Kalimantan Barat \n(Kota Pontianak)",
+          "78,20"
+        ],
+        [
+          "2",
+          "Pusat Pemerintahan Kabupaten \nMempawah (Mempawah Hilir)",
+          "2,30"
+        ],
+        [
+          "3",
+          "Makam Juang Mandor"
+        ]
+      ]
+    },
+    "_REF_APPSHEET_KEC": {
+      "raw_title": "_REF_APPSHEET_KEC",
+      "rows": [
+        [
+          "id_kecamatan",
+          "kode_kecamatan",
+          "nama_kecamatan",
+          "ibukota_kecamatan",
+          "nama_camat_kcda_lalu",
+          "periode_camat_kcda_lalu",
+          "nama_camat_konfirmasi_2026",
+          "periode_camat_konfirmasi_2026",
+          "status_camat_konfirmasi_2026",
+          "batas_utara_kcda_lalu",
+          "batas_selatan_kcda_lalu",
+          "batas_barat_kcda_lalu",
+          "batas_timur_kcda_lalu",
+          "batas_utara_konfirmasi_2026",
+          "batas_selatan_konfirmasi_2026",
+          "batas_barat_konfirmasi_2026",
+          "batas_timur_konfirmasi_2026",
+          "jarak_ke_pontianak_km_kcda_lalu",
+          "jarak_ke_ibukota_kab_km_kcda_lalu",
+          "jarak_ke_pontianak_km_konfirmasi_2026",
+          "jarak_ke_ibukota_kab_km_konfirmasi_2026",
+          "pns_camat_laki_konfirmasi_2026",
+          "pns_camat_perempuan_konfirmasi_2026",
+          "pns_sd_konfirmasi_2026",
+          "pns_smp_konfirmasi_2026",
+          "pns_sma_konfirmasi_2026"
+        ],
+        [
+          "KEC-6104020",
+          "6104020",
+          "Kecamatan Jongkat",
+          "Jungkat",
+          "Mahmud Hasan,S.Ag.M.Pd.",
+          "2024-sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "28,1",
+          "47,9"
+        ],
+        [
+          "KEC-6104030",
+          "6104030",
+          "Kecamatan Segedong",
+          "Parit Bugis",
+          "H. Arifin, S.Pd, M.Pd",
+          "2021 – Sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "42,1",
+          "40,3"
+        ],
+        [
+          "KEC-6104040",
+          "6104040",
+          "Kecamatan Sungai Pinyuh",
+          "Sungai Pinyuh",
+          "Ibrahim, S.ST.",
+          "2021 – Sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "67 km",
+          "19,7 km"
+        ],
+        [
+          "KEC-6104041",
+          "6104041",
+          "Kecamatan Anjongan",
+          "Anjungan Melancar",
+          "Ferry Ramadhani, S.STP, MAP",
+          "2022 –sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "73,9",
+          "32,8"
+        ],
+        [
+          "KEC-6104050",
+          "6104050",
+          "Kecamatan Mempawah Hilir",
+          "Tanjung",
+          "Drs. Ismayuda, MM",
+          "2022-2024",
+          "",
+          "",
+          "",
+          "Kecamatan Sungai Kunyit/Sungai Kunyit District",
+          "Kecamatan Mempawah Timur/ Mempawah Timur District",
+          "Selat Karimata/ Karimata Strait",
+          "Kecamatan Sadaniang/ Sadaniang District",
+          "",
+          "",
+          "",
+          "",
+          "63",
+          "2,8"
+        ],
+        [
+          "KEC-6104051",
+          "6104051",
+          "Kecamatan Mempawah Timur",
+          "Antibar",
+          "R. Agus Isnanto, SH",
+          "2019-2024",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "78,2",
+          "2,3"
+        ],
+        [
+          "KEC-6104060",
+          "6104060",
+          "Kecamatan Sungai Kunyit",
+          "Sungai Kunyit Laut",
+          "Ir. Teddy Prawoto, M.Si",
+          "2023 – 2024",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "94",
+          "19"
+        ],
+        [
+          "KEC-6104070",
+          "6104070",
+          "Kecamatan Toho",
+          "Toho",
+          "H. Tommy As. S.H.",
+          "2019–April 2025",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "82,6",
+          "35,5"
+        ],
+        [
+          "KEC-6104080",
+          "6104080",
+          "Kecamatan Sadaniang",
+          "Pentek",
+          "Muhammad Yusra, S.Sos., M.Si.",
+          "2024-Sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "99",
+          "36,1"
+        ]
+      ]
+    }
+  }
+}

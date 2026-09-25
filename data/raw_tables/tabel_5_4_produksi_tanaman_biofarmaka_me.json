@@ -1,0 +1,426 @@
+{
+  "no": "5.4",
+  "nama": "Produksi Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (kg)",
+  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "disediakan_ipds": true,
+  "sheet_id": "1o1CQBeGL0nA_33GOGs6PIoui4WwnYUhhw3qg8ShC0Dw",
+  "spreadsheet_title": "Produksi Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (kg)",
+  "updated_at": "2026-09-22 08:29:34",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "30.500",
+          "32.400",
+          "36.000",
+          "30.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "128",
+          "28",
+          "69",
+          "39"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "20",
+          "20",
+          "19",
+          "5"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "30",
+          "10",
+          "20",
+          "-"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "1.250",
+          "4.200",
+          "3.460",
+          "725"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "900",
+          "1650",
+          "743",
+          "599"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "875",
+          "1400",
+          "773",
+          "865"
+        ],
+        [
+          "Serai/Lemongrass",
+          "-",
+          "3500",
+          "7850",
+          "3650"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "43.200",
+          "320.000",
+          "166.000",
+          "141.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "17500",
+          "42500",
+          "58640",
+          "45000"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "15350",
+          "50000",
+          "44000",
+          "65000"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "12950",
+          "60000",
+          "64570",
+          "35000"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "91.850",
+          "87.000",
+          "122.040",
+          "43.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "1980",
+          "3775",
+          "2000",
+          "-"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "136",
+          "900",
+          "1050",
+          "190"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "1505",
+          "11500",
+          "27828",
+          "3100"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "-",
+          "9.600",
+          "24.000",
+          "18.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "-",
+          "810",
+          "1090",
+          "3300"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "-",
+          "2200",
+          "3564",
+          "1400"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "600",
+          "399.375",
+          "-",
+          "9.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "954",
+          "2500",
+          "-",
+          "-"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "-",
+          "4000",
+          "-",
+          "3500"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "1720",
+          "6000",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "61.750",
+          "36.028",
+          "46.608",
+          "16.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "25970",
+          "30330",
+          "15256",
+          "10400"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "4895",
+          "18900",
+          "19146",
+          "4800"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "28600",
+          "37045",
+          "14142",
+          "19200"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "33.600",
+          "16.300",
+          "2.350",
+          "3.300"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "25",
+          "117",
+          "70",
+          "52"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "100",
+          "135",
+          "50",
+          "125"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "200",
+          "212",
+          "50",
+          "213"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Jahe/Ginger",
+          "1.755.000",
+          "2.557.000",
+          "3.032.000",
+          "2.267.000"
+        ],
+        [
+          "Laos/Lengkuas/Galanga",
+          "3600",
+          "23000",
+          "53640",
+          "71000"
+        ],
+        [
+          "Kencur/East Indian Galangal",
+          "6800",
+          "25000",
+          "25000",
+          "25000"
+        ],
+        [
+          "Kunyit/Turmeric",
+          "9700",
+          "37500",
+          "64000",
+          "53600"
+        ],
+        [
+          "Lidah Buaya/ Aloevera",
+          "50",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Jeruk Nipis/ Lime",
+          "60000",
+          "60000",
+          "7500",
+          "71800"
+        ],
+        [
+          "Serai/Lemongrass",
+          "135000",
+          "320000",
+          "334000",
+          "160000"
+        ]
+      ]
+    }
+  }
+}

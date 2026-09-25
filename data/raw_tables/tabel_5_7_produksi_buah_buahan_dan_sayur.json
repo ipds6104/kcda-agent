@@ -1,0 +1,1086 @@
+{
+  "no": "5.7",
+  "nama": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
+  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "disediakan_ipds": true,
+  "sheet_id": "1_Ik0_Xh9rbR_Ilu7-qpFBBDKHKV2VCEYp5UYsgG3gCA",
+  "spreadsheet_title": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
+  "updated_at": "2026-09-22 08:29:40",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "1.650",
+          "2.180",
+          "-",
+          "1250"
+        ],
+        [
+          "Durian/Durian",
+          "1.570",
+          "3.550",
+          "525",
+          "2620"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "5.260",
+          "5.200",
+          "3.900",
+          "3.300"
+        ],
+        [
+          "Pisang/Banana",
+          "233.579",
+          "123.855",
+          "60.307",
+          "69.601"
+        ],
+        [
+          "Pepaya/Papaya",
+          "308",
+          "62",
+          "106",
+          "-"
+        ],
+        [
+          "Salak/Snakefruit",
+          "30",
+          "80",
+          "3",
+          "-"
+        ],
+        [
+          "Sawo/ Sapodilla/Sawo",
+          "1.618",
+          "1.478",
+          "375",
+          "525"
+        ],
+        [
+          "Rambutan/ Rambutan",
+          "1.250",
+          "893",
+          "400",
+          "875"
+        ],
+        [
+          "Jeruk Besar/ Pomelo",
+          "453",
+          "980",
+          "15",
+          "-"
+        ],
+        [
+          "Nangka/Cempedak/ Jackfruit",
+          "455",
+          "580",
+          "100",
+          "112"
+        ],
+        [
+          "Nenas/ Pineapple",
+          "118.612",
+          "77.670",
+          "70.130",
+          "86.682"
+        ],
+        [
+          "Lengkeng/ Dimocarpus Longan",
+          "496",
+          "560",
+          "11",
+          "-"
+        ],
+        [
+          "Sukun/ Breadfruit",
+          "220",
+          "630",
+          "160",
+          "-"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Jengkol/Jengkol",
+          "420",
+          "120",
+          "118",
+          "106"
+        ],
+        [
+          "Melinjo/ Gnetum/Melinjo",
+          "575",
+          "850",
+          "443",
+          "76"
+        ],
+        [
+          "Petai/ Twisted Cluster Bean",
+          "400",
+          "155",
+          "145",
+          "90"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "-",
+          "18",
+          "168",
+          "257"
+        ],
+        [
+          "Durian/Durian",
+          "-",
+          "800",
+          "1.883",
+          "656"
+        ],
+        [
+          "Pisang/Banana",
+          "2.360",
+          "280",
+          "571",
+          "551"
+        ],
+        [
+          "Pepaya/Papaya",
+          "2.637",
+          "2.000",
+          "1.133",
+          "782"
+        ],
+        [
+          "Sawo/Sapodilla/Sawo",
+          "20",
+          "65",
+          "72",
+          "51"
+        ],
+        [
+          "Rambutan/Rambutan",
+          "-",
+          "280",
+          "599",
+          "470"
+        ],
+        [
+          "Nangka/Cempedak/Jackfruit",
+          "59",
+          "688",
+          "1.052",
+          "517"
+        ],
+        [
+          "Lengkeng/Dimocarpus/Longan",
+          "-",
+          "4",
+          "21",
+          "41"
+        ],
+        [
+          "Sukun/Breadfruit",
+          "38",
+          "50",
+          "100",
+          "128"
+        ],
+        [
+          "Belimbing/Starfruit",
+          "30",
+          "12",
+          "84",
+          "63"
+        ],
+        [
+          "Duku/Langsat/Duku",
+          "8",
+          "320",
+          "632",
+          "667"
+        ],
+        [
+          "Jambu Air/Water Apple",
+          "20",
+          "70",
+          "177",
+          "144"
+        ],
+        [
+          "Jambu Biji/Guava",
+          "58",
+          "81",
+          "92",
+          "107"
+        ],
+        [
+          "Alpukat/Avocado",
+          "-",
+          "3",
+          "27",
+          "765"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Jengkol /Jengkol",
+          "820",
+          "1916",
+          "776",
+          "331"
+        ],
+        [
+          "Petai/Petai",
+          "318",
+          "410",
+          "153",
+          "362"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "803",
+          "4.303",
+          "2.680",
+          "798"
+        ],
+        [
+          "Durian/Durian",
+          "1.870",
+          "22.629",
+          "9.071",
+          "3792"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "815",
+          "4.733",
+          "6.998",
+          "280"
+        ],
+        [
+          "Pisang/Banana",
+          "1.855",
+          "10.966",
+          "8.350",
+          "3.021"
+        ],
+        [
+          "Pepaya/Papaya",
+          "440",
+          "205",
+          "684",
+          "146"
+        ],
+        [
+          "Salak/Snakefruit",
+          "239",
+          "562",
+          "505",
+          "55"
+        ],
+        [
+          "Duku/Langsat/Kokosan",
+          "172",
+          "835",
+          "372",
+          "333"
+        ],
+        [
+          "Jambu Air/ Water Apple",
+          "92",
+          "140",
+          "314",
+          "118"
+        ],
+        [
+          "Jambu Biji/ Guava",
+          "119",
+          "403",
+          "520",
+          "158"
+        ],
+        [
+          "Sawo/ Sapodilla/Sawo",
+          "307",
+          "1085",
+          "6485",
+          "194"
+        ],
+        [
+          "Lengkeng/ Dimocarpus Longan",
+          "460",
+          "2.820",
+          "1.385",
+          "213"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Petai/ Twisted Cluster Bean",
+          "270",
+          "1192",
+          "656",
+          "370"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "1.165",
+          "293",
+          "1.775",
+          "209"
+        ],
+        [
+          "Durian/Durian",
+          "-",
+          "178",
+          "121",
+          "186"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "102",
+          "101",
+          "108",
+          "164"
+        ],
+        [
+          "Pisang/Banana",
+          "1.262",
+          "1.179",
+          "962",
+          "7.220"
+        ],
+        [
+          "Pepaya/Papaya",
+          "271",
+          "522",
+          "314",
+          "255"
+        ],
+        [
+          "Salak/Snakefruit",
+          "9",
+          "12",
+          "6",
+          "5"
+        ],
+        [
+          "Sawo/ Sapodilla/Sawo",
+          "37",
+          "655",
+          "391",
+          "52"
+        ],
+        [
+          "Rambutan/ Rambutan",
+          "-",
+          "166",
+          "104",
+          "55"
+        ],
+        [
+          "Jeruk Besar/ Pomelo",
+          "33",
+          "34",
+          "50",
+          "34"
+        ],
+        [
+          "Nangka/Cempedak/ Jackfruit",
+          "544",
+          "191",
+          "348",
+          "775"
+        ],
+        [
+          "Nenas/ Pineapple",
+          "565",
+          "730",
+          "725",
+          "780"
+        ],
+        [
+          "Lengkeng/ Dimocarpus Longan",
+          "40",
+          "855",
+          "1425",
+          "17"
+        ],
+        [
+          "Sukun/ Breadfruit",
+          "164",
+          "144",
+          "577",
+          "175"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Petai/ Twisted Cluster Bean",
+          "-",
+          "124",
+          "240",
+          "129"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "1.260",
+          "238",
+          "1.198",
+          "975"
+        ],
+        [
+          "Durian/Durian",
+          "250",
+          "30",
+          "25",
+          "105"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "2.200",
+          "-",
+          "1.284",
+          "941"
+        ],
+        [
+          "Pisang/Banana",
+          "29.000",
+          "1.450",
+          "6.444",
+          "3.092"
+        ],
+        [
+          "Pepaya/Papaya",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Salak/Snakefruit",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sawo/ Sapodilla/Sawo",
+          "8.088",
+          "100",
+          "1.919",
+          "469"
+        ],
+        [
+          "Rambutan/ Rambutan",
+          "3.325",
+          "-",
+          "513",
+          "130"
+        ],
+        [
+          "Jeruk Besar/ Pomelo",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Nangka/Cempedak/ Jackfruit",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Nenas/ Pineapple",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Lengkeng/ Dimocarpus Longan",
+          "-",
+          "24",
+          "314",
+          "42"
+        ],
+        [
+          "Sukun/ Breadfruit",
+          "144",
+          "-",
+          "60",
+          "70"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Petai/ Twisted Cluster Bean",
+          "600",
+          "36",
+          "163",
+          "70"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "31.149",
+          "9.497",
+          "12.631",
+          "13170"
+        ],
+        [
+          "Durian/Durian",
+          "20.445",
+          "5.252",
+          "7.488",
+          "6324"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "42.720",
+          "38.448",
+          "17.429",
+          "19.861"
+        ],
+        [
+          "Pisang/Banana",
+          "23.518",
+          "12.149",
+          "8.889",
+          "12.896"
+        ],
+        [
+          "Pepaya/Papaya",
+          "5370",
+          "758",
+          "885",
+          "2185"
+        ],
+        [
+          "Salak/Snakefruit",
+          "3000",
+          "1667",
+          "731",
+          "778"
+        ],
+        [
+          "Sawo/ Sapodilla/Sawo",
+          "9.044",
+          "7.583",
+          "2.811",
+          "2445"
+        ],
+        [
+          "Rambutan/ Rambutan",
+          "9.770",
+          "8.160",
+          "3511",
+          "3720"
+        ],
+        [
+          "Duku/Langsat/Kokosan/Duku",
+          "30036",
+          "25560",
+          "15801",
+          "3982"
+        ],
+        [
+          "Nangka/Cempedak/ Jackfruit",
+          "7565",
+          "5395",
+          "2811",
+          "2767"
+        ],
+        [
+          "Nenas/ Pineapple",
+          "2.719",
+          "258",
+          "1.573",
+          "744"
+        ],
+        [
+          "Jambu Biji/Guava",
+          "3695",
+          "3094",
+          "1391",
+          "1230"
+        ],
+        [
+          "Sukun/ Breadfruit",
+          "5940",
+          "5013",
+          "2274",
+          "2595"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Jengkol/ Jengkol",
+          "900",
+          "900",
+          "587",
+          "552"
+        ],
+        [
+          "Petai/Twisted Cluster Bean",
+          "1131",
+          "952",
+          "537",
+          "410"
+        ],
+        [
+          "Melinjo/Gnetum",
+          "236",
+          "201",
+          "119",
+          "123"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Mangga/Mango",
+          "-",
+          "172",
+          "115",
+          "-"
+        ],
+        [
+          "Durian/Durian",
+          "470",
+          "124",
+          "502",
+          "1500"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "527",
+          "413",
+          "534",
+          "-"
+        ],
+        [
+          "Pisang/Banana",
+          "9.438",
+          "2.838",
+          "6.700",
+          "6.067"
+        ],
+        [
+          "Pepaya/Papaya",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Salak/Snakefruit",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sawo/ Sapodilla/Sawo",
+          "1.467",
+          "671",
+          "329",
+          "116"
+        ],
+        [
+          "Rambutan/ Rambutan",
+          "-",
+          "60",
+          "150",
+          "150"
+        ],
+        [
+          "Jeruk Besar/ Pomelo",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Nangka/Cempedak/ Jackfruit",
+          "1387",
+          "160",
+          "385",
+          "40"
+        ],
+        [
+          "Nenas/ Pineapple",
+          "220",
+          "53",
+          "72",
+          "101"
+        ],
+        [
+          "Lengkeng/ Dimocarpus Longan",
+          "193",
+          "44",
+          "53",
+          "162"
+        ],
+        [
+          "Sukun/ Breadfruit",
+          "1067",
+          "401",
+          "200",
+          "40"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Jengkol/ Jengkol",
+          "427",
+          "620",
+          "605",
+          "120"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Duku/Langsat/Kokosan/Duku",
+          "760",
+          "77",
+          "368",
+          "-"
+        ],
+        [
+          "Durian/Durian",
+          "5.820",
+          "2.290",
+          "3.847",
+          "-"
+        ],
+        [
+          "Jambu Air/ Water Apple",
+          "-",
+          "18",
+          "-",
+          "-"
+        ],
+        [
+          "Jambu Biji/ Guava",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Jeruk Besar/ Pamelo",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Jeruk Siam/Keprok/ Orange/tangerine",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mangga/ Mango",
+          "520",
+          "180",
+          "94",
+          "-"
+        ],
+        [
+          "Manggis/ Mangosteen",
+          "392",
+          "98",
+          "384",
+          "15"
+        ],
+        [
+          "Nangka/ Cempedak/ Jackfruit",
+          "532",
+          "1201",
+          "486",
+          "-"
+        ],
+        [
+          "Nenas/ Pineapple",
+          "182",
+          "32",
+          "10",
+          "-"
+        ],
+        [
+          "Pepaya/ Papaya",
+          "83",
+          "109",
+          "60",
+          "-"
+        ],
+        [
+          "Pisang/ Banana",
+          "1173",
+          "798",
+          "1609",
+          "-"
+        ],
+        [
+          "Rambutan/ Rambutan",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Petai/ Twisted Cluster Bean",
+          "372",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Jengkol/ Jengkol",
+          "426",
+          "185",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Buah–Buahan/Fruits:"
+        ],
+        [
+          "Belimbing/ Star Fruit",
+          "10",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mangga/Mango",
+          "-",
+          "-",
+          "700",
+          "-"
+        ],
+        [
+          "Durian/Durian",
+          "-",
+          "-",
+          "800",
+          "-"
+        ],
+        [
+          "Jeruk Siam/Keprok/Orange/Tangerine",
+          "330",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Pisang/Banana",
+          "133083",
+          "420000",
+          "566183",
+          "233439"
+        ],
+        [
+          "Pepaya/Papaya",
+          "2888",
+          "50000",
+          "304500",
+          "-"
+        ],
+        [
+          "Salak/Snakefruit",
+          "23",
+          "-",
+          "650",
+          "-"
+        ],
+        [
+          "Nanas/ Pineapple",
+          "42.237",
+          "312.000",
+          "212750",
+          "263794"
+        ],
+        [
+          "Lengkeng/ Dimocarpus Longan",
+          "10",
+          "20",
+          "220",
+          "-"
+        ],
+        [
+          "Sawo/ Sapodilla",
+          "600",
+          "870",
+          "1790",
+          "-"
+        ]
+      ]
+    }
+  }
+}

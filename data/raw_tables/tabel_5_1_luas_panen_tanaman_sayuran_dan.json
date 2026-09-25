@@ -1,0 +1,1048 @@
+{
+  "no": "5.1",
+  "nama": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
+  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "disediakan_ipds": true,
+  "sheet_id": "1cUphSmkWhpszHIzrlAbBN6OxB_p9rAxeZRGgtYIll9U",
+  "spreadsheet_title": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
+  "updated_at": "2026-09-22 08:29:28",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Keriting Curly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "2",
+          "6",
+          "5",
+          "3"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bawang Daun/ Scallion",
+          "3",
+          "3",
+          "2",
+          "3"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "3",
+          "3",
+          "2",
+          "2"
+        ],
+        [
+          "Ketimun/ Cucumber",
+          "3",
+          "2",
+          "3",
+          "1"
+        ],
+        [
+          "Petsai/Sawi/ Chinese Cabbage/mustard green",
+          "13",
+          "15",
+          "11",
+          "11"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/ Water Melon",
+          "-",
+          "3",
+          "-",
+          "1"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Keriting Curly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "3",
+          "12",
+          "7",
+          "19"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kacang Panjang/Long Beans",
+          "12",
+          "12",
+          "28",
+          "14"
+        ],
+        [
+          "Ketimun/Cucumber",
+          "18",
+          "43",
+          "80",
+          "35"
+        ],
+        [
+          "Terung/Eggplant",
+          "7",
+          "13",
+          "28",
+          "20"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "-",
+          "3",
+          "7",
+          "5"
+        ],
+        [
+          "Cabai Keiting Curly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "19",
+          "19",
+          "28",
+          "16"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "10",
+          "13",
+          "11",
+          "8"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "21",
+          "20",
+          "13",
+          "7"
+        ],
+        [
+          "Kangkung/ Water Spinach",
+          "11",
+          "11",
+          "13",
+          "8"
+        ],
+        [
+          "Ketimun/ Cucumber",
+          "16",
+          "17",
+          "11",
+          "10"
+        ],
+        [
+          "Petsai/Sawi/ Chinese Cabbage/ mustard green",
+          "-",
+          "2",
+          "8",
+          "6"
+        ],
+        [
+          "Terung/ Eggplant",
+          "10",
+          "10",
+          "9",
+          "9"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/ Water Melon",
+          "-",
+          "1",
+          "4",
+          "4"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "3",
+          "6",
+          "3",
+          "-"
+        ],
+        [
+          "Cabai Keriting Curly Chili",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "4",
+          "13",
+          "19",
+          "8"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "9",
+          "18",
+          "7",
+          "-"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "19",
+          "26",
+          "16",
+          "31"
+        ],
+        [
+          "Kangkung/ Water Spinach",
+          "25",
+          "18",
+          "11",
+          "4"
+        ],
+        [
+          "Ketimun/ Cucumber",
+          "23",
+          "18",
+          "17",
+          "29"
+        ],
+        [
+          "Petsai/Sawi/ Chinese Cabbage/ mustard green",
+          "21",
+          "19",
+          "14",
+          "11"
+        ],
+        [
+          "Terung/ Eggplant",
+          "11",
+          "10",
+          "5",
+          "5"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/ Water Melon",
+          "241",
+          "306",
+          "100",
+          "180"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "-",
+          "1",
+          "2",
+          "1"
+        ],
+        [
+          "Cabai Keiting Curly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "3",
+          "25",
+          "10",
+          "3"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "-",
+          "2",
+          "4",
+          "3"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "5",
+          "2",
+          "4",
+          "5"
+        ],
+        [
+          "Kangkung/ Water Spinach",
+          "2",
+          "7",
+          "3",
+          "6"
+        ],
+        [
+          "Ketimun/ Cucumber",
+          "11",
+          "5",
+          "7",
+          "5"
+        ],
+        [
+          "Petsai/Sawi/ Chinese Cabbage/ mustard green",
+          "12",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "Terung/ Eggplant",
+          "5",
+          "5",
+          "3",
+          "3"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/ Water Melon",
+          "-",
+          "1",
+          "5",
+          "6"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "-",
+          "10",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Keiting Curly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "29",
+          "20",
+          "16",
+          "13"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "12",
+          "15",
+          "10",
+          "5"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kacang Panjang/Long Beans",
+          "10",
+          "7",
+          "8",
+          "2"
+        ],
+        [
+          "Kangkung/Water Spinach",
+          "11",
+          "8",
+          "6",
+          "6"
+        ],
+        [
+          "Ketimun/Cucumber",
+          "13",
+          "8",
+          "16",
+          "9"
+        ],
+        [
+          "Petsai/Sawi/Chinese Cabbage/Mustard Green",
+          "17",
+          "11",
+          "8",
+          "10"
+        ],
+        [
+          "Terung/Eggplant",
+          "9",
+          "10",
+          "5",
+          "3"
+        ],
+        [
+          "Bayam/Spinach",
+          "4",
+          "1",
+          "3",
+          "1"
+        ],
+        [
+          "Bawang Daun/Scallion",
+          "27",
+          "20",
+          "10",
+          "8"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/Water Melon",
+          "17",
+          "16",
+          "6",
+          "7"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "8",
+          "4",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong Chili/Big Chili",
+          "13",
+          "23",
+          "8",
+          "23"
+        ],
+        [
+          "Cabai Keiting Curly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit Chili/Cayenne Pepper",
+          "16",
+          "36",
+          "27",
+          "47"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "12",
+          "12",
+          "9",
+          "23"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bayam/ Spinach",
+          "26",
+          "23",
+          "24",
+          "24"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "47",
+          "45",
+          "40",
+          "12"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/ Watermelon",
+          "16",
+          "27",
+          "21",
+          "39"
+        ],
+        [
+          "Melon/ Melon",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Merah/Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/TW/Teropong\nChili/Big Chili",
+          "13",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Keriting\nCurly Chili",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit\nChili/Cayenne Pepper",
+          "48",
+          "56",
+          "7",
+          "24"
+        ],
+        [
+          "Kentang/Potato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kubis/Cabbage",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Tomat/Tomato",
+          "23",
+          "19",
+          "14",
+          "1"
+        ],
+        [
+          "Bawang Putih/Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "4",
+          "25",
+          "27",
+          "19"
+        ],
+        [
+          "Kangkung/Water Spinach",
+          "55",
+          "42",
+          "46",
+          "34"
+        ],
+        [
+          "Bayam/Spinach",
+          "43",
+          "35",
+          "-",
+          "-"
+        ],
+        [
+          "Ketimun/Cucumber",
+          "71",
+          "76",
+          "27",
+          "20"
+        ],
+        [
+          "Petsai/Sawi/Chinese Cabbage/\nmustard green",
+          "101",
+          "117",
+          "72",
+          "52"
+        ],
+        [
+          "Terung/ Eggplant",
+          "76",
+          "70",
+          "41",
+          "28"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Sayuran/Vegetables:"
+        ],
+        [
+          "Bawang Daun/ Scallion",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bawang Merah/ Shallots",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bawang Putih/ Garlic",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bayam/ Spinach",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Blewah/ Blewah",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Buncis/ String Bean",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Besar/ Chili/Big Chili",
+          "4",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Cabai Rawit/Chili/Cayanenne Pepper",
+          "9",
+          "12",
+          "9",
+          "-"
+        ],
+        [
+          "Kacang Panjang/ Long Beans",
+          "5",
+          "6",
+          "2",
+          "-"
+        ],
+        [
+          "Kangkung/ Water Spinach",
+          "13",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Ketimun/ Cucumber",
+          "21",
+          "10",
+          "6",
+          "2"
+        ],
+        [
+          "Terung/ Eggplant",
+          "11",
+          "5",
+          "8",
+          "-"
+        ],
+        [
+          "Tomat/ Tomato",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Buah–buahan/Fruits:"
+        ],
+        [
+          "Semangka/ Water Melon",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    }
+  }
+}

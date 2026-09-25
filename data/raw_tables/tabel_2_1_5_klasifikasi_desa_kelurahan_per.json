@@ -1,0 +1,539 @@
+{
+  "no": "2.1.5",
+  "nama": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
+  "sumber": "Perka BPS No 120 Tahun 2020 TENTANG\nKLASIFIKASI DESA PERKOTAAN DAN PERDESAAN DI INDONESIA",
+  "disediakan_ipds": true,
+  "sheet_id": "1mv1gRkm6lQl97LS4G08g5mKnApvmvsP7QzhTZ_7hpnQ",
+  "spreadsheet_title": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
+  "updated_at": "2026-09-22 08:28:58",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Tanjung",
+          "Kelurahan",
+          "Perdesaan"
+        ],
+        [
+          "2",
+          "Kuala Secapah",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "3",
+          "Tengah",
+          "Kelurahan",
+          "Perkotaan"
+        ],
+        [
+          "4",
+          "Terusan",
+          "Kelurahan",
+          "Perkotaan"
+        ],
+        [
+          "5",
+          "Pasir",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "6",
+          "Penibung",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "7",
+          "Sengkubang",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "8",
+          "Malikian",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Sambora",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "2",
+          "Benuang",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "3",
+          "Pak Utan",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "4",
+          "Sepang",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "5",
+          "Pak Laheng",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "6",
+          "Terap",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "7",
+          "Kecurit",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "8",
+          "Toho Ilir",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Sungai Purun Kecil",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "2",
+          "Peniraman",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "3",
+          "Nusapati",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "4",
+          "Galang",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "5",
+          "Sungai Rasau",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "6",
+          "Sungai Pinyuh",
+          "Kelurahan",
+          "Perkotaan"
+        ],
+        [
+          "7",
+          "Sungai Batang",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "8",
+          "Sungai Bakau Besar Laut",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "9",
+          "Sungai Bakau Besar Darat",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Sungai Nipah",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "2",
+          "Jungkat",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "3",
+          "Wajok Hilir",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "4",
+          "Wajok Hulu",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "5",
+          "Peniti Luar",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Semudun",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "2",
+          "Semparong Parit Raden",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "3",
+          "Mendalok",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "4",
+          "Sungai Dungun",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "5",
+          "Sungai Limau",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "6",
+          "Sungai Kunyit Laut",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "7",
+          "Sungai Kunyit Dalam",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "8",
+          "Sungai Kunyit Hulu",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "9",
+          "Bukit Batu",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "10",
+          "Sungai Bundung Laut",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "11",
+          "Sungai Duri I",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "12",
+          "Sungai Duri II",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Peniti Dalam I",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "2",
+          "Sungai Burung",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "3",
+          "Sungai Purun Besar",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "4",
+          "Parit Bugis",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "5",
+          "Peniti Besar",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "6",
+          "Peniti Dalam II",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Pentek",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "2",
+          "Sekabuk",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "3",
+          "Bum-Bun",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "4",
+          "Amawang",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "5",
+          "Ansiap",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "6",
+          "Suak Barangan",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Anjungan Melancar",
+          "Kelurahan",
+          "Perkotaan"
+        ],
+        [
+          "2",
+          "Anjungan Dalam",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "3",
+          "Pak Bulu",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "4",
+          "Dema",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "5",
+          "Kepayang",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2024"
+        ],
+        [
+          "No",
+          "Desa/Kelurahan\nVillage/Subdistrict",
+          "Wilayah Administratif\nAdministrative Area",
+          "Klasifikasi Desa/Kelurahan\nClassification Urban Rural"
+        ],
+        [
+          "1",
+          "Pasir Wan Salim",
+          "Kelurahan",
+          "Perkotaan"
+        ],
+        [
+          "2",
+          "Sungai Bakau Kecil",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "3",
+          "Pasir Panjang",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "4",
+          "Pasir Palembang",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "5",
+          "Pulau Pedalaman",
+          "Kelurahan",
+          "Perkotaan"
+        ],
+        [
+          "6",
+          "Antibar",
+          "Desa",
+          "Perkotaan"
+        ],
+        [
+          "7",
+          "Sejegi",
+          "Desa",
+          "Perdesaan"
+        ],
+        [
+          "8",
+          "Parit Banjar",
+          "Desa",
+          "Perdesaan"
+        ]
+      ]
+    }
+  }
+}

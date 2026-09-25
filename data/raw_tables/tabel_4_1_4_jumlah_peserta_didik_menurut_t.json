@@ -1,0 +1,965 @@
+{
+  "no": "4.1.4",
+  "nama": "Jumlah Peserta Didik Menurut Tingkat Pendidikan di Kecamatan XXX",
+  "sumber": "Kemdikbud:\nTK\nSD\nSMP\nSMA\nSMK\n\nKemenag:\nRA\nMI\nMTS\nMA",
+  "disediakan_ipds": true,
+  "sheet_id": "1VK7v1ZgUHzsT6RSTNk95ZvvUv-Eow7CgsI0GHaWbo8E",
+  "spreadsheet_title": "Jumlah Peserta Didik Menurut Tingkat Pendidikan di Kecamatan XXX",
+  "updated_at": "2026-09-22 08:29:14",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "143",
+          "145",
+          "296",
+          "270",
+          "439",
+          "415"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "100",
+          "130",
+          "100",
+          "130"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "2.673",
+          "2.626",
+          "431",
+          "429",
+          "3.104",
+          "3.055"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "1.776",
+          "1828",
+          "1.776",
+          "1828"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "1.271",
+          "1.331",
+          "173",
+          "138",
+          "1.444",
+          "1.469"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "576",
+          "614",
+          "1.453",
+          "1397",
+          "2.029",
+          "2011"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "1.321",
+          "1.369",
+          "0",
+          "0",
+          "1.321",
+          "1.369"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "1.023",
+          "1.016",
+          "180",
+          "164",
+          "1.203",
+          "1.180"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "1.059",
+          "1048",
+          "1.059",
+          "1048"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "151",
+          "121",
+          "48",
+          "44",
+          "199",
+          "165"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "2.176",
+          "2.148",
+          "0",
+          "0",
+          "2.176",
+          "2.148"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "261",
+          "266",
+          "261",
+          "266"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "1.028",
+          "1.050",
+          "0",
+          "0",
+          "1.028",
+          "1.050"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "0",
+          "0",
+          "75",
+          "94",
+          "75",
+          "94"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "703",
+          "704",
+          "0",
+          "0",
+          "703",
+          "704"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "83",
+          "66",
+          "252",
+          "236",
+          "335",
+          "302"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "326",
+          "314",
+          "326",
+          "314"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "4.366",
+          "4.256",
+          "556",
+          "544",
+          "4.922",
+          "4.800"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "456",
+          "439",
+          "1.366",
+          "1337",
+          "1.822",
+          "1776"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "1.487",
+          "1.495",
+          "484",
+          "540",
+          "1.971",
+          "2.035"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "327",
+          "369",
+          "1.102",
+          "1004",
+          "1.429",
+          "1373"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "926",
+          "929",
+          "216",
+          "224",
+          "1.142",
+          "1.153"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "0",
+          "0",
+          "261",
+          "244",
+          "261",
+          "244"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "865",
+          "912",
+          "865",
+          "912"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "26",
+          "43",
+          "83",
+          "105",
+          "109",
+          "148"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "246",
+          "201",
+          "246",
+          "201"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "4.261",
+          "4.228",
+          "0",
+          "0",
+          "4.261",
+          "4.228"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "1.331",
+          "1324",
+          "1.331",
+          "1324"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "1.138",
+          "1.123",
+          "176",
+          "164",
+          "1.314",
+          "1.287"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "599",
+          "644",
+          "484",
+          "488",
+          "1.083",
+          "1132"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "824",
+          "837",
+          "31",
+          "42",
+          "855",
+          "879"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "0",
+          "0",
+          "18",
+          "18",
+          "18",
+          "18"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "432",
+          "402",
+          "432",
+          "402"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "92",
+          "84",
+          "74",
+          "75",
+          "166",
+          "159"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "66",
+          "52",
+          "66",
+          "52"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "2.587",
+          "2.576",
+          "49",
+          "51",
+          "2.636",
+          "2.627"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "382",
+          "389",
+          "382",
+          "389"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "692",
+          "683",
+          "0",
+          "0",
+          "692",
+          "683"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "0",
+          "0",
+          "462",
+          "466",
+          "462",
+          "466"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "408",
+          "385",
+          "0",
+          "0",
+          "408",
+          "385"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "399",
+          "424",
+          "0",
+          "0",
+          "399",
+          "424"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "272",
+          "246",
+          "272",
+          "246"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "38",
+          "49",
+          "74",
+          "53",
+          "112",
+          "102"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "2.789",
+          "2.641",
+          "0",
+          "0",
+          "2.789",
+          "2.641"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "268",
+          "247",
+          "268",
+          "247"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "776",
+          "806",
+          "0",
+          "0",
+          "776",
+          "806"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "0",
+          "0",
+          "116",
+          "135",
+          "116",
+          "135"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "881",
+          "957",
+          "0",
+          "0",
+          "881",
+          "957"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "50",
+          "39",
+          "50",
+          "39"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "0",
+          "17",
+          "161",
+          "160",
+          "161",
+          "177"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "1.812",
+          "1.825",
+          "248",
+          "201",
+          "2.060",
+          "2.026"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "461",
+          "480",
+          "461",
+          "480"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "851",
+          "874",
+          "284",
+          "310",
+          "1.135",
+          "1.184"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "0",
+          "0",
+          "197",
+          "188",
+          "197",
+          "188"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "594",
+          "591",
+          "0",
+          "0",
+          "594",
+          "591"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "0",
+          "0",
+          "43",
+          "32",
+          "43",
+          "32"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "78",
+          "104",
+          "78",
+          "104"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "43",
+          "17",
+          "134",
+          "142",
+          "177",
+          "159"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "1.161",
+          "1.172",
+          "43",
+          "51",
+          "1.204",
+          "1.223"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "505",
+          "499",
+          "86",
+          "83",
+          "591",
+          "582"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "0",
+          "0",
+          "49",
+          "70",
+          "49",
+          "70"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "97",
+          "76",
+          "0",
+          "0",
+          "97",
+          "76"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "Negeri/Public",
+          "",
+          "Swasta/Private",
+          "",
+          "Jumlah/Total"
+        ],
+        [
+          "",
+          "2024/2025",
+          "2025/2026",
+          "2025/2026",
+          "2025/2026",
+          "2024/2025",
+          "2025/2026"
+        ],
+        [
+          "Taman Kanak-Kanak \n(TK)1/Kindergarten1",
+          "67",
+          "57",
+          "125",
+          "108",
+          "192",
+          "165"
+        ],
+        [
+          "Raudatul Athfal (RA)2\nRaudatul Athfal (RA)2",
+          "0",
+          "0",
+          "159",
+          "124",
+          "159",
+          "124"
+        ],
+        [
+          "Sekolah Dasar (SD)1\nPrimary School1",
+          "2.384",
+          "2.351",
+          "87",
+          "83",
+          "2.471",
+          "2.434"
+        ],
+        [
+          "Madrasah Ibtidaiyah \n(MI)2/Madrasah \nIbtidaiyah (MI) 2",
+          "0",
+          "0",
+          "826",
+          "852",
+          "826",
+          "852"
+        ],
+        [
+          "Sekolah Menengah \nPertama (SMP)1\nJunior High School1",
+          "376",
+          "394",
+          "62",
+          "57",
+          "438",
+          "451"
+        ],
+        [
+          "Madrasah \nTsanawiyah (MTs)2\nMadrasah \nTsanawiyah (MTs) 2",
+          "0",
+          "0",
+          "918",
+          "866",
+          "918",
+          "866"
+        ],
+        [
+          "Sekolah Menengah \nAtas (SMA)1\nSenior High School1",
+          "0",
+          "0",
+          "10",
+          "11",
+          "10",
+          "11"
+        ],
+        [
+          "Sekolah Menengah \nKejuruan (SMK)1\nVocational High \nSchool1",
+          "325",
+          "322",
+          "149",
+          "251",
+          "474",
+          "573"
+        ],
+        [
+          "Madrasah Aliyah \n(MA)2\nMadrasah Aliyah \n(MA)2",
+          "109",
+          "89",
+          "436",
+          "394",
+          "545",
+          "483"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "no": "5.6",
+  "nama": "Produksi Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (tangkai)",
+  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "disediakan_ipds": true,
+  "sheet_id": "1Rs-FeKkqGfb7RVsb9vNQNp7nMfZe4W7KI8FDYNF4jUY",
+  "spreadsheet_title": "Produksi Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (tangkai)",
+  "updated_at": "2026-09-22 08:29:38",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bugenvil",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bugenvil",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Bugenvil",
+          "5000",
+          "33500",
+          "54000",
+          "55700"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Tanaman\n Kind of Plants",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        [
+          "Anggrek Pot1/Pot Orchid1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Anggrek Potong/Cut Orchid",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Krisan/Chrysantemum",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Mawar/Rose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "Sedap Malam/Tuberose",
+          "-",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    }
+  }
+}

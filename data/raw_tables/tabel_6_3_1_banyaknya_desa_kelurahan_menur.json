@@ -1,0 +1,227 @@
+{
+  "no": "6.3.1",
+  "nama": "Banyaknya Desa/Kelurahan Menurut Keberadaan Kantor Pos/Pos Pembantu/Rumah Pos, Pos Keliling, dan Perusahaan/Agen Jasa Ekspedisi Swasta di\nKecamatan XXX",
+  "sumber": "Podes",
+  "disediakan_ipds": false,
+  "sheet_id": "1DV8HwLTbVPCz79oNaOzEmjb4K7ey2IeIciT2px7Qiz8",
+  "spreadsheet_title": "Banyaknya Desa/Kelurahan Menurut Keberadaan Kantor Pos/Pos Pembantu/Rumah Pos, Pos Keliling, dan Perusahaan/Agen Jasa Ekspedisi Swasta di\nKecamatan XXX",
+  "updated_at": "2026-09-22 08:29:46",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "1"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "1"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "3"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "2"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "1"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "1"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "1"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "0"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "2"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "1"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "1"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "3"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "1"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "3"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "3"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "1"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "0"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "3"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "1"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "1"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "3"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "0"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "0"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "0"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Fasilitas Pos dan Ekspedisi\n Post and Expedition Facilities",
+          "2025"
+        ],
+        [
+          "Kantor Pos/Pos\nPembantu/Rumah Pos\nPost Office/Subsidiary of Post Office",
+          "0"
+        ],
+        [
+          "Pos Keliling\nMobile Portal Service",
+          "0"
+        ],
+        [
+          "Perusahaan/Agen Jasa Ekspedisi Swasta\nPrivate Expedition Service Company",
+          "0"
+        ]
+      ]
+    }
+  }
+}

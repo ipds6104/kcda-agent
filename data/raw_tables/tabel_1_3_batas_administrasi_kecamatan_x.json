@@ -1,0 +1,543 @@
+{
+  "no": "1.3.",
+  "nama": "Batas Administrasi Kecamatan XXX Menurut Arah Mata Angin",
+  "sumber": "KCDA 2025 + Kantor Camat",
+  "disediakan_ipds": false,
+  "sheet_id": "12Ohl8ShLolVXWRD7dBBtNNPqNfX_9pgAFFVYNbMLJ0U",
+  "spreadsheet_title": "Batas Administrasi Kecamatan XXX Menurut Arah Mata Angin",
+  "updated_at": "2026-09-22 08:28:46",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North",
+          "Kecamatan Sungai Kunyit/Sungai Kunyit District"
+        ],
+        [
+          "2",
+          "Selatan/South",
+          "Kecamatan Mempawah Timur/ Mempawah Timur District"
+        ],
+        [
+          "3",
+          "Barat/West",
+          "Selat Karimata/ Karimata Strait"
+        ],
+        [
+          "4",
+          "Timur/East",
+          "Kecamatan Sadaniang/ Sadaniang District"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan ",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "No",
+          "Arah Mata Angin\n Wind Direction",
+          "Berbatasan dengan\n Administrative Borders"
+        ],
+        [
+          "(1)",
+          "(2)",
+          "(3)"
+        ],
+        [
+          "1",
+          "Utara/North"
+        ],
+        [
+          "2",
+          "Selatan/South"
+        ],
+        [
+          "3",
+          "Barat/West"
+        ],
+        [
+          "4",
+          "Timur/East"
+        ]
+      ]
+    },
+    "_REF_APPSHEET_KEC": {
+      "raw_title": "_REF_APPSHEET_KEC",
+      "rows": [
+        [
+          "id_kecamatan",
+          "kode_kecamatan",
+          "nama_kecamatan",
+          "ibukota_kecamatan",
+          "nama_camat_kcda_lalu",
+          "periode_camat_kcda_lalu",
+          "nama_camat_konfirmasi_2026",
+          "periode_camat_konfirmasi_2026",
+          "status_camat_konfirmasi_2026",
+          "batas_utara_kcda_lalu",
+          "batas_selatan_kcda_lalu",
+          "batas_barat_kcda_lalu",
+          "batas_timur_kcda_lalu",
+          "batas_utara_konfirmasi_2026",
+          "batas_selatan_konfirmasi_2026",
+          "batas_barat_konfirmasi_2026",
+          "batas_timur_konfirmasi_2026",
+          "jarak_ke_pontianak_km_kcda_lalu",
+          "jarak_ke_ibukota_kab_km_kcda_lalu",
+          "jarak_ke_pontianak_km_konfirmasi_2026",
+          "jarak_ke_ibukota_kab_km_konfirmasi_2026",
+          "pns_camat_laki_konfirmasi_2026",
+          "pns_camat_perempuan_konfirmasi_2026",
+          "pns_sd_konfirmasi_2026",
+          "pns_smp_konfirmasi_2026",
+          "pns_sma_konfirmasi_2026"
+        ],
+        [
+          "KEC-6104020",
+          "6104020",
+          "Kecamatan Jongkat",
+          "Jungkat",
+          "Mahmud Hasan,S.Ag.M.Pd.",
+          "2024-sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "28,1",
+          "47,9"
+        ],
+        [
+          "KEC-6104030",
+          "6104030",
+          "Kecamatan Segedong",
+          "Parit Bugis",
+          "H. Arifin, S.Pd, M.Pd",
+          "2021 – Sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "42,1",
+          "40,3"
+        ],
+        [
+          "KEC-6104040",
+          "6104040",
+          "Kecamatan Sungai Pinyuh",
+          "Sungai Pinyuh",
+          "Ibrahim, S.ST.",
+          "2021 – Sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "67 km",
+          "19,7 km"
+        ],
+        [
+          "KEC-6104041",
+          "6104041",
+          "Kecamatan Anjongan",
+          "Anjungan Melancar",
+          "Ferry Ramadhani, S.STP, MAP",
+          "2022 –sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "73,9",
+          "32,8"
+        ],
+        [
+          "KEC-6104050",
+          "6104050",
+          "Kecamatan Mempawah Hilir",
+          "Tanjung",
+          "Drs. Ismayuda, MM",
+          "2022-2024",
+          "",
+          "",
+          "",
+          "Kecamatan Sungai Kunyit/Sungai Kunyit District",
+          "Kecamatan Mempawah Timur/ Mempawah Timur District",
+          "Selat Karimata/ Karimata Strait",
+          "Kecamatan Sadaniang/ Sadaniang District",
+          "",
+          "",
+          "",
+          "",
+          "63",
+          "2,8"
+        ],
+        [
+          "KEC-6104051",
+          "6104051",
+          "Kecamatan Mempawah Timur",
+          "Antibar",
+          "R. Agus Isnanto, SH",
+          "2019-2024",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "78,2",
+          "2,3"
+        ],
+        [
+          "KEC-6104060",
+          "6104060",
+          "Kecamatan Sungai Kunyit",
+          "Sungai Kunyit Laut",
+          "Ir. Teddy Prawoto, M.Si",
+          "2023 – 2024",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "94",
+          "19"
+        ],
+        [
+          "KEC-6104070",
+          "6104070",
+          "Kecamatan Toho",
+          "Toho",
+          "H. Tommy As. S.H.",
+          "2019–April 2025",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "82,6",
+          "35,5"
+        ],
+        [
+          "KEC-6104080",
+          "6104080",
+          "Kecamatan Sadaniang",
+          "Pentek",
+          "Muhammad Yusra, S.Sos., M.Si.",
+          "2024-Sekarang",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "99",
+          "36,1"
+        ]
+      ]
+    }
+  }
+}

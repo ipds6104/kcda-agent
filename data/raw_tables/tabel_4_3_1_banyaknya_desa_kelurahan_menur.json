@@ -1,0 +1,299 @@
+{
+  "no": "4.3.1",
+  "nama": "Banyaknya Desa/Kelurahan Menurut Sumber Penerangan Jalan Utama Desa/Kelurahan di Kecamatan XXX",
+  "sumber": "2023 + 2024 KCDA Tahun lalu\n2025 Podes",
+  "disediakan_ipds": false,
+  "sheet_id": "1B1URUs2wJzhtGMJ7i5snYXQ5J9phuaU-kmQUMXcSR1U",
+  "spreadsheet_title": "Banyaknya Desa/Kelurahan Menurut Sumber Penerangan Jalan Utama Desa/Kelurahan di Kecamatan XXX",
+  "updated_at": "2026-09-22 08:29:18",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "–",
+          "8"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "8",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "2",
+          "6"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "6",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "–",
+          "2"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "–",
+          "9"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "9",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "–",
+          "5"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "5",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "–",
+          "9"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "9",
+          "3"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "3",
+          "0"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "–",
+          "6"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "6",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan ",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "1",
+          "3"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "3",
+          "1"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "…",
+          "4",
+          "2"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "…",
+          "2",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "…",
+          "–",
+          "4"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Sumber Penerangan Jalan Utama\n Source of Main Street Illumination",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        [
+          "Listrik Pemerintah/State Electricity",
+          "–",
+          "–",
+          "8"
+        ],
+        [
+          "Listrik Non-Pemerintah/Non-State Electricity",
+          "8",
+          "8",
+          "0"
+        ],
+        [
+          "Non Listrik/Non-Electric",
+          "–",
+          "–",
+          "0"
+        ]
+      ]
+    }
+  }
+}

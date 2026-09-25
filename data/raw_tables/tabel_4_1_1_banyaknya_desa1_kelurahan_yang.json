@@ -1,0 +1,695 @@
+{
+  "no": "4.1.1",
+  "nama": "Banyaknya Desa1/Kelurahan yang Memiliki Fasilitas Sekolah Menurut Tingkat Pendidikan di Kecamatan XXX",
+  "sumber": "2023: tergantung ketersediaan data di daerah.\n2024 dan 2025: menggunakan data podes",
+  "disediakan_ipds": false,
+  "sheet_id": "1X5rNuK6ZMWNZQxnEFpQomXi1Fgv-c-6MfdF-kB_UCUY",
+  "spreadsheet_title": "Banyaknya Desa1/Kelurahan yang Memiliki Fasilitas Sekolah Menurut Tingkat Pendidikan di Kecamatan XXX",
+  "updated_at": "2026-09-22 08:29:08",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "…",
+          "6",
+          "6"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "…",
+          "2",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "8",
+          "8",
+          "8"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "6",
+          "7",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "5",
+          "5",
+          "7"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "5",
+          "6",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "2",
+          "2",
+          "5"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "3",
+          "3",
+          "3"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "3",
+          "3",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "2",
+          "3",
+          "3"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "…",
+          "–",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "8",
+          "8",
+          "8"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "6",
+          "6",
+          "7"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "–",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "…",
+          "6",
+          "8"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "…",
+          "7",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "30",
+          "9",
+          "9"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "15",
+          "8",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "8",
+          "4",
+          "8"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "15",
+          "7",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "3",
+          "2",
+          "6"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "7",
+          "5",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "–",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "…",
+          "2",
+          "4"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "–",
+          "2",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "5",
+          "5",
+          "5"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "5",
+          "5",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "4",
+          "4",
+          "5"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "4",
+          "4",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "1",
+          "1",
+          "5"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "4",
+          "4",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "–",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "…",
+          "4",
+          "6"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "–",
+          "3",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "11",
+          "11",
+          "11"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "3",
+          "4",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "5",
+          "5",
+          "9"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "3",
+          "4",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "1",
+          "1",
+          "3"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "1",
+          "3",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "–",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "3",
+          "4",
+          "4"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "–",
+          "2",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "6",
+          "6",
+          "6"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "4",
+          "4",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "3",
+          "4",
+          "5"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "2",
+          "2",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "2",
+          "2",
+          "3"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "…",
+          "4",
+          "4"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "…",
+          "–",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "5",
+          "5",
+          "5"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "3",
+          "3",
+          "3"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "1",
+          "2",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "1",
+          "1",
+          "2"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "1",
+          "2",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "5",
+          "5",
+          "5"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "6",
+          "6",
+          "6"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "5",
+          "5",
+          "5"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "–",
+          "–",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "–",
+          "–",
+          "0"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Tingkat Pendidikan\n Educational Level",
+          "2023",
+          "2024",
+          "2025",
+          "",
+          "Tapi nanti template di publikasinya disatukan"
+        ],
+        [
+          "Taman Kanak-Kanak (TK)\nKindergarten",
+          "5",
+          "5",
+          "6"
+        ],
+        [
+          "Raudatul Athfal (RA)\nRaudatul Athfal (RA)",
+          "…",
+          "3",
+          "0"
+        ],
+        [
+          "Sekolah Dasar (SD)\nPrimary School",
+          "8",
+          "8",
+          "8"
+        ],
+        [
+          "Madrasah Ibtidaiyah (MI)\nMadrasah Ibtidaiyah (MI)",
+          "4",
+          "4",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Pertama (SMP)\nJunior High School",
+          "4",
+          "4",
+          "6"
+        ],
+        [
+          "Madrasah Tsanawiyah (MTs)\nMadrasah Tsanawiyah (MTs)",
+          "4",
+          "4",
+          "0"
+        ],
+        [
+          "Sekolah Menengah Atas (SMA)\nSenior High School",
+          "1",
+          "1",
+          "5"
+        ],
+        [
+          "Sekolah Menengah Kejuruan (SMK)\nVocational High School",
+          "1",
+          "2",
+          "2"
+        ],
+        [
+          "Madrasah Aliyah (MA)\nMadrasah Aliyah (MA)",
+          "2",
+          "5",
+          "0"
+        ],
+        [
+          "Akademi/Perguruan Tinggi\nAcademy/University",
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    }
+  }
+}

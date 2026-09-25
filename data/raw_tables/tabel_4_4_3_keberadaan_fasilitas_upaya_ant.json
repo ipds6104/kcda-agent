@@ -1,0 +1,299 @@
+{
+  "no": "4.4.3",
+  "nama": "Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Desa/Kelurahan di Kecamatan XXX",
+  "sumber": "Podes",
+  "disediakan_ipds": false,
+  "sheet_id": "1jg-ouz0ekRBz1dnfAiu19ppK8fD7CobWhwoIHTK7CD0",
+  "spreadsheet_title": "Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Desa/Kelurahan di Kecamatan XXX",
+  "updated_at": "2026-09-22 08:29:26",
+  "tabs": {
+    "Mempawah Hilir": {
+      "raw_title": "Mempawah Hilir",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "2"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "3"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "2"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "8"
+        ]
+      ]
+    },
+    "Toho": {
+      "raw_title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "0"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "0"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "6"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "raw_title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "0"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "0"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "9"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "raw_title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "2"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "1"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "4"
+        ]
+      ]
+    },
+    "Sungai Kunyit": {
+      "raw_title": "Sungai Kunyit",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "2"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "0"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "6"
+        ]
+      ]
+    },
+    "Segedong": {
+      "raw_title": "Segedong",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "1"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "0"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "6"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "raw_title": "Anjongan",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "0"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "0"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "3"
+        ]
+      ]
+    },
+    "Sadaniang": {
+      "raw_title": "Sadaniang",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "0"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "0"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "0"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "0"
+        ]
+      ]
+    },
+    "Mempawah Timur": {
+      "raw_title": "Mempawah Timur",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Fasilitas/Upaya Antisipasi/Mitigasi\n Type of Facilities/Efforts for \nAnticipation/Mitigation",
+          "2025"
+        ],
+        [
+          "Sistem peringatan dini bencana alam\nNatural disaster early warning system",
+          "2"
+        ],
+        [
+          "Sistem peringatan dini khusus tsunami\nTsunami early warning system",
+          "0"
+        ],
+        [
+          "Perlengkapan keselamatan\nSafety equipment",
+          "8"
+        ],
+        [
+          "Rambu‐Rambu dan jalur evakuasi bencana\nSign and evacuation route",
+          "2"
+        ],
+        [
+          "Pembuatan, perawatan, atau normalisasi: \nsungai, kanal, tanggul, parit, drainase, waduk, \npantai, dll\nManufacture, maintenance, or normalization: \nrivers, canals, embankment, etc",
+          "6"
+        ]
+      ]
+    }
+  }
+}
