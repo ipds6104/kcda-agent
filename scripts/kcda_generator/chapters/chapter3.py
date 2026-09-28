@@ -8,7 +8,7 @@ from ..chart_generator import get_chapter3_charts
 from ..config import get_regency_info
 from .narrative_helper import render_chapter_intro
 
-def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
+def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: int = 4) -> str:
     regency = get_regency_info()
     nama_kab = regency.get("nama_resmi", "Kabupaten Mempawah")
     nama_kab_en = regency.get("nama_en", "Mempawah Regency")
@@ -20,7 +20,7 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     slug = cfg.get("slug", "")
 
     # Grafik dinamis data-driven dari Google Sheets
-    charts_markup = get_chapter3_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None)
+    charts_markup = get_chapter3_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None, fig_no=fig_no)
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
     # --- 3.1 Penduduk ---

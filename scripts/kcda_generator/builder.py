@@ -24,6 +24,7 @@ from .chapters.chapter5 import render_chapter5
 from .chapters.chapter6 import render_chapter6
 from .chapters.chapter7 import render_chapter7
 from .chapters.backcover import render_backcover
+from .charts import get_subdistrict_figures
 
 def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
     """Menyusun kode dokumen Typst lengkap ukuran A5 sesuai Template Resmi KCDA BPS Pusat."""
@@ -202,6 +203,13 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
 #metadata("akhir_buku") <akhir_buku>
 """
 
+    # Sequential figure numbers based on active figures in the subdistrict
+    figures = get_subdistrict_figures(slug, nama_singkat, nama_en)
+    fig_ch1 = next((f["num"] for f in figures if f["chapter"] == 1 and f["num"] > 1), 2)
+    fig_ch2 = next((f["num"] for f in figures if f["chapter"] == 2), 3)
+    fig_ch3 = next((f["num"] for f in figures if f["chapter"] == 3), 4)
+    fig_ch5 = next((f["num"] for f in figures if f["chapter"] == 5), 5)
+
     # Assemble Document
     parts = [
         header_logic,
@@ -209,11 +217,11 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
         """
 #metadata("transisi_isi") <transisi_isi>
 """,
-        render_chapter1(cfg, out_dir=out_dir),
-        render_chapter2(cfg, out_dir=out_dir),
-        render_chapter3(cfg, out_dir=out_dir),
+        render_chapter1(cfg, out_dir=out_dir, fig_no=fig_ch1),
+        render_chapter2(cfg, out_dir=out_dir, fig_no=fig_ch2),
+        render_chapter3(cfg, out_dir=out_dir, fig_no=fig_ch3),
         render_chapter4(cfg, out_dir=out_dir),
-        render_chapter5(cfg, out_dir=out_dir),
+        render_chapter5(cfg, out_dir=out_dir, fig_no=fig_ch5),
         render_chapter6(cfg, out_dir=out_dir),
         render_chapter7(cfg, out_dir=out_dir),
         daftar_pustaka_markup,

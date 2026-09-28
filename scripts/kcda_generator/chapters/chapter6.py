@@ -2,7 +2,7 @@
 
 from typing import Dict, Any, List, Optional
 from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
-from ..table_renderer import render_typst_table
+from ..table_renderer import render_typst_table, render_subchapter_heading
 from ..config import get_regency_info
 from .narrative_helper import render_chapter_intro
 
@@ -148,6 +148,10 @@ def render_chapter6(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         notes=catatan_podes
     )
 
+    sec_61 = render_subchapter_heading("6.1", "PARIWISATA", "TOURISM")
+    sec_62 = render_subchapter_heading("6.2", "TRANSPORTASI", "TRANSPORTATION")
+    sec_63 = render_subchapter_heading("6.3", "KOMUNIKASI", "COMMUNICATION")
+
     return f"""
 // ==========================================
 // ISI BAB 6: ULASAN NARASI & TABEL DATA
@@ -156,23 +160,20 @@ def render_chapter6(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 // ==========================================
 // 6.1 PARIWISATA
 // ==========================================
-#heading(level: 2, numbering: none, outlined: false)[6.1 Pariwisata/Tourism]
-#v(6pt)
+{sec_61}
 {t611_markup}
 #pagebreak()
 
 // ==========================================
 // 6.2 TRANSPORTASI
 // ==========================================
-#heading(level: 2, numbering: none, outlined: false)[6.2 Transportasi/Transportation]
-#v(6pt)
+{sec_62}
 {t621_markup}
 #pagebreak()
 
 // ==========================================
 // 6.3 KOMUNIKASI
 // ==========================================
-#heading(level: 2, numbering: none, outlined: false)[6.3 Komunikasi/Communication]
-#v(6pt)
+{sec_63}
 {t631_markup}
 """

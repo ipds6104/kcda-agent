@@ -30,47 +30,60 @@ def format_bilingual_stub(cell_val: str) -> str:
     Memformat stub/nilai sel dwibahasa sesuai Pedoman BPS:
     Jika memuat pasangan dwibahasa (contoh 'Bawang Merah / Shallots', 'Jumlah / Total', 'Banjir / Flood'):
     Bahasa Indonesia di atas, bahasa Inggris di bawahnya (enter) dicetak miring.
+    Format: [Bahasa Indonesia] \\ #text(style: "italic")[[Bahasa Inggris]]
     """
-    bilingual_indicators = {
-        "shallots", "chili", "pepper", "tomato", "eggplant", "beans", "cucumber", 
-        "spinach", "ginger", "galangal", "turmeric", "durian", "mango", "orange", 
-        "banana", "papaya", "pineapple", "rambutan", "total", "male", "female",
-        "public", "private", "hospital", "phc", "clinic", "pharmacy", "landslide",
-        "flood", "earthquake", "tidal", "wave", "disaster", "drought", "fire",
-        "tsunami", "outpatient", "inpatient", "unit", "post", "courier", "facility",
-        "head", "director", "in charge", "compilers", "editors", "writers", "layouters",
-        "under graduate", "bachelor", "graduate", "master", "primary", "secondary",
-        "vocational", "kindergarten", "islamic", "potato", "cabbage", "garlic",
-        "scallion", "mustard green", "water melon", "water spinach", "tangerine"
-    }
+    s = str(cell_val).strip()
+    if not s or s in ["–", "-", "...", "…"]:
+        return s
+    # Lewati baris header kelompok/kategori
+    if s.endswith(':') or any(cat in s.lower() for cat in ['sayuran/vegetables', 'buah-buahan/fruits', 'buah–buahan/fruits']):
+        return s
+    # Lewati jika sudah diformat Typst italic
+    if '#text(style: "italic")' in s:
+        return s
+
     # 1. Jika sudah ada pemisah baris baru \n
-    if "\n" in cell_val:
-        parts = cell_val.split("\n", 1)
-        id_t = parts[0].strip()
-        en_t = parts[1].strip().strip("_")
-        return f"{id_t} \\ #text(style: \"italic\")[{en_t}]"
+    if "\n" in s:
+        lines = [l.strip() for l in s.split("\n") if l.strip()]
+        if len(lines) == 2:
+            l1, l2 = lines[0], lines[1]
+            if l2.startswith('(') and '/' in l2:
+                p2 = l2.split('/', 1)
+                id_part = f"{l1} {p2[0].strip()}".strip()
+                en_part = p2[1].strip()
+                return f'{id_part} \\ #text(style: "italic")[{en_part}]'
+            return f'{l1} \\ #text(style: "italic")[{l2}]'
+        elif len(lines) == 3:
+            id_part = f"{lines[0]} {lines[1]}".strip()
+            en_part = lines[2].strip()
+            return f'{id_part} \\ #text(style: "italic")[{en_part}]'
+        elif len(lines) == 4:
+            id_part = f"{lines[0]} {lines[1]}".strip()
+            en_part = f"{lines[2]} {lines[3]}".strip()
+            return f'{id_part} \\ #text(style: "italic")[{en_part}]'
+        elif len(lines) > 4:
+            mid = len(lines) // 2
+            id_part = " ".join(lines[:mid])
+            en_part = " ".join(lines[mid:])
+            return f'{id_part} \\ #text(style: "italic")[{en_part}]'
 
     # 2. Jika dipisahkan ' / '
-    if " / " in cell_val:
-        parts = cell_val.split(" / ", 1)
-        id_t = parts[0].strip()
-        en_t = parts[1].strip().strip("_")
-        words = set(re.findall(r'[a-zA-Z]+', en_t.lower()))
-        if words.intersection(bilingual_indicators) or any(w in en_t.lower() for w in ["total", "school", "office"]):
-            return f"{id_t} \\ #text(style: \"italic\")[{en_t}]"
-        else:
-            return f"{id_t}/{en_t}"
+    if " / " in s:
+        parts = s.split(" / ", 1)
+        return f'{parts[0].strip()} \\ #text(style: "italic")[{parts[1].strip()}]'
 
-    # 3. Jika dipisahkan '/' dan memuat indikator istilah asing
-    if "/" in cell_val and not any(k in cell_val for k in ["202", "199", "km", "ha", "RT", "RW"]):
-        parts = cell_val.split("/", 1)
-        id_t = parts[0].strip()
-        en_t = parts[1].strip().strip("_")
-        words = set(re.findall(r'[a-zA-Z]+', en_t.lower()))
-        if words.intersection(bilingual_indicators):
-            return f"{id_t} \\ #text(style: \"italic\")[{en_t}]"
+    # 3. Jika dipisahkan '/' (tanpa spasi)
+    if "/" in s and not re.search(r'\b(202\d|199\d|km|ha|RT|RW|No|no)\b', s, re.IGNORECASE):
+        parts = s.split("/")
+        if len(parts) == 2:
+            return f'{parts[0].strip()} \\ #text(style: "italic")[{parts[1].strip()}]'
+        elif len(parts) > 2:
+            id_p = "/".join(parts[:-1]).strip()
+            en_p = parts[-1].strip()
+            return f'{id_p} \\ #text(style: "italic")[{en_p}]'
 
-    return cell_val
+    return s
+
 
 SOURCE_TRANSLATIONS = {
     "BPS Kabupaten Mempawah": "BPS-Statistics of Mempawah Regency",
@@ -253,15 +266,60 @@ def format_cell_value(val: str, table_no: str = "", col_idx: int = 0) -> str:
     return format_bilingual_stub(s)
 
 def get_cell_alignment(val: str, col_idx: int, header_text: str = "") -> str:
+    h_lower = header_text.strip().lower()
     if col_idx == 0:
-        if header_text.strip().lower() in ["no", "no."]:
+        if h_lower in ["no", "no."]:
             return "center + horizon"
         return "left + horizon"
-    clean = re.sub(r'#super\[\d+\]', '', val)
-    has_letters = any(c.isalpha() for c in clean)
-    if has_letters and not re.match(r'^(–|\-|\.\.\.|…|NA|x|xx|e|r)$', clean.strip()):
-        return "left + horizon"
-    return "right + horizon"
+
+    # Kolom teks deskriptif / nama orang / nama wilayah / arah / tempat / rincian
+    if any(k in h_lower for k in [
+        "nama camat", "nama kepala", "nama dusun", "desa/kelurahan", "wilayah perbatasan",
+        "arah mata angin", "berbatasan", "nama kota", "tempat penting", "rincian", "uraian"
+    ]):
+        clean = re.sub(r'#super\[\d+\]', '', val)
+        has_letters = any(c.isalpha() for c in clean)
+        if has_letters and not re.match(r'^(–|\-|\.\.\.|…|NA|x|xx|e|r)$', clean.strip()):
+            return "left + horizon"
+
+    # Seluruh isian data tabel (angka, tahun, status, simbol, kategori) dibuat rata tengah
+    return "center + horizon"
+
+
+def render_subchapter_heading(no: str, title_id: str, title_en: str) -> str:
+    """
+    Menghasilkan judul subbab resmi dwibahasa BPS di atas tabel pertama subbab tersebut:
+    Contoh: 4.3 PERUMAHAN DAN LINGKUNGAN/HOUSING AND ENVIRONMENT
+    """
+    return f"""
+#v(0.2cm)
+#text(9pt, font: ("Metropolis", "Liberation Sans", "Arial"), weight: "bold")[{no} {title_id.upper()}/]#text(9pt, font: ("Metropolis", "Liberation Sans", "Arial"), weight: "bold", style: "italic")[{title_en.upper()}]
+#v(6pt)
+"""
+
+
+def get_edu_two_tier_header(y1: str = "2024/2025", y2: str = "2025/2026") -> str:
+    """Header dua baris berkolom ganda untuk Tabel 4.1.2, 4.1.3, dan 4.1.4 (Pendidikan)."""
+    return f"""
+    table.cell(rowspan: 2, align: center + horizon)[#strong[Tingkat Pendidikan] \\ #text(6pt, style: "italic", weight: "bold")[Educational Level]],
+    table.cell(colspan: 2, align: center + horizon, stroke: (bottom: 0.6pt + black))[#strong[Negeri]/#text(style: "italic", weight: "bold")[Public]],
+    table.cell(colspan: 2, align: center + horizon, stroke: (bottom: 0.6pt + black))[#strong[Swasta]/#text(style: "italic", weight: "bold")[Private]],
+    table.cell(colspan: 2, align: center + horizon, stroke: (bottom: 0.6pt + black))[#strong[Jumlah]/#text(style: "italic", weight: "bold")[Total]],
+    table.cell(align: center + horizon)[#strong[{y1}]],
+    table.cell(align: center + horizon)[#strong[{y2}]],
+    table.cell(align: center + horizon)[#strong[{y1}]],
+    table.cell(align: center + horizon)[#strong[{y2}]],
+    table.cell(align: center + horizon)[#strong[{y1}]],
+    table.cell(align: center + horizon)[#strong[{y2}]],
+    table.cell(align: center + horizon)[#strong[(1)]],
+    table.cell(align: center + horizon)[#strong[(2)]],
+    table.cell(align: center + horizon)[#strong[(3)]],
+    table.cell(align: center + horizon)[#strong[(4)]],
+    table.cell(align: center + horizon)[#strong[(5)]],
+    table.cell(align: center + horizon)[#strong[(6)]],
+    table.cell(align: center + horizon)[#strong[(7)]]
+    """
+
 
 def render_typst_table(
     table_no: str,
@@ -274,7 +332,9 @@ def render_typst_table(
     source: Optional[str] = None,
     note: Optional[str] = None,
     notes: Optional[str] = None,
-    is_continued: bool = False
+    is_continued: bool = False,
+    custom_header: Optional[str] = None,
+    header_rows_count: int = 1
 ) -> str:
     """Merender tabel berstandar BPS untuk buku ukuran A5 dengan format judul dua kolom dan penegakan kaidah dwibahasa."""
     if note is None and notes is not None:
@@ -305,8 +365,12 @@ def render_typst_table(
         widths = ["2.2fr"] + ["1.0fr"] * (num_cols - 1)
         col_spec = "(" + ", ".join(widths) + ")"
 
-    header_cells = ", ".join([f"table.cell(align: center + horizon)[{format_bilingual_header(h)}]" for h in headers])
-    col_num_cells = ", ".join([f"table.cell(align: center + horizon)[#strong[{cn}]]" for cn in col_numbers])
+    if custom_header:
+        header_markup = custom_header.strip()
+    else:
+        header_cells = ", ".join([f"table.cell(align: center + horizon)[{format_bilingual_header(h)}]" for h in headers])
+        col_num_cells = ", ".join([f"table.cell(align: center + horizon)[#strong[{cn}]]" for cn in col_numbers])
+        header_markup = f"{header_cells}, {col_num_cells}"
 
     rendered_rows = []
     for r in rows:
@@ -398,11 +462,11 @@ def render_typst_table(
   columns: {col_spec},
   inset: {cell_inset},
   stroke: none,
-  fill: (col, row) => if row == 0 {{ cmyk(0%, 20%, 90%, 0%) }}
-                      else if row == 1 {{ cmyk(0%, 10%, 45%, 0%) }}
+  fill: (col, row) => if row < {header_rows_count} {{ cmyk(0%, 20%, 90%, 0%) }}
+                      else if row == {header_rows_count} {{ cmyk(0%, 10%, 45%, 0%) }}
                       else if calc.even(row) {{ rgb("#FFF8E7") }}
                       else {{ rgb("#FFF4D4") }},
-  table.header({header_cells}, {col_num_cells}),
+  table.header({header_markup}),
   {rows_str}
 )
 {note_str}#v(-3pt)

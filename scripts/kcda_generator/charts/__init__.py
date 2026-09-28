@@ -16,6 +16,7 @@ from .extractors import (
     get_chapter3_charts,
     get_chapter4_charts,
     get_chapter5_charts,
+    get_subdistrict_figures,
 )
 
 __all__ = [
@@ -29,4 +30,5 @@ __all__ = [
     "get_chapter3_charts",
     "get_chapter4_charts",
     "get_chapter5_charts",
+    "get_subdistrict_figures",
 ]

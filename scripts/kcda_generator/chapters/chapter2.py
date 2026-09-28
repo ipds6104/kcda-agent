@@ -3,11 +3,11 @@
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
-from ..table_renderer import render_typst_table
+from ..table_renderer import render_typst_table, render_subchapter_heading
 from ..chart_generator import get_chapter2_charts
 from .narrative_helper import render_chapter_intro
 
-def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
+def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: int = 3) -> str:
     nama_resmi = cfg["nama_resmi"]
     nama_en = cfg["nama_en"].replace(" Subdistrict", "")
     nama_singkat = cfg.get("nama_singkat", nama_resmi.replace("Kecamatan ", "").strip())
@@ -19,7 +19,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     has_214 = slug not in ["mempawah-hilir", "sungai-pinyuh"]
 
     # Grafik dinamis data-driven dari Google Sheets
-    charts_markup = get_chapter2_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None)
+    charts_markup = get_chapter2_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None, fig_no=fig_no)
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
     
@@ -63,8 +63,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t212_markup = render_typst_table(
         table_no="2.1.2",
-        title_id=f"Nama-Nama Camat yang Pernah/Masih Menjabat di {nama_resmi}",
-        title_en=f"Names of District Heads of {nama_en} District",
+        title_id=f"Nama-Nama Camat yang Pernah/Masih Menjabat di {nama_resmi}, 2025",
+        title_en=f"Names of Last and Current Who Have/Still Served in {nama_en} District, 2025",
         headers=["No", "Nama Camat\nName of District Head", "Periode Menjabat\nPeriod"],
         col_numbers=["(1)", "(2)", "(3)"],
         rows=t212_rows,
@@ -124,7 +124,10 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
             source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
         )
 
-    # --- 2.1.5 Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan ---
+    # --- 2.1.5 / 2.1.4 Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan ---
+    tno_klas = "2.1.5" if has_214 else "2.1.4"
+    tno_idm = "2.1.6" if has_214 else "2.1.5"
+
     rows_215_raw = get_kecamatan_tab_rows("2.1.5", nama_singkat)
     klas_map = {}
     for r in rows_215_raw[2:]:
@@ -139,7 +142,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         t215_rows.append([str(idx), d, v[0], v[1]])
 
     t215_markup = render_typst_table(
-        table_no="2.1.5",
+        table_no=tno_klas,
         title_id=f"Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di {nama_resmi}, 2024",
         title_en=f"Urban and Rural Classification of Village/Subdistrict in {nama_en} District, 2024",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Wilayah Administratif\nAdministrative Area", "Klasifikasi Desa/Kelurahan\nUrban/Rural Classification"],
@@ -149,7 +152,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         source="Peraturan Kepala Badan Pusat Statistik Nomor 120 Tahun 2020 Tentang Klasifikasi Desa Perkotaan dan Perdesaan di Indonesia Tahun 2020/ Regulation of the Chief Statistician Number 120 of 2020 Concerning the Classification of Urban and Rural Villages in Indonesia in 2020"
     )
 
-    # --- 2.1.6 IDM Desa ---
+    # --- 2.1.6 / 2.1.5 IDM Desa ---
     rows_216_raw = get_kecamatan_tab_rows("2.1.6", nama_singkat)
     idm_map = {}
     for r in rows_216_raw[2:]:
@@ -163,7 +166,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         t216_rows.append([str(idx), d, status_idm])
 
     t216_markup = render_typst_table(
-        table_no="2.1.6",
+        table_no=tno_idm,
         title_id=f"Status Desa berdasarkan Indeks Desa Membangun di {nama_resmi}, 2024",
         title_en=f"Village Status Based on Developing Village Index in {nama_en} District, 2024",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Status Indeks Desa Membangun\nDeveloping Village Index Status"],
@@ -370,6 +373,9 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     sec_214 = f"{t214_markup}\n#pagebreak()\n" if has_214 else ""
 
+    sec_21 = render_subchapter_heading("2.1", "Wilayah Administratif", "Administrative Area")
+    sec_22 = render_subchapter_heading("2.2", "Sumber Daya Manusia", "Human Resources")
+
     return f"""
 // ==========================================
 // BAB 2: PEMERINTAHAN (PEMBATAS, ULASAN & PENJELASAN TEKNIS)
@@ -379,7 +385,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 // ==========================================
 // TABEL DATA BAB 2 (1 HALAMAN 1 TABEL)
 // ==========================================
-{t211_markup}
+{sec_21}{t211_markup}
 #pagebreak()
 
 {t212_markup}
@@ -394,7 +400,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 {t216_markup}
 #pagebreak()
 
-{t221_markup}
+{sec_22}{t221_markup}
 #pagebreak()
 
 {t222_markup}

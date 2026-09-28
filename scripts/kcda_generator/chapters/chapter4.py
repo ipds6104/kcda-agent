@@ -3,12 +3,12 @@
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
-from ..table_renderer import render_typst_table
+from ..table_renderer import render_typst_table, render_subchapter_heading, get_edu_two_tier_header
 from ..chart_generator import get_chapter4_charts
 from ..config import get_regency_info
 from .narrative_helper import render_chapter_intro
 
-def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
+def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: int = 5) -> str:
     regency = get_regency_info()
     nama_kab = regency.get("nama_resmi", "Kabupaten Mempawah")
     nama_kab_en = regency.get("nama_en", "Mempawah Regency")
@@ -20,7 +20,7 @@ def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     slug = cfg.get("slug", "")
 
     # Grafik dinamis data-driven dari Google Sheets
-    charts_markup = get_chapter4_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None)
+    charts_markup = get_chapter4_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None, fig_no=fig_no)
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
     podes_catatan = "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
@@ -163,19 +163,39 @@ Special Hospital is a hospital that provides primary care in one area or one par
     # --- 4.1.1 Fasilitas Pendidikan di Desa (Podes) ---
     rows_411_raw = get_kecamatan_tab_rows("4.1.1", nama_singkat)
     t411_rows = []
-    if len(rows_411_raw) > 2:
-        for r in rows_411_raw[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'tabel']):
-                jenjang = r[0].split('\n')[0].strip()
+    
+    # Cari letak 'Template yang dipakai' di raw rows
+    template_idx = None
+    for idx, r in enumerate(rows_411_raw):
+        if r and any("template yang dipak" in str(c).lower() or "template yang dipakai" in str(c).lower() for c in r):
+            template_idx = idx
+            break
+
+    if template_idx is not None and len(rows_411_raw) > template_idx + 2:
+        for r in rows_411_raw[template_idx + 3:]:
+            if r and str(r[0]).strip() and not any(str(r[0]).lower().startswith(x) for x in ['sumber', 'catatan', 'tingkat', '(']):
+                jenjang = str(r[0]).strip()
                 y2023 = clean_cell_value(r[1] if len(r) > 1 else "–")
                 y2024 = clean_cell_value(r[2] if len(r) > 2 else "–")
                 y2025 = clean_cell_value(r[3] if len(r) > 3 else "–")
                 t411_rows.append([jenjang, y2023, y2024, y2025])
+    elif len(rows_411_raw) > 2:
+        for r in rows_411_raw[2:]:
+            if r and str(r[0]).strip() and not any(str(r[0]).lower().startswith(x) for x in ['sumber', 'catatan', 'tabel']):
+                jenjang = str(r[0]).strip()
+                y2023 = clean_cell_value(r[1] if len(r) > 1 else "–")
+                y2024 = clean_cell_value(r[2] if len(r) > 2 else "–")
+                y2025 = clean_cell_value(r[3] if len(r) > 3 else "–")
+                t411_rows.append([jenjang, y2023, y2024, y2025])
+
     if not t411_rows:
         default_jenjang = [
-            "Taman Kanak-Kanak (TK)", "Raudatul Athfal (RA)", "Sekolah Dasar (SD)",
-            "Madrasah Ibtidaiyah (MI)", "Sekolah Menengah Pertama (SMP)", "Madrasah Tsanawiyah (MTs)",
-            "Sekolah Menengah Atas (SMA)", "Sekolah Menengah Kejuruan (SMK)", "Madrasah Aliyah (MA)", "Akademi/Perguruan Tinggi"
+            "Taman Kanak-Kanak (TK)/Raudatul Athfal (RA)/Bustanul Athfal (BA)\n Kindergarten",
+            "Sekolah Dasar (SD)/Madrasah Ibtidaiyah (MI)\n Primary School",
+            "Sekolah Menengah Pertama (SMP)/Madrasah Tsanawiyah (MTs)\n Junior High School",
+            "Sekolah Menengah Atas (SMA)/Madrasah Aliyah (MA)\n Senior High School",
+            "Sekolah Menengah Kejuruan (SMK)\n Vocational High School",
+            "Akademi/Perguruan Tinggi\n Academy/University"
         ]
         t411_rows = [[j, "–", "–", "–"] for j in default_jenjang]
 
@@ -227,6 +247,8 @@ Special Hospital is a hospital that provides primary care in one area or one par
     edu_cols_7 = ["(1)", "(2)", "(3)", "(4)", "(5)", "(6)", "(7)"]
     edu_widths_7 = ["2.2fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr"]
 
+    edu_custom_hdr = get_edu_two_tier_header("2024/2025", "2025/2026")
+
     # --- 4.1.2 Satuan Pendidikan (TK, SD, SMP, SMA) ---
     rows_412_raw = get_kecamatan_tab_rows("4.1.2", nama_singkat)
     t412_rows = extract_edu_rows(rows_412_raw)
@@ -238,7 +260,9 @@ Special Hospital is a hospital that provides primary care in one area or one par
         col_numbers=edu_cols_7,
         rows=t412_rows,
         col_widths=edu_widths_7,
-        source=edu_sumber
+        source=edu_sumber,
+        custom_header=edu_custom_hdr,
+        header_rows_count=2
     )
 
     # --- 4.1.3 Jumlah Pendidik/Guru ---
@@ -252,7 +276,9 @@ Special Hospital is a hospital that provides primary care in one area or one par
         col_numbers=edu_cols_7,
         rows=t413_rows,
         col_widths=edu_widths_7,
-        source=edu_sumber
+        source=edu_sumber,
+        custom_header=edu_custom_hdr,
+        header_rows_count=2
     )
 
     # --- 4.1.4 Jumlah Peserta Didik/Murid ---
@@ -266,7 +292,9 @@ Special Hospital is a hospital that provides primary care in one area or one par
         col_numbers=edu_cols_7,
         rows=t414_rows,
         col_widths=edu_widths_7,
-        source=edu_sumber
+        source=edu_sumber,
+        custom_header=edu_custom_hdr,
+        header_rows_count=2
     )
 
     # --- 4.2.1 Sarana Kesehatan ---
@@ -275,7 +303,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
     if len(rows_421_raw) > 2:
         for r in rows_421_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                sarana = r[0].split('\n')[0].strip()
+                sarana = r[0].strip()
                 y2023 = clean_cell_value(r[1] if len(r) > 1 else "–")
                 y2024 = clean_cell_value(r[2] if len(r) > 2 else "–")
                 y2025 = clean_cell_value(r[3] if len(r) > 3 else "–")
@@ -308,7 +336,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
     if len(rows_431_raw) > 2:
         for r in rows_431_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                sumber_p = r[0].split('\n')[0].strip()
+                sumber_p = r[0].strip()
                 y2023 = clean_cell_value(r[1] if len(r) > 1 else "–")
                 y2024 = clean_cell_value(r[2] if len(r) > 2 else "–")
                 y2025 = clean_cell_value(r[3] if len(r) > 3 else "–")
@@ -339,7 +367,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
     if len(rows_432_raw) > 2:
         for r in rows_432_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                bb = r[0].split('\n')[0].strip()
+                bb = r[0].strip()
                 jml = clean_cell_value(r[1] if len(r) > 1 else "–")
                 t432_rows.append([bb, jml])
     if not t432_rows:
@@ -367,7 +395,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
     if len(rows_441_raw) > 2:
         for r in rows_441_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                bencana = r[0].split('\n')[0].strip()
+                bencana = r[0].strip()
                 jml = clean_cell_value(r[1] if len(r) > 1 else "–")
                 t441_rows.append([bencana, jml])
     if not t441_rows:
@@ -396,7 +424,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
     if len(rows_442_raw) > 2:
         for r in rows_442_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                bencana = r[0].split('\n')[0].strip()
+                bencana = r[0].strip()
                 jml = clean_cell_value(r[1] if len(r) > 1 else "–")
                 t442_rows.append([bencana, jml])
     if not t442_rows:
@@ -420,7 +448,9 @@ Special Hospital is a hospital that provides primary care in one area or one par
     if len(rows_443_raw) > 2:
         for r in rows_443_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                fasilitas = r[0].split('\n')[0].strip()
+                fasilitas = r[0].strip()
+                if "pembuatan" in fasilitas.lower() and "normalisasi" in fasilitas.lower():
+                    fasilitas = "Pembuatan, perawatan, atau normalisasi sungai, kanal, tanggul, dll\nManufacture, maintenance, or normalization of rivers, canals, etc"
                 jml = clean_cell_value(r[1] if len(r) > 1 else "–")
                 t443_rows.append([fasilitas, jml])
     if not t443_rows:
@@ -445,6 +475,11 @@ Special Hospital is a hospital that provides primary care in one area or one par
         note=podes_catatan
     )
 
+    sec_41 = render_subchapter_heading("4.1", "Pendidikan", "Education")
+    sec_42 = render_subchapter_heading("4.2", "Kesehatan", "Health")
+    sec_43 = render_subchapter_heading("4.3", "Perumahan dan Lingkungan", "Housing and Environment")
+    sec_44 = render_subchapter_heading("4.4", "Sosial Lainnya", "Religion and Other Social Affairs")
+
     return f"""
 // ==========================================
 // BAB 4: SOSIAL DAN KESEJAHTERAAN RAKYAT
@@ -454,7 +489,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
 // ==========================================
 // TABEL DATA BAB 4 (1 HALAMAN 1 TABEL)
 // ==========================================
-{t411_markup}
+{sec_41}{t411_markup}
 #pagebreak()
 
 {t412_markup}
@@ -466,16 +501,16 @@ Special Hospital is a hospital that provides primary care in one area or one par
 {t414_markup}
 #pagebreak()
 
-{t421_markup}
+{sec_42}{t421_markup}
 #pagebreak()
 
-{t431_markup}
+{sec_43}{t431_markup}
 #pagebreak()
 
 {t432_markup}
 #pagebreak()
 
-{t441_markup}
+{sec_44}{t441_markup}
 #pagebreak()
 
 {t442_markup}

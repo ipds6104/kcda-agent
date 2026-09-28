@@ -4,7 +4,8 @@ Menangani Halaman Daftar Isi, Daftar Tabel, Daftar Gambar, dan Penjelasan Umum.
 Format diselaraskan 100% dengan standar acuan BPS (foto 3EB00F00C37CA2448B231D.jpg & 3EB04675B2F1B6EA719590.jpg).
 """
 
-from typing import Dict, Any
+from typing import Dict, Any, List
+from ...charts import get_subdistrict_figures
 
 def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
     nama_resmi = cfg["nama_resmi"]
@@ -18,9 +19,21 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
     has_214 = slug not in ["mempawah-hilir", "sungai-pinyuh"]
     year_213 = "2025" if slug == "toho" else "2026"
     year_214 = "2025" if slug == "toho" else "2026"
+    tno_klas = "2.1.5" if has_214 else "2.1.4"
+    tno_idm = "2.1.6" if has_214 else "2.1.5"
 
     toc_214_entry = f"""#v(5pt)
-#toc_table_entry("2.1.4", "Nama-Nama Kepala Dusun di Kecamatan {nama_singkat}, {year_214}", "Names of Hamlet Heads in {nama_en} District, {year_214}", get_page_arabic(<tab_2_1_4>))""" if has_214 else ""
+#toc_table_entry("2.1.4", "Nama-Nama Kepala Dusun di Kecamatan {nama_singkat}", "Names of Hamlet Heads in {nama_en} District", get_page_arabic(<tab_2_1_4>))""" if has_214 else ""
+
+    figs = get_subdistrict_figures(slug, nama_singkat, nama_en)
+    fig_entries = []
+    for f in figs:
+        num = f["num"]
+        t_id = f["title_id"]
+        t_en = f["title_en"]
+        lbl = f["label"]
+        fig_entries.append(f'#toc_figure_entry("{num}", "{t_id}", "{t_en}", get_page_arabic(<{lbl}>))')
+    daftar_gambar_body = "\n#v(5pt)\n".join(fig_entries)
 
     return f"""// ==========================================
 // 8. DAFTAR ISI / CONTENTS
@@ -253,7 +266,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 
 #toc_table_chapter("1", "Geografi", "Geography", get_page_arabic(<bab1>))
 #v(5pt)
-#toc_table_entry("1.1", "Luas Daerah Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Total Area by Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_1_1>))
+#toc_table_entry("1.1", "Luas Daerah Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Area by Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_1_1>))
 #v(5pt)
 #toc_table_entry("1.2", "Jarak ke Ibukota Kecamatan dan Ibukota Kabupaten/Kota Menurut Desa/Kelurahan di Kecamatan {nama_singkat} (km), 2025", "Distance to District Capital and Regency Capital by Villages/Subdistricts in {nama_en} District (km), 2025", get_page_arabic(<tab_1_2>))
 #v(5pt)
@@ -268,14 +281,14 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(4pt)
 #toc_table_entry("2.1.1", "Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_2_1_1>))
 #v(5pt)
-#toc_table_entry("2.1.2", "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan {nama_singkat}", "Names of District Heads of {nama_en} District", get_page_arabic(<tab_2_1_2>))
+#toc_table_entry("2.1.2", "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan {nama_singkat}, 2025", "Names of Last and Current Who Have/Still Served in {nama_en} District, 2025", get_page_arabic(<tab_2_1_2>))
 #v(5pt)
 #toc_table_entry("2.1.3", "Nama-Nama Kepala Desa/Lurah di Kecamatan {nama_singkat}, {year_213}", "Names of Village Heads in {nama_en} District, {year_213}", get_page_arabic(<tab_2_1_3>))
 {toc_214_entry}
 #v(5pt)
-#toc_table_entry("2.1.5", "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan {nama_singkat}, 2020", "Urban and Rural Classification of Village/Subdistrict in {nama_en} District, 2020", get_page_arabic(<tab_2_1_5>))
+#toc_table_entry("{tno_klas}", "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan {nama_singkat}, 2024", "Urban and Rural Classification of Village/Subdistrict in {nama_en} District, 2024", get_page_arabic(<tab_{tno_klas.replace('.', '_')}>))
 #v(5pt)
-#toc_table_entry("2.1.6", "Status Desa Berdasarkan Indeks Desa Membangun (IDM) di Kecamatan {nama_singkat}, 2024", "Village Status Based on Developing Village Index (IDM) in {nama_en} District, 2024", get_page_arabic(<tab_2_1_6>))
+#toc_table_entry("{tno_idm}", "Status Desa Berdasarkan Indeks Desa Membangun (IDM) di Kecamatan {nama_singkat}, 2024", "Village Status Based on Developing Village Index (IDM) in {nama_en} District, 2024", get_page_arabic(<tab_{tno_idm.replace('.', '_')}>))
 
 #v(6pt)
 #toc_table_subchapter("2.2", "Sumber Daya Manusia", "Human Resources", get_page_arabic(<tab_2_2_1>))
@@ -384,21 +397,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 )
 #v(6pt)
 
-#toc_figure_entry("1", "Peta Wilayah Kecamatan {nama_singkat}, 2025", "Map of {nama_en} District, 2025", get_page_arabic(<fig_peta>))
-#v(5pt)
-#toc_figure_entry("2", "Jarak ke Ibukota Kecamatan Menurut Desa/Kelurahan di Kecamatan {nama_singkat} (km), 2025", "Distance to District Capital by Village/Subdistrict in {nama_en} District (km), 2025", get_page_arabic(<fig_1_1>))
-#v(5pt)
-#toc_figure_entry("3", "Jumlah Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of RT by Village in {nama_en} District, 2025", get_page_arabic(<fig_2_1>))
-#v(5pt)
-#toc_figure_entry("4", "Jumlah Penduduk Menurut Jenis Kelamin di Kecamatan {nama_singkat}, 2025", "Population by Sex in {nama_en} District, 2025", get_page_arabic(<fig_3_1>))
-#v(5pt)
-#toc_figure_entry("5", "Banyaknya Fasilitas Sekolah Menurut Tingkat Pendidikan di Kecamatan {nama_singkat}, 2025", "Number of School Facilities by Level in {nama_en} District, 2025", get_page_arabic(<fig_4_1>))
-#v(5pt)
-#toc_figure_entry("6", "Produksi Tanaman Hortikultura Unggulan di Kecamatan {nama_singkat}, 2025", "Production of Leading Horticulture Crops in {nama_en} District, 2025", get_page_arabic(<fig_5_1>))
-#v(5pt)
-#toc_figure_entry("7", "Prasarana dan Sarana Komunikasi Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Communication Infrastructure by Village in {nama_en} District, 2025", get_page_arabic(<fig_6_1>))
-#v(5pt)
-#toc_figure_entry("8", "Keberadaan Sarana Perdagangan dan Koperasi Aktif di Kecamatan {nama_singkat}, 2025", "Trading Facilities and Active Cooperatives in {nama_en} District, 2025", get_page_arabic(<fig_7_1>))
+{daftar_gambar_body}
 
 #pagebreak()
 

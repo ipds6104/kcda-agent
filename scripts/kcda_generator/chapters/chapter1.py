@@ -8,7 +8,7 @@ from ..chart_generator import get_chapter1_charts
 from ..config import get_regency_info
 from .narrative_helper import render_chapter_intro
 
-def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
+def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: int = 2) -> str:
     regency = get_regency_info()
     nama_kab = regency.get("nama_resmi", "Kabupaten Mempawah")
     nama_kab_en = regency.get("nama_en", "Mempawah Regency")
@@ -25,6 +25,7 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     # --- Gambar 1: Peta Wilayah Kecamatan ---
     peta_section = f"""
+#metadata("fig_1") <fig_1>
 #metadata("fig_peta") <fig_peta>
 #v(0.5cm)
 #align(center)[
@@ -43,7 +44,7 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 """
 
     # --- Gambar 2 dst: Grafik ---
-    charts_markup = get_chapter1_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None)
+    charts_markup = get_chapter1_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None, fig_no=fig_no)
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
     # --- 1.1 Luas Daerah ---
@@ -73,13 +74,13 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         v = luas_map.get(d.lower(), ["–", "–", "Indikatif"])
         t1_1_rows.append([d, v[0], v[1], v[2]])
 
-    t1_1_rows.append([f"Kecamatan {nama_singkat} / Total", total_luas, "100,00", ""])
+    t1_1_rows.append([f"Kecamatan {nama_singkat}", total_luas, "100,00", ""])
 
     t1_1_markup = render_typst_table(
         table_no="1.1",
         title_id=f"Luas Daerah Menurut Desa/Kelurahan di {nama_resmi}, 2025",
-        title_en=f"Total Area by Village/Subdistrict in {nama_en} District, 2025",
-        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Luas Daerah\nTotal Area (km²)", "Persentase\nPercentage (%)", "Status Batas\nBoundary Status"],
+        title_en=f"Area by Village/Subdistrict in {nama_en} District, 2025",
+        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Luas Daerah\nArea (km²)", "Persentase\nPercentage (%)", "Status Batas\nBoundary Status"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t1_1_rows,
         col_widths=["2.2fr", "1.1fr", "1.0fr", "1.3fr"],

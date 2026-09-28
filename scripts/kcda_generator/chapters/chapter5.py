@@ -8,7 +8,7 @@ from ..chart_generator import get_chapter5_charts
 from ..config import get_regency_info
 from .narrative_helper import render_chapter_intro
 
-def render_chapter5(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
+def render_chapter5(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: int = 5) -> str:
     regency = get_regency_info()
     nama_kab = regency.get("nama_resmi", "Kabupaten Mempawah")
     nama_kab_en = regency.get("nama_en", "Mempawah Regency")
@@ -19,7 +19,7 @@ def render_chapter5(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     slug = cfg.get("slug", "")
 
     # Grafik dinamis data-driven dari Google Sheets
-    charts_markup = get_chapter5_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None)
+    charts_markup = get_chapter5_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None, fig_no=fig_no)
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
     # Ekstraksi komoditas pertanian unggulan 2025
@@ -168,7 +168,7 @@ b. Plants that are harvested several times/undemolished are plants usually harve
         if len(rows_raw) > 2:
             for r in rows_raw[2:]:
                 if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'jenis tanaman', '(']):
-                    t_name = r[0].split('\n')[0].strip()
+                    t_name = r[0].replace('\r', '').replace('\n', ' ').strip()
                     # Simpan baris header kelompok/kategori (misal Sayuran/Vegetables:, Buah-buahan/Fruits:)
                     if t_name.endswith(':') or any(cat in t_name.lower() for cat in ['sayuran/vegetables', 'buah–buahan/fruits', 'buah-buahan/fruits', 'sayuran/ vegetables', 'buah–buahan / fruits']):
                         res.append([t_name, "", "", "", ""])
