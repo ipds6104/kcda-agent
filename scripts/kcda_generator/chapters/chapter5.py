@@ -209,7 +209,7 @@ b. Plants that are harvested several times/undemolished are plants usually harve
         col_numbers=["(1)", "(2)", "(3)", "(4)", "(5)"],
         rows=t51_rows,
         col_widths=["2.6fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr"],
-        source="BPS - Kementerian Pertanian, Survei Pertanian Hortikultura (SPH-SBS) / BPS-Statistics Indonesia - Ministry of Agriculture, Horticultural Agricultural Survey (SPH-SBS)"
+        source="Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura) / BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)"
     )
 
     t52_rows = extract_pertanian_rows("5.2", sayuran_list)
@@ -221,7 +221,7 @@ b. Plants that are harvested several times/undemolished are plants usually harve
         col_numbers=["(1)", "(2)", "(3)", "(4)", "(5)"],
         rows=t52_rows,
         col_widths=["2.6fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr"],
-        source="BPS - Kementerian Pertanian, Survei Pertanian Hortikultura (SPH-SBS) / BPS-Statistics Indonesia - Ministry of Agriculture, Horticultural Agricultural Survey (SPH-SBS)"
+        source="Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura) / BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)"
     )
 
     # --- 5.3 & 5.4 Biofarmaka ---

@@ -2,129 +2,11 @@
   "no": "4.4.1",
   "nama": "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam\nMenurut Jenis Bencana Alam di Kecamatan XXX",
   "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "16BBjSBhoZzQlwd_yE1jcRfDVY3u42yMexB7YXjKz6Iw",
-  "spreadsheet_title": "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam\nMenurut Jenis Bencana Alam di Kecamatan XXX",
-  "updated_at": "2026-09-22 08:29:22",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
-      "rows": [
-        [
-          "2025"
-        ],
-        [
-          "Jenis Bencana Alam\n Type of Natural Disaster",
-          "2025"
-        ],
-        [
-          "Gempa Bumi/Earthquake",
-          "0"
-        ],
-        [
-          "Tsunami",
-          "0"
-        ],
-        [
-          "Gunung Meletus/Volcanic Eruption",
-          "0"
-        ],
-        [
-          "Tanah Longsor/Landslide",
-          "0"
-        ],
-        [
-          "Banjir/Floods",
-          "0"
-        ],
-        [
-          "Banjir Bandang/Flash Floods",
-          "0"
-        ],
-        [
-          "Kekeringan/Drought",
-          "0"
-        ],
-        [
-          "Kebakaran Hutan dan Lahan/Forest and Land Fires",
-          "0"
-        ],
-        [
-          "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
-          "0"
-        ],
-        [
-          "Gelombang Pasang/Tidal Wave",
-          "0"
-        ],
-        [
-          "Abrasi/Abrasion"
-        ],
-        [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
-        ]
-      ]
-    },
-    "Toho": {
-      "raw_title": "Toho",
-      "rows": [
-        [
-          "2025"
-        ],
-        [
-          "Jenis Bencana Alam\n Type of Natural Disaster",
-          "2025"
-        ],
-        [
-          "Gempa Bumi/Earthquake",
-          "0"
-        ],
-        [
-          "Tsunami",
-          "0"
-        ],
-        [
-          "Gunung Meletus/Volcanic Eruption",
-          "0"
-        ],
-        [
-          "Tanah Longsor/Landslide",
-          "1"
-        ],
-        [
-          "Banjir/Floods",
-          "1"
-        ],
-        [
-          "Banjir Bandang/Flash Floods",
-          "0"
-        ],
-        [
-          "Kekeringan/Drought",
-          "0"
-        ],
-        [
-          "Kebakaran Hutan dan Lahan/Forest and Land Fires",
-          "0"
-        ],
-        [
-          "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
-          "1"
-        ],
-        [
-          "Gelombang Pasang/Tidal Wave",
-          "0"
-        ],
-        [
-          "Abrasi/Abrasion"
-        ],
-        [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
-        ]
-      ]
-    },
-    "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2025"
@@ -163,26 +45,148 @@
         ],
         [
           "Kebakaran Hutan dan Lahan/Forest and Land Fires",
-          "3"
+          "0"
         ],
         [
           "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
+          "3"
+        ],
+        [
+          "Gelombang Pasang/Tidal Wave",
           "1"
+        ],
+        [
+          "Abrasi/Abrasion",
+          "1"
+        ],
+        [
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "0"
+        ]
+      ]
+    },
+    "Toho": {
+      "title": "Toho",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Bencana Alam\n Type of Natural Disaster",
+          "2025"
+        ],
+        [
+          "Gempa Bumi/Earthquake",
+          "0"
+        ],
+        [
+          "Tsunami",
+          "0"
+        ],
+        [
+          "Gunung Meletus/Volcanic Eruption",
+          "0"
+        ],
+        [
+          "Tanah Longsor/Landslide",
+          "0"
+        ],
+        [
+          "Banjir/Floods",
+          "5"
+        ],
+        [
+          "Banjir Bandang/Flash Floods",
+          "0"
+        ],
+        [
+          "Kekeringan/Drought",
+          "0"
+        ],
+        [
+          "Kebakaran Hutan dan Lahan/Forest and Land Fires",
+          "0"
+        ],
+        [
+          "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
+          "0"
         ],
         [
           "Gelombang Pasang/Tidal Wave",
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          "0"
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "3"
+        ]
+      ]
+    },
+    "Sungai Pinyuh": {
+      "title": "Sungai Pinyuh",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Bencana Alam\n Type of Natural Disaster",
+          "2025"
+        ],
+        [
+          "Gempa Bumi/Earthquake",
+          "0"
+        ],
+        [
+          "Tsunami",
+          "0"
+        ],
+        [
+          "Gunung Meletus/Volcanic Eruption",
+          "0"
+        ],
+        [
+          "Tanah Longsor/Landslide",
+          "0"
+        ],
+        [
+          "Banjir/Floods",
+          "7"
+        ],
+        [
+          "Banjir Bandang/Flash Floods",
+          "0"
+        ],
+        [
+          "Kekeringan/Drought",
+          "0"
+        ],
+        [
+          "Kebakaran Hutan dan Lahan/Forest and Land Fires",
+          "1"
+        ],
+        [
+          "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
+          "0"
+        ],
+        [
+          "Gelombang Pasang/Tidal Wave",
+          "0"
+        ],
+        [
+          "Abrasi/Abrasion",
+          "0"
+        ],
+        [
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "0"
         ]
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "2025"
@@ -209,7 +213,7 @@
         ],
         [
           "Banjir/Floods",
-          "2"
+          "0"
         ],
         [
           "Banjir Bandang/Flash Floods",
@@ -225,22 +229,24 @@
         ],
         [
           "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
-          "1"
+          "0"
         ],
         [
           "Gelombang Pasang/Tidal Wave",
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          ""
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "5"
         ]
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2025"
@@ -267,7 +273,7 @@
         ],
         [
           "Banjir/Floods",
-          "2"
+          "5"
         ],
         [
           "Banjir Bandang/Flash Floods",
@@ -275,30 +281,32 @@
         ],
         [
           "Kekeringan/Drought",
-          "2"
+          "0"
         ],
         [
           "Kebakaran Hutan dan Lahan/Forest and Land Fires",
-          "3"
+          "1"
         ],
         [
           "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
-          "1"
+          "0"
         ],
         [
           "Gelombang Pasang/Tidal Wave",
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          "0"
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "7"
         ]
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2025"
@@ -337,7 +345,7 @@
         ],
         [
           "Kebakaran Hutan dan Lahan/Forest and Land Fires",
-          "2"
+          "0"
         ],
         [
           "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
@@ -348,15 +356,17 @@
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          "0"
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "3"
         ]
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2025"
@@ -383,7 +393,7 @@
         ],
         [
           "Banjir/Floods",
-          "2"
+          "0"
         ],
         [
           "Banjir Bandang/Flash Floods",
@@ -391,7 +401,7 @@
         ],
         [
           "Kekeringan/Drought",
-          "1"
+          "0"
         ],
         [
           "Kebakaran Hutan dan Lahan/Forest and Land Fires",
@@ -406,15 +416,17 @@
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          "0"
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "3"
         ]
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2025"
@@ -441,7 +453,7 @@
         ],
         [
           "Banjir/Floods",
-          "2"
+          "5"
         ],
         [
           "Banjir Bandang/Flash Floods",
@@ -453,7 +465,7 @@
         ],
         [
           "Kebakaran Hutan dan Lahan/Forest and Land Fires",
-          "2"
+          "3"
         ],
         [
           "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
@@ -464,15 +476,17 @@
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          ""
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "3"
         ]
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2025"
@@ -499,7 +513,7 @@
         ],
         [
           "Banjir/Floods",
-          "1"
+          "2"
         ],
         [
           "Banjir Bandang/Flash Floods",
@@ -515,20 +529,21 @@
         ],
         [
           "Angin Puyuh/Puting Beliung/\nTopan/Tornado/Typhoon",
-          "1"
+          "0"
         ],
         [
           "Gelombang Pasang/Tidal Wave",
           "0"
         ],
         [
-          "Abrasi/Abrasion"
+          "Abrasi/Abrasion",
+          "0"
         ],
         [
-          "Tidak Ada Bencana Alam/No Natural Disaster"
+          "Tidak Ada Bencana Alam/No Natural Disaster",
+          "4"
         ]
       ]
     }
-  },
-  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries\n\n2Periode Januari–Mei 2025/During January–May 2025"
+  }
 }

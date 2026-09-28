@@ -37,7 +37,7 @@ def get_kecamatan_tab_rows(table_no: str, nama_kecamatan_singkat: str) -> List[L
     target_clean = nama_kecamatan_singkat.lower().strip()
 
     for tname in tabs.keys():
-        tname_clean = tname.lower().strip()
+        tname_clean = tname.lower().strip().replace("mampawah", "mempawah")
         if tname_clean == target_clean or target_clean in tname_clean:
             target_tab = tname
             break
@@ -51,7 +51,9 @@ def clean_cell_value(val: Any) -> str:
     if val is None:
         return "..."
     s = str(val).strip()
-    if not s or s == "-" or s.lower() == "null":
+    if not s or s.lower() == "null":
         return "..."
+    if s == "-" or s == "–" or s == "—":
+        return "–"
     s = s.replace("#", "\\#").replace("$", "\\$").replace("@", "\\@")
     return s

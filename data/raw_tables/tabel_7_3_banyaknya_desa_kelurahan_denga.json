@@ -2,13 +2,11 @@
   "no": "7.3",
   "nama": "Banyaknya Desa/Kelurahan\ndengan Keberadaan Sarana\nPerdagangan Menurut Jenis\nSarana Perdagangan di Kecamatan\nXXX",
   "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "1fPF2Yb8rJXtNJAuK5wnVnBLCpZyYLQDHb5EGQf4bk_0",
-  "spreadsheet_title": "Banyaknya Desa/Kelurahan\ndengan Keberadaan Sarana\nPerdagangan Menurut Jenis\nSarana Perdagangan di Kecamatan\nXXX",
-  "updated_at": "2026-09-22 08:29:51",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2025"
@@ -19,7 +17,7 @@
         ],
         [
           "Kelompok pertokoan\nShopping complexs",
-          "9"
+          "1"
         ],
         [
           "Pasar dengan bangunan permanen\nMarkets in permanent building",
@@ -35,16 +33,16 @@
         ],
         [
           "Mini market/swalayan/supermarket",
-          "23"
+          "5"
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
-          "23"
+          "7"
         ]
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
           "2025"
@@ -71,7 +69,7 @@
         ],
         [
           "Mini market/swalayan/supermarket",
-          "5"
+          "2"
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
@@ -80,43 +78,7 @@
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
-      "rows": [
-        [
-          "2025"
-        ],
-        [
-          "Jenis Sarana Perdagangan\n Type of Trade Facilities",
-          "2025"
-        ],
-        [
-          "Kelompok pertokoan\nShopping complexs",
-          "30"
-        ],
-        [
-          "Pasar dengan bangunan permanen\nMarkets in permanent building",
-          "4"
-        ],
-        [
-          "Pasar dengan bangunan semi permanen\nMarket in semi permanent buildin",
-          "4"
-        ],
-        [
-          "Pasar tanpa bangunan\nMarket without permanent building",
-          "0"
-        ],
-        [
-          "Mini market/swalayan/supermarket",
-          "19"
-        ],
-        [
-          "Restoran/rumah makan\nRestaurant/food stall",
-          "18"
-        ]
-      ]
-    },
-    "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2025"
@@ -135,6 +97,42 @@
         ],
         [
           "Pasar dengan bangunan semi permanen\nMarket in semi permanent buildin",
+          "3"
+        ],
+        [
+          "Pasar tanpa bangunan\nMarket without permanent building",
+          "0"
+        ],
+        [
+          "Mini market/swalayan/supermarket",
+          "5"
+        ],
+        [
+          "Restoran/rumah makan\nRestaurant/food stall",
+          "2"
+        ]
+      ]
+    },
+    "Jongkat": {
+      "title": "Jongkat",
+      "rows": [
+        [
+          "2025"
+        ],
+        [
+          "Jenis Sarana Perdagangan\n Type of Trade Facilities",
+          "2025"
+        ],
+        [
+          "Kelompok pertokoan\nShopping complexs",
+          "2"
+        ],
+        [
+          "Pasar dengan bangunan permanen\nMarkets in permanent building",
+          "1"
+        ],
+        [
+          "Pasar dengan bangunan semi permanen\nMarket in semi permanent buildin",
           "0"
         ],
         [
@@ -143,16 +141,16 @@
         ],
         [
           "Mini market/swalayan/supermarket",
-          "9"
+          "5"
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
-          "17"
+          "3"
         ]
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2025"
@@ -183,12 +181,12 @@
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
-          "16"
+          "5"
         ]
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2025"
@@ -215,7 +213,7 @@
         ],
         [
           "Mini market/swalayan/supermarket",
-          "3"
+          "1"
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
@@ -224,7 +222,7 @@
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2025"
@@ -235,11 +233,11 @@
         ],
         [
           "Kelompok pertokoan\nShopping complexs",
-          "5"
+          "2"
         ],
         [
           "Pasar dengan bangunan permanen\nMarkets in permanent building",
-          "2"
+          "1"
         ],
         [
           "Pasar dengan bangunan semi permanen\nMarket in semi permanent buildin",
@@ -251,16 +249,16 @@
         ],
         [
           "Mini market/swalayan/supermarket",
-          "14"
+          "4"
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
-          "4"
+          "2"
         ]
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2025"
@@ -296,7 +294,7 @@
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2025"
@@ -307,7 +305,7 @@
         ],
         [
           "Kelompok pertokoan\nShopping complexs",
-          "5"
+          "3"
         ],
         [
           "Pasar dengan bangunan permanen\nMarkets in permanent building",
@@ -323,14 +321,13 @@
         ],
         [
           "Mini market/swalayan/supermarket",
-          "9"
+          "4"
         ],
         [
           "Restoran/rumah makan\nRestaurant/food stall",
-          "6"
+          "3"
         ]
       ]
     }
-  },
-  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
+  }
 }

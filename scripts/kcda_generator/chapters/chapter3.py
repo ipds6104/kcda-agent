@@ -31,6 +31,8 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     tot_pct, tot_kpd, tot_rasio = "100,00", "–", "–"
 
     for r in rows_31_raw:
+        if any("2024" in str(c) for c in r):
+            break
         if len(r) > 3 and r[0].strip():
             first_cell = r[0].strip()
             if any(first_cell.lower().startswith(x) for x in ['desa', 'tabel', 'sumber', 'catatan', '2025', 'no']):

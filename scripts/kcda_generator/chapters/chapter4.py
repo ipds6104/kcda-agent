@@ -245,7 +245,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
         "Jumlah/Total\n2025/2026"
     ]
     edu_cols_7 = ["(1)", "(2)", "(3)", "(4)", "(5)", "(6)", "(7)"]
-    edu_widths_7 = ["2.2fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr"]
+    edu_widths_7 = ["1.9fr", "1.0fr", "1.0fr", "1.0fr", "1.0fr", "1.0fr", "1.0fr"]
 
     edu_custom_hdr = get_edu_two_tier_header("2024/2025", "2025/2026")
 
@@ -467,7 +467,7 @@ Special Hospital is a hospital that provides primary care in one area or one par
         table_no="4.4.3",
         title_id=f"Banyaknya Desa#super[1]/Kelurahan dengan Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Jenis di {nama_resmi}, 2025",
         title_en=f"Number of Villages#super[1]/Subdistricts with Availability of Mitigation Facilities in {nama_en} District, 2025",
-        headers=["Fasilitas/Upaya Mitigasi Bencana\nDisaster Mitigation Facility/Effort", "2025"],
+        headers=["Jenis Fasilitas/Upaya Antisipasi/Mitigasi\nType of Facilities/Efforts for Anticipation/Mitigation", "2025"],
         col_numbers=["(1)", "(2)"],
         rows=t443_rows,
         col_widths=["3.4fr", "1.4fr"],

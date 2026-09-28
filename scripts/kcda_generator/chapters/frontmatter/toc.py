@@ -279,7 +279,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(4pt)
 #toc_table_subchapter("2.1", "Wilayah Administratif", "Administrative Area", get_page_arabic(<tab_2_1_1>))
 #v(4pt)
-#toc_table_entry("2.1.1", "Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_2_1_1>))
+#toc_table_entry("2.1.1", "Jumlah Dusun, Rukun Warga (RW), dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of Hamlets, Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_2_1_1>))
 #v(5pt)
 #toc_table_entry("2.1.2", "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan {nama_singkat}, 2025", "Names of Last and Current Who Have/Still Served in {nama_en} District, 2025", get_page_arabic(<tab_2_1_2>))
 #v(5pt)

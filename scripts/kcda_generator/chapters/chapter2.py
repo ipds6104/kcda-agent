@@ -23,7 +23,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
     
-    # --- 2.1.1 RW & RT ---
+    # --- 2.1.1 Dusun, RW & RT ---
     rows_211_raw = get_kecamatan_tab_rows("2.1.1", nama_singkat)
     rw_rt_map = {}
     for r in rows_211_raw[3:]:
@@ -36,16 +36,16 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     t211_rows = []
     for d in desa_list:
         v = rw_rt_map.get(d.lower(), ["–", "–", "–"])
-        t211_rows.append([d, v[1], v[2]])
+        t211_rows.append([d, v[0], v[1], v[2]])
 
     t211_markup = render_typst_table(
         table_no="2.1.1",
-        title_id=f"Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di {nama_resmi}, 2025",
-        title_en=f"Number of Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025",
-        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Rukun Warga\n(RW)", "Rukun Tetangga\n(RT)"],
-        col_numbers=["(1)", "(2)", "(3)"],
+        title_id=f"Jumlah Dusun, Rukun Warga (RW), dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di {nama_resmi}, 2025",
+        title_en=f"Number of Hamlets, Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025",
+        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Dusun\nHamlet", "Rukun Warga\n(RW)", "Rukun Tetangga\n(RT)"],
+        col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t211_rows,
-        col_widths=["2.6fr", "1.2fr", "1.2fr"],
+        col_widths=["2.2fr", "0.9fr", "1.0fr", "1.0fr"],
         source="Master SLS Badan Pusat Statistik / Master SLS BPS-Statistics Indonesia"
     )
 
