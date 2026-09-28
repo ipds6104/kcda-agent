@@ -2,98 +2,203 @@
   "no": "2.2.1",
   "nama": "Jumlah Pegawai Negeri Sipil Menurut Pemerintah Daerah dan Jenis Kelamin",
   "sumber": "Kantor Camat XXX/ XXX District Office",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "1Vqx2_TCs27HqnxYcoYHhLASZROf6gEJDvo6J6CjEQ8g",
-  "spreadsheet_title": "Jumlah Pegawai Negeri Sipil Menurut Pemerintah Daerah dan Jenis Kelamin",
-  "updated_at": "2026-09-22 08:29:02",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\nLocal Government",
           "Laki-Laki\n Male",
           "Perempuan\n Female",
-          "Jumlah\n Total"
+          "Jumlah\n Total",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
-          "Pemerintah Daerah Kecamatan Mempawah Hilir\nMempawah Hilir District Government"
+          "Pemerintah Daerah Kecamatan Mempawah Hilir\nMempawah Hilir District Government",
+          "8",
+          "4",
+          "12"
         ],
         [
-          "Pemerintah Daerah Kelurahan Tanjung\nTanjung Kelurahan Government"
+          "Pemerintah Daerah Kelurahan Tanjung\nTanjung Kelurahan Government",
+          "9",
+          "0",
+          "9"
         ],
         [
-          "Pemerintah Daerah Desa Kuala Secapah\nKuala Secapah Village Government"
+          "Pemerintah Daerah Desa Kuala Secapah\nKuala Secapah Village Government",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pemerintah Daerah Kelurahan Tengah\nTengah Kelurahan Government"
+          "Pemerintah Daerah Kelurahan Tengah\nTengah Kelurahan Government",
+          "4",
+          "2",
+          "6"
         ],
         [
-          "Pemerintah Daerah Kelurahan Terusan\nTerusan Kelurahan Government"
+          "Pemerintah Daerah Kelurahan Terusan\nTerusan Kelurahan Government",
+          "3",
+          "4",
+          "7"
         ],
         [
-          "Pemerintah Daerah Desa Pasir\nPasir Village Government"
+          "Pemerintah Daerah Desa Pasir\nPasir Village Government",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pemerintah Daerah Desa Penibung\nPenibung Village Government"
+          "Pemerintah Daerah Desa Penibung\nPenibung Village Government",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pemerintah Daerah Desa Sengkubang\nSengkubang Village Government"
+          "Pemerintah Daerah Desa Sengkubang\nSengkubang Village Government",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pemerintah Daerah Desa Malikian\nMalikian Village Government"
+          "Pemerintah Daerah Desa Malikian\nMalikian Village Government",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
           "Laki-Laki\n Male",
           "Perempuan\n Female",
-          "Jumlah\n Total"
+          "Jumlah\n Total",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
-          "Pemerintah Daerah Kecamatan Toho\nMempawah Hilir District Government"
+          "Pemerintah Daerah Kecamatan Toho\nMempawah Hilir District Government",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Sambora"
+          "Sambora",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Benuang"
+          "Benuang",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Pak Utan"
+          "Pak Utan",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Sepang"
+          "Sepang",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Pak Laheng"
+          "Pak Laheng",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Terap"
+          "Terap",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Kecurit"
+          "Kecurit",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Toho Ilir"
+          "Toho Ilir",
+          "...",
+          "...",
+          "..."
         ]
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -102,42 +207,75 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Sungai Pinyuh\nSungai Pinyuh District Government"
+          "Pemerintah Daerah Kecamatan Sungai Pinyuh\nSungai Pinyuh District Government",
+          "6",
+          "2",
+          "8"
         ],
         [
-          "Sungai Purun Kecil"
+          "Sungai Purun Kecil",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Peniraman"
+          "Peniraman",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Nusapati"
+          "Nusapati",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Galang"
+          "Galang",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Rasau"
+          "Sungai Rasau",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Sungai Pinyuh"
+          "Sungai Pinyuh",
+          "5",
+          "2",
+          "7"
         ],
         [
-          "Sungai Batang"
+          "Sungai Batang",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Bakau Besar Laut"
+          "Sungai Bakau Besar Laut",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Sungai Bakau Besar Darat"
+          "Sungai Bakau Besar Darat",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -146,30 +284,51 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Jongkat\nJongkat District Government"
+          "Pemerintah Daerah Kecamatan Jongkat\nJongkat District Government",
+          "21",
+          "5",
+          "26"
         ],
         [
-          "Sungai Nipah"
+          "Sungai Nipah",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Jungkat"
+          "Jungkat",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Wajok Hilir"
+          "Wajok Hilir",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Wajok Hulu"
+          "Wajok Hulu",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Peniti Luar"
+          "Peniti Luar",
+          "1",
+          "0",
+          "1"
         ]
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -178,51 +337,93 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Sungai Kunyit\nSungai Kunyit District Government"
+          "Pemerintah Daerah Kecamatan Sungai Kunyit\nSungai Kunyit District Government",
+          "20",
+          "7",
+          "27"
         ],
         [
-          "Semudun"
+          "Semudun",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Semparong Parit Raden"
+          "Semparong Parit Raden",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Mendalok"
+          "Mendalok",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Dungun"
+          "Sungai Dungun",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Limau"
+          "Sungai Limau",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Sungai Kunyit Laut"
+          "Sungai Kunyit Laut",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Sungai Kunyit Dalam"
+          "Sungai Kunyit Dalam",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Kunyit Hulu"
+          "Sungai Kunyit Hulu",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Bukit Batu"
+          "Bukit Batu",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Bundung Laut"
+          "Sungai Bundung Laut",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Duri I"
+          "Sungai Duri I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Duri Ii"
+          "Sungai Duri Ii",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -231,33 +432,57 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Segedong\nSegedong District Government"
+          "Pemerintah Daerah Kecamatan Segedong\nSegedong District Government",
+          "9",
+          "3",
+          "12"
         ],
         [
-          "Peniti Dalam I"
+          "Peniti Dalam I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Burung"
+          "Sungai Burung",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sungai Purun Besar"
+          "Sungai Purun Besar",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Parit Bugis"
+          "Parit Bugis",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Peniti Besar"
+          "Peniti Besar",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Peniti Dalam Ii"
+          "Peniti Dalam Ii",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -266,30 +491,51 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Anjongan\nAnjongan District Government"
+          "Pemerintah Daerah Kecamatan Anjongan\nAnjongan District Government",
+          "0",
+          "3",
+          "11"
         ],
         [
-          "Anjungan Melancar"
+          "Anjungan Melancar",
+          "4",
+          "2",
+          "6"
         ],
         [
-          "Anjungan Dalam"
+          "Anjungan Dalam",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pak Bulu"
+          "Pak Bulu",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Dema"
+          "Dema",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Kepayang"
+          "Kepayang",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -298,30 +544,57 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Sadaniang\nSadaniang District Government"
+          "Pemerintah Daerah Kecamatan Sadaniang\nSadaniang District Government",
+          "9",
+          "2",
+          "11"
         ],
         [
-          "Pentek"
+          "Pentek",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sekabuk"
+          "Sekabuk",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Bum-Bun"
+          "Bum-Bun",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Amawang"
+          "Amawang",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Ansiap"
+          "Ansiap",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Suak Barangan",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Pemerintah Daerah\n Local Government",
@@ -330,36 +603,63 @@
           "Jumlah\n Total"
         ],
         [
-          "Pemerintah Daerah Kecamatan Mempawah Timur\nMempawah Timur District Government"
+          "Pemerintah Daerah Kecamatan Mempawah Timur\nMempawah Timur District Government",
+          "17",
+          "10",
+          "27"
         ],
         [
-          "Pasir Wan Salim"
+          "Pasir Wan Salim",
+          "7",
+          "5",
+          "12"
         ],
         [
-          "Sungai Bakau Kecil"
+          "Sungai Bakau Kecil",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pasir Panjang"
+          "Pasir Panjang",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pasir Palembang"
+          "Pasir Palembang",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Pulau Pedalaman"
+          "Pulau Pedalaman",
+          "8",
+          "4",
+          "12"
         ],
         [
-          "Antibar"
+          "Antibar",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Sejegi"
+          "Sejegi",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Parit Banjar"
+          "Parit Banjar",
+          "0",
+          "0",
+          "0"
         ]
       ]
     },
     "_REF_APPSHEET_KEC": {
-      "raw_title": "_REF_APPSHEET_KEC",
+      "title": "_REF_APPSHEET_KEC",
       "rows": [
         [
           "id_kecamatan",
@@ -408,7 +708,14 @@
           "",
           "",
           "28,1",
-          "47,9"
+          "47,9",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104030",
@@ -429,7 +736,14 @@
           "",
           "",
           "42,1",
-          "40,3"
+          "40,3",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104040",
@@ -450,7 +764,14 @@
           "",
           "",
           "67 km",
-          "19,7 km"
+          "19,7 km",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104041",
@@ -471,7 +792,14 @@
           "",
           "",
           "73,9",
-          "32,8"
+          "32,8",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104050",
@@ -492,7 +820,14 @@
           "",
           "",
           "63",
-          "2,8"
+          "2,8",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104051",
@@ -513,7 +848,14 @@
           "",
           "",
           "78,2",
-          "2,3"
+          "2,3",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104060",
@@ -534,7 +876,14 @@
           "",
           "",
           "94",
-          "19"
+          "19",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104070",
@@ -555,7 +904,14 @@
           "",
           "",
           "82,6",
-          "35,5"
+          "35,5",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104080",
@@ -576,12 +932,19 @@
           "",
           "",
           "99",
-          "36,1"
+          "36,1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "_REF_APPSHEET_DESA": {
-      "raw_title": "_REF_APPSHEET_DESA",
+      "title": "_REF_APPSHEET_DESA",
       "rows": [
         [
           "id_desa",
@@ -635,7 +998,9 @@
           "24",
           "24",
           "",
-          "MAWAR, MELATI"
+          "MAWAR, MELATI",
+          "",
+          ""
         ],
         [
           "DESA-6104020002",
@@ -661,7 +1026,9 @@
           "70",
           "6",
           "",
-          "ALIANYANG, DAENG MANAMBON, PANGERAN ADIPATI, PANGSUMA, RADEN TAUFIK, RADEN WIJAYA, RAHADI USMAN, SULTAN ABDURRAHMAN, SULTAN MUHAMMAD, URAI BAWADI"
+          "ALIANYANG, DAENG MANAMBON, PANGERAN ADIPATI, PANGSUMA, RADEN TAUFIK, RADEN WIJAYA, RAHADI USMAN, SULTAN ABDURRAHMAN, SULTAN MUHAMMAD, URAI BAWADI",
+          "",
+          ""
         ],
         [
           "DESA-6104020003",
@@ -687,7 +1054,9 @@
           "41",
           "6",
           "",
-          "COKLAT, JERUK, KELAPA, KOPI, NANAS, PADI, PALAWIJA"
+          "COKLAT, JERUK, KELAPA, KOPI, NANAS, PADI, PALAWIJA",
+          "",
+          ""
         ],
         [
           "DESA-6104020004",
@@ -713,7 +1082,9 @@
           "72",
           "12",
           "",
-          "BRAHIMA, DURIAN, KUNYIT, LAPAN, MAMBO, PANDAN, TELUK DALAM"
+          "BRAHIMA, DURIAN, KUNYIT, LAPAN, MAMBO, PANDAN, TELUK DALAM",
+          "",
+          ""
         ],
         [
           "DESA-6104020006",
@@ -739,7 +1110,9 @@
           "19",
           "7",
           "",
-          "KARYA BHAKTI, PANCA BHAKTI, TARUNA BHAKTI"
+          "KARYA BHAKTI, PANCA BHAKTI, TARUNA BHAKTI",
+          "",
+          ""
         ],
         [
           "DESA-6104030001",
@@ -765,7 +1138,9 @@
           "24",
           "24",
           "",
-          "AMBO PINANG, SY. ABU BAKAR, WAK PAIK"
+          "AMBO PINANG, SY. ABU BAKAR, WAK PAIK",
+          "",
+          ""
         ],
         [
           "DESA-6104030002",
@@ -791,7 +1166,9 @@
           "9",
           "5",
           "",
-          "SUBUR 1, SUBUR 2"
+          "SUBUR 1, SUBUR 2",
+          "",
+          ""
         ],
         [
           "DESA-6104030003",
@@ -817,7 +1194,9 @@
           "21",
           "21",
           "",
-          "KEMUNING, MAKMUR, NELAYAN, PELITA"
+          "KEMUNING, MAKMUR, NELAYAN, PELITA",
+          "",
+          ""
         ],
         [
           "DESA-6104030004",
@@ -843,7 +1222,9 @@
           "10",
           "10",
           "",
-          "ASAM, KERANJI"
+          "ASAM, KERANJI",
+          "",
+          ""
         ],
         [
           "DESA-6104030005",
@@ -869,7 +1250,9 @@
           "36",
           "9",
           "",
-          "KARYA BAKTI, KARYA BERSAMA, KARYA UTAMA, SABAR MENANTI, SUKA DAMAI, SUKA MAJU, TANI MAKMUR"
+          "KARYA BAKTI, KARYA BERSAMA, KARYA UTAMA, SABAR MENANTI, SUKA DAMAI, SUKA MAJU, TANI MAKMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104030006",
@@ -895,7 +1278,9 @@
           "25",
           "25",
           "",
-          "CAHAYA INTAN, KARYA UTAMA, LEMBAH HIJAU, TUNAS BARU"
+          "CAHAYA INTAN, KARYA UTAMA, LEMBAH HIJAU, TUNAS BARU",
+          "",
+          ""
         ],
         [
           "DESA-6104040001",
@@ -921,7 +1306,9 @@
           "21",
           "21",
           "",
-          "BAHAGIAH, KARYA, NIKMAT, SEJAHTERA, SWADAYA"
+          "BAHAGIAH, KARYA, NIKMAT, SEJAHTERA, SWADAYA",
+          "",
+          ""
         ],
         [
           "DESA-6104040003",
@@ -947,7 +1334,9 @@
           "22",
           "22",
           "",
-          "BABUSSALAM, DANAU, PENIRAMAN DALAM, SUI DAYAK, TERATAI"
+          "BABUSSALAM, DANAU, PENIRAMAN DALAM, SUI DAYAK, TERATAI",
+          "",
+          ""
         ],
         [
           "DESA-6104040004",
@@ -973,7 +1362,9 @@
           "20",
           "4",
           "",
-          "01, 02, 03, 04, 05"
+          "01, 02, 03, 04, 05",
+          "",
+          ""
         ],
         [
           "DESA-6104040005",
@@ -999,7 +1390,9 @@
           "11",
           "16",
           "",
-          "HILIR, SELATAN, TENGAH, UTARA"
+          "HILIR, SELATAN, TENGAH, UTARA",
+          "",
+          ""
         ],
         [
           "DESA-6104040008",
@@ -1025,7 +1418,9 @@
           "9",
           "9",
           "",
-          "BARAT, TIMUR"
+          "BARAT, TIMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104040009",
@@ -1049,7 +1444,11 @@
           "6",
           "",
           "58",
-          "16"
+          "16",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104040010",
@@ -1075,7 +1474,9 @@
           "9",
           "5",
           "",
-          "BARAT, TIMUR"
+          "BARAT, TIMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104040011",
@@ -1101,7 +1502,9 @@
           "16",
           "16",
           "",
-          "BARAT, TIMUR"
+          "BARAT, TIMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104040012",
@@ -1127,7 +1530,9 @@
           "20",
           "20",
           "",
-          "HULU SUNGAI, PARIT AKOP, PARIT H. AMIN, PARIT KURUS, SIMPANG EMPAT"
+          "HULU SUNGAI, PARIT AKOP, PARIT H. AMIN, PARIT KURUS, SIMPANG EMPAT",
+          "",
+          ""
         ],
         [
           "DESA-6104041002",
@@ -1151,7 +1556,11 @@
           "4",
           "",
           "23",
-          "23"
+          "23",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104041003",
@@ -1177,7 +1586,9 @@
           "11",
           "11",
           "",
-          "PRAMUKA, TERDU"
+          "PRAMUKA, TERDU",
+          "",
+          ""
         ],
         [
           "DESA-6104041004",
@@ -1203,7 +1614,9 @@
           "8",
           "8",
           "",
-          "PAK BULU, PERIKANAN"
+          "PAK BULU, PERIKANAN",
+          "",
+          ""
         ],
         [
           "DESA-6104041005",
@@ -1229,7 +1642,9 @@
           "12",
           "12",
           "",
-          "BAGURUH, DEMA, PINYUH KERSIK"
+          "BAGURUH, DEMA, PINYUH KERSIK",
+          "",
+          ""
         ],
         [
           "DESA-6104041006",
@@ -1255,7 +1670,9 @@
           "18",
           "18",
           "",
-          "BILADO, KEPAYANG, LAHUAK, PELADIS"
+          "BILADO, KEPAYANG, LAHUAK, PELADIS",
+          "",
+          ""
         ],
         [
           "DESA-6104050001",
@@ -1279,7 +1696,11 @@
           "3",
           "",
           "6",
-          "6"
+          "6",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104050002",
@@ -1305,7 +1726,9 @@
           "15",
           "15",
           "",
-          "ABADI, HARAPAN, KABO, KARYA"
+          "ABADI, HARAPAN, KABO, KARYA",
+          "",
+          ""
         ],
         [
           "DESA-6104050007",
@@ -1329,7 +1752,11 @@
           "8",
           "",
           "24",
-          "24"
+          "24",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104050008",
@@ -1353,7 +1780,11 @@
           "17",
           "",
           "41",
-          "41"
+          "41",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104050012",
@@ -1379,7 +1810,9 @@
           "34",
           "34",
           "",
-          "LESTARI, PARIT AMANKU, PARIT SERIBU, PASIR LAUT, PASIR TENGAH, SEBUKIT RAMA, SUAP"
+          "LESTARI, PARIT AMANKU, PARIT SERIBU, PASIR LAUT, PASIR TENGAH, SEBUKIT RAMA, SUAP",
+          "",
+          ""
         ],
         [
           "DESA-6104050013",
@@ -1405,7 +1838,9 @@
           "16",
           "16",
           "",
-          "DEWA, MELAYU, RENJUANG"
+          "DEWA, MELAYU, RENJUANG",
+          "",
+          ""
         ],
         [
           "DESA-6104050014",
@@ -1431,7 +1866,9 @@
           "16",
           "16",
           "",
-          "BUGIS, PARIT SENIN, SIMPANG TIGA, SUKA DAMAI"
+          "BUGIS, PARIT SENIN, SIMPANG TIGA, SUKA DAMAI",
+          "",
+          ""
         ],
         [
           "DESA-6104050015",
@@ -1457,7 +1894,9 @@
           "27",
           "27",
           "",
-          "ABRASI, BAMBU, FAJAR, KURNIA, MEKAR, MENTARI, PARIS, PINANG"
+          "ABRASI, BAMBU, FAJAR, KURNIA, MEKAR, MENTARI, PARIS, PINANG",
+          "",
+          ""
         ],
         [
           "DESA-6104051001",
@@ -1481,7 +1920,11 @@
           "8",
           "",
           "",
-          "17"
+          "17",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104051002",
@@ -1507,7 +1950,9 @@
           "",
           "37",
           "",
-          "BENTENG RAYA, BENTENG TIMUR, KEDAUNG, KONSASI, SENAMBANG, SENGGIIRING, SENGGIRING, SEPAKAT DARAT, SEPAKAT TENGAH"
+          "BENTENG RAYA, BENTENG TIMUR, KEDAUNG, KONSASI, SENAMBANG, SENGGIIRING, SENGGIRING, SEPAKAT DARAT, SEPAKAT TENGAH",
+          "",
+          ""
         ],
         [
           "DESA-6104051003",
@@ -1533,7 +1978,9 @@
           "",
           "14",
           "",
-          "PASIR MANDAR, PEMATANG PASIR, SENAMBUNG, TERAJU MAS"
+          "PASIR MANDAR, PEMATANG PASIR, SENAMBUNG, TERAJU MAS",
+          "",
+          ""
         ],
         [
           "DESA-6104051004",
@@ -1559,7 +2006,9 @@
           "",
           "14",
           "",
-          "PELAIK, TEKAM BARU, TENGAH"
+          "PELAIK, TEKAM BARU, TENGAH",
+          "",
+          ""
         ],
         [
           "DESA-6104051005",
@@ -1583,7 +2032,11 @@
           "2",
           "",
           "",
-          "4"
+          "4",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104051006",
@@ -1609,7 +2062,9 @@
           "",
           "32",
           "",
-          "BUKIT ASAM, HARAPAN, MAKMUR, MEKAR JAYA, MOTON JAYA, PENDIDIKAN, PERMAI, SATRIA, TARUNA OPU"
+          "BUKIT ASAM, HARAPAN, MAKMUR, MEKAR JAYA, MOTON JAYA, PENDIDIKAN, PERMAI, SATRIA, TARUNA OPU",
+          "",
+          ""
         ],
         [
           "DESA-6104051007",
@@ -1635,7 +2090,9 @@
           "",
           "18",
           "",
-          "BEMBAN, GALAHERANG, TEKAM"
+          "BEMBAN, GALAHERANG, TEKAM",
+          "",
+          ""
         ],
         [
           "DESA-6104051008",
@@ -1661,7 +2118,9 @@
           "",
           "20",
           "",
-          "AMPULOR, PARIT BANJAR DARAT, PARIT BANJAR LAUT, PARIT BANJAR TENGAH"
+          "AMPULOR, PARIT BANJAR DARAT, PARIT BANJAR LAUT, PARIT BANJAR TENGAH",
+          "",
+          ""
         ],
         [
           "DESA-6104060001",
@@ -1687,7 +2146,9 @@
           "16",
           "16",
           "",
-          "INDAH, LESTARI, PERMAI, SEJAHTERA"
+          "INDAH, LESTARI, PERMAI, SEJAHTERA",
+          "",
+          ""
         ],
         [
           "DESA-6104060002",
@@ -1713,7 +2174,9 @@
           "9",
           "9",
           "",
-          "HIDAYAH, PELANGKIRAN, TAUFIK"
+          "HIDAYAH, PELANGKIRAN, TAUFIK",
+          "",
+          ""
         ],
         [
           "DESA-6104060003",
@@ -1739,7 +2202,9 @@
           "11",
           "11",
           "",
-          "DURIAN, MANDALA, TELAGA PUTIH"
+          "DURIAN, MANDALA, TELAGA PUTIH",
+          "",
+          ""
         ],
         [
           "DESA-6104060004",
@@ -1765,7 +2230,9 @@
           "9",
           "9",
           "",
-          "BERINGIN, DUTA, SATRYA"
+          "BERINGIN, DUTA, SATRYA",
+          "",
+          ""
         ],
         [
           "DESA-6104060005",
@@ -1791,7 +2258,9 @@
           "9",
           "9",
           "",
-          "NELAYAN, PEMBANGUNAN, TANI"
+          "NELAYAN, PEMBANGUNAN, TANI",
+          "",
+          ""
         ],
         [
           "DESA-6104060006",
@@ -1817,7 +2286,9 @@
           "13",
           "12",
           "",
-          "MUFAKAT, SABAR, TENANG"
+          "MUFAKAT, SABAR, TENANG",
+          "",
+          ""
         ],
         [
           "DESA-6104060007",
@@ -1843,7 +2314,9 @@
           "9",
           "9",
           "",
-          "CEMPAKA, MAWAR, MELATI"
+          "CEMPAKA, MAWAR, MELATI",
+          "",
+          ""
         ],
         [
           "DESA-6104060008",
@@ -1869,7 +2342,9 @@
           "10",
           "10",
           "",
-          "SEKIP I, SEKIP II, SEMAYAR"
+          "SEKIP I, SEKIP II, SEMAYAR",
+          "",
+          ""
         ],
         [
           "DESA-6104060009",
@@ -1895,7 +2370,9 @@
           "10",
           "10",
           "",
-          "KARYA UTAMA, KEMBANG LADA, SERAI WANGI"
+          "KARYA UTAMA, KEMBANG LADA, SERAI WANGI",
+          "",
+          ""
         ],
         [
           "DESA-6104060010",
@@ -1921,7 +2398,9 @@
           "12",
           "11",
           "",
-          "MAYASARI, SUKA TANI, TUJUH RATUS"
+          "MAYASARI, SUKA TANI, TUJUH RATUS",
+          "",
+          ""
         ],
         [
           "DESA-6104060011",
@@ -1947,7 +2426,9 @@
           "12",
           "12",
           "",
-          "SABAR, SUBUR, SUTRA"
+          "SABAR, SUBUR, SUTRA",
+          "",
+          ""
         ],
         [
           "DESA-6104060012",
@@ -1973,7 +2454,9 @@
           "11",
           "11",
           "",
-          "DAMAI, KARYA, TARUNA"
+          "DAMAI, KARYA, TARUNA",
+          "",
+          ""
         ],
         [
           "DESA-6104070002",
@@ -1999,7 +2482,9 @@
           "15",
           "15",
           "",
-          "MEKAR JAYA, TUNAS JAYA"
+          "MEKAR JAYA, TUNAS JAYA",
+          "",
+          ""
         ],
         [
           "DESA-6104070003",
@@ -2025,7 +2510,9 @@
           "9",
           "9",
           "",
-          "BENUANG, BOBOR"
+          "BENUANG, BOBOR",
+          "",
+          ""
         ],
         [
           "DESA-6104070004",
@@ -2051,7 +2538,9 @@
           "12",
           "13",
           "",
-          "001 PAK UTAN, 002 BAYUNG, 003 SIBO HILIR, 004 SIBO HULU, 004 SIBU HULU"
+          "001 PAK UTAN, 002 BAYUNG, 003 SIBO HILIR, 004 SIBO HULU, 004 SIBU HULU",
+          "",
+          ""
         ],
         [
           "DESA-6104070005",
@@ -2077,7 +2566,9 @@
           "14",
           "14",
           "",
-          "KUMPANG, SEPANG"
+          "KUMPANG, SEPANG",
+          "",
+          ""
         ],
         [
           "DESA-6104070006",
@@ -2103,7 +2594,9 @@
           "9",
           "9",
           "",
-          "PAK LAHENG, PAK ONA, SEKEK"
+          "PAK LAHENG, PAK ONA, SEKEK",
+          "",
+          ""
         ],
         [
           "DESA-6104070007",
@@ -2129,7 +2622,9 @@
           "11",
           "12",
           "",
-          "BALAH, TERAP"
+          "BALAH, TERAP",
+          "",
+          ""
         ],
         [
           "DESA-6104070008",
@@ -2155,7 +2650,9 @@
           "6",
           "6",
           "",
-          "DANDANG, PINANG"
+          "DANDANG, PINANG",
+          "",
+          ""
         ],
         [
           "DESA-6104070009",
@@ -2181,7 +2678,9 @@
           "13",
           "13",
           "",
-          "BONSORAN, KUALA TOHO, PROMPONG, TOHO ILIR"
+          "BONSORAN, KUALA TOHO, PROMPONG, TOHO ILIR",
+          "",
+          ""
         ],
         [
           "DESA-6104080001",
@@ -2207,7 +2706,9 @@
           "12",
           "11",
           "",
-          "KUMPANG, MURU, PENTEK, PENYUAK, UNTANG"
+          "KUMPANG, MURU, PENTEK, PENYUAK, UNTANG",
+          "",
+          ""
         ],
         [
           "DESA-6104080002",
@@ -2233,7 +2734,9 @@
           "10",
           "10",
           "",
-          "GELOMBANG, PAK NUNGKAT, SEKABUK, TITI DAHAN"
+          "GELOMBANG, PAK NUNGKAT, SEKABUK, TITI DAHAN",
+          "",
+          ""
         ],
         [
           "DESA-6104080003",
@@ -2259,7 +2762,9 @@
           "11",
           "13",
           "",
-          "BAWING, BUMBUN, NANGKA, SATAK"
+          "BAWING, BUMBUN, NANGKA, SATAK",
+          "",
+          ""
         ],
         [
           "DESA-6104080004",
@@ -2285,7 +2790,9 @@
           "14",
           "13",
           "",
-          "AMAWANG, PARONG, PELANJAU, PENDENG, PUDAK"
+          "AMAWANG, PARONG, PELANJAU, PENDENG, PUDAK",
+          "",
+          ""
         ],
         [
           "DESA-6104080005",
@@ -2311,7 +2818,9 @@
           "7",
           "7",
           "",
-          "ANSIAP, GUTOK, TIKALONG"
+          "ANSIAP, GUTOK, TIKALONG",
+          "",
+          ""
         ],
         [
           "DESA-6104080006",
@@ -2337,10 +2846,11 @@
           "10",
           "10",
           "",
-          "BARANGAN, GURO, PARASAN, SAMANTAKIN"
+          "BARANGAN, GURO, PARASAN, SAMANTAKIN",
+          "",
+          ""
         ]
       ]
     }
-  },
-  "catatan": ""
+  }
 }

@@ -10,27 +10,26 @@ def format_bilingual_header(header_text: str) -> str:
     1. Jika ada baris kedua: dicetak miring (italic).
     2. Jika satu baris dan dipisahkan '/': garis miring tanpa spasi dan kata bahasa asing dicetak miring.
     Menggunakan #strong agar aman dari tabrakan operator block comment Typst ('*/').
+    Tanpa kurung siku terluar agar tidak dirender literal oleh Typst di dalam table.cell[...].
     """
     if "\n" in header_text:
         parts = header_text.split("\n", 1)
         id_part = parts[0].strip()
         en_part = parts[1].strip().strip("_")
-        return f"[#strong[{id_part}] \\ #text(6pt, weight: \"bold\", style: \"italic\")[{en_part}]]"
+        return f"#strong[{id_part}] \\ #text(6pt, weight: \"bold\", style: \"italic\")[{en_part}]"
     elif " / " in header_text and not any(k in header_text for k in ["SD", "SMP", "SMA", "SMK", "PT"]):
         parts = header_text.split(" / ", 1)
         id_part = parts[0].strip()
         en_part = parts[1].strip().strip("_")
-        return f"[#strong[{id_part}]/#text(weight: \"bold\", style: \"italic\")[{en_part}]]"
+        return f"#strong[{id_part}]/#text(weight: \"bold\", style: \"italic\")[{en_part}]"
     else:
-        return f"[#strong[{header_text.strip()}]]"
+        return f"#strong[{header_text.strip()}]"
 
 def format_bilingual_stub(cell_val: str) -> str:
     """
     Memformat stub/nilai sel dwibahasa sesuai Pedoman BPS:
     Jika memuat pasangan dwibahasa (contoh 'Bawang Merah / Shallots', 'Jumlah / Total', 'Banjir / Flood'):
-    Ubah menjadi format baku 'Bawang Merah/_Shallots_' (slash tanpa spasi, istilah asing miring).
-    Jika alternatif bahasa Indonesia ('Kelompok Pertokoan / Ruko', 'Angin Puyuh / Puting Beliung'),
-    satukan dengan slash rapi 'Kelompok Pertokoan/Ruko'.
+    Bahasa Indonesia di atas, bahasa Inggris di bawahnya (enter) dicetak miring.
     """
     bilingual_indicators = {
         "shallots", "chili", "pepper", "tomato", "eggplant", "beans", "cucumber", 
@@ -39,18 +38,38 @@ def format_bilingual_stub(cell_val: str) -> str:
         "public", "private", "hospital", "phc", "clinic", "pharmacy", "landslide",
         "flood", "earthquake", "tidal", "wave", "disaster", "drought", "fire",
         "tsunami", "outpatient", "inpatient", "unit", "post", "courier", "facility",
-        "head", "director", "in charge", "compilers", "editors", "writers", "layouters"
+        "head", "director", "in charge", "compilers", "editors", "writers", "layouters",
+        "under graduate", "bachelor", "graduate", "master", "primary", "secondary",
+        "vocational", "kindergarten", "islamic", "potato", "cabbage", "garlic",
+        "scallion", "mustard green", "water melon", "water spinach", "tangerine"
     }
+    # 1. Jika sudah ada pemisah baris baru \n
+    if "\n" in cell_val:
+        parts = cell_val.split("\n", 1)
+        id_t = parts[0].strip()
+        en_t = parts[1].strip().strip("_")
+        return f"{id_t} \\ #text(style: \"italic\")[{en_t}]"
+
+    # 2. Jika dipisahkan ' / '
     if " / " in cell_val:
         parts = cell_val.split(" / ", 1)
         id_t = parts[0].strip()
         en_t = parts[1].strip().strip("_")
-        # Tokenize kata pada bagian kedua
         words = set(re.findall(r'[a-zA-Z]+', en_t.lower()))
-        if words.intersection(bilingual_indicators):
-            return f"{id_t}/_{en_t}_"
+        if words.intersection(bilingual_indicators) or any(w in en_t.lower() for w in ["total", "school", "office"]):
+            return f"{id_t} \\ #text(style: \"italic\")[{en_t}]"
         else:
             return f"{id_t}/{en_t}"
+
+    # 3. Jika dipisahkan '/' dan memuat indikator istilah asing
+    if "/" in cell_val and not any(k in cell_val for k in ["202", "199", "km", "ha", "RT", "RW"]):
+        parts = cell_val.split("/", 1)
+        id_t = parts[0].strip()
+        en_t = parts[1].strip().strip("_")
+        words = set(re.findall(r'[a-zA-Z]+', en_t.lower()))
+        if words.intersection(bilingual_indicators):
+            return f"{id_t} \\ #text(style: \"italic\")[{en_t}]"
+
     return cell_val
 
 SOURCE_TRANSLATIONS = {
@@ -254,7 +273,8 @@ def render_typst_table(
     col_widths: Optional[List[str]] = None,
     source: Optional[str] = None,
     note: Optional[str] = None,
-    notes: Optional[str] = None
+    notes: Optional[str] = None,
+    is_continued: bool = False
 ) -> str:
     """Merender tabel berstandar BPS untuk buku ukuran A5 dengan format judul dua kolom dan penegakan kaidah dwibahasa."""
     if note is None and notes is not None:
@@ -290,6 +310,17 @@ def render_typst_table(
 
     rendered_rows = []
     for r in rows:
+        # Periksa baris judul kelompok/kategori (misal: Sayuran/Vegetables:, Buah-buahan/Fruits:)
+        if len(r) > 0 and (len(r) == 1 or all(not str(c).strip() or str(c).strip() in ["–", "-", ""] for c in r[1:])) and any(cat in str(r[0]).lower() for cat in ["sayuran", "buah", "vegetables", "fruits"]):
+            raw_cat = str(r[0]).strip().rstrip(':')
+            if "/" in raw_cat:
+                c_id, c_en = raw_cat.split("/", 1)
+                formatted_cat = f"#strong[{c_id.strip()}] / #text(weight: \"bold\", style: \"italic\")[{c_en.strip()}:]"
+            else:
+                formatted_cat = f"#strong[{raw_cat}:]"
+            rendered_rows.append(f"table.cell(colspan: {num_cols}, align: left + horizon)[{formatted_cat}]")
+            continue
+
         cells = []
         for col_idx, c in enumerate(r):
             h_text = headers[col_idx] if col_idx < len(headers) else ""
@@ -313,7 +344,17 @@ def render_typst_table(
     formatted_source = format_bilingual_source(source)
     clean_no = re.sub(r'[^a-zA-Z0-9_\-]', '_', table_no)
 
-    markup = f"""
+    is_cont = is_continued or "lanjutan" in table_no.lower()
+    if is_cont:
+        base_no = re.sub(r'\s*lanjutan.*', '', table_no, flags=re.IGNORECASE).strip()
+        title_block = f"""
+#metadata("tab_{clean_no}") <tab_{clean_no}>
+#v(6pt)
+#text(10pt, weight: "bold")[Lanjutan Tabel {base_no} / #text(style: "italic")[Continued Table {base_no}]]
+#v(4pt)
+"""
+    else:
+        title_block = f"""
 #metadata("tab_{clean_no}") <tab_{clean_no}>
 #v(6pt)
 #grid(
@@ -344,10 +385,18 @@ def render_typst_table(
   ]
 )
 #v(3pt)
+"""
+
+    # Inset adaptif agar tabel dengan banyak baris (misal camat 22 baris) tetap muat rapi dalam 1 halaman
+    cell_inset = "(x: 3.5pt, y: 2.5pt)" if len(rows) > 14 else "(x: 3.5pt, y: 4.5pt)"
+    font_size_override = "#set text(size: 6.8pt)\n" if len(rows) > 16 else ""
+
+    markup = f"""
+{title_block}
 #show table.cell: set par(justify: false)
-#table(
+{font_size_override}#table(
   columns: {col_spec},
-  inset: (x: 3.5pt, y: 4.5pt),
+  inset: {cell_inset},
   stroke: none,
   fill: (col, row) => if row == 0 {{ cmyk(0%, 20%, 90%, 0%) }}
                       else if row == 1 {{ cmyk(0%, 10%, 45%, 0%) }}

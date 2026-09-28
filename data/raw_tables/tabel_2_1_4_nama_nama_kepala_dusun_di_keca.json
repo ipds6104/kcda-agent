@@ -2,13 +2,11 @@
   "no": "2.1.4",
   "nama": "Nama-Nama Kepala Dusun di Kecamatan XXX",
   "sumber": "Kantor Camat XXX/ XXX District Office",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "10eEof1SE5ucO6hUAvP7EJ8X7GQLyuGwiRpM4Ltc_Vkk",
-  "spreadsheet_title": "Nama-Nama Kepala Dusun di Kecamatan XXX",
-  "updated_at": "2026-09-27 19:24:27",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "No",
@@ -23,25 +21,46 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "",
+          "",
+          ""
         ],
         [
-          "2"
+          "2",
+          "",
+          "",
+          ""
         ],
         [
-          "3"
+          "3",
+          "",
+          "",
+          ""
         ],
         [
-          "4"
+          "4",
+          "",
+          "",
+          ""
         ],
         [
-          "5"
+          "5",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
+        [
+          "2025",
+          "",
+          "",
+          ""
+        ],
         [
           "No",
           "Desa/Kelurahan\n Village/Subdistrict",
@@ -183,7 +202,7 @@
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "No",
@@ -198,24 +217,39 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "",
+          "",
+          ""
         ],
         [
-          "2"
+          "2",
+          "",
+          "",
+          ""
         ],
         [
-          "3"
+          "3",
+          "",
+          "",
+          ""
         ],
         [
-          "4"
+          "4",
+          "",
+          "",
+          ""
         ],
         [
-          "5"
+          "5",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "No",
@@ -406,7 +440,7 @@
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "No",
@@ -645,7 +679,7 @@
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "No",
@@ -794,7 +828,7 @@
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "No",
@@ -961,7 +995,7 @@
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "No",
@@ -1050,7 +1084,7 @@
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "No",
@@ -1253,7 +1287,7 @@
       ]
     },
     "_REF_APPSHEET_DESA": {
-      "raw_title": "_REF_APPSHEET_DESA",
+      "title": "_REF_APPSHEET_DESA",
       "rows": [
         [
           "id_desa",
@@ -1307,7 +1341,9 @@
           "24",
           "24",
           "",
-          "MAWAR, MELATI"
+          "MAWAR, MELATI",
+          "",
+          ""
         ],
         [
           "DESA-6104020002",
@@ -1333,7 +1369,9 @@
           "70",
           "6",
           "",
-          "ALIANYANG, DAENG MANAMBON, PANGERAN ADIPATI, PANGSUMA, RADEN TAUFIK, RADEN WIJAYA, RAHADI USMAN, SULTAN ABDURRAHMAN, SULTAN MUHAMMAD, URAI BAWADI"
+          "ALIANYANG, DAENG MANAMBON, PANGERAN ADIPATI, PANGSUMA, RADEN TAUFIK, RADEN WIJAYA, RAHADI USMAN, SULTAN ABDURRAHMAN, SULTAN MUHAMMAD, URAI BAWADI",
+          "",
+          ""
         ],
         [
           "DESA-6104020003",
@@ -1359,7 +1397,9 @@
           "41",
           "6",
           "",
-          "COKLAT, JERUK, KELAPA, KOPI, NANAS, PADI, PALAWIJA"
+          "COKLAT, JERUK, KELAPA, KOPI, NANAS, PADI, PALAWIJA",
+          "",
+          ""
         ],
         [
           "DESA-6104020004",
@@ -1385,7 +1425,9 @@
           "72",
           "12",
           "",
-          "BRAHIMA, DURIAN, KUNYIT, LAPAN, MAMBO, PANDAN, TELUK DALAM"
+          "BRAHIMA, DURIAN, KUNYIT, LAPAN, MAMBO, PANDAN, TELUK DALAM",
+          "",
+          ""
         ],
         [
           "DESA-6104020006",
@@ -1411,7 +1453,9 @@
           "19",
           "7",
           "",
-          "KARYA BHAKTI, PANCA BHAKTI, TARUNA BHAKTI"
+          "KARYA BHAKTI, PANCA BHAKTI, TARUNA BHAKTI",
+          "",
+          ""
         ],
         [
           "DESA-6104030001",
@@ -1437,7 +1481,9 @@
           "24",
           "24",
           "",
-          "AMBO PINANG, SY. ABU BAKAR, WAK PAIK"
+          "AMBO PINANG, SY. ABU BAKAR, WAK PAIK",
+          "",
+          ""
         ],
         [
           "DESA-6104030002",
@@ -1463,7 +1509,9 @@
           "9",
           "5",
           "",
-          "SUBUR 1, SUBUR 2"
+          "SUBUR 1, SUBUR 2",
+          "",
+          ""
         ],
         [
           "DESA-6104030003",
@@ -1489,7 +1537,9 @@
           "21",
           "21",
           "",
-          "KEMUNING, MAKMUR, NELAYAN, PELITA"
+          "KEMUNING, MAKMUR, NELAYAN, PELITA",
+          "",
+          ""
         ],
         [
           "DESA-6104030004",
@@ -1515,7 +1565,9 @@
           "10",
           "10",
           "",
-          "ASAM, KERANJI"
+          "ASAM, KERANJI",
+          "",
+          ""
         ],
         [
           "DESA-6104030005",
@@ -1541,7 +1593,9 @@
           "36",
           "9",
           "",
-          "KARYA BAKTI, KARYA BERSAMA, KARYA UTAMA, SABAR MENANTI, SUKA DAMAI, SUKA MAJU, TANI MAKMUR"
+          "KARYA BAKTI, KARYA BERSAMA, KARYA UTAMA, SABAR MENANTI, SUKA DAMAI, SUKA MAJU, TANI MAKMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104030006",
@@ -1567,7 +1621,9 @@
           "25",
           "25",
           "",
-          "CAHAYA INTAN, KARYA UTAMA, LEMBAH HIJAU, TUNAS BARU"
+          "CAHAYA INTAN, KARYA UTAMA, LEMBAH HIJAU, TUNAS BARU",
+          "",
+          ""
         ],
         [
           "DESA-6104040001",
@@ -1593,7 +1649,9 @@
           "21",
           "21",
           "",
-          "BAHAGIAH, KARYA, NIKMAT, SEJAHTERA, SWADAYA"
+          "BAHAGIAH, KARYA, NIKMAT, SEJAHTERA, SWADAYA",
+          "",
+          ""
         ],
         [
           "DESA-6104040003",
@@ -1619,7 +1677,9 @@
           "22",
           "22",
           "",
-          "BABUSSALAM, DANAU, PENIRAMAN DALAM, SUI DAYAK, TERATAI"
+          "BABUSSALAM, DANAU, PENIRAMAN DALAM, SUI DAYAK, TERATAI",
+          "",
+          ""
         ],
         [
           "DESA-6104040004",
@@ -1645,7 +1705,9 @@
           "20",
           "4",
           "",
-          "01, 02, 03, 04, 05"
+          "01, 02, 03, 04, 05",
+          "",
+          ""
         ],
         [
           "DESA-6104040005",
@@ -1671,7 +1733,9 @@
           "11",
           "16",
           "",
-          "HILIR, SELATAN, TENGAH, UTARA"
+          "HILIR, SELATAN, TENGAH, UTARA",
+          "",
+          ""
         ],
         [
           "DESA-6104040008",
@@ -1697,7 +1761,9 @@
           "9",
           "9",
           "",
-          "BARAT, TIMUR"
+          "BARAT, TIMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104040009",
@@ -1721,7 +1787,11 @@
           "6",
           "",
           "58",
-          "16"
+          "16",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104040010",
@@ -1747,7 +1817,9 @@
           "9",
           "5",
           "",
-          "BARAT, TIMUR"
+          "BARAT, TIMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104040011",
@@ -1773,7 +1845,9 @@
           "16",
           "16",
           "",
-          "BARAT, TIMUR"
+          "BARAT, TIMUR",
+          "",
+          ""
         ],
         [
           "DESA-6104040012",
@@ -1799,7 +1873,9 @@
           "20",
           "20",
           "",
-          "HULU SUNGAI, PARIT AKOP, PARIT H. AMIN, PARIT KURUS, SIMPANG EMPAT"
+          "HULU SUNGAI, PARIT AKOP, PARIT H. AMIN, PARIT KURUS, SIMPANG EMPAT",
+          "",
+          ""
         ],
         [
           "DESA-6104041002",
@@ -1823,7 +1899,11 @@
           "4",
           "",
           "23",
-          "23"
+          "23",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104041003",
@@ -1849,7 +1929,9 @@
           "11",
           "11",
           "",
-          "PRAMUKA, TERDU"
+          "PRAMUKA, TERDU",
+          "",
+          ""
         ],
         [
           "DESA-6104041004",
@@ -1875,7 +1957,9 @@
           "8",
           "8",
           "",
-          "PAK BULU, PERIKANAN"
+          "PAK BULU, PERIKANAN",
+          "",
+          ""
         ],
         [
           "DESA-6104041005",
@@ -1901,7 +1985,9 @@
           "12",
           "12",
           "",
-          "BAGURUH, DEMA, PINYUH KERSIK"
+          "BAGURUH, DEMA, PINYUH KERSIK",
+          "",
+          ""
         ],
         [
           "DESA-6104041006",
@@ -1927,7 +2013,9 @@
           "18",
           "18",
           "",
-          "BILADO, KEPAYANG, LAHUAK, PELADIS"
+          "BILADO, KEPAYANG, LAHUAK, PELADIS",
+          "",
+          ""
         ],
         [
           "DESA-6104050001",
@@ -1951,7 +2039,11 @@
           "3",
           "",
           "6",
-          "6"
+          "6",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104050002",
@@ -1977,7 +2069,9 @@
           "15",
           "15",
           "",
-          "ABADI, HARAPAN, KABO, KARYA"
+          "ABADI, HARAPAN, KABO, KARYA",
+          "",
+          ""
         ],
         [
           "DESA-6104050007",
@@ -2001,7 +2095,11 @@
           "8",
           "",
           "24",
-          "24"
+          "24",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104050008",
@@ -2025,7 +2123,11 @@
           "17",
           "",
           "41",
-          "41"
+          "41",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104050012",
@@ -2051,7 +2153,9 @@
           "34",
           "34",
           "",
-          "LESTARI, PARIT AMANKU, PARIT SERIBU, PASIR LAUT, PASIR TENGAH, SEBUKIT RAMA, SUAP"
+          "LESTARI, PARIT AMANKU, PARIT SERIBU, PASIR LAUT, PASIR TENGAH, SEBUKIT RAMA, SUAP",
+          "",
+          ""
         ],
         [
           "DESA-6104050013",
@@ -2077,7 +2181,9 @@
           "16",
           "16",
           "",
-          "DEWA, MELAYU, RENJUANG"
+          "DEWA, MELAYU, RENJUANG",
+          "",
+          ""
         ],
         [
           "DESA-6104050014",
@@ -2103,7 +2209,9 @@
           "16",
           "16",
           "",
-          "BUGIS, PARIT SENIN, SIMPANG TIGA, SUKA DAMAI"
+          "BUGIS, PARIT SENIN, SIMPANG TIGA, SUKA DAMAI",
+          "",
+          ""
         ],
         [
           "DESA-6104050015",
@@ -2129,7 +2237,9 @@
           "27",
           "27",
           "",
-          "ABRASI, BAMBU, FAJAR, KURNIA, MEKAR, MENTARI, PARIS, PINANG"
+          "ABRASI, BAMBU, FAJAR, KURNIA, MEKAR, MENTARI, PARIS, PINANG",
+          "",
+          ""
         ],
         [
           "DESA-6104051001",
@@ -2153,7 +2263,11 @@
           "8",
           "",
           "",
-          "17"
+          "17",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104051002",
@@ -2179,7 +2293,9 @@
           "",
           "37",
           "",
-          "BENTENG RAYA, BENTENG TIMUR, KEDAUNG, KONSASI, SENAMBANG, SENGGIIRING, SENGGIRING, SEPAKAT DARAT, SEPAKAT TENGAH"
+          "BENTENG RAYA, BENTENG TIMUR, KEDAUNG, KONSASI, SENAMBANG, SENGGIIRING, SENGGIRING, SEPAKAT DARAT, SEPAKAT TENGAH",
+          "",
+          ""
         ],
         [
           "DESA-6104051003",
@@ -2205,7 +2321,9 @@
           "",
           "14",
           "",
-          "PASIR MANDAR, PEMATANG PASIR, SENAMBUNG, TERAJU MAS"
+          "PASIR MANDAR, PEMATANG PASIR, SENAMBUNG, TERAJU MAS",
+          "",
+          ""
         ],
         [
           "DESA-6104051004",
@@ -2231,7 +2349,9 @@
           "",
           "14",
           "",
-          "PELAIK, TEKAM BARU, TENGAH"
+          "PELAIK, TEKAM BARU, TENGAH",
+          "",
+          ""
         ],
         [
           "DESA-6104051005",
@@ -2255,7 +2375,11 @@
           "2",
           "",
           "",
-          "4"
+          "4",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "DESA-6104051006",
@@ -2281,7 +2405,9 @@
           "",
           "32",
           "",
-          "BUKIT ASAM, HARAPAN, MAKMUR, MEKAR JAYA, MOTON JAYA, PENDIDIKAN, PERMAI, SATRIA, TARUNA OPU"
+          "BUKIT ASAM, HARAPAN, MAKMUR, MEKAR JAYA, MOTON JAYA, PENDIDIKAN, PERMAI, SATRIA, TARUNA OPU",
+          "",
+          ""
         ],
         [
           "DESA-6104051007",
@@ -2307,7 +2433,9 @@
           "",
           "18",
           "",
-          "BEMBAN, GALAHERANG, TEKAM"
+          "BEMBAN, GALAHERANG, TEKAM",
+          "",
+          ""
         ],
         [
           "DESA-6104051008",
@@ -2333,7 +2461,9 @@
           "",
           "20",
           "",
-          "AMPULOR, PARIT BANJAR DARAT, PARIT BANJAR LAUT, PARIT BANJAR TENGAH"
+          "AMPULOR, PARIT BANJAR DARAT, PARIT BANJAR LAUT, PARIT BANJAR TENGAH",
+          "",
+          ""
         ],
         [
           "DESA-6104060001",
@@ -2359,7 +2489,9 @@
           "16",
           "16",
           "",
-          "INDAH, LESTARI, PERMAI, SEJAHTERA"
+          "INDAH, LESTARI, PERMAI, SEJAHTERA",
+          "",
+          ""
         ],
         [
           "DESA-6104060002",
@@ -2385,7 +2517,9 @@
           "9",
           "9",
           "",
-          "HIDAYAH, PELANGKIRAN, TAUFIK"
+          "HIDAYAH, PELANGKIRAN, TAUFIK",
+          "",
+          ""
         ],
         [
           "DESA-6104060003",
@@ -2411,7 +2545,9 @@
           "11",
           "11",
           "",
-          "DURIAN, MANDALA, TELAGA PUTIH"
+          "DURIAN, MANDALA, TELAGA PUTIH",
+          "",
+          ""
         ],
         [
           "DESA-6104060004",
@@ -2437,7 +2573,9 @@
           "9",
           "9",
           "",
-          "BERINGIN, DUTA, SATRYA"
+          "BERINGIN, DUTA, SATRYA",
+          "",
+          ""
         ],
         [
           "DESA-6104060005",
@@ -2463,7 +2601,9 @@
           "9",
           "9",
           "",
-          "NELAYAN, PEMBANGUNAN, TANI"
+          "NELAYAN, PEMBANGUNAN, TANI",
+          "",
+          ""
         ],
         [
           "DESA-6104060006",
@@ -2489,7 +2629,9 @@
           "13",
           "12",
           "",
-          "MUFAKAT, SABAR, TENANG"
+          "MUFAKAT, SABAR, TENANG",
+          "",
+          ""
         ],
         [
           "DESA-6104060007",
@@ -2515,7 +2657,9 @@
           "9",
           "9",
           "",
-          "CEMPAKA, MAWAR, MELATI"
+          "CEMPAKA, MAWAR, MELATI",
+          "",
+          ""
         ],
         [
           "DESA-6104060008",
@@ -2541,7 +2685,9 @@
           "10",
           "10",
           "",
-          "SEKIP I, SEKIP II, SEMAYAR"
+          "SEKIP I, SEKIP II, SEMAYAR",
+          "",
+          ""
         ],
         [
           "DESA-6104060009",
@@ -2567,7 +2713,9 @@
           "10",
           "10",
           "",
-          "KARYA UTAMA, KEMBANG LADA, SERAI WANGI"
+          "KARYA UTAMA, KEMBANG LADA, SERAI WANGI",
+          "",
+          ""
         ],
         [
           "DESA-6104060010",
@@ -2593,7 +2741,9 @@
           "12",
           "11",
           "",
-          "MAYASARI, SUKA TANI, TUJUH RATUS"
+          "MAYASARI, SUKA TANI, TUJUH RATUS",
+          "",
+          ""
         ],
         [
           "DESA-6104060011",
@@ -2619,7 +2769,9 @@
           "12",
           "12",
           "",
-          "SABAR, SUBUR, SUTRA"
+          "SABAR, SUBUR, SUTRA",
+          "",
+          ""
         ],
         [
           "DESA-6104060012",
@@ -2645,7 +2797,9 @@
           "11",
           "11",
           "",
-          "DAMAI, KARYA, TARUNA"
+          "DAMAI, KARYA, TARUNA",
+          "",
+          ""
         ],
         [
           "DESA-6104070002",
@@ -2671,7 +2825,9 @@
           "15",
           "15",
           "",
-          "MEKAR JAYA, TUNAS JAYA"
+          "MEKAR JAYA, TUNAS JAYA",
+          "",
+          ""
         ],
         [
           "DESA-6104070003",
@@ -2697,7 +2853,9 @@
           "9",
           "9",
           "",
-          "BENUANG, BOBOR"
+          "BENUANG, BOBOR",
+          "",
+          ""
         ],
         [
           "DESA-6104070004",
@@ -2723,7 +2881,9 @@
           "12",
           "13",
           "",
-          "001 PAK UTAN, 002 BAYUNG, 003 SIBO HILIR, 004 SIBO HULU, 004 SIBU HULU"
+          "001 PAK UTAN, 002 BAYUNG, 003 SIBO HILIR, 004 SIBO HULU, 004 SIBU HULU",
+          "",
+          ""
         ],
         [
           "DESA-6104070005",
@@ -2749,7 +2909,9 @@
           "14",
           "14",
           "",
-          "KUMPANG, SEPANG"
+          "KUMPANG, SEPANG",
+          "",
+          ""
         ],
         [
           "DESA-6104070006",
@@ -2775,7 +2937,9 @@
           "9",
           "9",
           "",
-          "PAK LAHENG, PAK ONA, SEKEK"
+          "PAK LAHENG, PAK ONA, SEKEK",
+          "",
+          ""
         ],
         [
           "DESA-6104070007",
@@ -2801,7 +2965,9 @@
           "11",
           "12",
           "",
-          "BALAH, TERAP"
+          "BALAH, TERAP",
+          "",
+          ""
         ],
         [
           "DESA-6104070008",
@@ -2827,7 +2993,9 @@
           "6",
           "6",
           "",
-          "DANDANG, PINANG"
+          "DANDANG, PINANG",
+          "",
+          ""
         ],
         [
           "DESA-6104070009",
@@ -2853,7 +3021,9 @@
           "13",
           "13",
           "",
-          "BONSORAN, KUALA TOHO, PROMPONG, TOHO ILIR"
+          "BONSORAN, KUALA TOHO, PROMPONG, TOHO ILIR",
+          "",
+          ""
         ],
         [
           "DESA-6104080001",
@@ -2879,7 +3049,9 @@
           "12",
           "11",
           "",
-          "KUMPANG, MURU, PENTEK, PENYUAK, UNTANG"
+          "KUMPANG, MURU, PENTEK, PENYUAK, UNTANG",
+          "",
+          ""
         ],
         [
           "DESA-6104080002",
@@ -2905,7 +3077,9 @@
           "10",
           "10",
           "",
-          "GELOMBANG, PAK NUNGKAT, SEKABUK, TITI DAHAN"
+          "GELOMBANG, PAK NUNGKAT, SEKABUK, TITI DAHAN",
+          "",
+          ""
         ],
         [
           "DESA-6104080003",
@@ -2931,7 +3105,9 @@
           "11",
           "13",
           "",
-          "BAWING, BUMBUN, NANGKA, SATAK"
+          "BAWING, BUMBUN, NANGKA, SATAK",
+          "",
+          ""
         ],
         [
           "DESA-6104080004",
@@ -2957,7 +3133,9 @@
           "14",
           "13",
           "",
-          "AMAWANG, PARONG, PELANJAU, PENDENG, PUDAK"
+          "AMAWANG, PARONG, PELANJAU, PENDENG, PUDAK",
+          "",
+          ""
         ],
         [
           "DESA-6104080005",
@@ -2983,7 +3161,9 @@
           "7",
           "7",
           "",
-          "ANSIAP, GUTOK, TIKALONG"
+          "ANSIAP, GUTOK, TIKALONG",
+          "",
+          ""
         ],
         [
           "DESA-6104080006",
@@ -3009,10 +3189,11 @@
           "10",
           "10",
           "",
-          "BARANGAN, GURO, PARASAN, SAMANTAKIN"
+          "BARANGAN, GURO, PARASAN, SAMANTAKIN",
+          "",
+          ""
         ]
       ]
     }
-  },
-  "catatan": ""
+  }
 }

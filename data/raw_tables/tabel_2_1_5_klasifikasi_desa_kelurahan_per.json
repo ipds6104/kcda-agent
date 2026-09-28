@@ -2,13 +2,11 @@
   "no": "2.1.5",
   "nama": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
   "sumber": "Peraturan Kepala Badan Pusat Statistik Nomor 120 Tahun 2020 Tentang Klasifikasi Desa Perkotaan dan Perdesaan di Indonesia Tahun 2020/ Regulation of the Chief Statistician Number 120 of 2020 Concerning the Classification of Urban and Rural Villages in Indonesia in 2020",
-  "disediakan_ipds": true,
+  "tahun": "2025",
   "sheet_id": "1mv1gRkm6lQl97LS4G08g5mKnApvmvsP7QzhTZ_7hpnQ",
-  "spreadsheet_title": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
-  "updated_at": "2026-09-22 08:28:58",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2024"
@@ -70,7 +68,7 @@
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
           "2024"
@@ -97,7 +95,7 @@
           "3",
           "Pak Utan",
           "Desa",
-          "Perkotaan"
+          "Perdesaan"
         ],
         [
           "4",
@@ -127,12 +125,12 @@
           "8",
           "Toho Ilir",
           "Desa",
-          "Perdesaan"
+          "Perkotaan"
         ]
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2024"
@@ -200,7 +198,7 @@
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "2024"
@@ -244,7 +242,7 @@
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2024"
@@ -330,7 +328,7 @@
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2024"
@@ -380,7 +378,7 @@
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2024"
@@ -430,7 +428,7 @@
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2024"
@@ -474,7 +472,7 @@
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2024"
@@ -535,6 +533,5 @@
         ]
       ]
     }
-  },
-  "catatan": ""
+  }
 }

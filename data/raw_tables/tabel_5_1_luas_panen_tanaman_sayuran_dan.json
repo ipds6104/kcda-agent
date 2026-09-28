@@ -2,13 +2,11 @@
   "no": "5.1",
   "nama": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
   "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
-  "disediakan_ipds": true,
+  "tahun": "2022–2025",
   "sheet_id": "1cUphSmkWhpszHIzrlAbBN6OxB_p9rAxeZRGgtYIll9U",
-  "spreadsheet_title": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
-  "updated_at": "2026-09-22 08:29:28",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2025"
@@ -21,7 +19,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -108,7 +110,11 @@
           "11"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/ Water Melon",
@@ -116,11 +122,18 @@
           "3",
           "-",
           "1"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
           "2025"
@@ -133,7 +146,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -211,11 +228,39 @@
           "13",
           "28",
           "20"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2025"
@@ -228,7 +273,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -322,7 +371,11 @@
           "9"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/ Water Melon",
@@ -334,7 +387,7 @@
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "2025"
@@ -347,7 +400,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -441,7 +498,11 @@
           "5"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/ Water Melon",
@@ -453,7 +514,7 @@
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2025"
@@ -466,7 +527,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -560,7 +625,11 @@
           "3"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/ Water Melon",
@@ -572,7 +641,7 @@
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2025"
@@ -585,7 +654,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -693,7 +766,11 @@
           "8"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/Water Melon",
@@ -705,7 +782,7 @@
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2025"
@@ -718,7 +795,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -791,7 +872,11 @@
           "12"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/ Watermelon",
@@ -806,11 +891,25 @@
           "-",
           "-",
           "-"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2025"
@@ -823,7 +922,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Merah/Shallots",
@@ -922,11 +1025,18 @@
           "70",
           "41",
           "28"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2025"
@@ -939,7 +1049,11 @@
           "2025"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Bawang Daun/ Scallion",
@@ -1033,7 +1147,11 @@
           "-"
         ],
         [
-          "Buah–buahan/Fruits:"
+          "Buah–buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semangka/ Water Melon",
@@ -1044,6 +1162,5 @@
         ]
       ]
     }
-  },
-  "catatan": ""
+  }
 }

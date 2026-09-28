@@ -67,7 +67,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         title_en=f"Names of District Heads of {nama_en} District",
         headers=["No", "Nama Camat\nName of District Head", "Periode Menjabat\nPeriod"],
         col_numbers=["(1)", "(2)", "(3)"],
-        rows=t212_rows[:14],
+        rows=t212_rows,
         col_widths=["0.6fr", "2.8fr", "1.6fr"],
         source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
@@ -75,8 +75,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     # --- 2.1.3 Nama-Nama Kepala Desa ---
     rows_213_raw = get_kecamatan_tab_rows("2.1.3", nama_singkat)
     kades_map = {}
-    for r in rows_213_raw[3:]:
-        if len(r) > 2 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan']):
+    for r in rows_213_raw[2:]:
+        if len(r) > 2 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan', 'tabel', 'no', 'desa', '(']):
             d_name = r[1].strip().lower()
             kades_nama = clean_cell_value(r[2])
             kades_map[d_name] = kades_nama
@@ -103,7 +103,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         rows_214_raw = get_kecamatan_tab_rows("2.1.4", nama_singkat)
         t214_rows = []
         for r in rows_214_raw[2:]:
-            if len(r) > 3 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan', 'tabel']):
+            if len(r) > 3 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan', 'tabel', 'no', 'desa', '(']):
                 no_d = clean_cell_value(r[0])
                 desa_d = clean_cell_value(r[1])
                 dusun_d = clean_cell_value(r[2])
@@ -115,11 +115,11 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
         t214_markup = render_typst_table(
             table_no="2.1.4",
-            title_id=f"Nama-Nama Kepala Dusun di {nama_resmi}, {year_214}",
-            title_en=f"Names of Hamlet Heads in {nama_en} District, {year_214}",
+            title_id=f"Nama-Nama Kepala Dusun di {nama_resmi}",
+            title_en=f"Names of Hamlet Heads in {nama_en} District",
             headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Nama Dusun\nName of Hamlet", "Nama Kepala Dusun\nName of Hamlet Head"],
             col_numbers=["(1)", "(2)", "(3)", "(4)"],
-            rows=t214_rows[:16],
+            rows=t214_rows,
             col_widths=["0.6fr", "1.8fr", "1.6fr", "2.0fr"],
             source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
         )
@@ -128,7 +128,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     rows_215_raw = get_kecamatan_tab_rows("2.1.5", nama_singkat)
     klas_map = {}
     for r in rows_215_raw[2:]:
-        if len(r) > 2 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['jumlah', 'total', 'sumber']):
+        if len(r) > 2 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['jumlah', 'total', 'sumber', 'catatan', 'no', 'desa', '(']):
             wil_adm = clean_cell_value(r[2] if len(r) > 2 else "Desa")
             klas = clean_cell_value(r[3] if len(r) > 3 else "Perdesaan")
             klas_map[r[1].strip().lower()] = [wil_adm, klas]
@@ -140,8 +140,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t215_markup = render_typst_table(
         table_no="2.1.5",
-        title_id=f"Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di {nama_resmi}, 2020",
-        title_en=f"Urban and Rural Classification of Village/Subdistrict in {nama_en} District, 2020",
+        title_id=f"Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di {nama_resmi}, 2024",
+        title_en=f"Urban and Rural Classification of Village/Subdistrict in {nama_en} District, 2024",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Wilayah Administratif\nAdministrative Area", "Klasifikasi Desa/Kelurahan\nUrban/Rural Classification"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t215_rows,
@@ -153,7 +153,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     rows_216_raw = get_kecamatan_tab_rows("2.1.6", nama_singkat)
     idm_map = {}
     for r in rows_216_raw[2:]:
-        if len(r) > 2 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['jumlah', 'total', 'sumber']):
+        if len(r) > 2 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['jumlah', 'total', 'sumber', 'catatan', 'no', 'desa', '(']):
             status = clean_cell_value(r[2])
             idm_map[r[1].strip().lower()] = status
 
@@ -164,8 +164,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t216_markup = render_typst_table(
         table_no="2.1.6",
-        title_id=f"Status Desa Berdasarkan Indeks Desa Membangun (IDM) di {nama_resmi}, 2024",
-        title_en=f"Village Status Based on Developing Village Index (IDM) in {nama_en} District, 2024",
+        title_id=f"Status Desa berdasarkan Indeks Desa Membangun di {nama_resmi}, 2024",
+        title_en=f"Village Status Based on Developing Village Index in {nama_en} District, 2024",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Status Indeks Desa Membangun\nDeveloping Village Index Status"],
         col_numbers=["(1)", "(2)", "(3)"],
         rows=t216_rows,
@@ -178,7 +178,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     t221_rows = []
     if len(rows_221_raw) > 2:
         for r in rows_221_raw[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'pemerintah daerah\n', '(']):
                 pem = clean_cell_value(r[0])
                 lk = clean_cell_value(r[1] if len(r) > 1 else "–")
                 pr = clean_cell_value(r[2] if len(r) > 2 else "–")
@@ -196,7 +196,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         title_en=f"Number of Government Employee by Local Government and Sex in {nama_en} District, 2025",
         headers=["Pemerintah Daerah\nLocal Government", "Laki-laki\nMale", "Perempuan\nFemale", "Jumlah\nTotal"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
-        rows=t221_rows[:12],
+        rows=t221_rows,
         col_widths=["2.6fr", "0.9fr", "0.9fr", "0.9fr"],
         source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
@@ -206,7 +206,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     t222_rows = []
     if len(rows_222_raw) > 2:
         for r in rows_222_raw[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'tingkat pendidikan', '(']):
                 pend = clean_cell_value(r[0])
                 lk = clean_cell_value(r[1] if len(r) > 1 else "–")
                 pr = clean_cell_value(r[2] if len(r) > 2 else "–")
@@ -226,8 +226,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t222_markup = render_typst_table(
         table_no="2.2.2",
-        title_id=f"Jumlah Pegawai Negeri Sipil Pemerintah Kecamatan {nama_singkat} Menurut Tingkat Pendidikan dan Jenis Kelamin, 2025",
-        title_en=f"Number of Government Employee of {nama_en} District Government by Educational Level and Sex, 2025",
+        title_id=f"Jumlah Pegawai Negeri Sipil Pemerintah Daerah {nama_resmi} Menurut Tingkat Pendidikan dan Jenis Kelamin, 2025",
+        title_en=f"Number of Government Employee of {nama_en} District Local Government by Educational Level and Sex, 2025",
         headers=["Tingkat Pendidikan\nEducational Level", "Laki-laki\nMale", "Perempuan\nFemale", "Jumlah\nTotal"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t222_rows,

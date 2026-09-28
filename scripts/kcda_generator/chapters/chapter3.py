@@ -164,9 +164,9 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     # Halaman 2 dari Tabel 3.1 (Lanjutan)
     t31_p2_markup = render_typst_table(
-        table_no="3.1 Lanjutan/Continued",
-        title_id=f"Distribusi Persentase Penduduk, Kepadatan Penduduk, dan Rasio Jenis Kelamin Menurut Desa/Kelurahan di {nama_resmi}, 2025",
-        title_en=f"Percentage Distribution of Population, Population Density, and Population Sex Ratio by Villages/Subdistricts in {nama_en} District, 2025",
+        table_no="3.1 Lanjutan",
+        title_id="",
+        title_en="",
         headers=[
             "Desa/Kelurahan\nVillage/Subdistrict",
             "Persentase Penduduk\nPercentage of Total Population (%)",
@@ -176,7 +176,8 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t31_p2_rows,
         col_widths=["2.4fr", "1.2fr", "1.2fr", "1.2fr"],
-        source=source_txt
+        source=source_txt,
+        is_continued=True
     )
 
     return f"""

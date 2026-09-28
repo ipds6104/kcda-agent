@@ -2,13 +2,11 @@
   "no": "5.7",
   "nama": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
   "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
-  "disediakan_ipds": true,
+  "tahun": "2022–2025",
   "sheet_id": "1_Ik0_Xh9rbR_Ilu7-qpFBBDKHKV2VCEYp5UYsgG3gCA",
-  "spreadsheet_title": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
-  "updated_at": "2026-09-22 08:29:40",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2025"
@@ -21,7 +19,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -115,7 +117,11 @@
           "-"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Jengkol/Jengkol",
@@ -137,11 +143,18 @@
           "155",
           "145",
           "90"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
           "2025"
@@ -154,7 +167,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -255,7 +272,11 @@
           "765"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Jengkol /Jengkol",
@@ -270,11 +291,18 @@
           "410",
           "153",
           "362"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2025"
@@ -287,7 +315,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -367,7 +399,11 @@
           "213"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Petai/ Twisted Cluster Bean",
@@ -375,11 +411,46 @@
           "1192",
           "656",
           "370"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "2025"
@@ -392,7 +463,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -486,7 +561,11 @@
           "175"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Petai/ Twisted Cluster Bean",
@@ -494,11 +573,32 @@
           "124",
           "240",
           "129"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2025"
@@ -511,7 +611,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -605,7 +709,11 @@
           "70"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Petai/ Twisted Cluster Bean",
@@ -613,11 +721,32 @@
           "36",
           "163",
           "70"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2025"
@@ -630,7 +759,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -724,7 +857,11 @@
           "2595"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Jengkol/ Jengkol",
@@ -746,11 +883,18 @@
           "201",
           "119",
           "123"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2025"
@@ -763,7 +907,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Mangga/Mango",
@@ -857,7 +1005,11 @@
           "40"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Jengkol/ Jengkol",
@@ -865,11 +1017,32 @@
           "620",
           "605",
           "120"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2025"
@@ -882,7 +1055,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Duku/Langsat/Kokosan/Duku",
@@ -976,7 +1153,11 @@
           "-"
         ],
         [
-          "Sayuran/Vegetables:"
+          "Sayuran/Vegetables:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Petai/ Twisted Cluster Bean",
@@ -991,11 +1172,25 @@
           "185",
           "-",
           "-"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2025"
@@ -1008,7 +1203,11 @@
           "2025"
         ],
         [
-          "Buah–Buahan/Fruits:"
+          "Buah–Buahan/Fruits:",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Belimbing/ Star Fruit",
@@ -1079,9 +1278,64 @@
           "870",
           "1790",
           "-"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     }
-  },
-  "catatan": ""
+  }
 }

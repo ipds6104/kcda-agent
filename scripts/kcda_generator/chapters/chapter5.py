@@ -167,10 +167,12 @@ b. Plants that are harvested several times/undemolished are plants usually harve
         res = []
         if len(rows_raw) > 2:
             for r in rows_raw[2:]:
-                if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                    if r[0].endswith(':'):
-                        continue
+                if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'jenis tanaman', '(']):
                     t_name = r[0].split('\n')[0].strip()
+                    # Simpan baris header kelompok/kategori (misal Sayuran/Vegetables:, Buah-buahan/Fruits:)
+                    if t_name.endswith(':') or any(cat in t_name.lower() for cat in ['sayuran/vegetables', 'buah–buahan/fruits', 'buah-buahan/fruits', 'sayuran/ vegetables', 'buah–buahan / fruits']):
+                        res.append([t_name, "", "", "", ""])
+                        continue
                     # Fix typo cabai keiting -> Cabai keriting
                     if "cabai keiting" in t_name.lower():
                         t_name = "Cabai keriting / Curly Chili"

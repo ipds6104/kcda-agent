@@ -2,60 +2,122 @@
   "no": "2.2.2",
   "nama": "Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan XX Menurut Tingkat Pendidikan dan Jenis Kelamin",
   "sumber": "Kantor Camat XXX/ XXX District Office",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "1gc5ZbcBNwU17rBqE6tcIlXxzR7RfFzi_F9OVI6HtJIQ",
-  "spreadsheet_title": "Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan XX Menurut Tingkat Pendidikan dan Jenis Kelamin",
-  "updated_at": "2026-09-22 08:29:04",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
           "Laki-Laki\n Male",
           "Perempuan\n Female",
-          "Jumlah\n Total"
+          "Jumlah\n Total",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "13",
+          "1",
+          "14"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "2",
+          "2",
+          "4"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "7",
+          "7",
+          "14"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "2",
+          "0",
+          "2"
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Jumlah",
+          "24",
+          "17",
+          "34"
         ]
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -64,42 +126,81 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "...",
+          "...",
+          "..."
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "...",
+          "...",
+          "..."
+        ],
+        [
+          "Jumlah",
+          "...",
+          "...",
+          "..."
         ]
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -108,42 +209,81 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "5",
+          "0",
+          "5"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "0",
+          "",
+          "0"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "1",
+          "2",
+          "3"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Jumlah",
+          "7",
+          "2",
+          "9"
         ]
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -152,42 +292,81 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "12",
+          "2",
+          "14"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "7",
+          "3",
+          "10"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "2",
+          "0",
+          "2"
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Jumlah",
+          "21",
+          "5",
+          "26"
         ]
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -196,42 +375,81 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "9",
+          "2",
+          "11"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "1",
+          "1",
+          "2"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "8",
+          "4",
+          "12"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Jumlah",
+          "20",
+          "7",
+          "27"
         ]
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -240,42 +458,81 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "4",
+          "0",
+          "4"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "0",
+          "1",
+          "1"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "3",
+          "2",
+          "5"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Jumlah",
+          "9",
+          "3",
+          "12"
         ]
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -284,42 +541,75 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "3",
+          "0",
+          "3"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "0",
+          "1",
+          "1"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "1",
+          "1",
+          "2"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "3",
+          "0",
+          "3"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "1",
+          "1",
+          "2"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Jumlah"
+          "Jumlah",
+          "8",
+          "3",
+          "11"
         ]
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -328,42 +618,75 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "4",
+          "0",
+          "4"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "1",
+          "0",
+          "1"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "3",
+          "1",
+          "4"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "1",
+          "1",
+          "2"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Jumlah"
+          "Jumlah",
+          "9",
+          "2",
+          "11"
         ]
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          ""
         ],
         [
           "Tingkat Pendidikan\n Educational Level",
@@ -372,39 +695,75 @@
           "Jumlah\n Total"
         ],
         [
-          "Sekolah Dasar (SD)\nPrimary School"
+          "Sekolah Dasar (SD)\nPrimary School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMP/Sederajat \nJunior High School"
+          "SMP/Sederajat \nJunior High School",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "SMA/Sederajat\nSenior High School"
+          "SMA/Sederajat\nSenior High School",
+          "11",
+          "2",
+          "13"
         ],
         [
-          "Diploma II/Akta II\nDiploma II/Akta II"
+          "Diploma I/Akta I\nDiploma I/Akta I",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma III/Akta III\nDiploma III/Akta III"
+          "Diploma II/Akta II\nDiploma II/Akta II",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Diploma IV/Akta IV\nDiploma IV/Akta IV"
+          "Diploma III/Akta III\nDiploma III/Akta III",
+          "2",
+          "4",
+          "6"
         ],
         [
-          "S1/Sarjana\nUnder Graduate/Bachelor"
+          "Diploma IV/Akta IV\nDiploma IV/Akta IV",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "S2/Pasca Sarjana\nGraduate"
+          "S1/Sarjana\nUnder Graduate/Bachelor",
+          "4",
+          "4",
+          "8"
         ],
         [
-          "S3/Doktor/Ph.D\nPost Graduate"
+          "S2/Pasca Sarjana\nGraduate",
+          "0",
+          "0",
+          "0"
         ],
         [
-          "Jumlah"
+          "S3/Doktor/Ph.D\nPost Graduate",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Jumlah",
+          "17",
+          "10",
+          "27"
         ]
       ]
     },
     "_REF_APPSHEET_KEC": {
-      "raw_title": "_REF_APPSHEET_KEC",
+      "title": "_REF_APPSHEET_KEC",
       "rows": [
         [
           "id_kecamatan",
@@ -453,7 +812,14 @@
           "",
           "",
           "28,1",
-          "47,9"
+          "47,9",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104030",
@@ -474,7 +840,14 @@
           "",
           "",
           "42,1",
-          "40,3"
+          "40,3",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104040",
@@ -495,7 +868,14 @@
           "",
           "",
           "67 km",
-          "19,7 km"
+          "19,7 km",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104041",
@@ -516,7 +896,14 @@
           "",
           "",
           "73,9",
-          "32,8"
+          "32,8",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104050",
@@ -537,7 +924,14 @@
           "",
           "",
           "63",
-          "2,8"
+          "2,8",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104051",
@@ -558,7 +952,14 @@
           "",
           "",
           "78,2",
-          "2,3"
+          "2,3",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104060",
@@ -579,7 +980,14 @@
           "",
           "",
           "94",
-          "19"
+          "19",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104070",
@@ -600,7 +1008,14 @@
           "",
           "",
           "82,6",
-          "35,5"
+          "35,5",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "KEC-6104080",
@@ -621,10 +1036,16 @@
           "",
           "",
           "99",
-          "36,1"
+          "36,1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       ]
     }
-  },
-  "catatan": ""
+  }
 }

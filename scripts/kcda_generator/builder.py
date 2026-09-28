@@ -175,10 +175,10 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
 #metadata("BIBLIOGRAPHY") <chapter_title_en>
 #metadata("daftar_pustaka") <daftar_pustaka>
 #v(0.5cm)
-#block[
+#align(center)[#block[
   #text(12pt, weight: "bold")[DAFTAR PUSTAKA] \\
   #text(9pt, style: "italic", fill: rgb("#4B5563"))[BIBLIOGRAPHY]
-]
+]]
 #v(10pt)
 
 #text(8pt)[

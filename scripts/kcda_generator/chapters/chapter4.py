@@ -183,24 +183,27 @@ Special Hospital is a hospital that provides primary care in one area or one par
         table_no="4.1.1",
         title_id=f"Banyaknya Desa#super[1]/Kelurahan yang Memiliki Fasilitas Sekolah Menurut Tingkat Pendidikan di {nama_resmi}, 2023–2025",
         title_en=f"Number of Villages#super[1]/Subdistricts Having Educational Facilities by Educational Level in {nama_en} District, 2023–2025",
-        headers=["Tingkat Pendidikan\nEducational Level", "2023", "2024", "2025"],
+        headers=["Tingkat Pendidikan\nEducational Level", "2023#super[2]", "2024#super[3]", "2025#super[3]"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t411_rows,
         col_widths=["2.6fr", "1.0fr", "1.0fr", "1.0fr"],
-        source=podes_sumber,
-        note=podes_catatan
+        source=f"2 Kantor Camat {nama_singkat}/ {nama_singkat} District Office\n3 Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/ BPS-Statistics Indonesia, Village Potential Data Collecting",
+        note="1 Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait / Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
     )
 
     def extract_edu_rows(raw_rows):
         res = []
         if len(raw_rows) > 3:
             for r in raw_rows[3:]:
-                if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                    lvl = r[0].split('\n')[0].strip()
-                    neg = clean_cell_value(r[2] if len(r) > 2 and r[2].strip() else (r[1] if len(r) > 1 else "–"))
-                    swa = clean_cell_value(r[4] if len(r) > 4 and r[4].strip() else (r[3] if len(r) > 3 else "–"))
-                    jml = clean_cell_value(r[6] if len(r) > 6 and r[6].strip() else (r[5] if len(r) > 5 else "–"))
-                    res.append([lvl, neg, swa, jml])
+                if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'tingkat', '(']):
+                    lvl = r[0].strip()
+                    n24 = clean_cell_value(r[1] if len(r) > 1 else "–")
+                    n25 = clean_cell_value(r[2] if len(r) > 2 else "–")
+                    s24 = clean_cell_value(r[3] if len(r) > 3 else "–")
+                    s25 = clean_cell_value(r[4] if len(r) > 4 else "–")
+                    j24 = clean_cell_value(r[5] if len(r) > 5 else "–")
+                    j25 = clean_cell_value(r[6] if len(r) > 6 else "–")
+                    res.append([lvl, n24, n25, s24, s25, j24, j25])
         if not res:
             default_jenjang = [
                 "Taman Kanak-Kanak (TK)", "Raudatul Athfal (RA)",
@@ -209,8 +212,20 @@ Special Hospital is a hospital that provides primary care in one area or one par
                 "Sekolah Menengah Atas (SMA)", "Sekolah Menengah Kejuruan (SMK)",
                 "Madrasah Aliyah (MA)", "Jumlah / Total"
             ]
-            res = [[j, "–", "–", "–"] for j in default_jenjang]
+            res = [[j, "–", "–", "–", "–", "–", "–"] for j in default_jenjang]
         return res
+
+    edu_headers_7 = [
+        "Tingkat Pendidikan\nEducational Level",
+        "Negeri/Public\n2024/2025",
+        "Negeri/Public\n2025/2026",
+        "Swasta/Private\n2024/2025",
+        "Swasta/Private\n2025/2026",
+        "Jumlah/Total\n2024/2025",
+        "Jumlah/Total\n2025/2026"
+    ]
+    edu_cols_7 = ["(1)", "(2)", "(3)", "(4)", "(5)", "(6)", "(7)"]
+    edu_widths_7 = ["2.2fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr", "0.9fr"]
 
     # --- 4.1.2 Satuan Pendidikan (TK, SD, SMP, SMA) ---
     rows_412_raw = get_kecamatan_tab_rows("4.1.2", nama_singkat)
@@ -219,10 +234,10 @@ Special Hospital is a hospital that provides primary care in one area or one par
         table_no="4.1.2",
         title_id=f"Jumlah Satuan Pendidikan Menurut Tingkat Pendidikan di {nama_resmi}, 2024/2025 dan 2025/2026",
         title_en=f"Number of Schools by Educational Level in {nama_en} District, 2024/2025 and 2025/2026",
-        headers=["Tingkat Pendidikan\nEducational Level", "Negeri\nPublic", "Swasta\nPrivate", "Jumlah\nTotal"],
-        col_numbers=["(1)", "(2)", "(3)", "(4)"],
+        headers=edu_headers_7,
+        col_numbers=edu_cols_7,
         rows=t412_rows,
-        col_widths=["2.6fr", "1.0fr", "1.0fr", "1.0fr"],
+        col_widths=edu_widths_7,
         source=edu_sumber
     )
 
@@ -233,10 +248,10 @@ Special Hospital is a hospital that provides primary care in one area or one par
         table_no="4.1.3",
         title_id=f"Jumlah Pendidik Menurut Tingkat Pendidikan di {nama_resmi}, 2024/2025 dan 2025/2026",
         title_en=f"Number of Teachers by Educational Level in {nama_en} District, 2024/2025 and 2025/2026",
-        headers=["Tingkat Pendidikan\nEducational Level", "Negeri\nPublic", "Swasta\nPrivate", "Jumlah\nTotal"],
-        col_numbers=["(1)", "(2)", "(3)", "(4)"],
+        headers=edu_headers_7,
+        col_numbers=edu_cols_7,
         rows=t413_rows,
-        col_widths=["2.6fr", "1.0fr", "1.0fr", "1.0fr"],
+        col_widths=edu_widths_7,
         source=edu_sumber
     )
 
@@ -247,10 +262,10 @@ Special Hospital is a hospital that provides primary care in one area or one par
         table_no="4.1.4",
         title_id=f"Jumlah Peserta Didik Menurut Tingkat Pendidikan di {nama_resmi}, 2024/2025 dan 2025/2026",
         title_en=f"Number of Pupils by Educational Level in {nama_en} District, 2024/2025 and 2025/2026",
-        headers=["Tingkat Pendidikan\nEducational Level", "Negeri\nPublic", "Swasta\nPrivate", "Jumlah\nTotal"],
-        col_numbers=["(1)", "(2)", "(3)", "(4)"],
+        headers=edu_headers_7,
+        col_numbers=edu_cols_7,
         rows=t414_rows,
-        col_widths=["2.6fr", "1.0fr", "1.0fr", "1.0fr"],
+        col_widths=edu_widths_7,
         source=edu_sumber
     )
 
