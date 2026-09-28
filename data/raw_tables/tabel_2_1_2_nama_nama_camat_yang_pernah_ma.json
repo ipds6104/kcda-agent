@@ -1,7 +1,7 @@
 {
   "no": "2.1.2",
   "nama": "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan XXX",
-  "sumber": "Data KCDA tahun lalu + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "1BjxvpODk5TZR8aLXCbzzPt4yoa9F9vpQ4t1nIXQG2gg",
   "spreadsheet_title": "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan XXX",
@@ -1045,5 +1045,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

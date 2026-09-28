@@ -1,7 +1,7 @@
 {
   "no": "7.2",
   "nama": "Banyaknya Desa/Kelurahan\ndengan dengan Keberadaan\nKoperasi Aktif Menurut Jenis\nKoperasi di Kecamatan XXX",
-  "sumber": "Podes",
+  "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "1hPj8fk8Es7t_AC9IccV7eCbJ9Nmzx10th1YhsgxnHVc",
   "spreadsheet_title": "Banyaknya Desa/Kelurahan\ndengan dengan Keberadaan\nKoperasi Aktif Menurut Jenis\nKoperasi di Kecamatan XXX",
@@ -259,5 +259,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
 }

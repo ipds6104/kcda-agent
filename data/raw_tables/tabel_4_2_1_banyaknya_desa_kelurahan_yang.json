@@ -1,7 +1,7 @@
 {
   "no": "4.2.1",
   "nama": "Banyaknya Desa/Kelurahan yang Memiliki Sarana Kesehatan Menurut Jenis Sarana Kesehatan di Kecamatan XXX",
-  "sumber": "2023 dan 2024\nKCDA.\n 2025 menggunakan data podes",
+  "sumber": "2Kantor Camat XXX/ XXX District Office\n\n\n3 Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "1iR8SKLkz_eLSrNJbfdZVU-GJ9LlSVgv8BtMX9yA0zt0",
   "spreadsheet_title": "Banyaknya Desa/Kelurahan yang Memiliki Sarana Kesehatan Menurut Jenis Sarana Kesehatan di Kecamatan XXX",
@@ -349,5 +349,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
 }

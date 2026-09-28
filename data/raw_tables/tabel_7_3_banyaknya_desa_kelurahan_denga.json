@@ -1,7 +1,7 @@
 {
   "no": "7.3",
   "nama": "Banyaknya Desa/Kelurahan\ndengan Keberadaan Sarana\nPerdagangan Menurut Jenis\nSarana Perdagangan di Kecamatan\nXXX",
-  "sumber": "Podes",
+  "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "1fPF2Yb8rJXtNJAuK5wnVnBLCpZyYLQDHb5EGQf4bk_0",
   "spreadsheet_title": "Banyaknya Desa/Kelurahan\ndengan Keberadaan Sarana\nPerdagangan Menurut Jenis\nSarana Perdagangan di Kecamatan\nXXX",
@@ -331,5 +331,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
 }

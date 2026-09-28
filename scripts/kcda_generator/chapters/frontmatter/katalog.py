@@ -11,30 +11,115 @@ from ...config import (
     get_publikasi_info
 )
 
+TIM_PENYUSUN_MAP = {
+    "mempawah-hilir": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Sukma Andini",
+        "pengolah_penulis": "Ihza Fikri Zaki Karunia",
+        "penata_letak": "Akma Batrisyia Jazima",
+        "penerjemah": "Ihza Fikri Zaki Karunia"
+    },
+    "mempawah-timur": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Ihza Fikri Zaki Karunia",
+        "pengolah_penulis": "Akma Batrisyia Jazima",
+        "penata_letak": "Sukma Andini",
+        "penerjemah": "Akma Batrisyia Jazima"
+    },
+    "sungai-pinyuh": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Akma Batrisyia Jazima",
+        "pengolah_penulis": "Sukma Andini",
+        "penata_letak": "Ihza Fikri Zaki Karunia",
+        "penerjemah": "Sukma Andini"
+    },
+    "anjongan": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Akma Batrisyia Jazima",
+        "pengolah_penulis": "Ihza Fikri Zaki Karunia",
+        "penata_letak": "Sukma Andini",
+        "penerjemah": "Ihza Fikri Zaki Karunia"
+    },
+    "toho": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Ihza Fikri Zaki Karunia",
+        "pengolah_penulis": "Sukma Andini",
+        "penata_letak": "Akma Batrisyia Jazima",
+        "penerjemah": "Sukma Andini"
+    },
+    "segedong": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Sukma Andini",
+        "pengolah_penulis": "Akma Batrisyia Jazima",
+        "penata_letak": "Ihza Fikri Zaki Karunia",
+        "penerjemah": "Akma Batrisyia Jazima"
+    },
+    "sungai-kunyit": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Sukma Andini",
+        "pengolah_penulis": "Ihza Fikri Zaki Karunia",
+        "penata_letak": "Akma Batrisyia Jazima",
+        "penerjemah": "Ihza Fikri Zaki Karunia"
+    },
+    "jongkat": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Ihza Fikri Zaki Karunia",
+        "pengolah_penulis": "Akma Batrisyia Jazima",
+        "penata_letak": "Sukma Andini",
+        "penerjemah": "Akma Batrisyia Jazima"
+    },
+    "sadaniang": {
+        "pengarah": "Munawir",
+        "penanggung_jawab": "Munawir",
+        "penyunting": "Akma Batrisyia Jazima",
+        "pengolah_penulis": "Sukma Andini",
+        "penata_letak": "Ihza Fikri Zaki Karunia",
+        "penerjemah": "Sukma Andini"
+    }
+}
+
 def render_katalog_and_contributors(cfg: Dict[str, Any]) -> str:
     regency = get_regency_info()
     instansi = get_instansi_info()
     pimpinan = get_pimpinan_info()
     pub = get_publikasi_info()
 
+    slug = cfg.get("slug", "")
     nama_resmi = cfg["nama_resmi"]
     nama_en = cfg["nama_en"].replace(" Subdistrict", "")
     no_pub = cfg.get("no_publikasi", "-")
     no_katalog = cfg.get("no_katalog", "-")
-    pic_polos = cfg.get("pic_nama_polos", "Staf BPS")
+    pic_full = cfg.get("pic_nama", "Staf BPS")
+    pic_polos = cfg.get("pic_nama_polos", pic_full.split(",")[0].strip() if "," in pic_full else pic_full)
     nama_singkat = cfg.get("nama_singkat", nama_resmi.replace("Kecamatan ", "").strip())
 
     tahun_rilis = pub.get("tahun_rilis", 2026)
-    volume = cfg.get("volume", f"Volume 1, {tahun_rilis}")
-    issn = cfg.get("issn")
+    volume = cfg.get("volume", f"Volume 17, {tahun_rilis}")
+    issn = cfg.get("issn", "")
 
     nama_instansi = instansi.get("nama_resmi", "Badan Pusat Statistik")
     nama_instansi_singkat = instansi.get("nama_singkat", "BPS")
     nama_instansi_en = instansi.get("nama_en", "BPS-Statistics")
     nama_kepala = pimpinan.get("nama_polos", "Kepala BPS")
 
-    issn_katalog = f"\n  #v(2pt)\n  #text(weight: \"bold\")[ISSN:] {issn} \\\\" if issn else ""
-    issn_tim = f"#align(right)[\n  #text(7pt, fill: luma(120))[ISSN {issn}]\n]\n" if issn else ""
+    team = TIM_PENYUSUN_MAP.get(slug, {})
+    pengarah = team.get("pengarah", nama_kepala)
+    penanggung_jawab = team.get("penanggung_jawab", nama_kepala)
+    penyunting = team.get("penyunting", "Sukma Andini")
+    pengolah_penulis = team.get("pengolah_penulis", pic_polos)
+    penata_letak = team.get("penata_letak", "Sukma Andini")
+    penerjemah = team.get("penerjemah", pic_polos)
+
+    issn_katalog = f" \\\n  #v(2pt)\n  #text(weight: \"bold\")[ISSN:] {issn}" if issn else ""
+    issn_tim = f"#align(right)[\n  #text(8pt)[ISSN {issn}]\n]\n" if issn else ""
 
     return f"""// ==========================================
 // 3. HALAMAN KATALOG & HAK CIPTA (HALAMAN ii)
@@ -71,7 +156,7 @@ def render_katalog_and_contributors(cfg: Dict[str, Any]) -> str:
 
 #v(9pt)
 #text(7.5pt)[
-  #text(weight: "bold")[Katalog/Catalogue:] {no_katalog}{issn_katalog}
+  #text(weight: "bold")[Katalog/Catalogue:] {no_katalog}{issn_katalog} \\
   #v(2pt)
   #text(weight: "bold")[Nomor Publikasi/Publication Number:] {no_pub}
 ]
@@ -80,7 +165,7 @@ def render_katalog_and_contributors(cfg: Dict[str, Any]) -> str:
 #text(7.5pt)[
   #text(weight: "bold")[Ukuran Buku/Book Size:] 14,8 cm x 21,0 cm \\
   #v(2pt)
-  #text(weight: "bold")[Jumlah Halaman/Number of Pages:] #total_frontmatter_pages+#total_arabic_pages Halaman/Pages
+  #text(weight: "bold")[Jumlah Halaman/Number of Pages:] #total_frontmatter_pages \+ #total_arabic_pages Halaman/Pages
 ]
 
 #v(7pt)
@@ -107,7 +192,7 @@ def render_katalog_and_contributors(cfg: Dict[str, Any]) -> str:
 #v(5pt)
 #text(7.5pt)[
   #text(weight: "bold")[Sumber Ilustrasi/Illustration Source:] \\
-  {nama_instansi_singkat}
+  Canva.com
 ]
 
 #v(5pt)
@@ -140,23 +225,27 @@ def render_katalog_and_contributors(cfg: Dict[str, Any]) -> str:
   
   #v(16pt)
   #text(8.5pt, weight: "bold")[Pengarah/_Director_] \\
-  #text(8pt)[{nama_kepala}]
+  #text(8pt)[{pengarah}]
   
   #v(11pt)
   #text(8.5pt, weight: "bold")[Penanggung Jawab/_Persons in Charge_] \\
-  #text(8pt)[{nama_kepala}]
+  #text(8pt)[{penanggung_jawab}]
   
   #v(11pt)
   #text(8.5pt, weight: "bold")[Penyunting/_Editors_] \\
-  #text(8pt)[Tim Kerja IPDS / Tim Publikasi]
+  #text(8pt)[{penyunting}]
   
   #v(11pt)
   #text(8.5pt, weight: "bold")[Pengolah Data dan Penulis Naskah/_Data Processor and Writers_] \\
-  #text(8pt)[{pic_polos}]
+  #text(8pt)[{pengolah_penulis}]
   
   #v(11pt)
   #text(8.5pt, weight: "bold")[Penata Letak/_Layouters_] \\
-  #text(8pt)[KCDA Agent]
+  #text(8pt)[{penata_letak}]
+  
+  #v(11pt)
+  #text(8.5pt, weight: "bold")[Penerjemah/_Translators_] \\
+  #text(8pt)[{penerjemah}]
 ]
 
 #pagebreak()
@@ -175,22 +264,20 @@ def render_katalog_and_contributors(cfg: Dict[str, Any]) -> str:
 #v(16pt)
 
 #align(center)[
-  #block(width: 82%)[
+  #block(width: 88%)[
     #set align(left)
     #set text(8pt)
-    1. Kantor Camat {nama_singkat}
-    #v(3pt)
-    2. Kantor Desa/Kelurahan se-Kecamatan {nama_singkat}
-    #v(3pt)
-    3. Korwil Bidang Pendidikan Kecamatan {nama_singkat}
-    #v(3pt)
-    4. Puskesmas se-Kecamatan {nama_singkat}
-    #v(3pt)
-    5. Kantor Urusan Agama (KUA) Kecamatan {nama_singkat}
-    #v(3pt)
-    6. Balai Penyuluhan Pertanian (BPP) Kecamatan {nama_singkat}
-    #v(3pt)
-    7. Dinas dan Instansi Terkait Pemerintah Daerah
+    1. Kementerian Agama/#text(style: "italic")[Ministry of Religious Affair]
+    #v(4pt)
+    2. Kementerian Pendidikan dan Kebudayaan/#text(style: "italic")[Ministry of Education and Culture]
+    #v(4pt)
+    3. Badan Pusat Statistik/#text(style: "italic")[BPS–Statistics Indonesia]
+    #v(4pt)
+    4. Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mempawah/#text(style: "italic")[Population and Civil Registration Service of Mempawah Regency]
+    #v(4pt)
+    5. Badan Perencanaan Pembangunan, Riset dan Inovasi Daerah Kabupaten Mempawah/#text(style: "italic")[Regional Development, Research and Innovation Agency of Mempawah Regency]
+    #v(4pt)
+    6. Kantor Kecamatan {nama_singkat}/#text(style: "italic")[{nama_singkat} District Office]
   ]
 ]
 """

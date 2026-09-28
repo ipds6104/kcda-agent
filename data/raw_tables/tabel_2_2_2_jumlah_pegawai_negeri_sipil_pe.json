@@ -1,7 +1,7 @@
 {
   "no": "2.2.2",
   "nama": "Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan XX Menurut Tingkat Pendidikan dan Jenis Kelamin",
-  "sumber": "Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "1gc5ZbcBNwU17rBqE6tcIlXxzR7RfFzi_F9OVI6HtJIQ",
   "spreadsheet_title": "Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan XX Menurut Tingkat Pendidikan dan Jenis Kelamin",
@@ -625,5 +625,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

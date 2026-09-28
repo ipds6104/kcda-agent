@@ -1,7 +1,7 @@
 {
   "no": "4.1.1",
   "nama": "Banyaknya Desa1/Kelurahan yang Memiliki Fasilitas Sekolah Menurut Tingkat Pendidikan di Kecamatan XXX",
-  "sumber": "2023: tergantung ketersediaan data di daerah.\n2024 dan 2025: menggunakan data podes",
+  "sumber": "3Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "1X5rNuK6ZMWNZQxnEFpQomXi1Fgv-c-6MfdF-kB_UCUY",
   "spreadsheet_title": "Banyaknya Desa1/Kelurahan yang Memiliki Fasilitas Sekolah Menurut Tingkat Pendidikan di Kecamatan XXX",
@@ -691,5 +691,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
 }

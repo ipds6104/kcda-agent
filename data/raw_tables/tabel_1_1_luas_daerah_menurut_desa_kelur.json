@@ -1,7 +1,7 @@
 {
   "no": "1.1.",
   "nama": "Luas Daerah Menurut Desa/Kelurahan di Kecamatan XXX",
-  "sumber": "Tergantung ketersediaan data di daerah (BAPEDDA)",
+  "sumber": "Dinas Kependudukan dan Pencatatan Sipil/BAPEDDA Kabupaten Mempawah / Population and\r\nCivil Registration Service/Regional Development Planning Agency of Mempawah Regency",
   "disediakan_ipds": true,
   "sheet_id": "1_zXe_P8sXdUeyiMOYx_K3VUzu8-BJ7--30sITv63fAU",
   "spreadsheet_title": "Luas Daerah Menurut Desa/Kelurahan di Kecamatan XXX",
@@ -2193,5 +2193,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "Untuk desa/kelurahan dengan status Indikatif masih perlu dilakukan pelacakan ke lapangan dan\r\nkesepakatan batas antarwilayah yang berbatasan. / For villages/subdistricts with Indicative status, field tracking and\r\nboundary agreements between adjacent areas are still required."
 }

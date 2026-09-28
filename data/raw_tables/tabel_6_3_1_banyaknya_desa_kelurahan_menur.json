@@ -1,7 +1,7 @@
 {
   "no": "6.3.1",
   "nama": "Banyaknya Desa/Kelurahan Menurut Keberadaan Kantor Pos/Pos Pembantu/Rumah Pos, Pos Keliling, dan Perusahaan/Agen Jasa Ekspedisi Swasta di\nKecamatan XXX",
-  "sumber": "Podes",
+  "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "1DV8HwLTbVPCz79oNaOzEmjb4K7ey2IeIciT2px7Qiz8",
   "spreadsheet_title": "Banyaknya Desa/Kelurahan Menurut Keberadaan Kantor Pos/Pos Pembantu/Rumah Pos, Pos Keliling, dan Perusahaan/Agen Jasa Ekspedisi Swasta di\nKecamatan XXX",
@@ -223,5 +223,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
 }

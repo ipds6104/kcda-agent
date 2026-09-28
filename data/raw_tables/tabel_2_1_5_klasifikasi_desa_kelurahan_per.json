@@ -1,7 +1,7 @@
 {
   "no": "2.1.5",
   "nama": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
-  "sumber": "Perka BPS No 120 Tahun 2020 TENTANG\nKLASIFIKASI DESA PERKOTAAN DAN PERDESAAN DI INDONESIA",
+  "sumber": "Peraturan Kepala Badan Pusat Statistik Nomor 120 Tahun 2020 Tentang Klasifikasi Desa Perkotaan dan Perdesaan di Indonesia Tahun 2020/ Regulation of the Chief Statistician Number 120 of 2020 Concerning the Classification of Urban and Rural Villages in Indonesia in 2020",
   "disediakan_ipds": true,
   "sheet_id": "1mv1gRkm6lQl97LS4G08g5mKnApvmvsP7QzhTZ_7hpnQ",
   "spreadsheet_title": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
@@ -535,5 +535,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

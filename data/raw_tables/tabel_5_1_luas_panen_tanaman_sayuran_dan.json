@@ -1,7 +1,7 @@
 {
   "no": "5.1",
   "nama": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
-  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
   "disediakan_ipds": true,
   "sheet_id": "1cUphSmkWhpszHIzrlAbBN6OxB_p9rAxeZRGgtYIll9U",
   "spreadsheet_title": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
@@ -1044,5 +1044,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

@@ -1,7 +1,7 @@
 {
   "no": "1.2.",
   "nama": "Jarak ke Ibukota Kecamatan dan Ibukota Kabupaten/Kota Menurut Desa/Kelurahan di Kecamatan XXX (km)",
-  "sumber": "KCDA 2025 + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "14FvPtJSYS2EgAQ1nzKzY-CX8l7t7A1rWJeHCgCZ3XzY",
   "spreadsheet_title": "Jarak ke Ibukota Kecamatan dan Ibukota Kabupaten/Kota Menurut Desa/Kelurahan di Kecamatan XXX (km)",
@@ -2304,5 +2304,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

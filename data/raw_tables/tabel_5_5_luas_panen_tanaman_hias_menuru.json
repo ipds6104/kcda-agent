@@ -1,7 +1,7 @@
 {
   "no": "5.5",
   "nama": "Luas Panen Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (m2)",
-  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
   "disediakan_ipds": true,
   "sheet_id": "1ltOg4vVRhEfnTSV0j0hJaPdxIXFz2D8b6T2I5vU_wKo",
   "spreadsheet_title": "Luas Panen Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (m2)",
@@ -478,5 +478,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

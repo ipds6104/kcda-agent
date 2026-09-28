@@ -1,7 +1,7 @@
 {
   "no": "4.1.3",
   "nama": "Jumlah Kepala Sekolah dan Pendidik Menurut Tingkat Pendidikan di Kecamatan XXX",
-  "sumber": "Kemdikbud:\nTK\nSD\nSMP\nSMA\nSMK\n\nKemenag:\nRA\nMI\nMTS\nMA",
+  "sumber": "1Kementerian Pendidikan Dasar dan Menengah; Sistem Data Pokok Pendidikan; data semester ganjil laporan sampai dengan 30 November/Ministry of Primary and Secondary Education; Sistem Data Pokok Pendidikan; odd semester report data up to 30 November\r\n\n2Kementerian Agama; EMIS; data semester genap laporan sampai dengan 30 Juni/Ministry of Religious Affairs; EMIS; even semester report data up to 30 June",
   "disediakan_ipds": true,
   "sheet_id": "1mVvhA7sH4LMhCUAdQjf3yLUn60yIFURJ5mEpA4dZ440",
   "spreadsheet_title": "Jumlah Kepala Sekolah dan Pendidik Menurut Tingkat Pendidikan di Kecamatan XXX",
@@ -961,5 +961,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

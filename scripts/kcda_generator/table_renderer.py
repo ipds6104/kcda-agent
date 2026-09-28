@@ -85,12 +85,59 @@ EN_SOURCE_KEYWORDS = {
     "disaster", "education", "health", "trade", "manpower", "industry"
 }
 
-def format_bilingual_source(s: str) -> str:
-    """
-    Memformat nama instansi sumber dwibahasa sesuai Pedoman BPS:
-    Format: [Instansi ID]/_[Instansi EN]_
-    Dicetak: [Instansi ID]/#text(style: "italic")[Instansi EN]
-    """
+def _clean_and_split_items(text: str):
+    if not text:
+        return []
+    t = text.replace('\r\n', '\n').strip()
+    raw_lines = [l.strip().lstrip(':').strip() for l in t.split('\n') if l.strip()]
+    has_numbered = any(re.match(r'^\d', l) for l in raw_lines)
+    if has_numbered:
+        items = []
+        current = ''
+        for l in raw_lines:
+            if re.match(r'^\d', l):
+                if current:
+                    items.append(current)
+                current = l
+            else:
+                if current:
+                    current += ' ' + l
+                else:
+                    current = l
+        if current:
+            items.append(current)
+        return items
+    else:
+        return [' '.join(raw_lines)]
+
+def format_bilingual_note_item(item: str) -> str:
+    item = item.strip().lstrip(':').strip()
+    if not item:
+        return ''
+    m_fn = re.match(r'^(\d+[\.\s]*)(.*)$', item)
+    prefix = ''
+    rest = item
+    if m_fn and len(m_fn.group(1).strip()) <= 2:
+        fn_num = m_fn.group(1).strip().rstrip('.')
+        prefix = f'#super[{fn_num}] '
+        rest = m_fn.group(2).strip()
+
+    if '/' in rest:
+        if ' / ' in rest:
+            p_id, p_en = rest.split(' / ', 1)
+        else:
+            p_id, p_en = rest.split('/', 1)
+        return f'{prefix}{p_id.strip()}/#text(style: "italic")[{p_en.strip()}]'
+    return f'{prefix}{rest}'
+
+def format_bilingual_note(n: Optional[str]) -> str:
+    """Memformat catatan tabel dwibahasa sesuai Pedoman BPS 2023."""
+    if not n:
+        return ''
+    items = _clean_and_split_items(n)
+    return ' \\ \n'.join([format_bilingual_note_item(it) for it in items if it.strip()])
+
+def _format_single_source_item(s: str) -> str:
     regency = get_regency_info()
     nama_kab = regency.get("nama_resmi", "Kabupaten Mempawah")
     nama_en = regency.get("nama_en", "Mempawah Regency")
@@ -101,29 +148,40 @@ def format_bilingual_source(s: str) -> str:
     if not s:
         return f'{nama_bps}/#text(style: "italic")[{nama_bps_en}]'
 
+    m_fn = re.match(r'^(\d+[\.\s]*)(.*)$', s)
+    prefix = ''
+    rest = s
+    if m_fn and len(m_fn.group(1).strip()) <= 2 and not s.startswith('19') and not s.startswith('20'):
+        fn_num = m_fn.group(1).strip().rstrip('.')
+        prefix = f'#super[{fn_num}] '
+        rest = m_fn.group(2).strip()
+
     # 1. Cek apakah sudah dwibahasa eksplisit dengan '/'
-    if "/" in s:
-        parts = s.rsplit("/", 1)
+    if "/" in rest:
+        if " / " in rest:
+            parts = rest.split(" / ", 1)
+        else:
+            parts = rest.rsplit("/", 1)
         right_words = set(re.findall(r"[a-zA-Z]+", parts[1].lower()))
-        if right_words.intersection(EN_SOURCE_KEYWORDS):
+        if right_words.intersection(EN_SOURCE_KEYWORDS) or len(parts[1].split()) >= 2:
             id_txt = parts[0].strip()
             en_txt = parts[1].strip().strip("_")
-            return f'{id_txt}/#text(style: "italic")[{en_txt}]'
+            return f'{prefix}{id_txt}/#text(style: "italic")[{en_txt}]'
 
     # 2. Cek kamus persis
-    s_clean = s.replace("  ", " ")
+    s_clean = rest.replace("  ", " ")
     if s_clean in SOURCE_TRANSLATIONS:
         en = SOURCE_TRANSLATIONS[s_clean]
         clean_id = s_clean.replace(" / ", "/")
-        return f'{clean_id}/#text(style: "italic")[{en}]'
+        return f'{prefix}{clean_id}/#text(style: "italic")[{en}]'
 
-    s_slash_clean = s.replace(" / ", "/")
+    s_slash_clean = rest.replace(" / ", "/")
     if s_slash_clean in SOURCE_TRANSLATIONS:
         en = SOURCE_TRANSLATIONS[s_slash_clean]
-        return f'{s_slash_clean}/#text(style: "italic")[{en}]'
+        return f'{prefix}{s_slash_clean}/#text(style: "italic")[{en}]'
 
     # 3. Pola Kantor Camat
-    m_camat = re.match(r"^Kantor Camat\s+(.+)$", s, re.IGNORECASE)
+    m_camat = re.match(r"^Kantor Camat\s+(.+)$", rest, re.IGNORECASE)
     if m_camat:
         kec = m_camat.group(1).strip()
         if " / " in kec or "/" in kec:
@@ -131,22 +189,60 @@ def format_bilingual_source(s: str) -> str:
             id_txt = f"Kantor Camat {parts[0]}/{parts[1]}"
             en_sub = f"Regional Secretariat Governance Division of {nama_en}" if "tata pemerintahan" in parts[1].lower() else parts[1]
             en_txt = f"{parts[0]} District Office/{en_sub}"
-            return f'{id_txt}/#text(style: "italic")[{en_txt}]'
-        return f'Kantor Camat {kec}/#text(style: "italic")[{kec} District Office]'
+            return f'{prefix}{id_txt}/#text(style: "italic")[{en_txt}]'
+        return f'{prefix}Kantor Camat {kec}/#text(style: "italic")[{kec} District Office]'
 
     # 4. Pola Balai Penyuluhan Pertanian
-    m_bpp = re.match(r"^Balai Penyuluhan Pertanian Kecamatan\s+(.+)$", s, re.IGNORECASE)
+    m_bpp = re.match(r"^Balai Penyuluhan Pertanian Kecamatan\s+(.+)$", rest, re.IGNORECASE)
     if m_bpp:
         kec = m_bpp.group(1).strip()
-        return f'Balai Penyuluhan Pertanian Kecamatan {kec}/#text(style: "italic")[Agricultural Extension Center of {kec} District]'
+        return f'{prefix}Balai Penyuluhan Pertanian Kecamatan {kec}/#text(style: "italic")[Agricultural Extension Center of {kec} District]'
 
     # 5. Pola Dinas / Badan Kabupaten umum
     for kab_label in [nama_kab, "Kabupaten Mempawah"]:
-        if kab_label in s and "/" not in s:
-            clean_name = s.replace(kab_label, "").strip()
-            return f'{s}/#text(style: "italic")[{clean_name} of {nama_en}]'
+        if kab_label in rest and "/" not in rest:
+            clean_name = rest.replace(kab_label, "").strip()
+            return f'{prefix}{rest}/#text(style: "italic")[{clean_name} of {nama_en}]'
 
-    return f'{s}/#text(style: "italic")[{s}]'
+    return f'{prefix}{rest}/#text(style: "italic")[{rest}]'
+
+def format_bilingual_source(s: str) -> str:
+    """
+    Memformat nama instansi sumber dwibahasa sesuai Pedoman BPS:
+    Format: [Instansi ID]/_[Instansi EN]_
+    Dicetak: [Instansi ID]/#text(style: "italic")[Instansi EN]
+    """
+    if not s:
+        return ''
+    items = _clean_and_split_items(s)
+    return ' \\ \n'.join([_format_single_source_item(it) for it in items if it.strip()])
+
+def format_cell_value(val: str, table_no: str = "", col_idx: int = 0) -> str:
+    s = str(val).strip()
+    if s in ["0", "0.0", "0,0", "0,00", "0.00"]:
+        return "–"
+    clean_tno = table_no.rstrip(".")
+    if clean_tno.startswith("5.") and s in ["...", "…", "-", "—", ""]:
+        return "–"
+    if re.match(r"^\d{4,}$", s):
+        try:
+            n = int(s)
+            if not (1900 <= n <= 2099):
+                s = f"{n:,}".replace(",", ".")
+        except ValueError:
+            pass
+    return format_bilingual_stub(s)
+
+def get_cell_alignment(val: str, col_idx: int, header_text: str = "") -> str:
+    if col_idx == 0:
+        if header_text.strip().lower() in ["no", "no."]:
+            return "center + horizon"
+        return "left + horizon"
+    clean = re.sub(r'#super\[\d+\]', '', val)
+    has_letters = any(c.isalpha() for c in clean)
+    if has_letters and not re.match(r'^(–|\-|\.\.\.|…|NA|x|xx|e|r)$', clean.strip()):
+        return "left + horizon"
+    return "right + horizon"
 
 def render_typst_table(
     table_no: str,
@@ -157,12 +253,31 @@ def render_typst_table(
     rows: List[List[str]],
     col_widths: Optional[List[str]] = None,
     source: Optional[str] = None,
-    note: Optional[str] = None
+    note: Optional[str] = None,
+    notes: Optional[str] = None
 ) -> str:
     """Merender tabel berstandar BPS untuk buku ukuran A5 dengan format judul dua kolom dan penegakan kaidah dwibahasa."""
+    if note is None and notes is not None:
+        note = notes
+    if source is None or note is None:
+        try:
+            from .config import get_tables_schema
+            schema = get_tables_schema()
+            clean_tno = table_no.rstrip('.')
+            for item in schema:
+                if item.get("no", "").rstrip(".") == clean_tno:
+                    if source is None and item.get("sumber"):
+                        source = item.get("sumber")
+                    if note is None and item.get("catatan"):
+                        note = item.get("catatan")
+                    break
+        except Exception:
+            pass
+
     if source is None:
         reg = get_regency_info()
         source = reg.get("nama_instansi_bps", "BPS")
+
     num_cols = len(headers)
     if col_widths and len(col_widths) == num_cols:
         col_spec = "(" + ", ".join(col_widths) + ")"
@@ -170,21 +285,33 @@ def render_typst_table(
         widths = ["2.2fr"] + ["1.0fr"] * (num_cols - 1)
         col_spec = "(" + ", ".join(widths) + ")"
 
-    header_cells = ", ".join([format_bilingual_header(h) for h in headers])
-    col_num_cells = ", ".join([f"[#strong[{cn}]]" for cn in col_numbers])
+    header_cells = ", ".join([f"table.cell(align: center + horizon)[{format_bilingual_header(h)}]" for h in headers])
+    col_num_cells = ", ".join([f"table.cell(align: center + horizon)[#strong[{cn}]]" for cn in col_numbers])
 
     rendered_rows = []
     for r in rows:
         cells = []
-        for c in r:
-            formatted_c = format_bilingual_stub(str(c))
-            cells.append(f"[{formatted_c}]")
+        for col_idx, c in enumerate(r):
+            h_text = headers[col_idx] if col_idx < len(headers) else ""
+            formatted_c = format_cell_value(str(c), table_no=table_no, col_idx=col_idx)
+            cell_align = get_cell_alignment(formatted_c, col_idx=col_idx, header_text=h_text)
+            cells.append(f"table.cell(align: {cell_align})[{formatted_c}]")
         rendered_rows.append(", ".join(cells))
 
     rows_str = ",\n  ".join(rendered_rows)
-    note_str = f"#v(-2pt)\n#text(6pt, fill: luma(60))[Catatan/#text(style: \"italic\")[Note] : {note}]\n" if note else ""
+    formatted_note = format_bilingual_note(note)
+    note_str = f"""#v(-2pt)
+#grid(
+  columns: (auto, 1fr),
+  column-gutter: 4pt,
+  align: (top + left, top + left),
+  [#text(6.5pt, fill: black)[Catatan/#text(style: "italic")[Note] :]],
+  [#text(6.5pt, fill: black)[{formatted_note}]]
+)
+""" if formatted_note else ""
+
     formatted_source = format_bilingual_source(source)
-    clean_no = table_no.replace(".", "_")
+    clean_no = re.sub(r'[^a-zA-Z0-9_\-]', '_', table_no)
 
     markup = f"""
 #metadata("tab_{clean_no}") <tab_{clean_no}>
@@ -200,20 +327,20 @@ def render_typst_table(
       align: (top + center, horizon),
       [
         #box(stroke: (bottom: 0.6pt + black), inset: (x: 2pt, bottom: 2.5pt))[
-          #text(7.5pt, weight: "bold")[Tabel]
+          #text(10pt, weight: "bold")[Tabel]
         ] \\
         #v(-3.5pt)
-        #text(6.5pt, style: "italic")[Tables]
+        #text(8pt, style: "italic")[Tables]
       ],
       [
-        #text(8.5pt, weight: "bold")[{table_no}]
+        #text(10pt, weight: "bold")[{table_no}]
       ]
     )
   ],
   [
-    #text(7.5pt, weight: "bold")[{title_id}] \\
+    #text(10pt, weight: "bold")[{title_id}] \\
     #v(-2pt)
-    #text(6.5pt, weight: "bold", style: "italic", fill: rgb("#1E293B"))[{title_en}]
+    #text(10pt, weight: "bold", style: "italic", fill: black)[{title_en}]
   ]
 )
 #v(3pt)
@@ -226,14 +353,17 @@ def render_typst_table(
                       else if row == 1 {{ cmyk(0%, 10%, 45%, 0%) }}
                       else if calc.even(row) {{ rgb("#FFF8E7") }}
                       else {{ rgb("#FFF4D4") }},
-  align: (col, row) => if row <= 1 {{ center + horizon }}
-                       else if col == 0 {{ left + horizon }}
-                       else {{ right + horizon }},
   table.header({header_cells}, {col_num_cells}),
   {rows_str}
 )
 {note_str}#v(-3pt)
-#text(6.5pt, fill: luma(60))[Sumber/#text(style: "italic")[Source] : {formatted_source}]
+#grid(
+  columns: (auto, 1fr),
+  column-gutter: 4pt,
+  align: (top + left, top + left),
+  [#text(6.5pt, fill: black)[Sumber/#text(style: "italic")[Source] :]],
+  [#text(6.5pt, fill: black)[{formatted_source}]]
+)
 #v(8pt)
 """
     return markup

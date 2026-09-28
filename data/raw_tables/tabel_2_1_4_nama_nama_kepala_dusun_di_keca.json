@@ -1,11 +1,11 @@
 {
   "no": "2.1.4",
   "nama": "Nama-Nama Kepala Dusun di Kecamatan XXX",
-  "sumber": "KCDA 2025 + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "10eEof1SE5ucO6hUAvP7EJ8X7GQLyuGwiRpM4Ltc_Vkk",
   "spreadsheet_title": "Nama-Nama Kepala Dusun di Kecamatan XXX",
-  "updated_at": "2026-09-22 08:28:56",
+  "updated_at": "2026-09-27 19:24:27",
   "tabs": {
     "Mempawah Hilir": {
       "raw_title": "Mempawah Hilir",
@@ -55,19 +55,130 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "Sambora",
+          "Mekar Jaya",
+          "Suherman"
         ],
         [
-          "2"
+          "2",
+          "Sambora",
+          "Tunas Jaya",
+          "Herdi Dadi"
         ],
         [
-          "3"
+          "3",
+          "Benuang",
+          "Benuang",
+          "Donatus Asuardi"
         ],
         [
-          "4"
+          "4",
+          "Benuang",
+          "Bobor",
+          "Toni"
         ],
         [
-          "5"
+          "5",
+          "Pak Utan",
+          "I",
+          "Sukandar"
+        ],
+        [
+          "6",
+          "Pak Utan",
+          "II",
+          "Albertus Nino Rismanto"
+        ],
+        [
+          "7",
+          "Pak Utan",
+          "III",
+          "Adiong"
+        ],
+        [
+          "8",
+          "Pak Utan",
+          "IV",
+          "Tolek"
+        ],
+        [
+          "9",
+          "Sepang",
+          "Sepang",
+          "–"
+        ],
+        [
+          "10",
+          "Sepang",
+          "Kumpang",
+          "Evander Dwi Lipa"
+        ],
+        [
+          "11",
+          "Pak Laheng",
+          "Pak Ona",
+          "Antonius Anton"
+        ],
+        [
+          "12",
+          "Pak Laheng",
+          "Pak Laheng",
+          "Suhartono"
+        ],
+        [
+          "13",
+          "Pak Laheng",
+          "Sekek",
+          "Yogi Yuswandi"
+        ],
+        [
+          "14",
+          "Terap",
+          "Terap",
+          "–"
+        ],
+        [
+          "15",
+          "Terap",
+          "Balah",
+          "Suhardi"
+        ],
+        [
+          "16",
+          "Kecurit",
+          "Pinang",
+          "H. Sunardi"
+        ],
+        [
+          "17",
+          "Kecurit",
+          "Dandang",
+          "Imanuel"
+        ],
+        [
+          "18",
+          "Toho Ilir",
+          "Toho Ilir",
+          "Suparman"
+        ],
+        [
+          "19",
+          "Toho Ilir",
+          "Kuala Toho",
+          "–"
+        ],
+        [
+          "20",
+          "Toho Ilir",
+          "Bonsoran",
+          "–"
+        ],
+        [
+          "21",
+          "Toho Ilir",
+          "Prompong",
+          "–"
         ]
       ]
     },
@@ -146,7 +257,7 @@
           "5",
           "Jungkat",
           "Dusun Raden Wijaya",
-          "Muhammad Ridek"
+          "Tari Maulani"
         ],
         [
           "6",
@@ -182,7 +293,7 @@
           "11",
           "Jungkat",
           "Dusun Alianyang",
-          "Darmawan"
+          "Nanda Erwinsyah"
         ],
         [
           "12",
@@ -310,19 +421,226 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "Semudun",
+          "Dusun Indah",
+          "A. Fahrurrozi, ST"
         ],
         [
-          "2"
+          "2",
+          "Semudun",
+          "Dusun Permai",
+          "Zainal Abidin"
         ],
         [
-          "3"
+          "3",
+          "Semudun",
+          "Dusun Sejahtera",
+          "Marsela Artha Maharani"
         ],
         [
-          "4"
+          "4",
+          "Semudun",
+          "Dusun Lestari",
+          "Mustahdi"
         ],
         [
-          "5"
+          "5",
+          "Semparong Parit Raden",
+          "Dusun Taufik",
+          "Mahmudin"
+        ],
+        [
+          "6",
+          "Semparong Parit Raden",
+          "Dusun Hidayah",
+          "Sapriadi"
+        ],
+        [
+          "7",
+          "Semparong Parit Raden",
+          "Dusun Palangkeran",
+          "Paisal"
+        ],
+        [
+          "8",
+          "Mendalok",
+          "Dusun Mandala",
+          "Herman Jasa"
+        ],
+        [
+          "9",
+          "Mendalok",
+          "Dusun Durian",
+          "Morkan"
+        ],
+        [
+          "10",
+          "Mendalok",
+          "Dusun Telaga Putih",
+          "Yemin, S.Pd.I"
+        ],
+        [
+          "11",
+          "Sungai Dungun",
+          "Dusun Satria",
+          "Dobiansyah"
+        ],
+        [
+          "12",
+          "Sungai Dungun",
+          "Dusun Duta",
+          "Zainal Ilmi"
+        ],
+        [
+          "13",
+          "Sungai Dungun",
+          "Dusun Beringin",
+          "Amiril"
+        ],
+        [
+          "14",
+          "Sungai Limau",
+          "Dusun Nelayan",
+          "Muhadab"
+        ],
+        [
+          "15",
+          "Sungai Limau",
+          "Dusun Pembangunan",
+          "Ilham"
+        ],
+        [
+          "16",
+          "Sungai Limau",
+          "Dusun Tani",
+          "Hamdani"
+        ],
+        [
+          "17",
+          "Sungai Kunyit Laut",
+          "Dusun Sabar",
+          "Zulhairi"
+        ],
+        [
+          "18",
+          "Sungai Kunyit Laut",
+          "Dusun Tenang",
+          "Heriansyah"
+        ],
+        [
+          "19",
+          "Sungai Kunyit Laut",
+          "Dusun Mufakat",
+          "Abdul Ghafur"
+        ],
+        [
+          "20",
+          "Sungai Kunyit Dalam",
+          "Dusun Melati",
+          "Amirudin"
+        ],
+        [
+          "21",
+          "Sungai Kunyit Dalam",
+          "Dusun Mawar",
+          "Budiono"
+        ],
+        [
+          "22",
+          "Sungai Kunyit Dalam",
+          "Dusun Cempaka",
+          "Sintia Febiola"
+        ],
+        [
+          "23",
+          "Sungai Kunyit Hulu",
+          "Dusun Sekip I",
+          "Abdul Hakim"
+        ],
+        [
+          "24",
+          "Sungai Kunyit Hulu",
+          "Dusun Sekip II",
+          "Muji"
+        ],
+        [
+          "25",
+          "Sungai Kunyit Hulu",
+          "Dusun Semayar",
+          "Sy. Sodikin"
+        ],
+        [
+          "26",
+          "Bukit Batu",
+          "Dusun Karya Utama",
+          "Jarkasih"
+        ],
+        [
+          "27",
+          "Bukit Batu",
+          "Dusun Serai Wangi",
+          "Yusmin"
+        ],
+        [
+          "28",
+          "Bukit Batu",
+          "Dusun Kembang Lada",
+          "Natalis Yoti"
+        ],
+        [
+          "29",
+          "Sungai Bundung Laut",
+          "Dusun Maya Sari",
+          "Nuraye"
+        ],
+        [
+          "30",
+          "Sungai Bundung Laut",
+          "Dusun Suka Tani",
+          "Eef Niza"
+        ],
+        [
+          "31",
+          "Sungai Bundung Laut",
+          "Dusun Tujuh Ratus",
+          "M. Ridho Fahmi, S. PD"
+        ],
+        [
+          "32",
+          "Sungai Duri I",
+          "Dusun Sutera",
+          "Wildan Firdaus"
+        ],
+        [
+          "33",
+          "Sungai Duri I",
+          "Dusun Subur",
+          "Deo Osandi"
+        ],
+        [
+          "34",
+          "Sungai Duri I",
+          "Dusun Sabar",
+          "Robi Wahyudi"
+        ],
+        [
+          "35",
+          "Sungai Duri II",
+          "Dusun Karya",
+          "Saiman, S. I.Pust"
+        ],
+        [
+          "36",
+          "Sungai Duri II",
+          "Dusun Taruna",
+          "Roby"
+        ],
+        [
+          "37",
+          "Sungai Duri II",
+          "Dusun Damai",
+          "Tabi'i"
         ]
       ]
     },
@@ -342,19 +660,136 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "Peniti Dalam I",
+          "Dusun Sy. Abu Bakar",
+          "Dedi Suryadi"
         ],
         [
-          "2"
+          "2",
+          "Peniti Dalam I",
+          "Dusun Wak Paik",
+          "M. Ali"
         ],
         [
-          "3"
+          "3",
+          "Peniti Dalam I",
+          "Dusun Ambo Pinang",
+          "Tri Agustono"
         ],
         [
-          "4"
+          "4",
+          "Sungai Burung",
+          "Dusun Subur 1",
+          "Desi"
         ],
         [
-          "5"
+          "5",
+          "Sungai Burung",
+          "Dusun Subur 2",
+          "Abdul Rozak"
+        ],
+        [
+          "6",
+          "Sungai Purun Besar",
+          "Dusun Nelayan",
+          "Fitriana"
+        ],
+        [
+          "7",
+          "Sungai Purun Besar",
+          "Dusun Kemuning",
+          "Rino"
+        ],
+        [
+          "8",
+          "Sungai Purun Besar",
+          "Dusun Makmur",
+          "Muhammad Safe'i"
+        ],
+        [
+          "9",
+          "Sungai Purun Besar",
+          "Dusun Pelita",
+          "Mulyadi Syarif"
+        ],
+        [
+          "10",
+          "Parit Bugis",
+          "Dusun Keranji",
+          "Isra Nur Hidayat"
+        ],
+        [
+          "11",
+          "Parit Bugis",
+          "Dusun Asam",
+          "Khairul Azhar"
+        ],
+        [
+          "12",
+          "Peniti Besar",
+          "Dusun Suka Damai",
+          "A. Yani"
+        ],
+        [
+          "13",
+          "Peniti Besar",
+          "Dusun Karya Bakti",
+          "Suryani"
+        ],
+        [
+          "14",
+          "Peniti Besar",
+          "Dusun Suka Maju",
+          "Turiman"
+        ],
+        [
+          "15",
+          "Peniti Besar",
+          "Dusun Karya Bersama",
+          "Hermansyah"
+        ],
+        [
+          "16",
+          "Peniti Besar",
+          "Dusun Tani Makmur",
+          "Heri Julianto"
+        ],
+        [
+          "17",
+          "Peniti Besar",
+          "Dusun Karya Utama",
+          "Jamaludin"
+        ],
+        [
+          "18",
+          "Peniti Besar",
+          "Dusun Sabar Menanti",
+          "Junaidi"
+        ],
+        [
+          "19",
+          "Peniti Dalam II",
+          "Dusun Karya Utama",
+          "Mulyadi"
+        ],
+        [
+          "20",
+          "Peniti Dalam II",
+          "Dusun Cahaya Intan",
+          "Erdian"
+        ],
+        [
+          "21",
+          "Peniti Dalam II",
+          "Dusun Lembah Hijau",
+          "Nasrullah"
+        ],
+        [
+          "22",
+          "Peniti Dalam II",
+          "Dusun Tunas Baru",
+          "Sabirin"
         ]
       ]
     },
@@ -374,19 +809,154 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "Pentek",
+          "Pentek",
+          "Cly Yuni S.Pd"
         ],
         [
-          "2"
+          "2",
+          "Pentek",
+          "Muru",
+          "Dani Ranto Revo Babaro, SE"
         ],
         [
-          "3"
+          "3",
+          "Pentek",
+          "Untang",
+          "F.X Jefrry Gerit Tumangking"
         ],
         [
-          "4"
+          "4",
+          "Pentek",
+          "Penyuak",
+          "Mersiana Yeti, S.Th"
         ],
         [
-          "5"
+          "5",
+          "Pentek",
+          "Kumpang",
+          "Nokus, S.Pd.K"
+        ],
+        [
+          "6",
+          "Sekabuk",
+          "Sekabuk",
+          "Teresia Yati"
+        ],
+        [
+          "7",
+          "Sekabuk",
+          "Gelombang",
+          "Asrianto"
+        ],
+        [
+          "8",
+          "Sekabuk",
+          "Titidahan",
+          "Ignasius Suardi"
+        ],
+        [
+          "9",
+          "Sekabuk",
+          "Pak Nungkat",
+          "Ihzar"
+        ],
+        [
+          "10",
+          "Bumbun",
+          "Bawing",
+          "Bio Datus"
+        ],
+        [
+          "11",
+          "Bumbun",
+          "Nangka",
+          "Isul"
+        ],
+        [
+          "12",
+          "Bumbun",
+          "Satak",
+          "Asmanto"
+        ],
+        [
+          "13",
+          "Bumbun",
+          "Bumbun",
+          "Lipsensius"
+        ],
+        [
+          "14",
+          "Amawang",
+          "Amawang",
+          "Oktavianus"
+        ],
+        [
+          "15",
+          "Amawang",
+          "Pudak",
+          "Flavius Akarius"
+        ],
+        [
+          "16",
+          "Amawang",
+          "Pelanjau",
+          "Niko"
+        ],
+        [
+          "17",
+          "Amawang",
+          "Pendeng",
+          "Marlina"
+        ],
+        [
+          "18",
+          "Amawang",
+          "Parong",
+          "Rusni"
+        ],
+        [
+          "19",
+          "Ansiap",
+          "Tikalong",
+          "Sukiran"
+        ],
+        [
+          "20",
+          "Ansiap",
+          "Ansiap",
+          "Tiko Riki"
+        ],
+        [
+          "21",
+          "Ansiap",
+          "Gutok",
+          "Iwan"
+        ],
+        [
+          "22",
+          "Suak Barangan",
+          "Samantakin",
+          "Erik"
+        ],
+        [
+          "23",
+          "Suak Barangan",
+          "Guro",
+          "Sugianto"
+        ],
+        [
+          "24",
+          "Suak Barangan",
+          "Barangan",
+          "Anatimus Usman"
+        ],
+        [
+          "25",
+          "Suak Barangan",
+          "Parasan",
+          "Marsius"
         ]
       ]
     },
@@ -406,19 +976,76 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "Anjungan Melancar",
+          "–",
+          "–"
         ],
         [
-          "2"
+          "2",
+          "Anjungan Dalam",
+          "1. Terdu",
+          "Margareta"
         ],
         [
-          "3"
+          "3",
+          "Anjungan Dalam",
+          "2. Pramuka",
+          "Basuni"
         ],
         [
-          "4"
+          "4",
+          "Pak Bulu",
+          "1. Perikanan",
+          "Satibi"
         ],
         [
-          "5"
+          "5",
+          "Pak Bulu",
+          "2. Pak Bulu",
+          "David"
+        ],
+        [
+          "6",
+          "Dema",
+          "1. Dema",
+          "Karlos"
+        ],
+        [
+          "7",
+          "Dema",
+          "2. Beguruh",
+          "Amos (PLT)"
+        ],
+        [
+          "8",
+          "Dema",
+          "3. Pinyuh Kersik",
+          "Andreas Atin"
+        ],
+        [
+          "9",
+          "Kepayang",
+          "1. Bilado",
+          "Fransiskus"
+        ],
+        [
+          "10",
+          "Kepayang",
+          "2. Lahuak",
+          "Supiri"
+        ],
+        [
+          "11",
+          "Kepayang",
+          "3. Peladis",
+          "Windi"
+        ],
+        [
+          "12",
+          "Kepayang",
+          "4. Kepayang",
+          "Robertus"
         ]
       ]
     },
@@ -438,19 +1065,190 @@
           "(4)"
         ],
         [
-          "1"
+          "1",
+          "Sungai Bakau Kecil",
+          "Senggiring",
+          "Hairidiansyah"
         ],
         [
-          "2"
+          "2",
+          "Sungai Bakau Kecil",
+          "Benteng Raya",
+          "Lily Maulina,S.Kom"
         ],
         [
-          "3"
+          "3",
+          "Sungai Bakau Kecil",
+          "Benteng Timur",
+          "Zulmi Ariansyah,S.Pd"
         ],
         [
-          "4"
+          "4",
+          "Sungai Bakau Kecil",
+          "Sepakat Tengah",
+          "Ismail"
         ],
         [
-          "5"
+          "5",
+          "Sungai Bakau Kecil",
+          "Sepakat Darat",
+          "Kholis"
+        ],
+        [
+          "6",
+          "Sungai Bakau Kecil",
+          "Kedaung",
+          "Abdul Rani Bahari"
+        ],
+        [
+          "7",
+          "Sungai Bakau Kecil",
+          "Senambang",
+          "Haidin"
+        ],
+        [
+          "8",
+          "Sungai Bakau Kecil",
+          "Konsasi",
+          "Samori"
+        ],
+        [
+          "9",
+          "Pasir Panjang",
+          "Pasir Mandar",
+          "Wandika,S.Pd"
+        ],
+        [
+          "10",
+          "Pasir Panjang",
+          "Pematang Pasir",
+          "Ramli"
+        ],
+        [
+          "11",
+          "Pasir Panjang",
+          "Senambang",
+          "Hasan Basri"
+        ],
+        [
+          "12",
+          "Pasir Panjang",
+          "Terajumas",
+          "-"
+        ],
+        [
+          "13",
+          "Pasir Palembang",
+          "Pelaik",
+          "Nawari"
+        ],
+        [
+          "14",
+          "Pasir Palembang",
+          "Tengah",
+          "Saheri"
+        ],
+        [
+          "15",
+          "Pasir Palembang",
+          "Tekam Baru",
+          "Basis"
+        ],
+        [
+          "16",
+          "Antibar",
+          "Makmur",
+          "Suhandri"
+        ],
+        [
+          "17",
+          "Antibar",
+          "Pendidikan",
+          "Yoghan Gianitra"
+        ],
+        [
+          "18",
+          "Antibar",
+          "Harapan",
+          "Sugiono"
+        ],
+        [
+          "19",
+          "Antibar",
+          "Perman",
+          "Suheri"
+        ],
+        [
+          "20",
+          "Antibar",
+          "Satria",
+          "Andi Fauzan"
+        ],
+        [
+          "21",
+          "Antibar",
+          "Moton Jaya",
+          "Asmuni"
+        ],
+        [
+          "22",
+          "Antibar",
+          "Mekar Jaya",
+          "Tantowi Yahya"
+        ],
+        [
+          "23",
+          "Antibar",
+          "Taruna Opu",
+          "Dg Iskandar"
+        ],
+        [
+          "24",
+          "Antibar",
+          "Bukti Asam",
+          "Marsudi"
+        ],
+        [
+          "25",
+          "Sejegi",
+          "Galaherang",
+          "Machrus Affandi"
+        ],
+        [
+          "26",
+          "Sejegi",
+          "Bemban",
+          "Suparno"
+        ],
+        [
+          "27",
+          "Sejegi",
+          "Tekam",
+          "Abdul Rosid"
+        ],
+        [
+          "28",
+          "Parit Banjar",
+          "Parit Banjar Laut",
+          "Pura'ie"
+        ],
+        [
+          "29",
+          "Parit Banjar",
+          "Parit Banjar Tengah",
+          "Abdul Kholiq"
+        ],
+        [
+          "30",
+          "Parit Banjar",
+          "Parit Banjar Darat",
+          "Ihya Ulumuddin"
+        ],
+        [
+          "31",
+          "Parit Banjar",
+          "Ampulor",
+          "Abdus Syakur"
         ]
       ]
     },
@@ -2215,5 +3013,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

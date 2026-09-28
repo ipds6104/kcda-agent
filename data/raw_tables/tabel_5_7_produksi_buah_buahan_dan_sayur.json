@@ -1,7 +1,7 @@
 {
   "no": "5.7",
   "nama": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
-  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
   "disediakan_ipds": true,
   "sheet_id": "1_Ik0_Xh9rbR_Ilu7-qpFBBDKHKV2VCEYp5UYsgG3gCA",
   "spreadsheet_title": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
@@ -1082,5 +1082,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

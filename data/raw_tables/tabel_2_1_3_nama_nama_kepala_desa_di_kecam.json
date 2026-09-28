@@ -1,7 +1,7 @@
 {
   "no": "2.1.3",
   "nama": "Nama-Nama Kepala Desa di Kecamatan XXX",
-  "sumber": "KCDA 2025 + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "1x-XjDE3rupSaBIwFGqyHpyYjz6S9ur0PVFORXY9AdW4",
   "spreadsheet_title": "Nama-Nama Kepala Desa di Kecamatan XXX",
@@ -2238,5 +2238,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

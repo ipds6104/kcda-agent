@@ -43,7 +43,10 @@ for kec in REGENCY_RAW_CONFIG.get("kecamatan", []):
             "desa_list": kec.get("desa_list", []),
             "cover_depan": kec.get("cover_depan", f"assets/covers/depan/{slug.title()}1.jpg"),
             "cover_dalam": kec.get("cover_dalam", f"assets/covers/depan/{slug.title()}2.jpg"),
-            "gsheet_id": kec.get("gsheet_id", "")
+            "gsheet_id": kec.get("gsheet_id", ""),
+            "volume": kec.get("volume", "Volume 17, 2026"),
+            "issn": kec.get("issn", ""),
+            "peta": kec.get("peta", f"assets/maps/{slug}.jpg")
         }
 
 def get_regency_info() -> Dict[str, Any]:

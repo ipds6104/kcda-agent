@@ -3,361 +3,397 @@
     "no": "1.1.",
     "nama": "Luas Daerah Menurut Desa/Kelurahan di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Tergantung ketersediaan data di daerah (BAPEDDA)",
+    "sumber": "Dinas Kependudukan dan Pencatatan Sipil/BAPEDDA Kabupaten Mempawah / Population and\r\nCivil Registration Service/Regional Development Planning Agency of Mempawah Regency",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1_zXe_P8sXdUeyiMOYx_K3VUzu8-BJ7--30sITv63fAU",
-    "note": "Disediakan IPDS"
+    "note": "Disediakan IPDS",
+    "catatan": "Untuk desa/kelurahan dengan status Indikatif masih perlu dilakukan pelacakan ke lapangan dan\r\nkesepakatan batas antarwilayah yang berbatasan. / For villages/subdistricts with Indicative status, field tracking and\r\nboundary agreements between adjacent areas are still required."
   },
   {
     "no": "1.2.",
     "nama": "Jarak ke Ibukota Kecamatan dan Ibukota Kabupaten/Kota Menurut Desa/Kelurahan di Kecamatan XXX (km)",
     "tahun": "2025",
-    "sumber": "KCDA 2025 + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "14FvPtJSYS2EgAQ1nzKzY-CX8l7t7A1rWJeHCgCZ3XzY",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "1.3.",
     "nama": "Batas Administrasi Kecamatan XXX Menurut Arah Mata Angin",
     "tahun": "2025",
-    "sumber": "KCDA 2025 + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "12Ohl8ShLolVXWRD7dBBtNNPqNfX_9pgAFFVYNbMLJ0U",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "1.4.",
     "nama": "Jarak Kantor Camat XXX Dengan Kota dan Tempat Penting Lainnya (km)",
     "tahun": "2025",
-    "sumber": "KCDA 2025 + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "10DAiZQaRpS7-w0qfA6OO_D6oIPCLzmVODciMRdu5Guo",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "2.1.1",
     "nama": "Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "KCDA 2025 + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "1Z-0jhg8zWUhqZrL1Raaju-W5fpGUwn_gBCViU-ZeL88",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "2.1.2",
     "nama": "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Data KCDA tahun lalu + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "1BjxvpODk5TZR8aLXCbzzPt4yoa9F9vpQ4t1nIXQG2gg",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "2.1.3",
     "nama": "Nama-Nama Kepala Desa di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "KCDA 2025 + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "1x-XjDE3rupSaBIwFGqyHpyYjz6S9ur0PVFORXY9AdW4",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "2.1.4",
     "nama": "Nama-Nama Kepala Dusun di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "KCDA 2025 + Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "10eEof1SE5ucO6hUAvP7EJ8X7GQLyuGwiRpM4Ltc_Vkk",
-    "note": "ini di beberapa kecamatan ada dan ada yang tidak ada, samain aja kah kek publikasi tahun lalu"
+    "note": "ini di beberapa kecamatan ada dan ada yang tidak ada, samain aja kah kek publikasi tahun lalu",
+    "catatan": ""
   },
   {
     "no": "2.1.5",
     "nama": "Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di Kecamatan XXX, 2024",
     "tahun": "2025",
-    "sumber": "Perka BPS No 120 Tahun 2020 TENTANG\nKLASIFIKASI DESA PERKOTAAN DAN PERDESAAN DI INDONESIA",
+    "sumber": "Peraturan Kepala Badan Pusat Statistik Nomor 120 Tahun 2020 Tentang Klasifikasi Desa Perkotaan dan Perdesaan di Indonesia Tahun 2020/ Regulation of the Chief Statistician Number 120 of 2020 Concerning the Classification of Urban and Rural Villages in Indonesia in 2020",
     "wajib": false,
     "disediakan_ipds": true,
     "sheet_id": "1mv1gRkm6lQl97LS4G08g5mKnApvmvsP7QzhTZ_7hpnQ",
     "note": "Biarin dulu aja ini, Disediakan IPDS",
-    "link": "https://docs.google.com/spreadsheets/d/1mv1gRkm6lQl97LS4G08g5mKnApvmvsP7QzhTZ_7hpnQ/edit?usp=sharing"
+    "link": "https://docs.google.com/spreadsheets/d/1mv1gRkm6lQl97LS4G08g5mKnApvmvsP7QzhTZ_7hpnQ/edit?usp=sharing",
+    "catatan": ""
   },
   {
     "no": "2.1.6",
     "nama": "Status Desa berdasarkan Indeks Desa Membangun di Kecamatan XXX, 2024",
     "tahun": "2025",
-    "sumber": "REKOMENDASI_IDM_PROVINSI_61_KALBAR-2023",
+    "sumber": "Indeks Desa Membangun (IDM) Tahun 2024 per Desa, Kementerian Desa, PDT dan Transmigrasi/ Index of Developing Village 2024 for each Village, Ministry of Villages, Development of Disadvantaged Regions, and Transmigration",
     "wajib": false,
     "disediakan_ipds": true,
     "sheet_id": "1qdrqJe5xgh2JW0A1RiIQdHgSSawMMdcNXZpsnSNE9EU",
-    "note": "Biarin dulu aja ini, Disediakan IPDS"
+    "note": "Biarin dulu aja ini, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "2.2.1",
     "nama": "Jumlah Pegawai Negeri Sipil Menurut Pemerintah Daerah dan Jenis Kelamin",
     "tahun": "2025",
-    "sumber": "Jumlah PNS per desa/kelurahan (Kantor Camat)",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "1Vqx2_TCs27HqnxYcoYHhLASZROf6gEJDvo6J6CjEQ8g",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "2.2.2",
     "nama": "Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan XX Menurut Tingkat Pendidikan dan Jenis Kelamin",
     "tahun": "2025",
-    "sumber": "Kantor Camat",
+    "sumber": "Kantor Camat XXX/ XXX District Office",
     "wajib": false,
     "disediakan_ipds": false,
     "sheet_id": "1gc5ZbcBNwU17rBqE6tcIlXxzR7RfFzi_F9OVI6HtJIQ",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "3.1",
     "nama": "Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, Rasio Jenis Kelamin Penduduk\nMenurut Desa/Kelurahan di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Tergantung ketersediaan data di daerah (Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mempawah)",
+    "sumber": "Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mempawah/ Population and Civil Registration Service of Mempawah Regency",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1_zXe_P8sXdUeyiMOYx_K3VUzu8-BJ7--30sITv63fAU",
-    "note": "Disediakan IPDS"
+    "note": "Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "4.1.1",
     "nama": "Banyaknya Desa1/Kelurahan yang Memiliki Fasilitas Sekolah Menurut Tingkat Pendidikan di Kecamatan XXX",
     "tahun": "2023–2025",
-    "sumber": "2023: tergantung ketersediaan data di daerah.\n2024 dan 2025: menggunakan data podes",
+    "sumber": "3Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1X5rNuK6ZMWNZQxnEFpQomXi1Fgv-c-6MfdF-kB_UCUY",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "4.1.2",
     "nama": "Jumlah Satuan Pendidikan Menurut Tingkat Pendidikan di Kecamatan XXX",
     "tahun": "2024/2025 dan 2025/2026",
-    "sumber": "Kemdikbud:\nTK\nSD\nSMP\nSMA\nSMK\n\nKemenag:\nRA\nMI\nMTS\nMA",
+    "sumber": "1Kementerian Pendidikan Dasar dan Menengah; Sistem Data Pokok Pendidikan; data semester ganjil laporan sampai dengan 30 November/Ministry of Primary and Secondary Education; Sistem Data Pokok Pendidikan; odd semester report data up to 30 November\n\n2Kementerian Agama; EMIS; data semester genap laporan sampai dengan 30 Juni/Ministry of Religious Affairs; EMIS; even semester report data up to 30 June",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1wevk0XUM5icbxIaGA1dS66YyRsXcrVqt5qRnpNIYrzw",
-    "note": "Disediakan IPDS"
+    "note": "Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "4.1.3",
     "nama": "Jumlah Kepala Sekolah dan Pendidik Menurut Tingkat Pendidikan di Kecamatan XXX",
     "tahun": "2024/2025 dan 2025/2026",
-    "sumber": "Kemdikbud:\nTK\nSD\nSMP\nSMA\nSMK\n\nKemenag:\nRA\nMI\nMTS\nMA",
+    "sumber": "1Kementerian Pendidikan Dasar dan Menengah; Sistem Data Pokok Pendidikan; data semester ganjil laporan sampai dengan 30 November/Ministry of Primary and Secondary Education; Sistem Data Pokok Pendidikan; odd semester report data up to 30 November\r\n\n2Kementerian Agama; EMIS; data semester genap laporan sampai dengan 30 Juni/Ministry of Religious Affairs; EMIS; even semester report data up to 30 June",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1mVvhA7sH4LMhCUAdQjf3yLUn60yIFURJ5mEpA4dZ440",
-    "note": "Disediakan IPDS"
+    "note": "Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "4.1.4",
     "nama": "Jumlah Peserta Didik Menurut Tingkat Pendidikan di Kecamatan XXX",
     "tahun": "2024/2025 dan 2025/2026",
-    "sumber": "Kemdikbud:\nTK\nSD\nSMP\nSMA\nSMK\n\nKemenag:\nRA\nMI\nMTS\nMA",
+    "sumber": "1Kementerian Pendidikan Dasar dan Menengah; Sistem Data Pokok Pendidikan; data semester ganjil laporan sampai dengan 30 November/Ministry of Primary and Secondary Education; Sistem Data Pokok Pendidikan; odd semester report data up to 30 November\n\n2Kementerian Agama; EMIS; data semester genap laporan sampai dengan 30 Juni/Ministry of Religious Affairs; EMIS; even semester report data up to 30 June",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1VK7v1ZgUHzsT6RSTNk95ZvvUv-Eow7CgsI0GHaWbo8E",
-    "note": "Disediakan IPDS"
+    "note": "Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "4.2.1",
     "nama": "Banyaknya Desa/Kelurahan yang Memiliki Sarana Kesehatan Menurut Jenis Sarana Kesehatan di Kecamatan XXX",
     "tahun": "2023–2025",
-    "sumber": "2023 dan 2024\nKCDA.\n 2025 menggunakan data podes",
+    "sumber": "2Kantor Camat XXX/ XXX District Office\n\n\n3 Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1iR8SKLkz_eLSrNJbfdZVU-GJ9LlSVgv8BtMX9yA0zt0",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "4.3.1",
     "nama": "Banyaknya Desa/Kelurahan Menurut Sumber Penerangan Jalan Utama Desa/Kelurahan di Kecamatan XXX",
     "tahun": "2023–2025",
-    "sumber": "2023 + 2024 KCDA Tahun lalu\n2025 Podes",
+    "sumber": "2Kantor Camat XXX/ XXX District Office\n\n\n3 Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1B1URUs2wJzhtGMJ7i5snYXQ5J9phuaU-kmQUMXcSR1U",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "4.3.2",
     "nama": "Banyaknya Desa/Kelurahan Menurut Jenis Bahan Bakar untuk Memasak yang Digunakan Sebagian Besar Keluarga di\nKecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1akeeI22aBu5g2hQFj2BL5wcxEWpr3eAChsYoI5LBm6Q",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "4.4.1",
     "nama": "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam\nMenurut Jenis Bencana Alam di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "16BBjSBhoZzQlwd_yE1jcRfDVY3u42yMexB7YXjKz6Iw",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries\n\n2Periode Januari–Mei 2025/During January–May 2025"
   },
   {
     "no": "4.4.2",
     "nama": "Banyaknya Desa1/Kelurahan yang Terdapat Korban Jiwa Akibat Bencana Alam Menurut Jenis Bencana Alam di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "10fFJ5wHgKICRGG-aYuXkyTpHDoI68HEIhVvI2JJWrco",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "4.4.3",
     "nama": "Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Desa/Kelurahan di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1jg-ouz0ekRBz1dnfAiu19ppK8fD7CobWhwoIHTK7CD0",
-    "note": ""
+    "note": "",
+    "catatan": ""
   },
   {
     "no": "5.1",
     "nama": "Luas Panen Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (ha)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1cUphSmkWhpszHIzrlAbBN6OxB_p9rAxeZRGgtYIll9U",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "5.2",
     "nama": "Produksi Tanaman Sayuran dan Buah-buahan Semusim Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1b2aZw_swBnyiz3QHWjq_EAl1ibhCTwLSu1QjB2tvmuc",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "5.3",
     "nama": "Luas Panen Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (m2)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "154iUA-guAt5HWlHYNr8RAWc7jVLGjwhZs8Y5lGi5FOk",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "5.4",
     "nama": "Produksi Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (kg)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1o1CQBeGL0nA_33GOGs6PIoui4WwnYUhhw3qg8ShC0Dw",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "5.5",
     "nama": "Luas Panen Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (m2)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1ltOg4vVRhEfnTSV0j0hJaPdxIXFz2D8b6T2I5vU_wKo",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "5.6",
     "nama": "Produksi Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (tangkai)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1Rs-FeKkqGfb7RVsb9vNQNp7nMfZe4W7KI8FDYNF4jUY",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "5.7",
     "nama": "Produksi Buah-Buahan dan Sayuran Tahunan Menurut Jenis Tanaman di Kecamatan XXX (kuintal)",
     "tahun": "2022–2025",
-    "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+    "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
     "wajib": true,
     "disediakan_ipds": true,
     "sheet_id": "1_Ik0_Xh9rbR_Ilu7-qpFBBDKHKV2VCEYp5UYsgG3gCA",
-    "note": "angkanya dibulatkan ya, Disediakan IPDS"
+    "note": "angkanya dibulatkan ya, Disediakan IPDS",
+    "catatan": ""
   },
   {
     "no": "6.1.1",
     "nama": "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana Akomodasi Menurut Jenis Akomodasi di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1y4JMdC7saKnuNhRymYJFuuJtW-wiqaLxTv3WFQAqk6E",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "6.2.1",
     "nama": "Banyaknya Desa/Kelurahan Menurut Prasarana dan Sarana Transportasi Antardesa/kelurahan di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "18iR80gcItK-zJDlz1faOgFRVtQuUdq25PALDwTFRU8Y",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "6.3.1",
     "nama": "Banyaknya Desa/Kelurahan Menurut Keberadaan Kantor Pos/Pos Pembantu/Rumah Pos, Pos Keliling, dan Perusahaan/Agen Jasa Ekspedisi Swasta di\nKecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1DV8HwLTbVPCz79oNaOzEmjb4K7ey2IeIciT2px7Qiz8",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "7.1",
     "nama": "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana\nLembaga Keuangan Bank Menurut Jenis Bank di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1yj4Jew3vvERyuhlG-I1scbT4nOYv1VmRKAMR_Ka10dQ",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "7.2",
     "nama": "Banyaknya Desa/Kelurahan\ndengan dengan Keberadaan\nKoperasi Aktif Menurut Jenis\nKoperasi di Kecamatan XXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1hPj8fk8Es7t_AC9IccV7eCbJ9Nmzx10th1YhsgxnHVc",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   },
   {
     "no": "7.3",
     "nama": "Banyaknya Desa/Kelurahan\ndengan Keberadaan Sarana\nPerdagangan Menurut Jenis\nSarana Perdagangan di Kecamatan\nXXX",
     "tahun": "2025",
-    "sumber": "Podes",
+    "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
     "wajib": true,
     "disediakan_ipds": false,
     "sheet_id": "1fPF2Yb8rJXtNJAuK5wnVnBLCpZyYLQDHb5EGQf4bk_0",
-    "note": ""
+    "note": "",
+    "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
   }
 ]

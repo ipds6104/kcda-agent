@@ -1,7 +1,7 @@
 {
   "no": "1.3.",
   "nama": "Batas Administrasi Kecamatan XXX Menurut Arah Mata Angin",
-  "sumber": "KCDA 2025 + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "12Ohl8ShLolVXWRD7dBBtNNPqNfX_9pgAFFVYNbMLJ0U",
   "spreadsheet_title": "Batas Administrasi Kecamatan XXX Menurut Arah Mata Angin",
@@ -63,19 +63,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kec. Sadaniang"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kec. Anjongan"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Kec. Mempawah Timur"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kab. Landak"
         ]
       ]
     },
@@ -97,19 +101,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kec. Anjongan"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kec. Laut Natuna"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Kec. Mempawah Timur"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kec. Segedong dan Kab. Landak"
         ]
       ]
     },
@@ -131,19 +139,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kecamatan Segedong & Landak"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kecamatan Sungai Kakap & Kota Pontianak"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Selat Karimata"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kecamatan Sungai Ambawang"
         ]
       ]
     },
@@ -165,19 +177,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kabupaten Bengkayang/ Bengkayang Regency"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kecamatan Mempawah Hilir/ Mempawah Hilir District"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Laut Natuna/ Natuna Sea"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kecamatan Sadaniang/ Sadaniang District"
         ]
       ]
     },
@@ -199,19 +215,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kec. Sei Pinyuh & Kab. Landak"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kec. Siantan & Kab. Kubu Raya"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Selat Karimata"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kab. Kubu Raya"
         ]
       ]
     },
@@ -233,19 +253,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kecamatan Mempawah Timur"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kabupaten Landak"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Kecamatan Sungai Pinyuh"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kecamatan Toho"
         ]
       ]
     },
@@ -267,19 +291,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kabupaten Bengkayang/ Bengkayang Regency"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kecamatan Toho/ Toho District"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Kecamatan Mempawah Hilir/ Mempawah Hilir District"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kabupaten Landak/ Landak Regency"
         ]
       ]
     },
@@ -301,19 +329,23 @@
         ],
         [
           "1",
-          "Utara/North"
+          "Utara/North",
+          "Kab. Bengkayang"
         ],
         [
           "2",
-          "Selatan/South"
+          "Selatan/South",
+          "Kab. Kubu Raya dan Kota Mempawah"
         ],
         [
           "3",
-          "Barat/West"
+          "Barat/West",
+          "Selat Karimata"
         ],
         [
           "4",
-          "Timur/East"
+          "Timur/East",
+          "Kab.Landak"
         ]
       ]
     },
@@ -539,5 +571,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

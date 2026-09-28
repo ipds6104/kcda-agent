@@ -5,42 +5,48 @@ from pathlib import Path
 from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
 from ..table_renderer import render_typst_table
 from ..chart_generator import get_chapter2_charts
+from .narrative_helper import render_chapter_intro
 
 def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
     nama_resmi = cfg["nama_resmi"]
-    nama_en = cfg["nama_en"]
-    nama_singkat = nama_resmi.replace("Kecamatan ", "")
-    desa_list = cfg["desa_list"]
+    nama_en = cfg["nama_en"].replace(" Subdistrict", "")
+    nama_singkat = cfg.get("nama_singkat", nama_resmi.replace("Kecamatan ", "").strip())
+    desa_list = cfg.get("desa_list", [])
     slug = cfg.get("slug", "")
+
+    year_213 = "2025" if slug == "toho" else "2026"
+    year_214 = "2025" if slug == "toho" else "2026"
+    has_214 = slug not in ["mempawah-hilir", "sungai-pinyuh"]
 
     # Grafik dinamis data-driven dari Google Sheets
     charts_markup = get_chapter2_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None)
-    chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else "\n#v(8pt)\n"
+    chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
+    
     # --- 2.1.1 RW & RT ---
     rows_211_raw = get_kecamatan_tab_rows("2.1.1", nama_singkat)
     rw_rt_map = {}
     for r in rows_211_raw[3:]:
         if len(r) > 1 and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['jumlah', 'total', 'sumber']):
-            dusun = clean_cell_value(r[1] if len(r) > 1 else "...")
-            rw = clean_cell_value(r[2] if len(r) > 2 else "...")
-            rt = clean_cell_value(r[3] if len(r) > 3 else "...")
+            dusun = clean_cell_value(r[1] if len(r) > 1 else "–")
+            rw = clean_cell_value(r[2] if len(r) > 2 else "–")
+            rt = clean_cell_value(r[3] if len(r) > 3 else "–")
             rw_rt_map[r[0].strip().lower()] = [dusun, rw, rt]
 
     t211_rows = []
     for d in desa_list:
-        v = rw_rt_map.get(d.lower(), ["...", "...", "..."])
-        t211_rows.append([d, v[0], v[1], v[2]])
+        v = rw_rt_map.get(d.lower(), ["–", "–", "–"])
+        t211_rows.append([d, v[1], v[2]])
 
     t211_markup = render_typst_table(
         table_no="2.1.1",
-        title_id=f"Jumlah Dusun, Rukun Warga (RW), dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di {nama_resmi}, 2025",
-        title_en=f"Number of Hamlets, RW, and RT by Village/Subdistrict in {nama_en}, 2025",
-        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Jumlah Dusun\nHamlets", "Rukun Warga\n(RW)", "Rukun Tetangga\n(RT)"],
-        col_numbers=["(1)", "(2)", "(3)", "(4)"],
+        title_id=f"Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di {nama_resmi}, 2025",
+        title_en=f"Number of Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025",
+        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Rukun Warga\n(RW)", "Rukun Tetangga\n(RT)"],
+        col_numbers=["(1)", "(2)", "(3)"],
         rows=t211_rows,
-        col_widths=["2.2fr", "1.0fr", "1.0fr", "1.0fr"],
-        source=f"Kantor Camat {nama_singkat}"
+        col_widths=["2.6fr", "1.2fr", "1.2fr"],
+        source="Master SLS Badan Pusat Statistik / Master SLS BPS-Statistics Indonesia"
     )
 
     # --- 2.1.2 Nama-Nama Camat ---
@@ -50,20 +56,20 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
         if len(r) > 1 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan']):
             idx = clean_cell_value(r[0])
             camat = clean_cell_value(r[1])
-            periode = clean_cell_value(r[2] if len(r) > 2 else "...")
+            periode = clean_cell_value(r[2] if len(r) > 2 else "–")
             t212_rows.append([idx, camat, periode])
     if not t212_rows:
-        t212_rows = [["1", "...", "..."]]
+        t212_rows = [["1", "–", "–"]]
 
     t212_markup = render_typst_table(
         table_no="2.1.2",
         title_id=f"Nama-Nama Camat yang Pernah/Masih Menjabat di {nama_resmi}",
-        title_en=f"Names of District Heads of {nama_en}",
+        title_en=f"Names of District Heads of {nama_en} District",
         headers=["No", "Nama Camat\nName of District Head", "Periode Menjabat\nPeriod"],
         col_numbers=["(1)", "(2)", "(3)"],
-        rows=t212_rows[:12], # Limit 12 baris agar muat 1 halaman
+        rows=t212_rows[:14],
         col_widths=["0.6fr", "2.8fr", "1.6fr"],
-        source=f"Kantor Camat {nama_singkat}"
+        source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
 
     # --- 2.1.3 Nama-Nama Kepala Desa ---
@@ -77,19 +83,46 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t213_rows = []
     for idx, d in enumerate(desa_list, 1):
-        kades = kades_map.get(d.lower(), "...")
+        kades = kades_map.get(d.lower(), "–")
         t213_rows.append([str(idx), d, kades])
 
     t213_markup = render_typst_table(
         table_no="2.1.3",
-        title_id=f"Nama-Nama Kepala Desa/Lurah di {nama_resmi}, 2025",
-        title_en=f"Names of Village Heads in {nama_en}, 2025",
+        title_id=f"Nama-Nama Kepala Desa/Lurah di {nama_resmi}, {year_213}",
+        title_en=f"Names of Village Heads in {nama_en} District, {year_213}",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Nama Kepala Desa / Lurah\nName of Village Head"],
         col_numbers=["(1)", "(2)", "(3)"],
         rows=t213_rows,
         col_widths=["0.6fr", "2.2fr", "2.8fr"],
-        source=f"Kantor Camat {nama_singkat}"
+        source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
+
+    # --- 2.1.4 Nama-Nama Kepala Dusun (Hanya 7 Kecamatan) ---
+    t214_markup = ""
+    if has_214:
+        rows_214_raw = get_kecamatan_tab_rows("2.1.4", nama_singkat)
+        t214_rows = []
+        for r in rows_214_raw[2:]:
+            if len(r) > 3 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan', 'tabel']):
+                no_d = clean_cell_value(r[0])
+                desa_d = clean_cell_value(r[1])
+                dusun_d = clean_cell_value(r[2])
+                nama_d = clean_cell_value(r[3])
+                if desa_d:
+                    t214_rows.append([no_d, desa_d, dusun_d, nama_d])
+        if not t214_rows:
+            t214_rows = [["1", "–", "–", "–"]]
+
+        t214_markup = render_typst_table(
+            table_no="2.1.4",
+            title_id=f"Nama-Nama Kepala Dusun di {nama_resmi}, {year_214}",
+            title_en=f"Names of Hamlet Heads in {nama_en} District, {year_214}",
+            headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Nama Dusun\nName of Hamlet", "Nama Kepala Dusun\nName of Hamlet Head"],
+            col_numbers=["(1)", "(2)", "(3)", "(4)"],
+            rows=t214_rows[:16],
+            col_widths=["0.6fr", "1.8fr", "1.6fr", "2.0fr"],
+            source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
+        )
 
     # --- 2.1.5 Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan ---
     rows_215_raw = get_kecamatan_tab_rows("2.1.5", nama_singkat)
@@ -107,13 +140,13 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t215_markup = render_typst_table(
         table_no="2.1.5",
-        title_id=f"Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di {nama_resmi}, 2024",
-        title_en=f"Urban and Rural Classification of Village/Subdistrict in {nama_en}, 2024",
+        title_id=f"Klasifikasi Desa/Kelurahan Perdesaan dan Perkotaan di {nama_resmi}, 2020",
+        title_en=f"Urban and Rural Classification of Village/Subdistrict in {nama_en} District, 2020",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Wilayah Administratif\nAdministrative Area", "Klasifikasi Desa/Kelurahan\nUrban/Rural Classification"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t215_rows,
         col_widths=["0.6fr", "2.2fr", "1.6fr", "1.6fr"],
-        source="Peraturan Kepala BPS No. 120 Tahun 2020 / Chief of BPS Regulation No. 120 of 2020"
+        source="Peraturan Kepala Badan Pusat Statistik Nomor 120 Tahun 2020 Tentang Klasifikasi Desa Perkotaan dan Perdesaan di Indonesia Tahun 2020/ Regulation of the Chief Statistician Number 120 of 2020 Concerning the Classification of Urban and Rural Villages in Indonesia in 2020"
     )
 
     # --- 2.1.6 IDM Desa ---
@@ -126,80 +159,243 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     t216_rows = []
     for idx, d in enumerate(desa_list, 1):
-        status_idm = idm_map.get(d.lower(), "...")
+        status_idm = idm_map.get(d.lower(), "–")
         t216_rows.append([str(idx), d, status_idm])
 
     t216_markup = render_typst_table(
         table_no="2.1.6",
         title_id=f"Status Desa Berdasarkan Indeks Desa Membangun (IDM) di {nama_resmi}, 2024",
-        title_en=f"Village Status Based on Developing Village Index (IDM) in {nama_en}, 2024",
+        title_en=f"Village Status Based on Developing Village Index (IDM) in {nama_en} District, 2024",
         headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Status Indeks Desa Membangun\nDeveloping Village Index Status"],
         col_numbers=["(1)", "(2)", "(3)"],
         rows=t216_rows,
         col_widths=["0.6fr", "2.5fr", "2.5fr"],
-        source="Kementerian Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi / Ministry of Villages, Disadvantaged Regions Development, and Transmigration"
+        source="Indeks Desa Membangun (IDM) Tahun 2024 per Desa, Kementerian Desa, PDT dan Transmigrasi/ Index of Developing Village 2024 for each Village, Ministry of Villages, Development of Disadvantaged Regions, and Transmigration"
     )
 
-    # --- 2.2.1 PNS menurut Golongan ---
+    # --- 2.2.1 PNS menurut Pemerintah Daerah ---
     rows_221_raw = get_kecamatan_tab_rows("2.2.1", nama_singkat)
     t221_rows = []
-    gol_list = ["Golongan I", "Golongan II", "Golongan III", "Golongan IV", "Jumlah / Total"]
-    for idx, g in enumerate(gol_list, 1):
-        t221_rows.append([g, "...", "...", "..."])
+    if len(rows_221_raw) > 2:
+        for r in rows_221_raw[2:]:
+            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+                pem = clean_cell_value(r[0])
+                lk = clean_cell_value(r[1] if len(r) > 1 else "–")
+                pr = clean_cell_value(r[2] if len(r) > 2 else "–")
+                tot = clean_cell_value(r[3] if len(r) > 3 else "–")
+                t221_rows.append([pem, lk, pr, tot])
+    if not t221_rows:
+        t221_rows = [
+            [f"Pemerintah Daerah Kecamatan {nama_singkat}\n{nama_en} District Government", "–", "–", "–"],
+            ["Jumlah / Total", "–", "–", "–"]
+        ]
 
     t221_markup = render_typst_table(
         table_no="2.2.1",
-        title_id=f"Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan Menurut Golongan di {nama_resmi}, 2025",
-        title_en=f"Number of Civil Servants in {nama_en} Office by Rank/Class, 2025",
-        headers=["Golongan\nRank / Class", "Laki-laki\nMale", "Perempuan\nFemale", "Jumlah\nTotal"],
+        title_id=f"Jumlah Pegawai Negeri Sipil Menurut Pemerintah Daerah dan Jenis Kelamin di {nama_resmi}, 2025",
+        title_en=f"Number of Government Employee by Local Government and Sex in {nama_en} District, 2025",
+        headers=["Pemerintah Daerah\nLocal Government", "Laki-laki\nMale", "Perempuan\nFemale", "Jumlah\nTotal"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
-        rows=t221_rows,
-        col_widths=["2.2fr", "1.0fr", "1.0fr", "1.0fr"],
-        source=f"Kantor Camat {nama_singkat}"
+        rows=t221_rows[:12],
+        col_widths=["2.6fr", "0.9fr", "0.9fr", "0.9fr"],
+        source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
 
     # --- 2.2.2 PNS menurut Pendidikan ---
-    pend_list = ["≤ SMP / Junior High", "SMA / Senior High", "Diploma I/II/III", "S1 / D-IV (Bachelor)", "S2 / Master", "Jumlah / Total"]
-    t222_rows = [[p, "...", "...", "..."] for p in pend_list]
+    rows_222_raw = get_kecamatan_tab_rows("2.2.2", nama_singkat)
+    t222_rows = []
+    if len(rows_222_raw) > 2:
+        for r in rows_222_raw[2:]:
+            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+                pend = clean_cell_value(r[0])
+                lk = clean_cell_value(r[1] if len(r) > 1 else "–")
+                pr = clean_cell_value(r[2] if len(r) > 2 else "–")
+                tot = clean_cell_value(r[3] if len(r) > 3 else "–")
+                t222_rows.append([pend, lk, pr, tot])
+    if not t222_rows:
+        pend_list = [
+            "Sekolah Dasar (SD)\nPrimary School",
+            "SMP/Sederajat\nJunior High School",
+            "SMA/Sederajat\nSenior High School",
+            "Diploma I/II/III\nDiploma I/II/III",
+            "Diploma IV/S1\nBachelor Degree",
+            "S2 / Master",
+            "Jumlah / Total"
+        ]
+        t222_rows = [[p, "–", "–", "–"] for p in pend_list]
 
     t222_markup = render_typst_table(
         table_no="2.2.2",
-        title_id=f"Jumlah Pegawai Negeri Sipil Pemerintah Daerah Kecamatan Menurut Tingkat Pendidikan di {nama_resmi}, 2025",
-        title_en=f"Number of Civil Servants in {nama_en} Office by Education Level, 2025",
-        headers=["Tingkat Pendidikan\nEducation Level", "Laki-laki\nMale", "Perempuan\nFemale", "Jumlah\nTotal"],
+        title_id=f"Jumlah Pegawai Negeri Sipil Pemerintah Kecamatan {nama_singkat} Menurut Tingkat Pendidikan dan Jenis Kelamin, 2025",
+        title_en=f"Number of Government Employee of {nama_en} District Government by Educational Level and Sex, 2025",
+        headers=["Tingkat Pendidikan\nEducational Level", "Laki-laki\nMale", "Perempuan\nFemale", "Jumlah\nTotal"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t222_rows,
-        col_widths=["2.2fr", "1.0fr", "1.0fr", "1.0fr"],
-        source=f"Kantor Camat {nama_singkat}"
+        col_widths=["2.6fr", "0.9fr", "0.9fr", "0.9fr"],
+        source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
+
+    # --- Ulasan dan Penjelasan Teknis Bab 2 Sesuai Publikasi BPS ---
+    tot_rw = sum(int(rw_rt_map[d.lower()][1]) for d in desa_list if d.lower() in rw_rt_map and rw_rt_map[d.lower()][1].isdigit())
+    tot_rt = sum(int(rw_rt_map[d.lower()][2]) for d in desa_list if d.lower() in rw_rt_map and rw_rt_map[d.lower()][2].isdigit())
+    tot_dusun = sum(int(rw_rt_map[d.lower()][0]) for d in desa_list if d.lower() in rw_rt_map and rw_rt_map[d.lower()][0].isdigit())
+
+    camat_first = t212_rows[0][1] if t212_rows and t212_rows[0][1] != "–" else ""
+    camat_first_p = t212_rows[0][2] if t212_rows and len(t212_rows[0]) > 2 and t212_rows[0][2] != "–" else ""
+    camat_last = t212_rows[-1][1] if t212_rows and t212_rows[-1][1] != "–" else ""
+    camat_last_p = t212_rows[-1][2] if t212_rows and len(t212_rows[-1]) > 2 and t212_rows[-1][2] != "–" else ""
+
+    urban_desas = [r[1] for r in t215_rows if len(r) > 3 and "perkotaan" in r[3].lower()]
+    rural_desas = [r[1] for r in t215_rows if len(r) > 3 and "perdesaan" in r[3].lower()]
+
+    if camat_first and camat_last and camat_first != camat_last:
+        teks_camat_id = (
+            f"Sejak awal berdirinya, Kecamatan {nama_singkat} sudah banyak mengalami pergantian pemimpin. "
+            f"Jabatan Camat {nama_singkat} pertama dijabat oleh {camat_first} ({camat_first_p}). "
+            f"Dalam perkembangannya, kepemimpinan kecamatan terus berlanjut hingga saat ini dijabat oleh {camat_last} ({camat_last_p})."
+        )
+        teks_camat_en = (
+            f"Since its inception, {nama_en} District has experienced many changes in leadership. "
+            f"The first position of Head of {nama_en} District was held by {camat_first} ({camat_first_p}). "
+            f"Over time, district leadership has continued through to the present term held by {camat_last} ({camat_last_p})."
+        )
+    else:
+        teks_camat_id = (
+            f"Dalam menyelenggarakan tata kelola pemerintahan di tingkat kecamatan, Camat bertindak sebagai pemimpin dan koordinator pemerintahan wilayah di Kecamatan {nama_singkat}."
+        )
+        teks_camat_en = (
+            f"In administering governance at the district level, the Camat serves as the regional government leader and coordinator in {nama_en} District."
+        )
+
+    str_urban = ", ".join(urban_desas)
+    if urban_desas:
+        teks_desa_id = (
+            f"Kecamatan {nama_singkat} pada tahun 2025 terdiri dari {len(desa_list)} desa/kelurahan yang terbagi menjadi {tot_dusun} dusun, {tot_rw} RW dan {tot_rt} RT. "
+            f"Berdasarkan klasifikasi perdesaan dan perkotaan, {len(urban_desas)} desa/kelurahan yaitu {str_urban} merupakan wilayah perkotaan, sedangkan {len(rural_desas)} desa/kelurahan lainnya merupakan wilayah perdesaan.\\\n\\\n"
+            f"Berdasarkan Indeks Desa Membangun (IDM), seluruh desa mandiri dan berkembang terus ditingkatkan kemandirian ekonominya."
+        )
+        teks_desa_en = (
+            f"{nama_en} District in 2025 consists of {len(desa_list)} villages/subdistricts divided into {tot_dusun} dusun, {tot_rw} RW and {tot_rt} RT. "
+            f"Based on the classification of rural and urban areas, {len(urban_desas)} villages/subdistricts ({str_urban}) are urban areas, while the other {len(rural_desas)} villages/subdistricts are rural areas.\\\n\\\n"
+            f"Based on the Index of Developing Villages, village statuses across the district are predominantly independent and advancing."
+        )
+    else:
+        teks_desa_id = (
+            f"Kecamatan {nama_singkat} pada tahun 2025 terdiri dari {len(desa_list)} desa/kelurahan yang terbagi menjadi {tot_dusun} dusun, {tot_rw} RW dan {tot_rt} RT, "
+            f"dengan klasifikasi wilayah perdesaan yang didukung kelembagaan masyarakat tingkat rukun tetangga dan rukun warga."
+        )
+        teks_desa_en = (
+            f"{nama_en} District in 2025 consists of {len(desa_list)} villages/subdistricts divided into {tot_dusun} dusun, {tot_rw} RW and {tot_rt} RT, "
+            f"with rural classifications supported by neighborhood and community unit institutions."
+        )
+
+    teks_pns_id = (
+        f"Aparatur sipil negara di lingkungan Pemerintah Daerah Kecamatan {nama_singkat} menjalankan fungsi pelayanan publik, koordinasi administrasi, dan fasilitasi pembangunan antardesa."
+    )
+    teks_pns_en = (
+        f"Civil servants within the {nama_en} District Government perform public service functions, administrative coordination, and development facilitation among villages."
+    )
+
+    ulasan_id = f"""#block[
+  #text(8pt, weight: \"bold\")[1. #h(2pt) Kepala Daerah] \\
+  #v(2pt)
+  {teks_camat_id}
+]
+#v(8pt)
+#block[
+  #text(8pt, weight: \"bold\")[2. #h(2pt) Pemerintah Desa] \\
+  #v(2pt)
+  {teks_desa_id}
+]
+#v(8pt)
+#block[
+  #text(8pt, weight: \"bold\")[3. #h(2pt) Pegawai Negeri Sipil] \\
+  #v(2pt)
+  {teks_pns_id}
+]"""
+
+    ulasan_en = f"""#block[
+  #text(8pt, weight: \"bold\", style: \"italic\")[1. #h(2pt) Regional Head] \\
+  #v(2pt)
+  {teks_camat_en}
+]
+#v(8pt)
+#block[
+  #text(8pt, weight: \"bold\", style: \"italic\")[2. #h(2pt) Village Government] \\
+  #v(2pt)
+  {teks_desa_en}
+]
+#v(8pt)
+#block[
+  #text(8pt, weight: \"bold\", style: \"italic\")[3. #h(2pt) Civil Service] \\
+  #v(2pt)
+  {teks_pns_en}
+]"""
+
+    technical_notes_bab2 = [
+        (
+            "Kecamatan adalah bagian wilayah dari daerah kabupaten/kota yang dipimpin oleh Camat. Kecamatan diatur sesuai dengan ketentuan Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah.",
+            "District is part of the region of the district / city led by Camat. District is regulated in accordance with the provisions of Law No. 23 of 2014 on Regional Government."
+        ),
+        (
+            "Desa/Kelurahan adalah wilayah yang dipimpin oleh kepala desa/kepala kelurahan (lurah) yang berada di bawah koordinasi camat.",
+            "Village/Subdistrict is a region led by the village head/subdistrict head (lurah) who is under the coordination of district head."
+        ),
+        (
+            "Rukun Tetangga (RT) dan Rukun Warga (RW) digunakan untuk mengidentifikasi satuan lingkungan setempat. RT dan RW merupakan organisasi yang dibentuk melalui musyawarah oleh masyarakat setempat serta diakui dan dibina oleh Pemerintah untuk menjadi mitra dalam pemberdayaan masyarakat. Pembentukan RT dan RW sejalan dengan besaran jumlah penduduk di suatu wilayah.",
+            "RT and RW are used to identify local environmental units. RT and RW are organisations formed through deliberation by local communities and recognized and built by the Government to become partners in community empowerment. The formation of RT and RW is in line with the size of the population in a region."
+        ),
+        (
+            "Klasifikasi Wilayah adalah golongan suatu wilayah administrasi setingkat desa/kelurahan yang ditentukan berdasarkan standar atau ciri wilayah perkotaan dan perdesaan.",
+            "Regional Classification is a group of administrative regions as high as village/subdistrict specified based on standards or characteristics of urban and rural areas."
+        ),
+        (
+            "Indeks Desa Membangun (IDM) merupakan indeks komposit yang dibentuk dari tiga indeks, yaitu Indeks Ketahanan Sosial (IKS), Indeks Ketahanan Ekonomi (IKE), dan Indeks Ketahanan Ekologi/Lingkungan (IKL). Nilai IDM yang semakin tinggi menunjukkan kondisi desa yang semakin baik dari segi sosial, ekonomi, dan ekologi. IDM dapat menentukan status desa menjadi Desa Mandiri, Maju, Berkembang, Tertinggal, dan Sangat Tertinggal berdasarkan nilai dari indeks-indeks tersebut.",
+            "Index of Developing Village is a composite index formed from three indices, namely Social Resilience Index, Economic Resilience Index, and Ecological/Environmental.Resilience Index. The higher Index of Developing Village values indicate the better of the village in terms of social, economic, and ecological terms. Index of Developing Village can determine the status of the village to be \\\"Mandiri\\\", \\\"Maju\\\", \\\"Berkembang\\\", \\\"Tertinggal\\\" and \\\"Sangat Tertinggal\\\" Village based on the value of these indexes."
+        ),
+        (
+            "Pegawai Negeri Sipil (PNS) adalah setiap warga negara Republik Indonesia yang telah memenuhi syarat yang ditentukan, diangkat oleh pejabat yang berwenang dan diserahi tugas dalam jabatan negeri, atau diserahi tugas negara lainnya, dan digaji berdasarkan peraturan perundang-undangan yang berlaku. PNS terdiri dari PNS pusat dan PNS daerah.",
+            "Civil Service (PNS) is any citizen of the Republic of Indonesia who has qualified as specified, appointed by the authorized officials and assigned duties in state office, or assigned to other state duties, and paid under applicable legislation. The PNS consists of the central PNS and the local PNS."
+        )
+    ]
+
+    bab2_intro = render_chapter_intro(
+        chapter_num=2,
+        title_id="PEMERINTAHAN",
+        title_en="GOVERNMENT",
+        ulasan_id=ulasan_id,
+        ulasan_en=ulasan_en,
+        technical_notes=technical_notes_bab2
+    )
+
+    sec_214 = f"{t214_markup}\n#pagebreak()\n" if has_214 else ""
 
     return f"""
 // ==========================================
-// BAB 2: PEMERINTAHAN (INFOGRAFIS & NARASI)
+// BAB 2: PEMERINTAHAN (PEMBATAS, ULASAN & PENJELASAN TEKNIS)
 // ==========================================
+{bab2_intro}
 {chart_section}
 // ==========================================
-// ISI BAB 2: ULASAN NARASI & TABEL DATA
+// TABEL DATA BAB 2 (1 HALAMAN 1 TABEL)
 // ==========================================
-#text(8.5pt)[
-Secara administratif, Kecamatan {nama_singkat} terbagi menjadi {len(desa_list)} desa/kelurahan yang dipimpin oleh kepala desa dan lurah definitif, didukung oleh aparatur pemerintah desa, Badan Permusyawaratan Desa (BPD), serta kelembagaan RT dan RW sebagai garda terdepan pelayanan kemasyarakatan.
-]
-#v(12pt)
-
 {t211_markup}
 #pagebreak()
 
 {t212_markup}
-#v(10pt)
+#pagebreak()
+
 {t213_markup}
 #pagebreak()
 
-{t215_markup}
-#v(10pt)
+{sec_214}{t215_markup}
+#pagebreak()
+
 {t216_markup}
 #pagebreak()
 
 {t221_markup}
-#v(10pt)
+#pagebreak()
+
 {t222_markup}
 """

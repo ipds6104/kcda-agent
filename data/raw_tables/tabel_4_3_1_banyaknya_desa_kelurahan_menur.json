@@ -1,7 +1,7 @@
 {
   "no": "4.3.1",
   "nama": "Banyaknya Desa/Kelurahan Menurut Sumber Penerangan Jalan Utama Desa/Kelurahan di Kecamatan XXX",
-  "sumber": "2023 + 2024 KCDA Tahun lalu\n2025 Podes",
+  "sumber": "2Kantor Camat XXX/ XXX District Office\n\n\n3 Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "1B1URUs2wJzhtGMJ7i5snYXQ5J9phuaU-kmQUMXcSR1U",
   "spreadsheet_title": "Banyaknya Desa/Kelurahan Menurut Sumber Penerangan Jalan Utama Desa/Kelurahan di Kecamatan XXX",
@@ -295,5 +295,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
 }

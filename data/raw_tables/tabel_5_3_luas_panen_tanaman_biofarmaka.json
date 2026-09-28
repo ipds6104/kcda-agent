@@ -1,7 +1,7 @@
 {
   "no": "5.3",
   "nama": "Luas Panen Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (m2)",
-  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
   "disediakan_ipds": true,
   "sheet_id": "154iUA-guAt5HWlHYNr8RAWc7jVLGjwhZs8Y5lGi5FOk",
   "spreadsheet_title": "Luas Panen Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (m2)",
@@ -422,5 +422,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

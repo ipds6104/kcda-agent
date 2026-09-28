@@ -1,7 +1,7 @@
 {
   "no": "2.1.6",
   "nama": "Status Desa berdasarkan Indeks Desa Membangun di Kecamatan XXX, 2024",
-  "sumber": "REKOMENDASI_IDM_PROVINSI_61_KALBAR-2023",
+  "sumber": "Indeks Desa Membangun (IDM) Tahun 2024 per Desa, Kementerian Desa, PDT dan Transmigrasi/ Index of Developing Village 2024 for each Village, Ministry of Villages, Development of Disadvantaged Regions, and Transmigration",
   "disediakan_ipds": true,
   "sheet_id": "1qdrqJe5xgh2JW0A1RiIQdHgSSawMMdcNXZpsnSNE9EU",
   "spreadsheet_title": "Status Desa berdasarkan Indeks Desa Membangun di Kecamatan XXX, 2024",
@@ -499,5 +499,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

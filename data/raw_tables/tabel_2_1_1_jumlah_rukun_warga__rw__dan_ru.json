@@ -1,7 +1,7 @@
 {
   "no": "2.1.1",
   "nama": "Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan XXX",
-  "sumber": "KCDA 2025 + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "1Z-0jhg8zWUhqZrL1Raaju-W5fpGUwn_gBCViU-ZeL88",
   "spreadsheet_title": "Jumlah Rukun Warga (RW) dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan XXX",
@@ -2404,5 +2404,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

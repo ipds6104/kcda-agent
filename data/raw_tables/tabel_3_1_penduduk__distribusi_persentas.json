@@ -1,7 +1,7 @@
 {
   "no": "3.1",
   "nama": "Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, Rasio Jenis Kelamin Penduduk\nMenurut Desa/Kelurahan di Kecamatan XXX",
-  "sumber": "Tergantung ketersediaan data di daerah (Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mempawah)",
+  "sumber": "Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mempawah/ Population and Civil Registration Service of Mempawah Regency",
   "disediakan_ipds": true,
   "sheet_id": "1_zXe_P8sXdUeyiMOYx_K3VUzu8-BJ7--30sITv63fAU",
   "spreadsheet_title": "Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, Rasio Jenis Kelamin Penduduk\nMenurut Desa/Kelurahan di Kecamatan XXX",
@@ -2193,5 +2193,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

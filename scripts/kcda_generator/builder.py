@@ -77,84 +77,88 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
 #show figure: it => [ #it #metadata("f") <page_marker> ]
 #show image: it => [ #it #metadata("i") <page_marker> ]
 
-#set page(
-  paper: "a5",
-  margin: (
-    inside: 2.0cm,
-    outside: 1.5cm,
-    top: 2.0cm,
-    bottom: 2.0cm,
-  ),
-  header-ascent: 40%,
-  footer-descent: 20%,
-  header: context {{
-    let p = here().page()
-    let has_c = query(selector(<page_marker>)).any(m => {{
-      let pos = m.location().position()
-      pos.page == p and pos.y > 1.4cm and pos.y < 19.4cm
-    }})
-    let is_ch = query(selector(<chapter_page>)).any(m => m.location().page() == p)
-    if has_c and not in_frontmatter.get() and not is_ch {{
-      let page_num = counter(page).get().first()
-      let titles = query(selector(<chapter_title>)).filter(m => m.location().page() <= p)
-      let chapter_title = if titles.len() > 0 {{ titles.last().value }} else {{ "" }}
-      if calc.even(page_num) {{
-        // Halaman Genap (Verso/Kiri): Judul Publikasi Bahasa Indonesia
-        align(left, text(8pt, font: ("Metropolis", "Liberation Sans", "Arial"), fill: running_title_color, weight: "bold")[KECAMATAN {nama_singkat.upper()} DALAM ANGKA {tahun_rilis}])
-      }} else {{
-        // Halaman Ganjil (Rekto/Kanan): Judul Bab Bahasa Indonesia
-        let right_text = if chapter_title != "" {{ chapter_title }} else {{ "{nama_instansi_singkat}" }}
-        align(right, text(8pt, font: ("Metropolis", "Liberation Sans", "Arial"), fill: running_title_color, weight: "bold")[#right_text])
-      }}
-    }}
-  }},
-  footer: context {{
-    let p = here().page()
-    let has_c = query(selector(<page_marker>)).any(m => {{
-      let pos = m.location().position()
-      pos.page == p and pos.y > 1.4cm and pos.y < 19.4cm
-    }})
-    let is_ch = query(selector(<chapter_page>)).any(m => m.location().page() == p)
-    if not has_c or is_ch {{
-      none
-    }} else if in_frontmatter.get() {{
-      let page_num = counter(page).get().first()
-      if page_num >= 5 {{
-        let display_val = counter(page).display("i")
-        if calc.even(page_num) {{
-          align(left + top, text(7.5pt, font: ("Myriad Pro", "Liberation Sans", "Arial"), fill: rgb("#4B5563"), weight: "bold")[#v(3pt) #display_val])
-        }} else {{
-          align(right + top, text(7.5pt, font: ("Myriad Pro", "Liberation Sans", "Arial"), fill: rgb("#4B5563"), weight: "bold")[#v(3pt) #display_val])
-        }}
-      }}
-    }} else {{
-      let page_num = counter(page).get().first()
-      let display_val = counter(page).display("1")
-      let titles_en = query(selector(<chapter_title_en>)).filter(m => m.location().page() <= p)
-      let chapter_en = if titles_en.len() > 0 {{ titles_en.last().value }} else {{ "" }}
-      if calc.even(page_num) {{
-        grid(
-          columns: (auto, auto),
-          align: horizon,
-          column-gutter: 8pt,
-          page_badge(display_val),
-          text(8pt, font: ("Metropolis", "Liberation Sans", "Arial"), style: "italic", fill: running_title_color)[{nama_en.upper()} DISTRICT IN FIGURES {tahun_rilis}]
-        )
-      }} else {{
-        let right_en_text = if chapter_en != "" {{ upper(chapter_en) }} else {{ "{nama_en.upper()} DISTRICT IN FIGURES {tahun_rilis}" }}
-        grid(
-          columns: (1fr, auto),
-          align: horizon,
-          column-gutter: 8pt,
-          align(right, text(8pt, font: ("Metropolis", "Liberation Sans", "Arial"), style: "italic", fill: running_title_color)[#right_en_text]),
-          page_badge(display_val)
-        )
-      }}
-    }}
-  }}
+#let normal_margins = (
+  inside: 2.0cm,
+  outside: 1.5cm,
+  top: 2.0cm,
+  bottom: 2.0cm,
 )
 
-#set text(font: ("Myriad Pro", "Liberation Sans", "Arial"), size: 7.5pt, lang: "id")
+#let page_header = context {{
+  let p = here().page()
+  let has_c = query(selector(<page_marker>)).any(m => {{
+    let pos = m.location().position()
+    pos.page == p and pos.y > 1.4cm and pos.y < 19.4cm
+  }})
+  if has_c and not in_frontmatter.get() {{
+    let page_num = counter(page).get().first()
+    let titles = query(selector(<chapter_title>)).filter(m => m.location().page() <= p)
+    let chapter_title = if titles.len() > 0 {{ titles.last().value }} else {{ "" }}
+    if calc.even(page_num) {{
+      // Halaman Genap (Verso/Kiri): Judul Publikasi Bahasa Indonesia
+      align(left, text(8pt, font: ("Metropolis", "Liberation Sans"), fill: running_title_color, weight: "bold")[KECAMATAN {nama_singkat.upper()} DALAM ANGKA {tahun_rilis}])
+    }} else {{
+      // Halaman Ganjil (Rekto/Kanan): Judul Bab Bahasa Indonesia
+      let right_text = if chapter_title != "" {{ chapter_title }} else {{ "{nama_instansi_singkat}" }}
+      align(right, text(8pt, font: ("Metropolis", "Liberation Sans"), fill: running_title_color, weight: "bold")[#right_text])
+    }}
+  }}
+}}
+
+#let page_footer = context {{
+  let p = here().page()
+  let has_c = query(selector(<page_marker>)).any(m => {{
+    let pos = m.location().position()
+    pos.page == p and pos.y > 1.4cm and pos.y < 19.4cm
+  }})
+  if not has_c {{
+    none
+  }} else if in_frontmatter.get() {{
+    let page_num = counter(page).get().first()
+    if page_num >= 5 {{
+      let display_val = counter(page).display("i")
+      if calc.even(page_num) {{
+        align(left + top, text(7.5pt, font: ("Myriad Pro", "Liberation Sans"), fill: rgb("#4B5563"), weight: "bold")[#v(3pt) #display_val])
+      }} else {{
+        align(right + top, text(7.5pt, font: ("Myriad Pro", "Liberation Sans"), fill: rgb("#4B5563"), weight: "bold")[#v(3pt) #display_val])
+      }}
+    }}
+  }} else {{
+    let page_num = counter(page).get().first()
+    let display_val = counter(page).display("1")
+    let titles_en = query(selector(<chapter_title_en>)).filter(m => m.location().page() <= p)
+    let chapter_en = if titles_en.len() > 0 {{ titles_en.last().value }} else {{ "" }}
+    if calc.even(page_num) {{
+      grid(
+        columns: (auto, auto),
+        align: horizon,
+        column-gutter: 8pt,
+        page_badge(display_val),
+        text(8pt, font: ("Metropolis", "Liberation Sans"), style: "italic", fill: running_title_color)[{nama_en.upper()} DISTRICT IN FIGURES {tahun_rilis}]
+      )
+    }} else {{
+      let right_en_text = if chapter_en != "" {{ upper(chapter_en) }} else {{ "{nama_en.upper()} DISTRICT IN FIGURES {tahun_rilis}" }}
+      grid(
+        columns: (1fr, auto),
+        align: horizon,
+        column-gutter: 8pt,
+        align(right, text(8pt, font: ("Metropolis", "Liberation Sans"), style: "italic", fill: running_title_color)[#right_en_text]),
+        page_badge(display_val)
+      )
+    }}
+  }}
+}}
+
+#set page(
+  paper: "a5",
+  margin: normal_margins,
+  header-ascent: 40%,
+  footer-descent: 20%,
+  header: page_header,
+  footer: page_footer,
+)
+
+#set text(font: ("Myriad Pro", "Liberation Sans"), size: 7.5pt, lang: "id")
 #set par(justify: true, leading: 0.5em)
 
 #show table.cell: set par(justify: false)
@@ -166,11 +170,15 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
 // ==========================================
 // DAFTAR PUSTAKA (BIBLIOGRAPHY)
 // ==========================================
+#pagebreak()
+#metadata("DAFTAR PUSTAKA") <chapter_title>
+#metadata("BIBLIOGRAPHY") <chapter_title_en>
+#metadata("daftar_pustaka") <daftar_pustaka>
 #v(0.5cm)
 #block[
   #text(12pt, weight: "bold")[DAFTAR PUSTAKA] \\
   #text(9pt, style: "italic", fill: rgb("#4B5563"))[BIBLIOGRAPHY]
-] <chapter_page>
+]
 #v(10pt)
 
 #text(8pt)[
@@ -191,12 +199,16 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
   #v(8pt)
   Kementerian Pertanian & Badan Pusat Statistik. 2023. _Pedoman Statistik Pertanian Hortikultura (SPH)_. Jakarta: Kementerian Pertanian.
 ]
+#metadata("akhir_buku") <akhir_buku>
 """
 
     # Assemble Document
     parts = [
         header_logic,
         render_frontmatter(cfg),
+        """
+#metadata("transisi_isi") <transisi_isi>
+""",
         render_chapter1(cfg, out_dir=out_dir),
         render_chapter2(cfg, out_dir=out_dir),
         render_chapter3(cfg, out_dir=out_dir),
@@ -209,3 +221,4 @@ def build_kcda_typst(slug: str, out_dir: Any = None) -> str:
     ]
 
     return "\n".join(parts)
+

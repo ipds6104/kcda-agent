@@ -1,7 +1,7 @@
 {
   "no": "2.2.1",
   "nama": "Jumlah Pegawai Negeri Sipil Menurut Pemerintah Daerah dan Jenis Kelamin",
-  "sumber": "Jumlah PNS per desa/kelurahan (Kantor Camat)",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "1Vqx2_TCs27HqnxYcoYHhLASZROf6gEJDvo6J6CjEQ8g",
   "spreadsheet_title": "Jumlah Pegawai Negeri Sipil Menurut Pemerintah Daerah dan Jenis Kelamin",
@@ -2341,5 +2341,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

@@ -1,7 +1,7 @@
 {
   "no": "4.4.3",
   "nama": "Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Desa/Kelurahan di Kecamatan XXX",
-  "sumber": "Podes",
+  "sumber": "",
   "disediakan_ipds": false,
   "sheet_id": "1jg-ouz0ekRBz1dnfAiu19ppK8fD7CobWhwoIHTK7CD0",
   "spreadsheet_title": "Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Desa/Kelurahan di Kecamatan XXX",
@@ -295,5 +295,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

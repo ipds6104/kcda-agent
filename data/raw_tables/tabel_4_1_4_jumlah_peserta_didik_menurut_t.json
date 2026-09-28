@@ -1,7 +1,7 @@
 {
   "no": "4.1.4",
   "nama": "Jumlah Peserta Didik Menurut Tingkat Pendidikan di Kecamatan XXX",
-  "sumber": "Kemdikbud:\nTK\nSD\nSMP\nSMA\nSMK\n\nKemenag:\nRA\nMI\nMTS\nMA",
+  "sumber": "1Kementerian Pendidikan Dasar dan Menengah; Sistem Data Pokok Pendidikan; data semester ganjil laporan sampai dengan 30 November/Ministry of Primary and Secondary Education; Sistem Data Pokok Pendidikan; odd semester report data up to 30 November\n\n2Kementerian Agama; EMIS; data semester genap laporan sampai dengan 30 Juni/Ministry of Religious Affairs; EMIS; even semester report data up to 30 June",
   "disediakan_ipds": true,
   "sheet_id": "1VK7v1ZgUHzsT6RSTNk95ZvvUv-Eow7CgsI0GHaWbo8E",
   "spreadsheet_title": "Jumlah Peserta Didik Menurut Tingkat Pendidikan di Kecamatan XXX",
@@ -961,5 +961,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

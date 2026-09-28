@@ -1,7 +1,7 @@
 {
   "no": "1.4.",
   "nama": "Jarak Kantor Camat XXX Dengan Kota dan Tempat Penting Lainnya (km)",
-  "sumber": "KCDA 2025 + Kantor Camat",
+  "sumber": "Kantor Camat XXX/ XXX District Office",
   "disediakan_ipds": false,
   "sheet_id": "10DAiZQaRpS7-w0qfA6OO_D6oIPCLzmVODciMRdu5Guo",
   "spreadsheet_title": "Jarak Kantor Camat XXX Dengan Kota dan Tempat Penting Lainnya (km)",
@@ -35,7 +35,8 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "50,00"
         ]
       ]
     },
@@ -67,7 +68,8 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "-"
         ]
       ]
     },
@@ -99,7 +101,8 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "36,2 km"
         ]
       ]
     },
@@ -131,7 +134,13 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "-"
+        ],
+        [
+          "4",
+          "Pasar Sungai Pinyuh",
+          "30,40"
         ]
       ]
     },
@@ -163,7 +172,13 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "66,00"
+        ],
+        [
+          "4",
+          "Kecamatan Sungai Pinyuh",
+          "35,00"
         ]
       ]
     },
@@ -195,7 +210,13 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "59,60"
+        ],
+        [
+          "4",
+          "Kota Sungai Pinyuh",
+          "22,40"
         ]
       ]
     },
@@ -227,7 +248,8 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "21,50"
         ]
       ]
     },
@@ -259,7 +281,8 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "50,90"
         ]
       ]
     },
@@ -291,7 +314,8 @@
         ],
         [
           "3",
-          "Makam Juang Mandor"
+          "Makam Juang Mandor",
+          "46,20"
         ]
       ]
     },
@@ -517,5 +541,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

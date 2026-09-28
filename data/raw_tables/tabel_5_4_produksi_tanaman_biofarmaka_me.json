@@ -1,7 +1,7 @@
 {
   "no": "5.4",
   "nama": "Produksi Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (kg)",
-  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
   "disediakan_ipds": true,
   "sheet_id": "1o1CQBeGL0nA_33GOGs6PIoui4WwnYUhhw3qg8ShC0Dw",
   "spreadsheet_title": "Produksi Tanaman Biofarmaka Menurut Jenis Tanaman di Kecamatan XXX (kg)",
@@ -422,5 +422,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }

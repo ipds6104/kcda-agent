@@ -1,229 +1,234 @@
-# ==============================================================================
-# Konfigurasi Master Kabupaten / Kota untuk KCDA Agent
-# ==============================================================================
-# File ini mendefinisikan seluruh konteks daerah, metadata instansi, daftar kecamatan,
-# dan sumber data Google Sheets untuk kompilasi publikasi Kecamatan Dalam Angka (KCDA).
-# ==============================================================================
-
-# Status template bawaan: Ubah menjadi false jika Anda sudah menyesuaikan file ini!
-is_template_default: true
-
+is_template_default: false
 kabupaten:
-  nama_resmi: "Kabupaten Mempawah"
-  nama_singkat: "Mempawah"
-  nama_en: "Mempawah Regency"
-  tipe: "kabupaten"             # "kabupaten" atau "kota"
-  kode_wilayah: "6104"
-  ibukota_kabupaten: "Mempawah"
-
+  nama_resmi: Kabupaten Mempawah
+  nama_singkat: Mempawah
+  nama_en: Mempawah Regency
+  tipe: kabupaten
+  kode_wilayah: '6104'
+  ibukota_kabupaten: Mempawah
 instansi:
-  nama_resmi: "Badan Pusat Statistik Kabupaten Mempawah"
-  nama_singkat: "BPS Kabupaten Mempawah"
-  nama_en: "BPS-Statistics of Mempawah Regency"
-  alamat: "Jalan Raden Kusno Nomor 59 Mempawah 78912"
-  telepon: "(0561) 691049"
-  website: "https://mempawahkab.bps.go.id"
-  email: "bps6104@bps.go.id"
-  kode_satker: "61040"
-
+  nama_resmi: Badan Pusat Statistik Kabupaten Mempawah
+  nama_singkat: BPS Kabupaten Mempawah
+  nama_en: BPS-Statistics of Mempawah Regency
+  alamat: Jalan Raden Kusno Nomor 59 Mempawah 78912
+  telepon: (0561) 691049
+  website: https://mempawahkab.bps.go.id
+  email: bps6104@bps.go.id
+  kode_satker: '61040'
 publikasi:
-  judul_seri: "Kecamatan Dalam Angka"
-  judul_seri_en: "Subdistrict in Figures"
+  judul_seri: Kecamatan Dalam Angka
+  judul_seri_en: Subdistrict in Figures
   tahun_rilis: 2026
   tahun_data: 2025
-  ukuran_kertas: "a5"
-  warna_tema_cmyk: "cmyk(0%, 20%, 90%, 0%)"       # Kuning/Gold BPS 2026
-  warna_running_cmyk: "cmyk(0%, 35%, 95%, 0%)"
-
+  ukuran_kertas: a5
+  warna_tema_cmyk: cmyk(0%, 20%, 90%, 0%)
+  warna_running_cmyk: cmyk(0%, 35%, 95%, 0%)
 pimpinan:
-  nama_lengkap: "Munawir, S.E., M.M."
-  nama_polos: "Munawir"
-  nip: "197205121994031001"
-  jabatan: "Kepala Badan Pusat Statistik Kabupaten Mempawah"
-  jabatan_singkat: "Kepala BPS Kabupaten Mempawah"
-
-# Daftar Kecamatan di Kabupaten/Kota
+  nama_lengkap: Munawir, S.E., M.M.
+  nama_polos: Munawir
+  nip: '197205121994031001'
+  jabatan: Kepala Badan Pusat Statistik Kabupaten Mempawah
+  jabatan_singkat: Kepala BPS Kabupaten Mempawah
 kecamatan:
-  - slug: "mempawah-hilir"
-    nama_resmi: "Kecamatan Mempawah Hilir"
-    nama_singkat: "Mempawah Hilir"
-    nama_en: "Mempawah Hilir Subdistrict"
-    kode_wilayah: "6104050"
-    no_katalog: "1102001.6104050"
-    no_publikasi: "61040.26012"
-    pic_nama: "Sukma Andini, S.Tr.Stat."
-    ibukota: "Tanjung"
-    cover_depan: "assets/covers/depan/Mempawah Hilir1.jpg"
-    cover_dalam: "assets/covers/depan/Mempawah Hilir2.jpg"
-    desa_list:
-      - "Tanjung"
-      - "Kuala Secapah"
-      - "Tengah"
-      - "Terusan"
-      - "Pasir"
-      - "Penibung"
-      - "Sengkubang"
-      - "Malikian"
-
-  - slug: "mempawah-timur"
-    nama_resmi: "Kecamatan Mempawah Timur"
-    nama_singkat: "Mempawah Timur"
-    nama_en: "Mempawah Timur Subdistrict"
-    kode_wilayah: "6104051"
-    no_katalog: "1102001.6104051"
-    no_publikasi: "61040.26004"
-    pic_nama: "Ahmad Aulia Rahman, S.Tr.Stat."
-    ibukota: "Antibar"
-    cover_depan: "assets/covers/depan/Mempawah Timur1.jpg"
-    cover_dalam: "assets/covers/depan/Mempawah Timur2.jpg"
-    desa_list:
-      - "Pasir Wan Salim"
-      - "Sungai Bakau Kecil"
-      - "Pasir Panjang"
-      - "Pasir Palembang"
-      - "Pulau Pedalaman"
-      - "Antibar"
-      - "Sejegi"
-      - "Parit Banjar"
-
-  - slug: "sungai-pinyuh"
-    nama_resmi: "Kecamatan Sungai Pinyuh"
-    nama_singkat: "Sungai Pinyuh"
-    nama_en: "Sungai Pinyuh Subdistrict"
-    kode_wilayah: "6104040"
-    no_katalog: "1102001.6104040"
-    no_publikasi: "61040.26011"
-    pic_nama: "Vaniya Dewi Wulandari, A.Md.Stat."
-    ibukota: "Sungai Pinyuh"
-    cover_depan: "assets/covers/depan/Sungai Pinyuh1.jpg"
-    cover_dalam: "assets/covers/depan/Sungai Pinyuh2.jpg"
-    desa_list:
-      - "Sungai Purun Kecil"
-      - "Peniraman"
-      - "Nusapati"
-      - "Galang"
-      - "Sungai Rasau"
-      - "Sungai Pinyuh"
-      - "Sungai Batang"
-      - "Sungai Bakau Besar Laut"
-      - "Sungai Bakau Besar Darat"
-
-  - slug: "sungai-kunyit"
-    nama_resmi: "Kecamatan Sungai Kunyit"
-    nama_singkat: "Sungai Kunyit"
-    nama_en: "Sungai Kunyit Subdistrict"
-    kode_wilayah: "6104060"
-    no_katalog: "1102001.6104060"
-    no_publikasi: "61040.26005"
-    pic_nama: "Sarah Pratiwi, S.Tr.Stat."
-    ibukota: "Sungai Kunyit Laut"
-    cover_depan: "assets/covers/depan/Sungai Kunyit1.jpg"
-    cover_dalam: "assets/covers/depan/Sungai Kunyit2.jpg"
-    desa_list:
-      - "Semudun"
-      - "Semparong Parit Raden"
-      - "Mendalok"
-      - "Sungai Dungun"
-      - "Sungai Limau"
-      - "Sungai Kunyit Laut"
-      - "Sungai Kunyit Dalam"
-      - "Sungai Kunyit Hulu"
-      - "Bukit Batu"
-      - "Sungai Bundung Laut"
-      - "Sungai Duri I"
-      - "Sungai Duri II"
-
-  - slug: "segedong"
-    nama_resmi: "Kecamatan Segedong"
-    nama_singkat: "Segedong"
-    nama_en: "Segedong Subdistrict"
-    kode_wilayah: "6104030"
-    no_katalog: "1102001.6104030"
-    no_publikasi: "61040.26010"
-    pic_nama: "Listio Jati Nandhiko, S.Tr.Stat."
-    ibukota: "Parit Bugis"
-    cover_depan: "assets/covers/depan/Segedong1.jpg"
-    cover_dalam: "assets/covers/depan/Segedong2.jpg"
-    desa_list:
-      - "Peniti Dalam I"
-      - "Sungai Burung"
-      - "Sungai Purun Besar"
-      - "Parit Bugis"
-      - "Peniti Besar"
-      - "Peniti Dalam II"
-
-  - slug: "toho"
-    nama_resmi: "Kecamatan Toho"
-    nama_singkat: "Toho"
-    nama_en: "Toho Subdistrict"
-    kode_wilayah: "6104070"
-    no_katalog: "1102001.6104070"
-    no_publikasi: "61040.26006"
-    pic_nama: "Arini Faurizah, S.Tr.Stat."
-    ibukota: "Toho"
-    cover_depan: "assets/covers/depan/Toho1.jpg"
-    cover_dalam: "assets/covers/depan/Toho2.jpg"
-    desa_list:
-      - "Sambora"
-      - "Benuang"
-      - "Pak Utan"
-      - "Sepang"
-      - "Pak Laheng"
-      - "Terap"
-      - "Kecurit"
-      - "Toho Ilir"
-
-  - slug: "jongkat"
-    nama_resmi: "Kecamatan Jongkat"
-    nama_singkat: "Jongkat"
-    nama_en: "Jongkat Subdistrict"
-    kode_wilayah: "6104020"
-    no_katalog: "1102001.6104020"
-    no_publikasi: "61040.26009"
-    pic_nama: "Dwi Wahyu Ningsih, S.Tr.Stat."
-    ibukota: "Jungkat"
-    cover_depan: "assets/covers/depan/Jongkat1.jpg"
-    cover_dalam: "assets/covers/depan/Jongkat2.jpg"
-    desa_list:
-      - "Wajok Hilir"
-      - "Wajok Hulu"
-      - "Jungkat"
-      - "Peniti Luar"
-      - "Sungai Nipah"
-
-  - slug: "anjongan"
-    nama_resmi: "Kecamatan Anjongan"
-    nama_singkat: "Anjongan"
-    nama_en: "Anjongan Subdistrict"
-    kode_wilayah: "6104041"
-    no_katalog: "1102001.6104041"
-    no_publikasi: "61040.26007"
-    pic_nama: "Dicky Pratama, A.Md.Stat."
-    ibukota: "Anjongan"
-    cover_depan: "assets/covers/depan/Anjongan1.jpg"
-    cover_dalam: "assets/covers/depan/Anjongan2.jpg"
-    desa_list:
-      - "Anjongan Melancar"
-      - "Anjungan"
-      - "Pak Bulu"
-      - "Dema"
-      - "Kepayang"
-
-  - slug: "sadaniang"
-    nama_resmi: "Kecamatan Sadaniang"
-    nama_singkat: "Sadaniang"
-    nama_en: "Sadaniang Subdistrict"
-    kode_wilayah: "6104071"
-    no_katalog: "1102001.6104071"
-    no_publikasi: "61040.26008"
-    pic_nama: "Siti Nurjanah, S.Tr.Stat."
-    ibukota: "Pentek"
-    cover_depan: "assets/covers/depan/Sadaniang1.jpg"
-    cover_dalam: "assets/covers/depan/Sadaniang2.jpg"
-    desa_list:
-      - "Pentek"
-      - "Ansiap"
-      - "Amawak"
-      - "Sekabuk"
-      - "Suak Barangan"
-      - "Bum-Bum"
+- slug: mempawah-hilir
+  nama_resmi: Kecamatan Mempawah Hilir
+  nama_singkat: Mempawah Hilir
+  nama_en: Mempawah Hilir Subdistrict
+  kode_wilayah: '6104050'
+  no_katalog: '1102001.6104050'
+  no_publikasi: '61040.26012'
+  pic_nama: Sukma Andini, S.Tr.Stat.
+  ibukota: Tanjung
+  cover_depan: assets/covers/depan/Mempawah Hilir1.jpg
+  cover_dalam: assets/covers/depan/Mempawah Hilir2.jpg
+  desa_list:
+  - Tanjung
+  - Kuala Secapah
+  - Tengah
+  - Terusan
+  - Pasir
+  - Penibung
+  - Sengkubang
+  - Malikian
+  volume: Volume 17, 2026
+  issn: 3064-5468
+  peta: assets/maps/mempawah-hilir.jpg
+- slug: mempawah-timur
+  nama_resmi: Kecamatan Mempawah Timur
+  nama_singkat: Mempawah Timur
+  nama_en: Mempawah Timur Subdistrict
+  kode_wilayah: '6104051'
+  no_katalog: '1102001.6104051'
+  no_publikasi: '61040.26004'
+  pic_nama: Ahmad Aulia Rahman, S.Tr.Stat.
+  ibukota: Antibar
+  cover_depan: assets/covers/depan/Mempawah Timur1.jpg
+  cover_dalam: assets/covers/depan/Mempawah Timur2.jpg
+  desa_list:
+  - Pasir Wan Salim
+  - Sungai Bakau Kecil
+  - Pasir Panjang
+  - Pasir Palembang
+  - Pulau Pedalaman
+  - Antibar
+  - Sejegi
+  - Parit Banjar
+  volume: Volume 17, 2026
+  issn: 3064-5506
+  peta: assets/maps/mempawah-timur.jpg
+- slug: sungai-pinyuh
+  nama_resmi: Kecamatan Sungai Pinyuh
+  nama_singkat: Sungai Pinyuh
+  nama_en: Sungai Pinyuh Subdistrict
+  kode_wilayah: '6104040'
+  no_katalog: '1102001.6104040'
+  no_publikasi: '61040.26011'
+  pic_nama: Vaniya Dewi Wulandari, A.Md.Stat.
+  ibukota: Sungai Pinyuh
+  cover_depan: assets/covers/depan/Sungai Pinyuh1.jpg
+  cover_dalam: assets/covers/depan/Sungai Pinyuh2.jpg
+  desa_list:
+  - Sungai Purun Kecil
+  - Peniraman
+  - Nusapati
+  - Galang
+  - Sungai Rasau
+  - Sungai Pinyuh
+  - Sungai Batang
+  - Sungai Bakau Besar Laut
+  - Sungai Bakau Besar Darat
+  volume: Volume 17, 2026
+  issn: 3064-5433
+  peta: assets/maps/sungai-pinyuh.jpg
+- slug: sungai-kunyit
+  nama_resmi: Kecamatan Sungai Kunyit
+  nama_singkat: Sungai Kunyit
+  nama_en: Sungai Kunyit Subdistrict
+  kode_wilayah: '6104060'
+  no_katalog: '1102001.6104060'
+  no_publikasi: '61040.26005'
+  pic_nama: Sarah Pratiwi, S.Tr.Stat.
+  ibukota: Sungai Kunyit Laut
+  cover_depan: assets/covers/depan/Sungai Kunyit1.jpg
+  cover_dalam: assets/covers/depan/Sungai Kunyit2.jpg
+  desa_list:
+  - Semudun
+  - Semparong Parit Raden
+  - Mendalok
+  - Sungai Dungun
+  - Sungai Limau
+  - Sungai Kunyit Laut
+  - Sungai Kunyit Dalam
+  - Sungai Kunyit Hulu
+  - Bukit Batu
+  - Sungai Bundung Laut
+  - Sungai Duri I
+  - Sungai Duri II
+  volume: Volume 17, 2026
+  issn: 3064-5441
+  peta: assets/maps/sungai-kunyit.jpg
+- slug: segedong
+  nama_resmi: Kecamatan Segedong
+  nama_singkat: Segedong
+  nama_en: Segedong Subdistrict
+  kode_wilayah: '6104030'
+  no_katalog: '1102001.6104030'
+  no_publikasi: '61040.26010'
+  pic_nama: Listio Jati Nandhiko, S.Tr.Stat.
+  ibukota: Parit Bugis
+  cover_depan: assets/covers/depan/Segedong1.jpg
+  cover_dalam: assets/covers/depan/Segedong2.jpg
+  desa_list:
+  - Peniti Dalam I
+  - Sungai Burung
+  - Sungai Purun Besar
+  - Parit Bugis
+  - Peniti Besar
+  - Peniti Dalam II
+  volume: Volume 17, 2026
+  issn: 3064-545X
+  peta: assets/maps/segedong.jpg
+- slug: toho
+  nama_resmi: Kecamatan Toho
+  nama_singkat: Toho
+  nama_en: Toho Subdistrict
+  kode_wilayah: '6104070'
+  no_katalog: '1102001.6104070'
+  no_publikasi: '61040.26006'
+  pic_nama: Arini Faurizah, S.Tr.Stat.
+  ibukota: Toho
+  cover_depan: assets/covers/depan/Toho1.jpg
+  cover_dalam: assets/covers/depan/Toho2.jpg
+  desa_list:
+  - Sambora
+  - Benuang
+  - Pak Utan
+  - Sepang
+  - Pak Laheng
+  - Terap
+  - Kecurit
+  - Toho Ilir
+  volume: Volume 17, 2026
+  issn: 3064-5476
+  peta: assets/maps/toho.jpg
+- slug: jongkat
+  nama_resmi: Kecamatan Jongkat
+  nama_singkat: Jongkat
+  nama_en: Jongkat Subdistrict
+  kode_wilayah: '6104020'
+  no_katalog: '1102001.6104020'
+  no_publikasi: '61040.26009'
+  pic_nama: Dwi Wahyu Ningsih, S.Tr.Stat.
+  ibukota: Jungkat
+  cover_depan: assets/covers/depan/Jongkat1.jpg
+  cover_dalam: assets/covers/depan/Jongkat2.jpg
+  desa_list:
+  - Wajok Hilir
+  - Wajok Hulu
+  - Jungkat
+  - Peniti Luar
+  - Sungai Nipah
+  volume: Volume 17, 2026
+  issn: 3064-5719
+  peta: assets/maps/jongkat.jpg
+- slug: anjongan
+  nama_resmi: Kecamatan Anjongan
+  nama_singkat: Anjongan
+  nama_en: Anjongan Subdistrict
+  kode_wilayah: '6104041'
+  no_katalog: '1102001.6104041'
+  no_publikasi: '61040.26007'
+  pic_nama: Dicky Pratama, A.Md.Stat.
+  ibukota: Anjongan
+  cover_depan: assets/covers/depan/Anjongan1.jpg
+  cover_dalam: assets/covers/depan/Anjongan2.jpg
+  desa_list:
+  - Anjongan Melancar
+  - Anjungan
+  - Pak Bulu
+  - Dema
+  - Kepayang
+  volume: Volume 17, 2026
+  issn: 3064-5697
+  peta: assets/maps/anjongan.jpg
+- slug: sadaniang
+  nama_resmi: Kecamatan Sadaniang
+  nama_singkat: Sadaniang
+  nama_en: Sadaniang Subdistrict
+  kode_wilayah: '6104071'
+  no_katalog: '1102001.6104071'
+  no_publikasi: '61040.26008'
+  pic_nama: Siti Nurjanah, S.Tr.Stat.
+  ibukota: Pentek
+  cover_depan: assets/covers/depan/Sadaniang1.jpg
+  cover_dalam: assets/covers/depan/Sadaniang2.jpg
+  desa_list:
+  - Pentek
+  - Ansiap
+  - Amawak
+  - Sekabuk
+  - Suak Barangan
+  - Bum-Bum
+  volume: Volume 17, 2026
+  issn: 3064-5700
+  peta: assets/maps/sadaniang.jpg

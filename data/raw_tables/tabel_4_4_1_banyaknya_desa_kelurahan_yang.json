@@ -1,7 +1,7 @@
 {
   "no": "4.4.1",
   "nama": "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam\nMenurut Jenis Bencana Alam di Kecamatan XXX",
-  "sumber": "Podes",
+  "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
   "disediakan_ipds": false,
   "sheet_id": "16BBjSBhoZzQlwd_yE1jcRfDVY3u42yMexB7YXjKz6Iw",
   "spreadsheet_title": "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam\nMenurut Jenis Bencana Alam di Kecamatan XXX",
@@ -529,5 +529,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries\n\n2Periode Januari–Mei 2025/During January–May 2025"
 }

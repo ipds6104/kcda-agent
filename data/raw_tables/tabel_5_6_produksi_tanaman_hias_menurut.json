@@ -1,7 +1,7 @@
 {
   "no": "5.6",
   "nama": "Produksi Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (tangkai)",
-  "sumber": "BPS, Statistik Pertanian Hortikultura SPH-SBS",
+  "sumber": "Badan Pusat Statistik-Kementerian Pertanian (Direktorat Jenderal Hortikultura)/BPS-Statistics Indonesia-Ministry of Agriculture (Directorate General of Horticulture)",
   "disediakan_ipds": true,
   "sheet_id": "1Rs-FeKkqGfb7RVsb9vNQNp7nMfZe4W7KI8FDYNF4jUY",
   "spreadsheet_title": "Produksi Tanaman Hias Menurut Jenis Tanaman di Kecamatan XXX (tangkai)",
@@ -478,5 +478,6 @@
         ]
       ]
     }
-  }
+  },
+  "catatan": ""
 }
