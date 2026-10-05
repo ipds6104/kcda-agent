@@ -183,11 +183,11 @@ kecamatan:
   cover_depan: assets/covers/depan/Jongkat1.jpg
   cover_dalam: assets/covers/depan/Jongkat2.jpg
   desa_list:
+  - Sungai Nipah
+  - Jungkat
   - Wajok Hilir
   - Wajok Hulu
-  - Jungkat
   - Peniti Luar
-  - Sungai Nipah
   volume: Volume 17, 2026
   issn: 3064-5719
   peta: assets/maps/jongkat.jpg
