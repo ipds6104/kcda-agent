@@ -15,7 +15,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     slug = cfg.get("slug", "")
 
     year_213 = "2025" if slug == "toho" else "2026"
-    year_214 = "2025" if slug == "toho" else "2026"
+    year_213 = "2025" if slug == "toho" else "2026"
     has_214 = slug not in ["mempawah-hilir", "sungai-pinyuh"]
 
     # Grafik dinamis data-driven dari Google Sheets
@@ -26,17 +26,43 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     # --- 2.1.1 Dusun, RW & RT ---
     rows_211_raw = get_kecamatan_tab_rows("2.1.1", nama_singkat)
     rw_rt_map = {}
+    tot_dusun = None
+    tot_rw = None
+    tot_rt = None
+
     for r in rows_211_raw[3:]:
-        if len(r) > 1 and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['jumlah', 'total', 'sumber']):
+        if len(r) > 1 and r[0].strip():
+            row_label = r[0].strip().lower()
+            if any(row_label.startswith(x) for x in ['jumlah', 'total', 'kecamatan']):
+                if tot_dusun is None:
+                    tot_dusun = clean_cell_value(r[1] if len(r) > 1 else "–")
+                    tot_rw = clean_cell_value(r[2] if len(r) > 2 else "–")
+                    tot_rt = clean_cell_value(r[3] if len(r) > 3 else "–")
+                continue
+            if row_label.startswith('sumber') or row_label.startswith('catatan'):
+                continue
             dusun = clean_cell_value(r[1] if len(r) > 1 else "–")
             rw = clean_cell_value(r[2] if len(r) > 2 else "–")
             rt = clean_cell_value(r[3] if len(r) > 3 else "–")
-            rw_rt_map[r[0].strip().lower()] = [dusun, rw, rt]
+            rw_rt_map[row_label] = [dusun, rw, rt]
 
     t211_rows = []
     for d in desa_list:
         v = match_village_row(rw_rt_map, d, ["–", "–", "–"])
         t211_rows.append([d, v[0], v[1], v[2]])
+
+    if tot_dusun is None or tot_dusun in ["–", "...", ""]:
+        try:
+            d_sum = sum(int(r[1]) for r in t211_rows if str(r[1]).isdigit())
+            rw_sum = sum(int(r[2]) for r in t211_rows if str(r[2]).isdigit())
+            rt_sum = sum(int(r[3]) for r in t211_rows if str(r[3]).isdigit())
+            tot_dusun = str(d_sum)
+            tot_rw = str(rw_sum)
+            tot_rt = str(rt_sum)
+        except Exception:
+            tot_dusun, tot_rw, tot_rt = "–", "–", "–"
+
+    t211_rows.append([f"Kecamatan {nama_singkat}", tot_dusun, tot_rw, tot_rt])
 
     t211_markup = render_typst_table(
         table_no="2.1.1",
@@ -115,8 +141,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
         t214_markup = render_typst_table(
             table_no="2.1.4",
-            title_id=f"Nama-Nama Kepala Dusun di {nama_resmi}",
-            title_en=f"Names of Hamlet Heads in {nama_en} District",
+            title_id=f"Nama-Nama Kepala Dusun di {nama_resmi}, 2025",
+            title_en=f"Names of Hamlet Heads in {nama_en} District, 2025",
             headers=["No", "Desa/Kelurahan\nVillage/Subdistrict", "Nama Dusun\nName of Hamlet", "Nama Kepala Dusun\nName of Hamlet Head"],
             col_numbers=["(1)", "(2)", "(3)", "(4)"],
             rows=t214_rows,

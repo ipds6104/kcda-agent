@@ -23,7 +23,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
     tno_idm = "2.1.6" if has_214 else "2.1.5"
 
     toc_214_entry = f"""#v(5pt)
-#toc_table_entry("2.1.4", "Nama-Nama Kepala Dusun di Kecamatan {nama_singkat}", "Names of Hamlet Heads in {nama_en} District", get_page_arabic(<tab_2_1_4>))""" if has_214 else ""
+#toc_table_entry("2.1.4", "Nama-Nama Kepala Dusun di Kecamatan {nama_singkat}, 2025", "Names of Hamlet Heads in {nama_en} District, 2025", get_page_arabic(<tab_2_1_4>))""" if has_214 else ""
 
     figs = get_subdistrict_figures(slug, nama_singkat, nama_en)
     fig_entries = []
