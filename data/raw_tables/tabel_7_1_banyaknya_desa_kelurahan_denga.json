@@ -2,13 +2,11 @@
   "no": "7.1",
   "nama": "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana\nLembaga Keuangan Bank Menurut Jenis Bank di Kecamatan XXX",
   "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "1yj4Jew3vvERyuhlG-I1scbT4nOYv1VmRKAMR_Ka10dQ",
-  "spreadsheet_title": "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana\nLembaga Keuangan Bank Menurut Jenis Bank di Kecamatan XXX",
-  "updated_at": "2026-09-22 08:29:48",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2025"
@@ -19,7 +17,7 @@
         ],
         [
           "Bank Umum Pemerintah\nGovernment Bank",
-          "6"
+          "2"
         ],
         [
           "Bank Umum Swasta\nPrivate Bank",
@@ -32,7 +30,7 @@
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
           "2025"
@@ -56,7 +54,7 @@
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2025"
@@ -67,11 +65,11 @@
         ],
         [
           "Bank Umum Pemerintah\nGovernment Bank",
-          "4"
+          "1"
         ],
         [
           "Bank Umum Swasta\nPrivate Bank",
-          "2"
+          "1"
         ],
         [
           "Bank Perkreditan Rakyat (BPR)\nRural Bank",
@@ -80,7 +78,7 @@
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "2025"
@@ -91,7 +89,7 @@
         ],
         [
           "Bank Umum Pemerintah\nGovernment Bank",
-          "2"
+          "1"
         ],
         [
           "Bank Umum Swasta\nPrivate Bank",
@@ -104,7 +102,7 @@
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2025"
@@ -128,7 +126,7 @@
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2025"
@@ -152,7 +150,7 @@
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2025"
@@ -163,7 +161,7 @@
         ],
         [
           "Bank Umum Pemerintah\nGovernment Bank",
-          "2"
+          "1"
         ],
         [
           "Bank Umum Swasta\nPrivate Bank",
@@ -176,7 +174,7 @@
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2025"
@@ -200,7 +198,7 @@
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2025"
@@ -223,6 +221,5 @@
         ]
       ]
     }
-  },
-  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
+  }
 }

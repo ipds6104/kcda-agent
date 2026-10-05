@@ -360,7 +360,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(6pt)
 #toc_table_subchapter("6.2", "Transportasi", "Transportation", get_page_arabic(<tab_6_2_1>))
 #v(4pt)
-#toc_table_entry("6.2.1", "Banyaknya Desa/Kelurahan Menurut Prasarana dan Sarana Transportasi Antardesa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts by Transportation Infrastructure and Facilities Between Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_6_2_1>))
+#toc_table_entry("6.2.1", "Banyaknya Desa/Kelurahan Menurut Prasarana dan Sarana Transportasi Antardesa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts by Inter-Village/ Subdistricts Transportation Infrastructure and Facilities in {nama_en} District, 2025", get_page_arabic(<tab_6_2_1>))
 #v(6pt)
 #toc_table_subchapter("6.3", "Komunikasi", "Communication", get_page_arabic(<tab_6_3_1>))
 #v(4pt)
@@ -371,9 +371,9 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(5pt)
 #toc_table_entry("7.1", "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana Lembaga Keuangan Bank Menurut Jenis Bank di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Bank by Type of Bank in {nama_en} District, 2025", get_page_arabic(<tab_7_1>))
 #v(5pt)
-#toc_table_entry("7.2", "Banyaknya Desa/Kelurahan dengan Keberadaan Koperasi Aktif Menurut Jenis Koperasi di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Active Cooperatives by Type in {nama_en} District, 2025", get_page_arabic(<tab_7_2>))
+#toc_table_entry("7.2", "Banyaknya Desa/Kelurahan dengan Keberadaan Koperasi Aktif Menurut Jenis Koperasi di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Cooperative by Type of Cooperative in {nama_en} District, 2025", get_page_arabic(<tab_7_2>))
 #v(5pt)
-#toc_table_entry("7.3", "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana Perdagangan Menurut Jenis Sarana Perdagangan di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Trade Facilities by Type in {nama_en} District, 2025", get_page_arabic(<tab_7_3>))
+#toc_table_entry("7.3", "Banyaknya Desa/Kelurahan dengan Keberadaan Sarana Perdagangan Menurut Jenis Sarana Perdagangan di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Trade Facilities by Type of Trade Facilities in {nama_en} District, 2025", get_page_arabic(<tab_7_3>))
 
 #pagebreak()
 

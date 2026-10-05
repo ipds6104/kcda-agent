@@ -2,13 +2,11 @@
   "no": "7.2",
   "nama": "Banyaknya Desa/Kelurahan\ndengan dengan Keberadaan\nKoperasi Aktif Menurut Jenis\nKoperasi di Kecamatan XXX",
   "sumber": "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting",
-  "disediakan_ipds": false,
+  "tahun": "2025",
   "sheet_id": "1hPj8fk8Es7t_AC9IccV7eCbJ9Nmzx10th1YhsgxnHVc",
-  "spreadsheet_title": "Banyaknya Desa/Kelurahan\ndengan dengan Keberadaan\nKoperasi Aktif Menurut Jenis\nKoperasi di Kecamatan XXX",
-  "updated_at": "2026-09-22 08:29:49",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
           "2025"
@@ -23,11 +21,11 @@
         ],
         [
           "Koperasi industri kecil dan kerajinan rakyat (Kopinkra)\nSmall industry and citizen handicraft cooperative",
-          "12"
+          "1"
         ],
         [
           "Koperasi simpan pinjam (kospin)\nSavings and loan cooperative",
-          "6"
+          "3"
         ],
         [
           "Koperasi lainnya\nOther cooperative",
@@ -36,7 +34,7 @@
       ]
     },
     "Toho": {
-      "raw_title": "Toho",
+      "title": "Toho",
       "rows": [
         [
           "2025"
@@ -55,7 +53,7 @@
         ],
         [
           "Koperasi simpan pinjam (kospin)\nSavings and loan cooperative",
-          "2"
+          "1"
         ],
         [
           "Koperasi lainnya\nOther cooperative",
@@ -64,7 +62,7 @@
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2025"
@@ -92,7 +90,7 @@
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [
           "2025"
@@ -111,7 +109,7 @@
         ],
         [
           "Koperasi simpan pinjam (kospin)\nSavings and loan cooperative",
-          "3"
+          "1"
         ],
         [
           "Koperasi lainnya\nOther cooperative",
@@ -120,7 +118,7 @@
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [
           "2025"
@@ -143,12 +141,12 @@
         ],
         [
           "Koperasi lainnya\nOther cooperative",
-          "9"
+          "5"
         ]
       ]
     },
     "Segedong": {
-      "raw_title": "Segedong",
+      "title": "Segedong",
       "rows": [
         [
           "2025"
@@ -176,7 +174,7 @@
       ]
     },
     "Anjongan": {
-      "raw_title": "Anjongan",
+      "title": "Anjongan",
       "rows": [
         [
           "2025"
@@ -195,7 +193,7 @@
         ],
         [
           "Koperasi simpan pinjam (kospin)\nSavings and loan cooperative",
-          "5"
+          "2"
         ],
         [
           "Koperasi lainnya\nOther cooperative",
@@ -204,7 +202,7 @@
       ]
     },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [
           "2025"
@@ -232,7 +230,7 @@
       ]
     },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [
           "2025"
@@ -259,6 +257,5 @@
         ]
       ]
     }
-  },
-  "catatan": "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
+  }
 }
