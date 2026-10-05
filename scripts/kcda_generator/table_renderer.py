@@ -28,9 +28,9 @@ def format_bilingual_header(header_text: str) -> str:
 def format_bilingual_stub(cell_val: str) -> str:
     """
     Memformat stub/nilai sel dwibahasa sesuai Pedoman BPS:
-    Jika memuat pasangan dwibahasa (contoh 'Bawang Merah / Shallots', 'Jumlah / Total', 'Banjir / Flood'):
-    Bahasa Indonesia di atas, bahasa Inggris di bawahnya (enter) dicetak miring.
-    Format: [Bahasa Indonesia] \\ #text(style: "italic")[[Bahasa Inggris]]
+    Jika memuat pasangan dwibahasa (contoh 'Bawang Merah / Shallots', 'Jumlah / Total', 'Banjir / Flood', 'Listrik/Electric'):
+    Bahasa Inggris di samping bahasa Indonesia dipisahkan garis miring '/' dan dicetak miring.
+    Format: [Bahasa Indonesia]/#text(style: "italic")[[Bahasa Inggris]]
     """
     s = str(cell_val).strip()
     if not s or s in ["–", "-", "...", "…"]:
@@ -42,45 +42,45 @@ def format_bilingual_stub(cell_val: str) -> str:
     if '#text(style: "italic")' in s:
         return s
 
-    # 1. Jika sudah ada pemisah baris baru \n
-    if "\n" in s:
-        lines = [l.strip() for l in s.split("\n") if l.strip()]
-        if len(lines) == 2:
-            l1, l2 = lines[0], lines[1]
-            if l2.startswith('(') and '/' in l2:
-                p2 = l2.split('/', 1)
-                id_part = f"{l1} {p2[0].strip()}".strip()
-                en_part = p2[1].strip()
-                return f'{id_part} \\ #text(style: "italic")[{en_part}]'
-            return f'{l1} \\ #text(style: "italic")[{l2}]'
-        elif len(lines) == 3:
-            id_part = f"{lines[0]} {lines[1]}".strip()
-            en_part = lines[2].strip()
-            return f'{id_part} \\ #text(style: "italic")[{en_part}]'
-        elif len(lines) == 4:
-            id_part = f"{lines[0]} {lines[1]}".strip()
-            en_part = f"{lines[2]} {lines[3]}".strip()
-            return f'{id_part} \\ #text(style: "italic")[{en_part}]'
-        elif len(lines) > 4:
-            mid = len(lines) // 2
-            id_part = " ".join(lines[:mid])
-            en_part = " ".join(lines[mid:])
-            return f'{id_part} \\ #text(style: "italic")[{en_part}]'
+    # 1. Bersihkan newline di sekitar slash
+    s = s.replace('/\n', '/').replace('\n/', '/')
 
-    # 2. Jika dipisahkan ' / '
-    if " / " in s:
-        parts = s.split(" / ", 1)
-        return f'{parts[0].strip()} \\ #text(style: "italic")[{parts[1].strip()}]'
+    # 2. Jika ada pemisah ' / ' atau '/' (dwibahasa dalam satu ekspresi)
+    if '/' in s and not re.search(r'\b(202\d|199\d|km|ha|RT|RW|No|no)\b', s, re.IGNORECASE):
+        # Tangani kasus khusus multi-slash bencana alam
+        if 'Tornado/Typhoon' in s:
+            return 'Angin Puyuh/Puting Beliung/Topan/#text(style: "italic")[Tornado/Typhoon]'
 
-    # 3. Jika dipisahkan '/' (tanpa spasi)
-    if "/" in s and not re.search(r'\b(202\d|199\d|km|ha|RT|RW|No|no)\b', s, re.IGNORECASE):
-        parts = s.split("/")
+        # Bersihkan newline internal menjadi satu spasi
+        s_clean = ' '.join(s.split())
+        if ' / ' in s_clean:
+            parts = s_clean.split(' / ', 1)
+        else:
+            parts = s_clean.split('/')
+
         if len(parts) == 2:
-            return f'{parts[0].strip()} \\ #text(style: "italic")[{parts[1].strip()}]'
+            id_p = parts[0].strip().rstrip('/')
+            en_p = parts[1].strip().lstrip('/')
+            return f'{id_p}/#text(style: "italic")[{en_p}]'
         elif len(parts) > 2:
-            id_p = "/".join(parts[:-1]).strip()
-            en_p = parts[-1].strip()
-            return f'{id_p} \\ #text(style: "italic")[{en_p}]'
+            id_p = '/'.join(parts[:-1]).strip().rstrip('/')
+            en_p = parts[-1].strip().lstrip('/')
+            return f'{id_p}/#text(style: "italic")[{en_p}]'
+
+    # 3. Jika hanya dipisahkan newline (tanpa slash)
+    if '\n' in s:
+        lines = [l.strip() for l in s.split('\n') if l.strip()]
+        if len(lines) == 2:
+            return f'{lines[0].rstrip("/")}/#text(style: "italic")[{lines[1].lstrip("/")}]'
+        elif len(lines) == 3:
+            id_part = f'{lines[0]} {lines[1]}'.strip()
+            en_part = lines[2].strip()
+            return f'{id_part.rstrip("/")}/#text(style: "italic")[{en_part.lstrip("/")}]'
+        elif len(lines) >= 4:
+            mid = len(lines) // 2
+            id_part = ' '.join(lines[:mid]).strip()
+            en_part = ' '.join(lines[mid:]).strip()
+            return f'{id_part.rstrip("/")}/#text(style: "italic")[{en_part.lstrip("/")}]'
 
     return s
 
@@ -435,7 +435,7 @@ def render_typst_table(
           #text(10pt, weight: "bold")[Tabel]
         ] \\
         #v(-3.5pt)
-        #text(8pt, style: "italic")[Tables]
+        #text(8pt, style: "italic")[Table]
       ],
       [
         #text(10pt, weight: "bold")[{table_no}]
