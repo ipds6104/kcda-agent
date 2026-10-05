@@ -284,8 +284,8 @@ Special Hospital is a hospital that provides primary care in one area or one par
     t413_rows = extract_edu_rows(rows_413_raw)
     t413_markup = render_typst_table(
         table_no="4.1.3",
-        title_id=f"Jumlah Pendidik Menurut Tingkat Pendidikan di {nama_resmi}, 2024/2025 dan 2025/2026",
-        title_en=f"Number of Teachers by Educational Level in {nama_en} District, 2024/2025 and 2025/2026",
+        title_id=f"Jumlah Kepala Sekolah dan Pendidik Menurut Tingkat Pendidikan di {nama_resmi}, 2024/2025 dan 2025/2026",
+        title_en=f"Number of Headmasters and Teachers by Educational Level in {nama_en} District, 2024/2025 and 2025/2026",
         headers=edu_headers_7,
         col_numbers=edu_cols_7,
         rows=t413_rows,

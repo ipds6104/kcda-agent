@@ -311,7 +311,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(5pt)
 #toc_table_entry("4.1.2", "Jumlah Satuan Pendidikan Menurut Tingkat Pendidikan di Kecamatan {nama_singkat}, 2024/2025 dan 2025/2026", "Number of Schools by Educational Level in {nama_en} District, 2024/2025 and 2025/2026", get_page_arabic(<tab_4_1_2>))
 #v(5pt)
-#toc_table_entry("4.1.3", "Jumlah Pendidik Menurut Tingkat Pendidikan di Kecamatan {nama_singkat}, 2024/2025 dan 2025/2026", "Number of Teachers by Educational Level in {nama_en} District, 2024/2025 and 2025/2026", get_page_arabic(<tab_4_1_3>))
+#toc_table_entry("4.1.3", "Jumlah Kepala Sekolah dan Pendidik Menurut Tingkat Pendidikan di Kecamatan {nama_singkat}, 2024/2025 dan 2025/2026", "Number of Headmasters and Teachers by Educational Level in {nama_en} District, 2024/2025 and 2025/2026", get_page_arabic(<tab_4_1_3>))
 #v(5pt)
 #toc_table_entry("4.1.4", "Jumlah Peserta Didik Menurut Tingkat Pendidikan di Kecamatan {nama_singkat}, 2024/2025 dan 2025/2026", "Number of Pupils by Educational Level in {nama_en} District, 2024/2025 and 2025/2026", get_page_arabic(<tab_4_1_4>))
 
