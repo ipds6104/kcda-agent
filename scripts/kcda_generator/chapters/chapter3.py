@@ -2,7 +2,7 @@
 
 from typing import Dict, Any, List, Optional
 from pathlib import Path
-from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
+from ..data_loader import get_kecamatan_tab_rows, clean_cell_value, match_village_row
 from ..table_renderer import render_typst_table
 from ..chart_generator import get_chapter3_charts
 from ..config import get_regency_info
@@ -59,13 +59,15 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
             t31_p2_map[d_name.lower()] = [d_name, pct, kpd, rasio]
 
     valid_kpd = []
-    for d, row in t31_p2_map.items():
-        try:
-            kpd_f = float(row[2].replace('.', '').replace(',', '.'))
-            pct_f = float(row[1].replace(',', '.'))
-            valid_kpd.append((row[0], kpd_f, row[2], pct_f, row[1]))
-        except Exception:
-            pass
+    for d in desa_list:
+        row = match_village_row(t31_p2_map, d)
+        if row:
+            try:
+                kpd_f = float(row[2].replace('.', '').replace(',', '.'))
+                pct_f = float(row[1].replace(',', '.'))
+                valid_kpd.append((d, kpd_f, row[2], pct_f, row[1]))
+            except Exception:
+                pass
 
     if valid_kpd:
         valid_kpd.sort(key=lambda x: x[1])
@@ -137,8 +139,10 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     t31_p1_rows = []
     t31_p2_rows = []
     for d in desa_list:
-        v1 = t31_p1_map.get(d.lower(), [d, "–", "–", "–"])
-        v2 = t31_p2_map.get(d.lower(), [d, "–", "–", "–"])
+        row1 = match_village_row(t31_p1_map, d)
+        row2 = match_village_row(t31_p2_map, d)
+        v1 = [d, row1[1], row1[2], row1[3]] if row1 else [d, "–", "–", "–"]
+        v2 = [d, row2[1], row2[2], row2[3]] if row2 else [d, "–", "–", "–"]
         t31_p1_rows.append(v1)
         t31_p2_rows.append(v2)
 

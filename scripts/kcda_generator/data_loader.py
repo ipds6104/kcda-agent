@@ -57,3 +57,19 @@ def clean_cell_value(val: Any) -> str:
         return "–"
     s = s.replace("#", "\\#").replace("$", "\\$").replace("@", "\\@")
     return s
+
+def normalize_village_name(name: str) -> str:
+    """Normalize village name for robust matching (removes hyphens, spaces, lowercases)."""
+    return name.lower().replace("-", "").replace(" ", "").strip()
+
+def match_village_row(mapping: Dict[str, Any], village: str, default: Any = None) -> Any:
+    """Looks up village in mapping with fuzzy hyphen/casing tolerance."""
+    v_clean = village.lower().strip()
+    if v_clean in mapping:
+        return mapping[v_clean]
+    v_norm = normalize_village_name(village)
+    for k, val in mapping.items():
+        if normalize_village_name(k) == v_norm:
+            return val
+    return default
+

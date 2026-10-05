@@ -222,8 +222,8 @@ kecamatan:
     cover_dalam: "assets/covers/depan/Sadaniang2.jpg"
     desa_list:
       - "Pentek"
-      - "Ansiap"
-      - "Amawak"
       - "Sekabuk"
+      - "Bumbun"
+      - "Amawang"
+      - "Ansiap"
       - "Suak Barangan"
-      - "Bum-Bum"

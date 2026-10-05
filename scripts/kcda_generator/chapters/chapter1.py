@@ -2,7 +2,7 @@
 
 from typing import Dict, Any, List, Optional
 from pathlib import Path
-from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
+from ..data_loader import get_kecamatan_tab_rows, clean_cell_value, match_village_row
 from ..table_renderer import render_typst_table
 from ..chart_generator import get_chapter1_charts
 from ..config import get_regency_info
@@ -71,7 +71,7 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
     t1_1_rows = []
     for d in desa_list:
-        v = luas_map.get(d.lower(), ["–", "–", "Indikatif"])
+        v = match_village_row(luas_map, d, ["–", "–", "Indikatif"])
         t1_1_rows.append([d, v[0], v[1], v[2]])
 
     t1_1_rows.append([f"Kecamatan {nama_singkat}", total_luas, "100,00", ""])
@@ -99,7 +99,7 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
     t1_2_rows = []
     for d in desa_list:
-        v = jarak_map.get(d.lower(), ["–", "–"])
+        v = match_village_row(jarak_map, d, ["–", "–"])
         t1_2_rows.append([d, v[0], v[1]])
 
     t1_2_markup = render_typst_table(
@@ -170,13 +170,15 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     )
 
     valid_desas = []
-    for k, v in luas_map.items():
-        try:
-            val_f = float(v[0].replace(',', '.'))
-            pct_f = float(v[1].replace(',', '.'))
-            valid_desas.append((k.title(), val_f, v[0], pct_f, v[1]))
-        except Exception:
-            pass
+    for d in desa_list:
+        v = match_village_row(luas_map, d)
+        if v:
+            try:
+                val_f = float(v[0].replace(',', '.'))
+                pct_f = float(v[1].replace(',', '.'))
+                valid_desas.append((d, val_f, v[0], pct_f, v[1]))
+            except Exception:
+                pass
 
     if valid_desas:
         valid_desas.sort(key=lambda x: x[1])
