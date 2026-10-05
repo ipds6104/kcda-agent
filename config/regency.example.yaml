@@ -203,8 +203,8 @@ kecamatan:
     cover_depan: "assets/covers/depan/Anjongan1.jpg"
     cover_dalam: "assets/covers/depan/Anjongan2.jpg"
     desa_list:
-      - "Anjongan Melancar"
-      - "Anjungan"
+      - "Anjungan Melancar"
+      - "Anjungan Dalam"
       - "Pak Bulu"
       - "Dema"
       - "Kepayang"

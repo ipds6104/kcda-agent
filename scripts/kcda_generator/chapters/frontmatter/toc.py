@@ -330,11 +330,9 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(6pt)
 #toc_table_subchapter("4.4", "Sosial Lainnya", "Religion and Other Social Affairs", get_page_arabic(<tab_4_4_1>))
 #v(4pt)
-#toc_table_entry("4.4.1", "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam Menurut Jenis Bencana Alam di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Natural Disaster Events by Type in {nama_en} District, 2025", get_page_arabic(<tab_4_4_1>))
+#toc_table_entry("4.4.1", "Banyaknya Desa/Kelurahan yang Mengalami Kejadian Bencana Alam Menurut Jenis Bencana Alam di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Natural Disaster Events by Type of Natural Disaster in {nama_en} District, 2025", get_page_arabic(<tab_4_4_1>))
 #v(5pt)
-#toc_table_entry("4.4.2", "Banyaknya Desa/Kelurahan yang Terdapat Korban Jiwa Akibat Bencana Alam Menurut Jenis Bencana Alam di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Fatalities Due to Natural Disasters by Type in {nama_en} District, 2025", get_page_arabic(<tab_4_4_2>))
-#v(5pt)
-#toc_table_entry("4.4.3", "Banyaknya Desa/Kelurahan dengan Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Jenis di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Mitigation Facilities in {nama_en} District, 2025", get_page_arabic(<tab_4_4_3>))
+#toc_table_entry("4.4.2", "Banyaknya Desa/Kelurahan dengan Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Jenis Fasilitas/Upaya Antisipasi/Mitigasi di Kecamatan {nama_singkat}, 2025", "Number of Villages/Subdistricts with Availability of Facilities/Efforts for Anticipation/Mitigation of Natural Disasters by Type of Facilities/Efforts for Anticipation/Mitigation in {nama_en} District, 2025", get_page_arabic(<tab_4_4_2>))
 
 #v(7pt)
 #toc_table_chapter("5", "Pertanian", "Agriculture", get_page_arabic(<bab5>))

@@ -406,54 +406,33 @@ Special Hospital is a hospital that provides primary care in one area or one par
         ]
         t441_rows = [[s, "–"] for s in default_disaster]
 
+    t441_catatan = "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries\n2Periode Januari–Mei 2025/During January–May 2025"
+    t441_sumber = "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS-Statistics Indonesia, Village Potential Data Collecting"
+
     t441_markup = render_typst_table(
         table_no="4.4.1",
-        title_id=f"Banyaknya Desa#super[1]/Kelurahan yang Mengalami Kejadian Bencana Alam Menurut Jenis Bencana Alam di {nama_resmi}, 2025",
-        title_en=f"Number of Villages#super[1]/Subdistricts with Natural Disaster Events by Type in {nama_en} District, 2025",
+        title_id=f"Banyaknya Desa#super[1]/Kelurahan yang Mengalami Kejadian Bencana Alam Menurut Jenis Bencana Alam di {nama_resmi}, 2025#super[2]",
+        title_en=f"Number of Villages#super[1]/Subdistricts with Natural Disaster Events by Type of Natural Disaster in {nama_en} District, 2025#super[2]",
         headers=["Jenis Bencana Alam\nType of Natural Disaster", "2025"],
         col_numbers=["(1)", "(2)"],
         rows=t441_rows,
         col_widths=["3.4fr", "1.4fr"],
-        source=podes_sumber,
-        note=podes_catatan
+        source=t441_sumber,
+        note=t441_catatan
     )
 
-    # --- 4.4.2 Korban Jiwa Bencana Alam ---
-    rows_442_raw = get_kecamatan_tab_rows("4.4.2", nama_singkat)
+    # --- 4.4.2 Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam ---
+    rows_442_raw = get_kecamatan_tab_rows("4.4.2", nama_singkat) or get_kecamatan_tab_rows("4.4.3", nama_singkat)
     t442_rows = []
     if len(rows_442_raw) > 2:
         for r in rows_442_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
-                bencana = r[0].strip()
-                jml = clean_cell_value(r[1] if len(r) > 1 else "–")
-                t442_rows.append([bencana, jml])
-    if not t442_rows:
-        t442_rows = [[s, "–"] for s in ["Tanah Longsor / Landslide", "Banjir / Flood", "Angin Puyuh/Puting Beliung / Tornado", "Kebakaran Hutan dan Lahan / Forest and Land Fire"]]
-
-    t442_markup = render_typst_table(
-        table_no="4.4.2",
-        title_id=f"Banyaknya Desa#super[1]/Kelurahan yang Terdapat Korban Jiwa Akibat Bencana Alam Menurut Jenis Bencana Alam di {nama_resmi}, 2025",
-        title_en=f"Number of Villages#super[1]/Subdistricts with Fatalities Due to Natural Disasters by Type in {nama_en} District, 2025",
-        headers=["Jenis Bencana Alam\nType of Natural Disaster", "2025"],
-        col_numbers=["(1)", "(2)"],
-        rows=t442_rows,
-        col_widths=["3.4fr", "1.4fr"],
-        source=podes_sumber,
-        note=podes_catatan
-    )
-
-    # --- 4.4.3 Fasilitas Mitigasi Bencana ---
-    rows_443_raw = get_kecamatan_tab_rows("4.4.3", nama_singkat)
-    t443_rows = []
-    if len(rows_443_raw) > 2:
-        for r in rows_443_raw[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
                 fasilitas = r[0].strip()
                 if "pembuatan" in fasilitas.lower() and "normalisasi" in fasilitas.lower():
-                    fasilitas = "Pembuatan, perawatan, atau normalisasi sungai, kanal, tanggul, dll\nManufacture, maintenance, or normalization of rivers, canals, etc"
+                    fasilitas = "Pembuatan, perawatan, atau normalisasi sungai, kanal, tanggul, dll/Manufacture, maintenance, or normalization of rivers, canals, etc"
                 jml = clean_cell_value(r[1] if len(r) > 1 else "–")
-                t443_rows.append([fasilitas, jml])
-    if not t443_rows:
+                t442_rows.append([fasilitas, jml])
+    if not t442_rows:
         default_mitigasi = [
             "Sistem Peringatan Dini Bencana Alam / Early Warning System",
             "Sistem Peringatan Dini Khusus Tsunami / Tsunami Early Warning System",
@@ -461,17 +440,17 @@ Special Hospital is a hospital that provides primary care in one area or one par
             "Rambu-rambu dan Jalur Evakuasi Bencana / Evacuation Signs and Routes",
             "Pembuatan, Perawatan, atau Normalisasi / Construction, Maintenance, or Normalization"
         ]
-        t443_rows = [[s, "–"] for s in default_mitigasi]
+        t442_rows = [[s, "–"] for s in default_mitigasi]
 
-    t443_markup = render_typst_table(
-        table_no="4.4.3",
-        title_id=f"Banyaknya Desa#super[1]/Kelurahan dengan Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Jenis di {nama_resmi}, 2025",
-        title_en=f"Number of Villages#super[1]/Subdistricts with Availability of Mitigation Facilities in {nama_en} District, 2025",
+    t442_markup = render_typst_table(
+        table_no="4.4.2",
+        title_id=f"Banyaknya Desa#super[1]/Kelurahan dengan Keberadaan Fasilitas/Upaya Antisipasi/Mitigasi Bencana Alam Menurut Jenis Fasilitas/Upaya Antisipasi/Mitigasi di {nama_resmi}, 2025",
+        title_en=f"Number of Villages#super[1]/Subdistricts with Availability of Facilities/Efforts for Anticipation/Mitigation of Natural Disasters by Type of Facilities/Efforts for Anticipation/Mitigation in {nama_en} District, 2025",
         headers=["Jenis Fasilitas/Upaya Antisipasi/Mitigasi\nType of Facilities/Efforts for Anticipation/Mitigation", "2025"],
         col_numbers=["(1)", "(2)"],
-        rows=t443_rows,
+        rows=t442_rows,
         col_widths=["3.4fr", "1.4fr"],
-        source=podes_sumber,
+        source=t441_sumber,
         note=podes_catatan
     )
 
@@ -514,7 +493,4 @@ Special Hospital is a hospital that provides primary care in one area or one par
 #pagebreak()
 
 {t442_markup}
-#pagebreak()
-
-{t443_markup}
 """
