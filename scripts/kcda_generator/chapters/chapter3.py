@@ -146,16 +146,16 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         t31_p1_rows.append(v1)
         t31_p2_rows.append(v2)
 
-    t31_p1_rows.append([f"Kecamatan {nama_singkat} / Total", tot_lk, tot_pr, tot_all])
-    t31_p2_rows.append([f"Kecamatan {nama_singkat} / Total", "100,00", tot_kpd, tot_rasio])
+    t31_p1_rows.append([f"Kecamatan {nama_singkat}", tot_lk, tot_pr, tot_all])
+    t31_p2_rows.append([f"Kecamatan {nama_singkat}", "100,00", tot_kpd, tot_rasio])
 
-    source_txt = f"Dinas Kependudukan dan Pencatatan Sipil {nama_kab} (Semester II 2025) / Population and Civil Registration Service of {nama_kab_en} (Semester II 2025)"
+    source_txt = f"Dinas Kependudukan dan Pencatatan Sipil {nama_kab}/Population and Civil Registration Service of {nama_kab_en}"
 
     # Halaman 1 dari Tabel 3.1
     t31_p1_markup = render_typst_table(
         table_no="3.1",
-        title_id=f"Penduduk Menurut Desa/Kelurahan dan Jenis Kelamin di {nama_resmi}, 2025",
-        title_en=f"Population by Villages/Subdistricts and Sex in {nama_en} District, 2025",
+        title_id=f"Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, Rasio Jenis Kelamin Penduduk Menurut Desa/Kelurahan di {nama_resmi}, 2025",
+        title_en=f"Population, Percentage Distribution of Population, Population Density, and Population Sex Ratio by Villages/Subdistricts in {nama_en} District, 2025",
         headers=[
             "Desa/Kelurahan\nVillage/Subdistrict",
             "Laki-laki\nMale",
@@ -175,7 +175,7 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         title_en="",
         headers=[
             "Desa/Kelurahan\nVillage/Subdistrict",
-            "Persentase Penduduk\nPercentage of Total Population (%)",
+            "Distribusi Penduduk\nPopulation Distribution (%)",
             "Kepadatan Penduduk (per km²)\nPopulation Density per sq.km",
             "Rasio Jenis Kelamin Penduduk\nPopulation Sex Ratio"
         ],

@@ -1,5 +1,6 @@
 """Chapter 4: Sosial dan Kesejahteraan Rakyat Generator for KCDA 2026."""
 
+import re
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 from ..data_loader import get_kecamatan_tab_rows, clean_cell_value
@@ -25,7 +26,10 @@ def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
     podes_catatan = "1Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait/Villages in this table include Transmigration Settlement Unit which is still fostered by the relevant ministries"
     podes_sumber = "Badan Pusat Statistik, Pendataan Potensi Desa (Podes)/BPS–Statistics Indonesia, Village Potential Data Collecting"
-    edu_sumber = "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi & Kementerian Agama / Ministry of Education, Culture, Research, and Technology & Ministry of Religious Affairs"
+    edu_sumber = (
+        "1Kementerian Pendidikan Dasar dan Menengah; Sistem Data Pokok Pendidikan; data semester ganjil laporan sampai dengan 30 November/Ministry of Primary and Secondary Education; Sistem Data Pokok Pendidikan; odd semester report data up to 30 November\n"
+        "2Kementerian Agama; EMIS; data semester genap laporan sampai dengan 30 Juni/Ministry of Religious Affairs; EMIS; even semester report data up to 30 June"
+    )
 
     # Ekstraksi angka pendidikan (Tabel 4.1.2)
     rows_412_raw = get_kecamatan_tab_rows("4.1.2", nama_singkat)
@@ -217,6 +221,8 @@ Special Hospital is a hospital that provides primary care in one area or one par
             for r in raw_rows[3:]:
                 if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'tingkat', '(']):
                     lvl = r[0].strip()
+                    # Format angka footnote 1, 2, 3 menjadi superskrip (#super[...])
+                    lvl = re.sub(r'(?<=[A-Za-z\)])\s*([123](?:,[123])*)\b', r'#super[\1]', lvl)
                     n24 = clean_cell_value(r[1] if len(r) > 1 else "–")
                     n25 = clean_cell_value(r[2] if len(r) > 2 else "–")
                     s24 = clean_cell_value(r[3] if len(r) > 3 else "–")
@@ -226,11 +232,16 @@ Special Hospital is a hospital that provides primary care in one area or one par
                     res.append([lvl, n24, n25, s24, s25, j24, j25])
         if not res:
             default_jenjang = [
-                "Taman Kanak-Kanak (TK)", "Raudatul Athfal (RA)",
-                "Sekolah Dasar (SD)", "Madrasah Ibtidaiyah (MI)",
-                "Sekolah Menengah Pertama (SMP)", "Madrasah Tsanawiyah (MTs)",
-                "Sekolah Menengah Atas (SMA)", "Sekolah Menengah Kejuruan (SMK)",
-                "Madrasah Aliyah (MA)", "Jumlah / Total"
+                "Taman Kanak-Kanak (TK)#super[1]/#text(style: \"italic\")[Kindergarten#super[1]]",
+                "Raudatul Athfal (RA)#super[2]/#text(style: \"italic\")[Raudatul Athfal (RA)#super[2]]",
+                "Sekolah Dasar (SD)#super[1]/#text(style: \"italic\")[Primary School#super[1]]",
+                "Madrasah Ibtidaiyah (MI)#super[2]/#text(style: \"italic\")[Madrasah Ibtidaiyah (MI)#super[2]]",
+                "Sekolah Menengah Pertama (SMP)#super[1]/#text(style: \"italic\")[Junior High School#super[1]]",
+                "Madrasah Tsanawiyah (MTs)#super[2]/#text(style: \"italic\")[Madrasah Tsanawiyah (MTs)#super[2]]",
+                "Sekolah Menengah Atas (SMA)#super[1]/#text(style: \"italic\")[Senior High School#super[1]]",
+                "Sekolah Menengah Kejuruan (SMK)#super[1]/#text(style: \"italic\")[Vocational High School#super[1]]",
+                "Madrasah Aliyah (MA)#super[2]/#text(style: \"italic\")[Madrasah Aliyah (MA)#super[2]]",
+                "Jumlah / Total"
             ]
             res = [[j, "–", "–", "–", "–", "–", "–"] for j in default_jenjang]
         return res
