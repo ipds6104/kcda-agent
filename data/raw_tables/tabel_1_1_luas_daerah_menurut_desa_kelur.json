@@ -2,16 +2,22 @@
   "no": "1.1.",
   "nama": "Luas Daerah Menurut Desa/Kelurahan di Kecamatan XXX",
   "sumber": "Dinas Kependudukan dan Pencatatan Sipil/BAPEDDA Kabupaten Mempawah / Population and\r\nCivil Registration Service/Regional Development Planning Agency of Mempawah Regency",
-  "disediakan_ipds": true,
+  "tahun": "2025",
   "sheet_id": "1_zXe_P8sXdUeyiMOYx_K3VUzu8-BJ7--30sITv63fAU",
-  "spreadsheet_title": "Luas Daerah Menurut Desa/Kelurahan di Kecamatan XXX",
-  "updated_at": "2026-09-22 08:28:43",
   "tabs": {
     "Mempawah Hilir": {
-      "raw_title": "Mempawah Hilir",
+      "title": "Mempawah Hilir",
       "rows": [
         [
-          "2025"
+          "2025",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Desa/Kelurahan\n Village/Subdistrict",
@@ -29,7 +35,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Tanjung",
@@ -158,7 +169,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Tanjung",
@@ -262,7 +278,7 @@
       ]
     },
     "Toho": {
-      "raw_title": "Toho ",
+      "title": "Toho ",
       "rows": [
         [],
         [
@@ -284,7 +300,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Sambora",
@@ -395,7 +416,15 @@
         ],
         [],
         [
-          "2024"
+          "2024",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Desa/Kelurahan",
@@ -412,7 +441,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Sambora",
@@ -516,7 +550,7 @@
       ]
     },
     "Sungai Pinyuh": {
-      "raw_title": "Sungai Pinyuh",
+      "title": "Sungai Pinyuh",
       "rows": [
         [
           "2025"
@@ -540,7 +574,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Sungai Purun Kecil",
@@ -681,7 +720,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Sungai Purun Kecil",
@@ -796,7 +840,7 @@
       ]
     },
     "Jongkat": {
-      "raw_title": "Jongkat",
+      "title": "Jongkat",
       "rows": [
         [],
         [
@@ -818,7 +862,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Sungai Nipah",
@@ -889,7 +938,24 @@
           "176,89",
           "103,95",
           "290,93",
-          "100,00"
+          "100,00",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [],
         [],
@@ -911,7 +977,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Sungai Nipah",
@@ -982,7 +1053,7 @@
       ]
     },
     "Sungai Kunyit": {
-      "raw_title": "Sungai Kunyit",
+      "title": "Sungai Kunyit",
       "rows": [
         [],
         [],
@@ -1005,7 +1076,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semudun",
@@ -1160,7 +1236,24 @@
           "241,70",
           "105,01",
           "129,23",
-          "100,00"
+          "100,00",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [],
         [],
@@ -1183,7 +1276,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Semudun",
@@ -1330,406 +1428,8 @@
         ]
       ]
     },
-    "Segedong": {
-      "raw_title": "Segedong",
-      "rows": [
-        [],
-        [],
-        [],
-        [
-          "2025"
-        ],
-        [
-          "Desa/Kelurahan",
-          "Penduduk",
-          "",
-          "",
-          "Persentase Penduduk",
-          "Kepadatan\n Penduduk (per km2)",
-          "Rasio Jenis Kelamin",
-          "Luas \nTotal Area \n(km2/sq.km)",
-          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area",
-          "Status"
-        ],
-        [
-          "",
-          "Laki-laki",
-          "Perempuan",
-          "Jumlah"
-        ],
-        [
-          "Peniti Dalam I",
-          "2.058",
-          "2.001",
-          "4.059",
-          "15,48",
-          "32,92",
-          "102,85",
-          "123,29",
-          "45,09",
-          "Indikatif"
-        ],
-        [
-          "Sungai Burung",
-          "1.593",
-          "1.561",
-          "3.154",
-          "12,03",
-          "311,20",
-          "102,05",
-          "10,14",
-          "3,71",
-          "Indikatif"
-        ],
-        [
-          "Sungai Purun Besar",
-          "3.073",
-          "2.918",
-          "5.991",
-          "22,85",
-          "208,46",
-          "105,31",
-          "28,74",
-          "10,51",
-          "Indikatif"
-        ],
-        [
-          "Parit Bugis",
-          "1.251",
-          "1.281",
-          "2.532",
-          "9,66",
-          "353,88",
-          "97,66",
-          "7,16",
-          "2,62",
-          "Indikatif"
-        ],
-        [
-          "Peniti Besar",
-          "3.116",
-          "2.944",
-          "6.060",
-          "23,12",
-          "126,94",
-          "105,84",
-          "47,74",
-          "17,46",
-          "Indikatif"
-        ],
-        [
-          "Peniti Dalam Ii",
-          "2.256",
-          "2.164",
-          "4.420",
-          "16,86",
-          "78,38",
-          "104,25",
-          "56,39",
-          "20,62",
-          "Indikatif"
-        ],
-        [
-          "Kecamatan Segedong",
-          "13.347",
-          "12.869",
-          "26.216",
-          "100,00",
-          "95,87",
-          "103,71",
-          "273,45",
-          "100,00"
-        ],
-        [],
-        [],
-        [
-          "2024"
-        ],
-        [
-          "Desa/Kelurahan",
-          "Penduduk",
-          "",
-          "",
-          "Persentase Penduduk",
-          "Kepadatan\n Penduduk (per km2)",
-          "Rasio Jenis Kelamin",
-          "Luas \nTotal Area \n(km2/sq.km)",
-          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area"
-        ],
-        [
-          "",
-          "Laki-laki",
-          "Perempuan",
-          "Jumlah"
-        ],
-        [
-          "Peniti Dalam I",
-          "2.109",
-          "2.043",
-          "4.152",
-          "15,77",
-          "33,68",
-          "103,23",
-          "123,28",
-          "45,08"
-        ],
-        [
-          "Sungai Burung",
-          "1.683",
-          "1.634",
-          "3.317",
-          "12,60",
-          "352,50",
-          "103,00",
-          "9,41",
-          "3,44"
-        ],
-        [
-          "Sungai Purun Besar",
-          "3.052",
-          "2.915",
-          "5.967",
-          "22,66",
-          "228,88",
-          "104,70",
-          "26,07",
-          "9,53"
-        ],
-        [
-          "Parit Bugis",
-          "1.229",
-          "1.241",
-          "2.470",
-          "9,38",
-          "289,91",
-          "99,03",
-          "8,52",
-          "3,12"
-        ],
-        [
-          "Peniti Besar",
-          "3.115",
-          "2.928",
-          "6.043",
-          "22,95",
-          "121,42",
-          "106,39",
-          "49,77",
-          "18,20"
-        ],
-        [
-          "Peniti Dalam Ii",
-          "2.236",
-          "2.150",
-          "4.386",
-          "16,65",
-          "77,78",
-          "104,00",
-          "56,39",
-          "20,62"
-        ],
-        [
-          "Kecamatan Segedong",
-          "13.424",
-          "12.911",
-          "26.335",
-          "100,00",
-          "96,31",
-          "103,97",
-          "273,44",
-          "100,00"
-        ]
-      ]
-    },
-    "Anjongan": {
-      "raw_title": "Anjongan",
-      "rows": [
-        [],
-        [],
-        [
-          "2025"
-        ],
-        [
-          "Desa/Kelurahan",
-          "Penduduk",
-          "",
-          "",
-          "Persentase Penduduk",
-          "Kepadatan\n Penduduk (per km2)",
-          "Rasio Jenis Kelamin",
-          "Luas \nTotal Area \n(km2/sq.km)",
-          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area",
-          "Status"
-        ],
-        [
-          "",
-          "Laki-laki",
-          "Perempuan",
-          "Jumlah"
-        ],
-        [
-          "Anjungan Melancar",
-          "4.357",
-          "4.295",
-          "8.652",
-          "38,81",
-          "622,00",
-          "101,44",
-          "13,91",
-          "11,19",
-          "Indikatif"
-        ],
-        [
-          "Anjungan Dalam",
-          "1.913",
-          "1.725",
-          "3.638",
-          "16,32",
-          "72,77",
-          "110,90",
-          "49,99",
-          "40,22",
-          "Indikatif"
-        ],
-        [
-          "Pak Bulu",
-          "1.072",
-          "1.030",
-          "2.102",
-          "9,43",
-          "329,98",
-          "104,08",
-          "6,37",
-          "5,13",
-          "Indikatif"
-        ],
-        [
-          "Dema",
-          "1.600",
-          "1.437",
-          "3.037",
-          "13,62",
-          "132,22",
-          "111,34",
-          "22,97",
-          "18,48",
-          "Indikatif"
-        ],
-        [
-          "Kepayang",
-          "2.516",
-          "2.350",
-          "4.866",
-          "21,83",
-          "156,77",
-          "107,06",
-          "31,04",
-          "24,98",
-          "Indikatif"
-        ],
-        [
-          "Kecamatan Anjongan",
-          "11.458",
-          "10.837",
-          "22.295",
-          "100,00",
-          "179,39",
-          "105,73",
-          "124,28",
-          "100,00"
-        ],
-        [],
-        [],
-        [
-          "2024"
-        ],
-        [
-          "Desa/Kelurahan",
-          "Penduduk",
-          "",
-          "",
-          "Persentase Penduduk",
-          "Kepadatan\n Penduduk (per km2)",
-          "Rasio Jenis Kelamin",
-          "Luas \nTotal Area \n(km2/sq.km)",
-          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area"
-        ],
-        [
-          "",
-          "Laki-laki",
-          "Perempuan",
-          "Jumlah"
-        ],
-        [
-          "Anjungan Melancar",
-          "4.374",
-          "4.332",
-          "8.706",
-          "39,09",
-          "616,57",
-          "100,97",
-          "14,12",
-          "11,36"
-        ],
-        [
-          "Anjungan Dalam",
-          "1.895",
-          "1.700",
-          "3.595",
-          "16,14",
-          "71,91",
-          "111,47",
-          "49,99",
-          "40,23"
-        ],
-        [
-          "Pak Bulu",
-          "1.111",
-          "1.049",
-          "2.160",
-          "9,70",
-          "339,09",
-          "105,91",
-          "6,37",
-          "5,13"
-        ],
-        [
-          "Dema",
-          "1.565",
-          "1.421",
-          "2.986",
-          "13,41",
-          "130,05",
-          "110,13",
-          "22,96",
-          "18,47"
-        ],
-        [
-          "Kepayang",
-          "2.500",
-          "2.323",
-          "4.823",
-          "21,66",
-          "156,39",
-          "107,62",
-          "30,84",
-          "24,81"
-        ],
-        [
-          "Kecamatan Anjongan",
-          "11.445",
-          "10.825",
-          "22.270",
-          "100,00",
-          "179,19",
-          "105,73",
-          "124,28",
-          "100,00"
-        ]
-      ]
-    },
     "Mempawah Timur": {
-      "raw_title": "Mempawah Timur",
+      "title": "Mempawah Timur",
       "rows": [
         [],
         [],
@@ -1752,7 +1452,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Pasir Wan Salim",
@@ -1859,7 +1564,24 @@
           "294,11",
           "102,95",
           "120,39",
-          "100,00"
+          "100,00",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [],
         [],
@@ -1881,7 +1603,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Pasir Wan Salim",
@@ -1984,8 +1711,460 @@
         ]
       ]
     },
+    "Segedong": {
+      "title": "Segedong",
+      "rows": [
+        [],
+        [],
+        [],
+        [
+          "2025"
+        ],
+        [
+          "Desa/Kelurahan",
+          "Penduduk",
+          "",
+          "",
+          "Persentase Penduduk",
+          "Kepadatan\n Penduduk (per km2)",
+          "Rasio Jenis Kelamin",
+          "Luas \nTotal Area \n(km2/sq.km)",
+          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area",
+          "Status"
+        ],
+        [
+          "",
+          "Laki-laki",
+          "Perempuan",
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Peniti Dalam I",
+          "2.058",
+          "2.001",
+          "4.059",
+          "15,48",
+          "32,92",
+          "102,85",
+          "123,29",
+          "45,09",
+          "Indikatif"
+        ],
+        [
+          "Sungai Burung",
+          "1.593",
+          "1.561",
+          "3.154",
+          "12,03",
+          "311,20",
+          "102,05",
+          "10,14",
+          "3,71",
+          "Indikatif"
+        ],
+        [
+          "Sungai Purun Besar",
+          "3.073",
+          "2.918",
+          "5.991",
+          "22,85",
+          "208,46",
+          "105,31",
+          "28,74",
+          "10,51",
+          "Indikatif"
+        ],
+        [
+          "Parit Bugis",
+          "1.251",
+          "1.281",
+          "2.532",
+          "9,66",
+          "353,88",
+          "97,66",
+          "7,16",
+          "2,62",
+          "Indikatif"
+        ],
+        [
+          "Peniti Besar",
+          "3.116",
+          "2.944",
+          "6.060",
+          "23,12",
+          "126,94",
+          "105,84",
+          "47,74",
+          "17,46",
+          "Indikatif"
+        ],
+        [
+          "Peniti Dalam Ii",
+          "2.256",
+          "2.164",
+          "4.420",
+          "16,86",
+          "78,38",
+          "104,25",
+          "56,39",
+          "20,62",
+          "Indikatif"
+        ],
+        [
+          "Kecamatan Segedong",
+          "13.347",
+          "12.869",
+          "26.216",
+          "100,00",
+          "95,87",
+          "103,71",
+          "273,45",
+          "100,00",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [],
+        [],
+        [
+          "2024"
+        ],
+        [
+          "Desa/Kelurahan",
+          "Penduduk",
+          "",
+          "",
+          "Persentase Penduduk",
+          "Kepadatan\n Penduduk (per km2)",
+          "Rasio Jenis Kelamin",
+          "Luas \nTotal Area \n(km2/sq.km)",
+          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area"
+        ],
+        [
+          "",
+          "Laki-laki",
+          "Perempuan",
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Peniti Dalam I",
+          "2.109",
+          "2.043",
+          "4.152",
+          "15,77",
+          "33,68",
+          "103,23",
+          "123,28",
+          "45,08"
+        ],
+        [
+          "Sungai Burung",
+          "1.683",
+          "1.634",
+          "3.317",
+          "12,60",
+          "352,50",
+          "103,00",
+          "9,41",
+          "3,44"
+        ],
+        [
+          "Sungai Purun Besar",
+          "3.052",
+          "2.915",
+          "5.967",
+          "22,66",
+          "228,88",
+          "104,70",
+          "26,07",
+          "9,53"
+        ],
+        [
+          "Parit Bugis",
+          "1.229",
+          "1.241",
+          "2.470",
+          "9,38",
+          "289,91",
+          "99,03",
+          "8,52",
+          "3,12"
+        ],
+        [
+          "Peniti Besar",
+          "3.115",
+          "2.928",
+          "6.043",
+          "22,95",
+          "121,42",
+          "106,39",
+          "49,77",
+          "18,20"
+        ],
+        [
+          "Peniti Dalam Ii",
+          "2.236",
+          "2.150",
+          "4.386",
+          "16,65",
+          "77,78",
+          "104,00",
+          "56,39",
+          "20,62"
+        ],
+        [
+          "Kecamatan Segedong",
+          "13.424",
+          "12.911",
+          "26.335",
+          "100,00",
+          "96,31",
+          "103,97",
+          "273,44",
+          "100,00"
+        ]
+      ]
+    },
+    "Anjongan": {
+      "title": "Anjongan",
+      "rows": [
+        [],
+        [],
+        [
+          "2025"
+        ],
+        [
+          "Desa/Kelurahan",
+          "Penduduk",
+          "",
+          "",
+          "Persentase Penduduk",
+          "Kepadatan\n Penduduk (per km2)",
+          "Rasio Jenis Kelamin",
+          "Luas \nTotal Area \n(km2/sq.km)",
+          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area",
+          "Status"
+        ],
+        [
+          "",
+          "Laki-laki",
+          "Perempuan",
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Anjungan Melancar",
+          "4.357",
+          "4.295",
+          "8.652",
+          "38,81",
+          "622,00",
+          "101,44",
+          "13,91",
+          "11,19",
+          "Indikatif"
+        ],
+        [
+          "Anjungan Dalam",
+          "1.913",
+          "1.725",
+          "3.638",
+          "16,32",
+          "72,77",
+          "110,90",
+          "49,99",
+          "40,22",
+          "Indikatif"
+        ],
+        [
+          "Pak Bulu",
+          "1.072",
+          "1.030",
+          "2.102",
+          "9,43",
+          "329,98",
+          "104,08",
+          "6,37",
+          "5,13",
+          "Indikatif"
+        ],
+        [
+          "Dema",
+          "1.600",
+          "1.437",
+          "3.037",
+          "13,62",
+          "132,22",
+          "111,34",
+          "22,97",
+          "18,48",
+          "Indikatif"
+        ],
+        [
+          "Kepayang",
+          "2.516",
+          "2.350",
+          "4.866",
+          "21,83",
+          "156,77",
+          "107,06",
+          "31,04",
+          "24,98",
+          "Indikatif"
+        ],
+        [
+          "Kecamatan Anjongan",
+          "11.458",
+          "10.837",
+          "22.295",
+          "100,00",
+          "179,39",
+          "105,73",
+          "124,28",
+          "100,00",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [],
+        [],
+        [
+          "2024"
+        ],
+        [
+          "Desa/Kelurahan",
+          "Penduduk",
+          "",
+          "",
+          "Persentase Penduduk",
+          "Kepadatan\n Penduduk (per km2)",
+          "Rasio Jenis Kelamin",
+          "Luas \nTotal Area \n(km2/sq.km)",
+          "Persentase terhadap Luas \nKecamatan\n Percentage to District Area"
+        ],
+        [
+          "",
+          "Laki-laki",
+          "Perempuan",
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Anjungan Melancar",
+          "4.374",
+          "4.332",
+          "8.706",
+          "39,09",
+          "616,57",
+          "100,97",
+          "14,12",
+          "11,36"
+        ],
+        [
+          "Anjungan Dalam",
+          "1.895",
+          "1.700",
+          "3.595",
+          "16,14",
+          "71,91",
+          "111,47",
+          "49,99",
+          "40,23"
+        ],
+        [
+          "Pak Bulu",
+          "1.111",
+          "1.049",
+          "2.160",
+          "9,70",
+          "339,09",
+          "105,91",
+          "6,37",
+          "5,13"
+        ],
+        [
+          "Dema",
+          "1.565",
+          "1.421",
+          "2.986",
+          "13,41",
+          "130,05",
+          "110,13",
+          "22,96",
+          "18,47"
+        ],
+        [
+          "Kepayang",
+          "2.500",
+          "2.323",
+          "4.823",
+          "21,66",
+          "156,39",
+          "107,62",
+          "30,84",
+          "24,81"
+        ],
+        [
+          "Kecamatan Anjongan",
+          "11.445",
+          "10.825",
+          "22.270",
+          "100,00",
+          "179,19",
+          "105,73",
+          "124,28",
+          "100,00"
+        ]
+      ]
+    },
     "Sadaniang": {
-      "raw_title": "Sadaniang",
+      "title": "Sadaniang",
       "rows": [
         [],
         [
@@ -2007,7 +2186,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Pentek",
@@ -2090,7 +2274,24 @@
           "28,99",
           "113,83",
           "445,30",
-          "100,00"
+          "100,00",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [],
         [],
@@ -2112,7 +2313,12 @@
           "",
           "Laki-laki",
           "Perempuan",
-          "Jumlah"
+          "Jumlah",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         [
           "Pentek",
@@ -2193,6 +2399,5 @@
         ]
       ]
     }
-  },
-  "catatan": "Untuk desa/kelurahan dengan status Indikatif masih perlu dilakukan pelacakan ke lapangan dan\r\nkesepakatan batas antarwilayah yang berbatasan. / For villages/subdistricts with Indicative status, field tracking and\r\nboundary agreements between adjacent areas are still required."
+  }
 }

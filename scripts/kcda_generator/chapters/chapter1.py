@@ -51,10 +51,10 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     rows_1_1_raw = get_kecamatan_tab_rows("1.1.", nama_singkat)
     luas_map = {}
     total_luas = "–"
-    for r in rows_1_1_raw[3:]:
+    for r in rows_1_1_raw:
         if len(r) > 1 and r[0].strip():
             nama_d = r[0].strip()
-            if nama_d.isdigit() or any(nama_d.lower().startswith(x) for x in ['desa/kelurahan', 'kelurahan/desa', 'tabel']):
+            if nama_d.isdigit() or nama_d.startswith('202') or any(nama_d.lower().startswith(x) for x in ['desa/kelurahan', 'kelurahan/desa', 'tabel']):
                 continue
             if any(nama_d.lower().startswith(x) for x in ['jumlah', 'total', 'kecamatan']):
                 if len(r) > 7 and r[7].strip() and total_luas == "–":
@@ -66,7 +66,7 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
             if nama_d.lower() not in luas_map:
                 luas_val = clean_cell_value(r[7] if len(r) > 7 else r[1])
                 pct_val = clean_cell_value(r[8] if len(r) > 8 else "–")
-                status_val = clean_cell_value(r[9] if len(r) > 9 else "Indikatif")
+                status_val = clean_cell_value(r[9] if (len(r) > 9 and r[9].strip()) else "Indikatif")
                 luas_map[nama_d.lower()] = [luas_val, pct_val, status_val]
 
     t1_1_rows = []
@@ -80,22 +80,26 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         table_no="1.1",
         title_id=f"Luas Daerah Menurut Desa/Kelurahan di {nama_resmi}, 2025",
         title_en=f"Area by Village/Subdistrict in {nama_en} District, 2025",
-        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Luas Daerah\nArea (km²)", "Persentase\nPercentage (%)", "Status Batas\nBoundary Status"],
+        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Luas Daerah\nArea (km²)", "Persentase terhadap Luas Kecamatan\nPercentage to District Area", "Status Batas\nBoundary Status"],
         col_numbers=["(1)", "(2)", "(3)", "(4)"],
         rows=t1_1_rows,
-        col_widths=["2.2fr", "1.1fr", "1.0fr", "1.3fr"],
-        source=f"Dinas Kependudukan dan Pencatatan Sipil/BAPEDDA Kabupaten Mempawah / Population and Civil Registration Service/Regional Development Planning Agency of Mempawah Regency",
+        col_widths=["1.9fr", "1.1fr", "1.8fr", "1.2fr"],
+        source="Badan Perencanaan Pembangunan, Riset dan Inovasi Daerah Kabupaten Mempawah/Regional Development, Research and Innovation Agency of Mempawah Regency",
         note="Untuk desa/kelurahan dengan status Indikatif masih perlu dilakukan pelacakan ke lapangan dan kesepakatan batas antarwilayah yang berbatasan. / For villages/subdistricts with Indicative status, field tracking and boundary agreements between adjacent areas are still required."
     )
 
     # --- 1.2 Jarak ke Ibukota Kecamatan & Kabupaten ---
     rows_1_2_raw = get_kecamatan_tab_rows("1.2.", nama_singkat)
     jarak_map = {}
-    for r in rows_1_2_raw[3:]:
-        if len(r) > 1 and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['jumlah', 'total', 'sumber']):
+    for r in rows_1_2_raw:
+        if len(r) > 1 and r[0].strip():
+            nama_d = r[0].strip()
+            if nama_d.isdigit() or nama_d.startswith('202') or any(nama_d.lower().startswith(x) for x in ['desa', 'kelurahan', 'tabel', 'jumlah', 'total', 'sumber', 'catatan', '(1)']):
+                continue
             j_kec = clean_cell_value(r[1] if len(r) > 1 else "–")
             j_kab = clean_cell_value(r[2] if len(r) > 2 else "–")
-            jarak_map[r[0].strip().lower()] = [j_kec, j_kab]
+            if nama_d.lower() not in jarak_map:
+                jarak_map[nama_d.lower()] = [j_kec, j_kab]
 
     t1_2_rows = []
     for d in desa_list:
@@ -106,10 +110,10 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         table_no="1.2",
         title_id=f"Jarak ke Ibukota Kecamatan dan Ibukota Kabupaten/Kota Menurut Desa/Kelurahan di {nama_resmi} (km), 2025",
         title_en=f"Distance to District Capital and Regency Capital by Village in {nama_en} District (km), 2025",
-        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Ke Ibukota Kec.\nTo District Capital (km)", "Ke Ibukota Kab.\nTo Regency Capital (km)"],
+        headers=["Desa/Kelurahan\nVillage/Subdistrict", "Jarak ke Ibukota Kecamatan\nDistance to District Capital", "Jarak ke Ibukota Kabupaten/Kota\nDistance to Regency/Municipal Capital"],
         col_numbers=["(1)", "(2)", "(3)"],
         rows=t1_2_rows,
-        col_widths=["2.5fr", "1.3fr", "1.3fr"],
+        col_widths=["1.8fr", "1.7fr", "1.9fr"],
         source=f"Kantor Camat {nama_singkat}/ {nama_singkat} District Office"
     )
 
