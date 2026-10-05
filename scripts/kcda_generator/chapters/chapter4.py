@@ -221,8 +221,11 @@ Special Hospital is a hospital that provides primary care in one area or one par
             for r in raw_rows[3:]:
                 if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'tingkat', '(']):
                     lvl = r[0].strip()
-                    # Format angka footnote 1, 2, 3 menjadi superskrip (#super[...])
-                    lvl = re.sub(r'(?<=[A-Za-z\)])\s*([123](?:,[123])*)\b', r'#super[\1]', lvl)
+                    # Hapus footnote 3 bila ada (sesuai arahan: footnote nomor 3 dihapus)
+                    lvl = re.sub(r',\s*3\b', '', lvl)
+                    lvl = re.sub(r'(?<=[A-Za-z\)])\s*3\b', '', lvl)
+                    # Format angka footnote 1 dan 2 menjadi superskrip (#super[...])
+                    lvl = re.sub(r'(?<=[A-Za-z\)])\s*([12])\b', r'#super[\1]', lvl)
                     n24 = clean_cell_value(r[1] if len(r) > 1 else "–")
                     n25 = clean_cell_value(r[2] if len(r) > 2 else "–")
                     s24 = clean_cell_value(r[3] if len(r) > 3 else "–")
