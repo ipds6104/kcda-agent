@@ -212,15 +212,10 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
                 lk = clean_cell_value(r[1] if len(r) > 1 else "–")
                 pr = clean_cell_value(r[2] if len(r) > 2 else "–")
                 tot = clean_cell_value(r[3] if len(r) > 3 else "–")
-                for d in desa_list:
-                    if normalize_village_name(pem) == normalize_village_name(d):
-                        pem = d
-                        break
                 t221_rows.append([pem, lk, pr, tot])
     if not t221_rows:
         t221_rows = [
-            [f"Pemerintah Daerah Kecamatan {nama_singkat}\n{nama_en} District Government", "–", "–", "–"],
-            ["Jumlah / Total", "–", "–", "–"]
+            [f"Pemerintah Daerah Kecamatan {nama_singkat}\n{nama_en} District Government", "–", "–", "–"]
         ]
 
     t221_markup = render_typst_table(
