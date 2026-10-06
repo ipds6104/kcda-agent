@@ -22,63 +22,57 @@ def render_chapter5(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     charts_markup = get_chapter5_charts(slug, nama_singkat, nama_en, Path(out_dir) if out_dir else None, fig_no=fig_no)
     chart_section = f"\n{charts_markup}\n#pagebreak()\n" if charts_markup.strip() else ""
 
-    # Ekstraksi komoditas pertanian unggulan 2025
-    rows_52 = get_kecamatan_tab_rows("5.2", nama_singkat)
-    items_52 = []
-    if len(rows_52) > 2:
-        for r in rows_52[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ["sumber", "catatan", "jenis", "sayur"]):
-                name = r[0].split("\n")[0].split("/")[0].strip()
-                val_str = clean_cell_value(r[4] if len(r) > 4 else (r[3] if len(r) > 3 else "0"))
-                try:
-                    vf = float(val_str.replace(".", "").replace(",", "."))
-                    if vf > 0:
-                        items_52.append((name, vf, val_str))
-                except Exception:
-                    pass
+    def get_top_item(tab_no):
+        rows = get_kecamatan_tab_rows(tab_no, nama_singkat)
+        items = []
+        if len(rows) > 2:
+            for r in rows[2:]:
+                if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ["sumber", "catatan", "jenis", "sayur", "buah"]):
+                    raw = r[0].replace('\r', '').replace('\n', ' ').strip()
+                    parts = raw.split('/')
+                    n_id = parts[0].strip()
+                    n_en = parts[1].strip() if len(parts) > 1 else n_id
+                    if n_id.lower().endswith(" chili"):
+                        n_id = n_id[:-6].strip()
+                    val_str = clean_cell_value(r[4] if len(r) > 4 else (r[3] if len(r) > 3 else "0"))
+                    try:
+                        vf = float(val_str.replace(".", "").replace(",", "."))
+                        if vf > 0:
+                            items.append((n_id, n_en, vf, val_str))
+                    except Exception:
+                        pass
+        if items:
+            return max(items, key=lambda x: x[2])
+        return None
 
-    rows_54 = get_kecamatan_tab_rows("5.4", nama_singkat)
-    items_54 = []
-    if len(rows_54) > 2:
-        for r in rows_54[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ["sumber", "catatan", "jenis"]):
-                name = r[0].split("\n")[0].split("/")[0].strip()
-                val_str = clean_cell_value(r[4] if len(r) > 4 else (r[3] if len(r) > 3 else "0"))
-                try:
-                    vf = float(val_str.replace(".", "").replace(",", "."))
-                    if vf > 0:
-                        items_54.append((name, vf, val_str))
-                except Exception:
-                    pass
+    top_sayur = get_top_item("5.2")
+    top_bio = get_top_item("5.4")
+    top_buah = get_top_item("5.7")
 
-    rows_57 = get_kecamatan_tab_rows("5.7", nama_singkat)
-    items_57 = []
-    if len(rows_57) > 2:
-        for r in rows_57[2:]:
-            if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ["sumber", "catatan", "jenis", "buah", "sayur"]):
-                name = r[0].split("\n")[0].split("/")[0].strip()
-                val_str = clean_cell_value(r[4] if len(r) > 4 else (r[3] if len(r) > 3 else "0"))
-                try:
-                    vf = float(val_str.replace(".", "").replace(",", "."))
-                    if vf > 0:
-                        items_57.append((name, vf, val_str))
-                except Exception:
-                    pass
+    p_id = []
+    p_en = []
+    if top_sayur:
+        p_id.append(f"produksi tanaman sayuran semusim terbesar dicatat oleh komoditas {top_sayur[0]} dengan produksi mencapai {top_sayur[3]} kuintal")
+        p_en.append(f"the largest seasonal vegetable crop production was recorded by {top_sayur[1]} reaching {top_sayur[3]} quintals")
+    if top_bio:
+        p_id.append(f"produksi tanaman biofarmaka didominasi oleh {top_bio[0]} sebesar {top_bio[3]} kg")
+        p_en.append(f"medicinal plants production was dominated by {top_bio[1]} amounting to {top_bio[3]} kg")
+    if top_buah:
+        p_id.append(f"produksi buah-buahan tahunan tertinggi diraih oleh komoditas {top_buah[0]} sebanyak {top_buah[3]} kuintal")
+        p_en.append(f"the highest annual fruit crop production was achieved by {top_buah[1]} with {top_buah[3]} quintals")
 
-    top_sayur = max(items_52, key=lambda x: x[1]) if items_52 else ("Sayuran Semusim", 0, "–")
-    top_bio = max(items_54, key=lambda x: x[1]) if items_54 else ("Jahe", 0, "–")
-    top_buah = max(items_57, key=lambda x: x[1]) if items_57 else ("Buah Tahunan", 0, "–")
-
-    if top_sayur[1] > 0 and top_bio[1] > 0 and top_buah[1] > 0:
+    if p_id:
         teks_horti_id = (
-            f"Pada tahun 2025, produksi tanaman sayuran semusim terbesar di Kecamatan {nama_singkat} adalah {top_sayur[0]} yaitu sebesar {top_sayur[2]} kuintal. "
-            f"Untuk produksi tanaman biofarmaka, {top_bio[0]} merupakan komoditas dengan produksi terbesar yaitu {top_bio[2]} kg. "
-            f"Sementara itu, untuk produksi buah-buahan tahunan terbesar dicatat oleh komoditas {top_buah[0]} sebanyak {top_buah[2]} kuintal."
+            f"Sektor pertanian memegang peranan penting dalam perekonomian masyarakat Kecamatan {nama_singkat}, "
+            f"khususnya budidaya aneka tanaman hortikultura semusim dan tahunan. "
+            f"Pada tahun 2025, {'; '.join(p_id)}. "
+            f"Hasil panen komoditas ini menjadi pasokan pangan penting bagi konsumsi masyarakat lokal maupun dipasarkan ke luar wilayah kecamatan."
         )
         teks_horti_en = (
-            f"In 2025, the largest seasonal vegetable crop production in {nama_en} District was {top_sayur[0]} at {top_sayur[2]} quintals. "
-            f"For medicinal plants production, {top_bio[0]} was the leading commodity with {top_bio[2]} kg. "
-            f"Meanwhile, the largest annual fruit production was recorded by {top_buah[0]} reaching {top_buah[2]} quintals."
+            f"The agricultural sector plays a crucial role in the economy of {nama_en} District, "
+            f"particularly the cultivation of seasonal and annual horticultural crops. "
+            f"In 2025, {'; '.join(p_en)}. "
+            f"These harvest yields serve as important food supplies for local consumption and are traded to surrounding markets."
         )
     else:
         teks_horti_id = (

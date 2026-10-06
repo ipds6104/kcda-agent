@@ -74,46 +74,71 @@ def render_chapter3(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         lowest_kpd = valid_kpd[0]
         highest_kpd = valid_kpd[-1]
         valid_kpd.sort(key=lambda x: x[3])
+        smallest_pop = valid_kpd[0]
         largest_pop = valid_kpd[-1]
 
-        ulasan_kpd_id = (
-            f"Penduduk Kecamatan {nama_singkat} pada tahun 2025 berjumlah sekitar {tot_all} jiwa "
-            f"dengan kepadatan penduduk sekitar {tot_kpd} jiwa per kilometer persegi.\\\n\\\n"
-            f"Penyebaran penduduk di Kecamatan {nama_singkat} tidak merata antar desa yang satu dengan desa lainnya. "
-            f"Desa {highest_kpd[0]} merupakan desa dengan tingkat kepadatan penduduk tertinggi yaitu {highest_kpd[2]} jiwa/km². "
-            f"Sebaliknya, desa {lowest_kpd[0]} memiliki tingkat kepadatan terendah yaitu sekitar {lowest_kpd[2]} jiwa/km².\\\n\\\n"
-            f"{largest_pop[0]} adalah desa dengan persentase penduduk terbesar di Kecamatan {nama_singkat}, "
-            f"yaitu sekitar {largest_pop[4]} persen dari total penduduk di Kecamatan {nama_singkat}. "
-            f"Rasio jenis kelamin sekitar {tot_rasio}, yang artinya terdapat sekitar {tot_rasio.split(',')[0]} penduduk laki-laki "
-            f"untuk setiap 100 penduduk perempuan di Kecamatan {nama_singkat} pada Tahun 2025."
+        teks_jml_id = (
+            f"Penduduk Kecamatan {nama_singkat} pada tahun 2025 tercatat sebanyak {tot_all} jiwa, "
+            f"terdiri atas {tot_lk} jiwa laki-laki dan {tot_pr} jiwa perempuan. "
+            f"Komposisi ini menghasilkan rasio jenis kelamin sebesar {tot_rasio}, "
+            f"yang mengindikasikan terdapat sekitar {tot_rasio.split(',')[0]} penduduk laki-laki "
+            f"untuk setiap 100 penduduk perempuan di wilayah ini."
+        )
+        teks_jml_en = (
+            f"The population of {nama_en} District in 2025 was recorded at {tot_all} people, "
+            f"comprising {tot_lk} males and {tot_pr} females. "
+            f"This composition yields a sex ratio of {tot_rasio}, "
+            f"indicating approximately {tot_rasio.split(',')[0]} males for every 100 females in this district."
         )
 
-        ulasan_kpd_en = (
-            f"The population of {nama_en} District in 2025 totaled about {tot_all} people "
-            f"with a population density of about {tot_kpd} people per square kilometer.\\\n\\\n"
-            f"The spread of residents in {nama_en} District is not even between villages. "
-            f"{highest_kpd[0]} village has the highest population density rate of {highest_kpd[2]} people/sq.km. "
-            f"In contrast, {lowest_kpd[0]} village has the lowest density of about {lowest_kpd[2]} people/sq.km.\\\n\\\n"
-            f"{largest_pop[0]} is the village with the largest percentage of population in {nama_en} District, "
-            f"which is about {largest_pop[4]} percent of the total population. "
-            f"The sex ratio is about {tot_rasio}, meaning there are about {tot_rasio.split(',')[0]} male population "
-            f"for every 100 female residents in {nama_en} District in 2025."
+        teks_kpd_id = (
+            f"Kepadatan penduduk di Kecamatan {nama_singkat} mencapai rata-rata sekitar {tot_kpd} jiwa per kilometer persegi. "
+            f"Penyebaran penduduk belum merata antardesa, di mana Desa {highest_kpd[0]} memiliki kepadatan tertinggi mencapai {highest_kpd[2]} jiwa/km², "
+            f"sedangkan Desa {lowest_kpd[0]} mencatat kepadatan terendah sebesar {lowest_kpd[2]} jiwa/km².\\\n\\\n"
+            f"Dari sisi konsentrasi penduduk, {largest_pop[0]} merupakan desa dengan proporsi penduduk terbesar ({largest_pop[4]} persen), "
+            f"sementara proporsi penduduk terkecil berada di {smallest_pop[0]} ({smallest_pop[4]} persen)."
         )
-    else:
-        ulasan_kpd_id = f"Penduduk Kecamatan {nama_singkat} pada tahun 2025 berjumlah {tot_all} jiwa dengan kepadatan penduduk {tot_kpd} jiwa/km²."
-        ulasan_kpd_en = f"The population of {nama_en} District in 2025 totaled {tot_all} people with a density of {tot_kpd} people/sq.km."
+        teks_kpd_en = (
+            f"The average population density in {nama_en} District reaches approximately {tot_kpd} people per square kilometer. "
+            f"Population distribution is not evenly distributed across villages; {highest_kpd[0]} village has the highest density at {highest_kpd[2]} people/sq.km, "
+            f"while {lowest_kpd[0]} village records the lowest at {lowest_kpd[2]} people/sq.km.\\\n\\\n"
+            f"In terms of population concentration, {largest_pop[0]} has the largest share ({largest_pop[4]} percent), "
+            f"whereas the smallest share is found in {smallest_pop[0]} ({smallest_pop[4]} percent)."
+        )
 
-    # Penjelasan Teknis & Ulasan Bab 3
-    ulasan_id = f"""#block[
-  #text(8pt, weight: "bold")[1. #h(2pt) Kependudukan] \\
+        ulasan_id = f"""#block[
+  #text(8pt, weight: "bold")[1. #h(2pt) Perkembangan Penduduk dan Rasio Jenis Kelamin] \\
   #v(2pt)
-  {ulasan_kpd_id}
+  {teks_jml_id}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold")[2. #h(2pt) Distribusi dan Kepadatan Penduduk] \\
+  #v(2pt)
+  {teks_kpd_id}
 ]"""
 
-    ulasan_en = f"""#block[
+        ulasan_en = f"""#block[
+  #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Population Growth and Sex Ratio] \\
+  #v(2pt)
+  {teks_jml_en}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold", style: "italic")[2. #h(2pt) Population Distribution and Density] \\
+  #v(2pt)
+  {teks_kpd_en}
+]"""
+    else:
+        ulasan_id = f"""#block[
+  #text(8pt, weight: "bold")[1. #h(2pt) Kependudukan] \\
+  #v(2pt)
+  Penduduk Kecamatan {nama_singkat} pada tahun 2025 berjumlah {tot_all} jiwa dengan kepadatan penduduk {tot_kpd} jiwa/km².
+]"""
+        ulasan_en = f"""#block[
   #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Population] \\
   #v(2pt)
-  {ulasan_kpd_en}
+  The population of {nama_en} District in 2025 totaled {tot_all} people with a density of {tot_kpd} people/sq.km.
 ]"""
 
     technical_notes_bab3 = [

@@ -237,29 +237,76 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         f"East : {batas_map.get('timur', '–')}"
     )
 
+    valid_distances = []
+    for r in t1_2_rows:
+        if len(r) > 1 and r[1] not in ["–", "...", ""]:
+            try:
+                d_val = float(r[1].replace(',', '.'))
+                valid_distances.append((r[0], d_val, r[1]))
+            except Exception:
+                pass
+
+    jarak_kab = "–"
+    for r in t1_4_rows:
+        if len(r) > 2 and ("ibukota kabupaten" in r[1].lower() or "regency" in r[1].lower()):
+            jarak_kab = r[2]
+            break
+
+    if valid_distances:
+        valid_distances.sort(key=lambda x: x[1])
+        nearest_desa = valid_distances[0]
+        farthest_desa = valid_distances[-1]
+        teks_jarak_id = (
+            f"Aksesibilitas antarwilayah desa ke pusat pemerintahan kecamatan cukup bervariasi. "
+            f"Desa dengan jarak terjauh ke ibukota kecamatan adalah {farthest_desa[0]} dengan jarak sekitar {farthest_desa[2]} km, "
+            f"sedangkan desa terdekat adalah {nearest_desa[0]} ({nearest_desa[2]} km). "
+            + (f"Jarak dari kantor camat ke ibukota kabupaten ({ibukota_kab}) adalah sekitar {jarak_kab} km." if jarak_kab != "–" else "")
+        )
+        teks_jarak_en = (
+            f"Accessibility between villages and the district capital varies. "
+            f"The village with the farthest distance to the district capital is {farthest_desa[0]} ({farthest_desa[2]} km), "
+            f"while the nearest village is {nearest_desa[0]} ({nearest_desa[2]} km). "
+            + (f"The distance from the district office to the regency capital ({ibukota_kab}) is approximately {jarak_kab} km." if jarak_kab != "–" else "")
+        )
+    else:
+        teks_jarak_id = f"Jarak dari kantor camat ke ibukota kabupaten ({ibukota_kab}) adalah sekitar {jarak_kab} km." if jarak_kab != "–" else "Seluruh desa di kecamatan ini terhubung melalui jalur transportasi menuju ibukota kecamatan."
+        teks_jarak_en = f"The distance from the district office to the regency capital ({ibukota_kab}) is approximately {jarak_kab} km." if jarak_kab != "–" else "All villages in this district are connected via transportation routes to the district capital."
+
     # Penjelasan Teknis & Ulasan Bab 1 (2 Kolom Resmi Sesuai Gambar 1 & Gambar 2)
     ulasan_id = f"""#block[
   #text(8pt, weight: "bold")[1. #h(2pt) Letak Wilayah] \\
   #v(2pt)
   {teks_letak_id}
 ]
-#v(8pt)
+#v(6pt)
 #block[
   #text(8pt, weight: "bold")[2. #h(2pt) Luas Wilayah] \\
   #v(2pt)
   {teks_luas_id}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold")[3. #h(2pt) Aksesibilitas Wilayah] \\
+  #v(2pt)
+  {teks_jarak_id}
 ]"""
 
     ulasan_en = f"""#block[
-  #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Area Located] \\
+  #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Area Location] \\
   #v(2pt)
   {teks_letak_en}
 ]
-#v(8pt)
+#v(6pt)
 #block[
   #text(8pt, weight: "bold", style: "italic")[2. #h(2pt) Total Area] \\
   #v(2pt)
   {teks_luas_en}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold", style: "italic")[3. #h(2pt) Regional Accessibility] \\
+  #v(2pt)
+  {teks_jarak_en}
 ]"""
 
     technical_notes_bab1 = [

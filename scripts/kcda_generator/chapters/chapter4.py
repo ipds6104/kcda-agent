@@ -48,9 +48,42 @@ def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         return "–"
 
     sd_count = get_edu_val("dasar")
+    mi_count = get_edu_val("ibtidaiyah")
     smp_count = get_edu_val("pertama")
+    mts_count = get_edu_val("tsanawiyah")
     sma_count = get_edu_val("atas")
     smk_count = get_edu_val("kejuruan")
+    ma_count = get_edu_val("aliyah")
+
+    dasar_parts_id = [f"{sd_count} Sekolah Dasar (SD)"]
+    dasar_parts_en = [f"{sd_count} primary schools (SD)"]
+    if mi_count != "–" and mi_count != "0":
+        dasar_parts_id.append(f"{mi_count} Madrasah Ibtidaiyah (MI)")
+        dasar_parts_en.append(f"{mi_count} Madrasah Ibtidaiyah (MI)")
+    str_dasar_id = " serta ".join(dasar_parts_id)
+    str_dasar_en = " and ".join(dasar_parts_en)
+
+    menengah_parts_id = [f"{smp_count} Sekolah Menengah Pertama (SMP)"]
+    menengah_parts_en = [f"{smp_count} junior high schools (SMP)"]
+    if mts_count != "–" and mts_count != "0":
+        menengah_parts_id.append(f"{mts_count} Madrasah Tsanawiyah (MTs)")
+        menengah_parts_en.append(f"{mts_count} Madrasah Tsanawiyah (MTs)")
+    str_menengah_id = " serta ".join(menengah_parts_id)
+    str_menengah_en = " and ".join(menengah_parts_en)
+
+    atas_parts_id = []
+    atas_parts_en = []
+    if sma_count != "–" and sma_count != "0":
+        atas_parts_id.append(f"{sma_count} SMA")
+        atas_parts_en.append(f"{sma_count} senior high school(s) (SMA)")
+    if smk_count != "–" and smk_count != "0":
+        atas_parts_id.append(f"{smk_count} SMK")
+        atas_parts_en.append(f"{smk_count} vocational school(s) (SMK)")
+    if ma_count != "–" and ma_count != "0":
+        atas_parts_id.append(f"{ma_count} MA")
+        atas_parts_en.append(f"{ma_count} Madrasah Aliyah (MA)")
+    str_atas_id = ", ".join(atas_parts_id) if atas_parts_id else "sarana sekolah menengah atas di wilayah sekitarnya"
+    str_atas_en = ", ".join(atas_parts_en) if atas_parts_en else "senior secondary facilities in adjacent areas"
 
     # Ekstraksi angka kesehatan (Tabel 4.2.1)
     rows_421_raw = get_kecamatan_tab_rows("4.2.1", nama_singkat)
@@ -68,32 +101,59 @@ def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
                 return v
         return "–"
 
+    rs = get_kes_val("rumah sakit")
     p_inap = get_kes_val("rawat inap")
     p_non = get_kes_val("tanpa")
+    apotek = get_kes_val("apotek")
+
+    rs_clean = rs if rs not in ["–", "...", "0"] else None
+    inap_clean = p_inap if p_inap not in ["–", "...", "0"] else None
+    non_clean = p_non if p_non not in ["–", "...", "0"] else "1"
+    apotek_clean = apotek if apotek not in ["–", "...", "0"] else None
+
+    faskes_id_list = []
+    faskes_en_list = []
+    if rs_clean:
+        faskes_id_list.append(f"{rs_clean} unit Rumah Sakit")
+        faskes_en_list.append(f"{rs_clean} hospital(s)")
+    if inap_clean:
+        faskes_id_list.append(f"{inap_clean} unit Puskesmas rawat inap")
+        faskes_en_list.append(f"{inap_clean} inpatient Public Health Center(s)")
+    if non_clean:
+        faskes_id_list.append(f"{non_clean} unit Puskesmas tanpa rawat inap")
+        faskes_en_list.append(f"{non_clean} outpatient Public Health Center(s)")
+    str_faskes_id = ", ".join(faskes_id_list[:-1]) + " dan " + faskes_id_list[-1] if len(faskes_id_list) > 1 else faskes_id_list[0]
+    str_faskes_en = ", ".join(faskes_en_list[:-1]) + " and " + faskes_en_list[-1] if len(faskes_en_list) > 1 else faskes_en_list[0]
+
+    if apotek_clean:
+        apotek_id_txt = f"Akses masyarakat terhadap obat-obatan dan perbekalan medis juga ditunjang oleh {apotek_clean} desa/kelurahan yang memiliki sarana apotek/toko obat."
+        apotek_en_txt = f"Public access to medicines and medical supplies is also supported by {apotek_clean} village(s) with pharmacies/drugstores."
+    else:
+        apotek_id_txt = "Pelayanan kefarmasian dan penyediaan obat-obatan esensial bagi masyarakat didukung langsung melalui instalasi farmasi Puskesmas setempat."
+        apotek_en_txt = "Pharmaceutical services and essential drug supply for the community are directly supported through local Public Health Center pharmacy installations."
 
     teks_edu_id = (
-        f"Ketersediaan fasilitas pendidikan akan sangat menunjang dalam meningkatkan mutu pendidikan. "
-        f"Pada tahun ajaran 2025/2026, terdapat {sd_count} Sekolah Dasar (SD) di Kecamatan {nama_singkat}. "
-        f"Jumlah Sekolah Menengah Pertama (SMP) tercatat sebanyak {smp_count} sekolah, sedangkan pada jenjang "
-        f"Sekolah Menengah Atas (SMA) terdapat {sma_count} sekolah dan Sekolah Menengah Kejuruan (SMK) sebanyak {smk_count} sekolah."
+        f"Ketersediaan fasilitas pendidikan merupakan fondasi utama dalam meningkatkan mutu sumber daya manusia. "
+        f"Pada tahun ajaran 2025/2026, jenjang pendidikan dasar di Kecamatan {nama_singkat} didukung oleh {str_dasar_id}. "
+        f"Untuk jenjang pendidikan menengah pertama, tercatat keberadaan {str_menengah_id}. "
+        f"Sementara pada jenjang pendidikan menengah atas dan kejuruan, terdapat {str_atas_id} guna menampung kelanjutan studi peserta didik."
     )
     teks_edu_en = (
-        f"The availability of educational facilities plays an important role in improving the quality of education. "
-        f"In the 2025/2026 academic year, {nama_en} District had {sd_count} primary schools (SD), "
-        f"{smp_count} junior high schools (SMP), {sma_count} senior high school(s) (SMA), and {smk_count} vocational high school(s) (SMK)."
+        f"The availability of educational facilities is an essential foundation for enhancing human resource quality. "
+        f"In the 2025/2026 academic year, basic education in {nama_en} District was supported by {str_dasar_en}. "
+        f"At the junior secondary level, there were {str_menengah_en}. "
+        f"Meanwhile, at the senior secondary and vocational level, there were {str_atas_en} to accommodate continuing students."
     )
 
     teks_kes_id = (
-        f"Fasilitas kesehatan merupakan sarana prasarana yang vital di suatu wilayah. "
-        f"Pada tahun 2025, fasilitas kesehatan yang tersedia di Kecamatan {nama_singkat} meliputi "
-        f"{p_inap} Puskesmas rawat inap, {p_non} Puskesmas tanpa rawat inap, serta sarana apotek/toko obat "
-        f"yang menunjang peningkatan derajat kesehatan masyarakat."
+        f"Ketersediaan sarana pelayanan kesehatan yang memadai merupakan kebutuhan vital masyarakat. "
+        f"Pada tahun 2025, fasilitas kesehatan di Kecamatan {nama_singkat} mencakup {str_faskes_id}. "
+        f"{apotek_id_txt} Keberadaan sarana ini berperan strategis dalam memelihara dan meningkatkan derajat kesehatan masyarakat di seluruh wilayah kecamatan."
     )
     teks_kes_en = (
-        f"Health facilities are essential infrastructure in a region. "
-        f"In 2025, health facilities available in {nama_en} District included "
-        f"{p_inap} inpatient Public Health Center, {p_non} outpatient Public Health Center, and pharmacies "
-        f"supporting the improvement of public health."
+        f"The availability of adequate health service facilities is a vital necessity for the community. "
+        f"In 2025, health facilities in {nama_en} District included {str_faskes_en}. "
+        f"{apotek_en_txt} These facilities play a strategic role in maintaining and enhancing public health across the district."
     )
 
     # Penjelasan Teknis & Ulasan Bab 4 (2 Kolom Resmi Sesuai Gambar 1 & Gambar 2)
@@ -102,7 +162,7 @@ def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
   #v(2pt)
   {teks_edu_id}
 ]
-#v(8pt)
+#v(6pt)
 #block[
   #text(8pt, weight: "bold")[2. #h(2pt) Kesehatan] \\
   #v(2pt)
@@ -114,7 +174,7 @@ def render_chapter4(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
   #v(2pt)
   {teks_edu_en}
 ]
-#v(8pt)
+#v(6pt)
 #block[
   #text(8pt, weight: "bold", style: "italic")[2. #h(2pt) Health] \\
   #v(2pt)

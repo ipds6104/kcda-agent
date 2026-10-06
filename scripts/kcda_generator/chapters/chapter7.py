@@ -14,46 +14,140 @@ def render_chapter7(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
 
     # Penjelasan Teknis & Ulasan Bab 7 Resmi BPS
     rows_71 = get_kecamatan_tab_rows("7.1", nama_singkat)
-    bank_cnt = "–"
+    d71 = {}
     if len(rows_71) > 2:
         for r in rows_71[2:]:
-            if r and "pemerintah" in r[0].lower():
-                bank_cnt = clean_cell_value(r[1] if len(r) > 1 else "–")
-                break
+            if r and len(r) > 1 and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+                d71[r[0].lower().split('\n')[0].strip()] = clean_cell_value(r[1])
 
-    if bank_cnt != "–" and bank_cnt != "0":
-        teks_fin_id = (
-            f"Perbankan dan koperasi merupakan lembaga keuangan yang berperan penting dalam menggerakkan perekonomian masyarakat. "
-            f"Pada tahun 2025 di Kecamatan {nama_singkat}, tercatat keberadaan Bank Umum Pemerintah di {bank_cnt} desa/kelurahan, "
-            f"serta lembaga koperasi yang beroperasi di wilayah kecamatan guna mendukung permodalan usaha masyarakat."
+    rows_72 = get_kecamatan_tab_rows("7.2", nama_singkat)
+    d72 = {}
+    if len(rows_72) > 2:
+        for r in rows_72[2:]:
+            if r and len(r) > 1 and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+                d72[r[0].lower().split('\n')[0].strip()] = clean_cell_value(r[1])
+
+    rows_73 = get_kecamatan_tab_rows("7.3", nama_singkat)
+    d73 = {}
+    if len(rows_73) > 2:
+        for r in rows_73[2:]:
+            if r and len(r) > 1 and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan']):
+                d73[r[0].lower().split('\n')[0].strip()] = clean_cell_value(r[1])
+
+    bg = int(d71.get('bank umum pemerintah', '0')) if d71.get('bank umum pemerintah', '0').isdigit() else 0
+    bs = int(d71.get('bank umum swasta', '0')) if d71.get('bank umum swasta', '0').isdigit() else 0
+    bb = int(d71.get('bank perkreditan rakyat (bpr)', '0')) if d71.get('bank perkreditan rakyat (bpr)', '0').isdigit() else 0
+
+    kud = int(d72.get('koperasi unit desa (kud)', '0')) if d72.get('koperasi unit desa (kud)', '0').isdigit() else 0
+    kospin = int(d72.get('koperasi simpan pinjam (kospin)', '0')) if d72.get('koperasi simpan pinjam (kospin)', '0').isdigit() else 0
+
+    toko = int(d73.get('kelompok pertokoan', '0')) if d73.get('kelompok pertokoan', '0').isdigit() else 0
+    pasar_p = int(d73.get('pasar dengan bangunan permanen', '0')) if d73.get('pasar dengan bangunan permanen', '0').isdigit() else 0
+    pasar_sp = int(d73.get('pasar dengan bangunan semi permanen', '0')) if d73.get('pasar dengan bangunan semi permanen', '0').isdigit() else 0
+    mini = int(d73.get('mini market/swalayan/supermarket', '0')) if d73.get('mini market/swalayan/supermarket', '0').isdigit() else 0
+    resto = int(d73.get('restoran/rumah makan', '0')) if d73.get('restoran/rumah makan', '0').isdigit() else 0
+
+    bank_id_parts = []
+    bank_en_parts = []
+    if bg > 0:
+        bank_id_parts.append(f"{bg} desa memiliki Bank Umum Pemerintah")
+        bank_en_parts.append(f"{bg} village(s) had Government Commercial Banks")
+    if bs > 0:
+        bank_id_parts.append(f"{bs} desa memiliki Bank Umum Swasta")
+        bank_en_parts.append(f"{bs} village(s) had Private Commercial Banks")
+    if bb > 0:
+        bank_id_parts.append(f"{bb} desa memiliki Bank Perkreditan Rakyat (BPR)")
+        bank_en_parts.append(f"{bb} village(s) had Rural Banks (BPR)")
+
+    kop_id_parts = []
+    kop_en_parts = []
+    if kud > 0:
+        kop_id_parts.append(f"Koperasi Unit Desa (KUD) di {kud} desa")
+        kop_en_parts.append(f"Village Cooperative Units (KUD) in {kud} village(s)")
+    if kospin > 0:
+        kop_id_parts.append(f"Koperasi Simpan Pinjam di {kospin} desa")
+        kop_en_parts.append(f"Savings and Loan Cooperatives in {kospin} village(s)")
+
+    if bank_id_parts:
+        str_bank_id = f"Keberadaan lembaga perbankan tercatat di mana {', '.join(bank_id_parts)}. "
+        str_bank_en = f"The presence of banking institutions was recorded where {', '.join(bank_en_parts)}. "
+    else:
+        str_bank_id = f"Aktivitas perbankan masyarakat ditunjang oleh agen layanan perbankan tanpa kantor serta jaringan bank di kecamatan sekitar. "
+        str_bank_en = f"Community banking activities are supported by branchless banking agents and banking networks in neighboring districts. "
+
+    if kop_id_parts:
+        str_kop_id = f"Di sektor perkoperasian, terdapat {' dan '.join(kop_id_parts)} yang berperan aktif memperkuat permodalan usaha warga."
+        str_kop_en = f"In the cooperative sector, there were {' and '.join(kop_en_parts)} actively strengthening capital for local businesses."
+    else:
+        str_kop_id = f"Lembaga keuangan mikro dan kelompok simpan pinjam masyarakat terus didorong guna memfasilitasi permodalan usaha perdesaan."
+        str_kop_en = f"Microfinance institutions and community loan groups continue to be encouraged to facilitate rural enterprise capital."
+
+    teks_fin_id = (
+        f"Lembaga keuangan perbankan dan koperasi memegang peranan krusial dalam mendukung likuiditas permodalan dan pertumbuhan ekonomi wilayah. "
+        f"{str_bank_id}{str_kop_id}"
+    )
+    teks_fin_en = (
+        f"Banking institutions and cooperatives play a vital role in supporting capital liquidity and regional economic growth. "
+        f"{str_bank_en}{str_kop_en}"
+    )
+
+    pasar_tot = pasar_p + pasar_sp
+    dagang_id_parts = []
+    dagang_en_parts = []
+    if pasar_tot > 0:
+        dagang_id_parts.append(f"pasar permanen/semi permanen di {pasar_tot} desa/kelurahan")
+        dagang_en_parts.append(f"permanent/semi-permanent markets in {pasar_tot} village(s)")
+    if toko > 0:
+        dagang_id_parts.append(f"kelompok pertokoan di {toko} desa/kelurahan")
+        dagang_en_parts.append(f"shopping complexes in {toko} village(s)")
+    if mini > 0:
+        dagang_id_parts.append(f"minimarket/swalayan di {mini} desa/kelurahan")
+        dagang_en_parts.append(f"minimarkets/supermarkets in {mini} village(s)")
+    if resto > 0:
+        dagang_id_parts.append(f"restoran/rumah makan di {resto} desa/kelurahan")
+        dagang_en_parts.append(f"restaurants/food stalls in {resto} village(s)")
+
+    if dagang_id_parts:
+        teks_trade_id = (
+            f"Aktivitas perdagangan dan distribusi barang konsumsi di Kecamatan {nama_singkat} berkembang dengan ketersediaan "
+            f"{', '.join(dagang_id_parts)}. Keberadaan sarana perniagaan ini memastikan kelancaran rantai pasok kebutuhan pokok bagi masyarakat."
         )
-        teks_fin_en = (
-            f"Banks and cooperatives are vital financial institutions that drive the community economy. "
-            f"In 2025, in {nama_en} District, Government Commercial Banks were available in {bank_cnt} village(s)/subdistrict(s), "
-            f"along with cooperatives operating across the district to support business capital."
+        teks_trade_en = (
+            f"Trade and consumer goods distribution activities in {nama_en} District thrive with the availability of "
+            f"{', '.join(dagang_en_parts)}. These commercial amenities ensure smooth supply chains of basic necessities for the community."
         )
     else:
-        teks_fin_id = (
-            f"Perbankan dan koperasi merupakan lembaga keuangan yang berperan dalam menggerakkan perekonomian masyarakat. "
-            f"Di Kecamatan {nama_singkat}, keberadaan sarana lembaga keuangan bank dan koperasi simpan pinjam "
-            f"terus menunjang kelancaran transaksi serta akses permodalan bagi usaha masyarakat."
+        teks_trade_id = (
+            f"Aktivitas perniagaan dan pemenuhan kebutuhan pokok masyarakat di Kecamatan {nama_singkat} bertumpu pada jaringan toko kelontong tradisional "
+            f"serta pasar berkala antardesa yang menghubungkan produsen lokal dengan konsumen."
         )
-        teks_fin_en = (
-            f"Banks and cooperatives are financial institutions playing an important role in driving the community economy. "
-            f"In {nama_en} District, the presence of banking and cooperative facilities "
-            f"continues to support smooth transactions and capital access for local enterprises."
+        teks_trade_en = (
+            f"Commercial activities and basic necessity fulfillment in {nama_en} District rely on traditional grocery store networks "
+            f"and periodic inter-village markets connecting local producers with consumers."
         )
 
     ulasan_id = f"""#block[
-  #text(8pt, weight: "bold")[Perbankan dan Koperasi] \\
+  #text(8pt, weight: "bold")[1. #h(2pt) Perbankan dan Koperasi] \\
   #v(2pt)
   {teks_fin_id}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold")[2. #h(2pt) Sarana Perdagangan] \\
+  #v(2pt)
+  {teks_trade_id}
 ]"""
 
     ulasan_en = f"""#block[
-  #text(8pt, weight: "bold", style: "italic")[Banking and Cooperatives] \\
+  #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Banking and Cooperatives] \\
   #v(2pt)
   {teks_fin_en}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold", style: "italic")[2. #h(2pt) Trade Facilities] \\
+  #v(2pt)
+  {teks_trade_en}
 ]"""
 
     technical_notes_bab7 = [

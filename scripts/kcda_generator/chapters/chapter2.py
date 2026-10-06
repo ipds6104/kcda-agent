@@ -309,67 +309,113 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
             f"In administering governance at the district level, the Camat serves as the regional government leader and coordinator in {nama_en} District."
         )
 
+    mandiri_cnt = sum(1 for r in t216_rows if "mandiri" in str(r[2]).lower())
+    maju_cnt = sum(1 for r in t216_rows if "maju" in str(r[2]).lower())
+    berkembang_cnt = sum(1 for r in t216_rows if "berkembang" in str(r[2]).lower())
+
+    idm_parts_id = []
+    idm_parts_en = []
+    if mandiri_cnt > 0:
+        idm_parts_id.append(f"{mandiri_cnt} desa berstatus Mandiri")
+        idm_parts_en.append(f"{mandiri_cnt} Independent Village(s)")
+    if maju_cnt > 0:
+        idm_parts_id.append(f"{maju_cnt} desa Maju")
+        idm_parts_en.append(f"{maju_cnt} Advanced Village(s)")
+    if berkembang_cnt > 0:
+        idm_parts_id.append(f"{berkembang_cnt} desa Berkembang")
+        idm_parts_en.append(f"{berkembang_cnt} Developing Village(s)")
+
+    str_idm_id = ", ".join(idm_parts_id) if idm_parts_id else "seluruh desa terus ditingkatkan kemandirian ekonominya"
+    str_idm_en = ", ".join(idm_parts_en) if idm_parts_en else "village autonomy continues to be promoted"
+
+    tot_pns = "–"
+    pns_lk = "–"
+    pns_pr = "–"
+    for r in t221_rows:
+        if len(r) > 3 and any(k in r[0].lower() for k in ["kecamatan", "pemerintah", "kelurahan", "jumlah"]):
+            if r[3] not in ["–", "...", ""]:
+                tot_pns = r[3]
+                pns_lk = r[1]
+                pns_pr = r[2]
+                break
+
     str_urban = ", ".join(urban_desas)
     if urban_desas:
         teks_desa_id = (
-            f"Kecamatan {nama_singkat} pada tahun 2025 terdiri dari {len(desa_list)} desa/kelurahan yang terbagi menjadi {tot_dusun} dusun, {tot_rw} RW dan {tot_rt} RT. "
-            f"Berdasarkan klasifikasi perdesaan dan perkotaan, {len(urban_desas)} desa/kelurahan yaitu {str_urban} merupakan wilayah perkotaan, sedangkan {len(rural_desas)} desa/kelurahan lainnya merupakan wilayah perdesaan.\\\n\\\n"
-            f"Berdasarkan Indeks Desa Membangun (IDM), seluruh desa mandiri dan berkembang terus ditingkatkan kemandirian ekonominya."
+            f"Kecamatan {nama_singkat} pada tahun 2025 terdiri dari {len(desa_list)} desa/kelurahan yang terbagi menjadi {tot_dusun} dusun, {tot_rw} RW, dan {tot_rt} RT. "
+            f"Berdasarkan klasifikasi perdesaan dan perkotaan, {len(urban_desas)} desa/kelurahan yaitu {str_urban} merupakan wilayah perkotaan, sedangkan {len(rural_desas)} desa lainnya merupakan wilayah perdesaan.\\\n\\\n"
+            f"Berdasarkan status Indeks Desa Membangun (IDM), capaian kemandirian desa mencakup {str_idm_id}."
         )
         teks_desa_en = (
-            f"{nama_en} District in 2025 consists of {len(desa_list)} villages/subdistricts divided into {tot_dusun} dusun, {tot_rw} RW and {tot_rt} RT. "
-            f"Based on the classification of rural and urban areas, {len(urban_desas)} villages/subdistricts ({str_urban}) are urban areas, while the other {len(rural_desas)} villages/subdistricts are rural areas.\\\n\\\n"
-            f"Based on the Index of Developing Villages, village statuses across the district are predominantly independent and advancing."
+            f"{nama_en} District in 2025 consists of {len(desa_list)} villages/subdistricts divided into {tot_dusun} dusun, {tot_rw} RW, and {tot_rt} RT. "
+            f"Based on the classification of rural and urban areas, {len(urban_desas)} village(s) ({str_urban}) are urban areas, while {len(rural_desas)} other villages are rural areas.\\\n\\\n"
+            f"Based on the Developing Village Index (IDM), village autonomy achievements include {str_idm_en}."
         )
     else:
         teks_desa_id = (
-            f"Kecamatan {nama_singkat} pada tahun 2025 terdiri dari {len(desa_list)} desa/kelurahan yang terbagi menjadi {tot_dusun} dusun, {tot_rw} RW dan {tot_rt} RT, "
-            f"dengan klasifikasi wilayah perdesaan yang didukung kelembagaan masyarakat tingkat rukun tetangga dan rukun warga."
+            f"Kecamatan {nama_singkat} pada tahun 2025 terdiri dari {len(desa_list)} desa yang terbagi menjadi {tot_dusun} dusun, {tot_rw} RW, dan {tot_rt} RT, "
+            f"dengan klasifikasi wilayah perdesaan yang didukung kelembagaan masyarakat tingkat rukun tetangga dan rukun warga.\\\n\\\n"
+            f"Berdasarkan status Indeks Desa Membangun (IDM), capaian kemandirian desa mencakup {str_idm_id}."
         )
         teks_desa_en = (
-            f"{nama_en} District in 2025 consists of {len(desa_list)} villages/subdistricts divided into {tot_dusun} dusun, {tot_rw} RW and {tot_rt} RT, "
-            f"with rural classifications supported by neighborhood and community unit institutions."
+            f"{nama_en} District in 2025 consists of {len(desa_list)} villages divided into {tot_dusun} dusun, {tot_rw} RW, and {tot_rt} RT, "
+            f"with rural classifications supported by neighborhood and community unit institutions.\\\n\\\n"
+            f"Based on the Developing Village Index (IDM), village autonomy achievements include {str_idm_en}."
         )
 
-    teks_pns_id = (
-        f"Aparatur sipil negara di lingkungan Pemerintah Daerah Kecamatan {nama_singkat} menjalankan fungsi pelayanan publik, koordinasi administrasi, dan fasilitasi pembangunan antardesa."
-    )
-    teks_pns_en = (
-        f"Civil servants within the {nama_en} District Government perform public service functions, administrative coordination, and development facilitation among villages."
-    )
+    if tot_pns not in ["–", "...", "0"]:
+        teks_pns_id = (
+            f"Penyelenggaraan pelayanan publik di lingkungan Pemerintah Kecamatan {nama_singkat} didukung oleh "
+            f"{tot_pns} orang Pegawai Negeri Sipil (PNS), yang terdiri dari {pns_lk} orang laki-laki dan {pns_pr} orang perempuan. "
+            f"Aparatur kecamatan berperan penting dalam koordinasi administrasi kewilayahan dan fasilitasi pembangunan desa."
+        )
+        teks_pns_en = (
+            f"Public service delivery within {nama_en} District Government is supported by "
+            f"{tot_pns} Civil Servants (PNS), consisting of {pns_lk} males and {pns_pr} females. "
+            f"District officials play an essential role in regional administrative coordination and village development facilitation."
+        )
+    else:
+        teks_pns_id = (
+            f"Aparatur sipil negara di lingkungan Pemerintah Daerah Kecamatan {nama_singkat} menjalankan fungsi pelayanan publik, "
+            f"koordinasi administrasi perizinan, dan fasilitasi pembangunan antardesa."
+        )
+        teks_pns_en = (
+            f"Civil servants within the {nama_en} District Government perform public service functions, "
+            f"administrative coordination, and development facilitation among villages."
+        )
 
     ulasan_id = f"""#block[
-  #text(8pt, weight: \"bold\")[1. #h(2pt) Kepala Daerah] \\
+  #text(8pt, weight: "bold")[1. #h(2pt) Kepala Daerah] \\
   #v(2pt)
   {teks_camat_id}
 ]
-#v(8pt)
+#v(6pt)
 #block[
-  #text(8pt, weight: \"bold\")[2. #h(2pt) Pemerintah Desa] \\
+  #text(8pt, weight: "bold")[2. #h(2pt) Pemerintah Desa] \\
   #v(2pt)
   {teks_desa_id}
 ]
-#v(8pt)
+#v(6pt)
 #block[
-  #text(8pt, weight: \"bold\")[3. #h(2pt) Pegawai Negeri Sipil] \\
+  #text(8pt, weight: "bold")[3. #h(2pt) Pegawai Negeri Sipil] \\
   #v(2pt)
   {teks_pns_id}
 ]"""
 
     ulasan_en = f"""#block[
-  #text(8pt, weight: \"bold\", style: \"italic\")[1. #h(2pt) Regional Head] \\
+  #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Regional Head] \\
   #v(2pt)
   {teks_camat_en}
 ]
-#v(8pt)
+#v(6pt)
 #block[
-  #text(8pt, weight: \"bold\", style: \"italic\")[2. #h(2pt) Village Government] \\
+  #text(8pt, weight: "bold", style: "italic")[2. #h(2pt) Village Government] \\
   #v(2pt)
   {teks_desa_en}
 ]
-#v(8pt)
+#v(6pt)
 #block[
-  #text(8pt, weight: \"bold\", style: \"italic\")[3. #h(2pt) Civil Service] \\
+  #text(8pt, weight: "bold", style: "italic")[3. #h(2pt) Civil Service] \\
   #v(2pt)
   {teks_pns_en}
 ]"""

@@ -25,19 +25,113 @@ def render_chapter6(cfg: Dict[str, Any], out_dir: Optional[Any] = None) -> str:
                 elif "penginapan" in r_txt or "inn" in r_txt:
                     inn_cnt = clean_cell_value(r[1] if len(r) > 1 else "0")
 
-    teks_akomodasi_id = f"tersedia sarana akomodasi berupa {hotel_cnt} hotel dan {inn_cnt} penginapan" if (hotel_cnt != "0" or inn_cnt != "0") else "tersedia sarana akomodasi dan fasilitas penunjang"
-    teks_akomodasi_en = f"had accommodation facilities consisting of {hotel_cnt} hotel and {inn_cnt} inn" if (hotel_cnt != "0" or inn_cnt != "0") else "had accommodation facilities and supporting amenities"
+    h_val = int(hotel_cnt) if hotel_cnt.isdigit() else 0
+    inn_val = int(inn_cnt) if inn_cnt.isdigit() else 0
 
-    ulasan_id = (
-        f"Pada tahun 2025, di Kecamatan {nama_singkat} {teks_akomodasi_id}. "
-        f"Selain itu, tersedia jaringan komunikasi serta layanan pengiriman ekspedisi swasta yang beroperasi di wilayah kecamatan. "
-        f"Seluruh wilayah di Kecamatan {nama_singkat} dapat diakses melalui jalur transportasi darat."
-    )
-    ulasan_en = (
-        f"In 2025, {nama_en} District {teks_akomodasi_en}. "
-        f"In addition, communication networks and private courier services operated across the district. "
-        f"All areas in {nama_en} District are accessible by land transportation routes."
-    )
+    akom_id_list = []
+    akom_en_list = []
+    if h_val > 0:
+        akom_id_list.append(f"{h_val} hotel")
+        akom_en_list.append(f"{h_val} hotel(s)")
+    if inn_val > 0:
+        akom_id_list.append(f"{inn_val} penginapan/losmen")
+        akom_en_list.append(f"{inn_val} inn(s)")
+
+    if akom_id_list:
+        teks_akom_id = f"Ketersediaan sarana akomodasi pariwisata di Kecamatan {nama_singkat} tercatat sebanyak {' dan '.join(akom_id_list)} guna menunjang mobilitas wisatawan dan perjalanan dinas."
+        teks_akom_en = f"The availability of tourism accommodation facilities in {nama_en} District was recorded at {' and '.join(akom_en_list)} to support visitor mobility and business travel."
+    else:
+        teks_akom_id = f"Sarana akomodasi wisata di Kecamatan {nama_singkat} bertumpu pada fasilitas hunian singgah dan penginapan di sekitar wilayah kecamatan."
+        teks_akom_en = f"Tourism accommodation facilities in {nama_en} District rely on lodging and transit residential facilities in adjacent areas."
+
+    rows_621 = get_kecamatan_tab_rows("6.2.1", nama_singkat)
+    darat_cnt = "0"
+    darat_air_cnt = "0"
+    if len(rows_621) > 2:
+        for r in rows_621[2:]:
+            if r:
+                r_txt = r[0].lower()
+                if "darat dan air" in r_txt:
+                    darat_air_cnt = clean_cell_value(r[1] if len(r) > 1 else "0")
+                elif "darat" in r_txt:
+                    darat_cnt = clean_cell_value(r[1] if len(r) > 1 else "0")
+
+    d_val = int(darat_cnt) if darat_cnt.isdigit() else 0
+    da_val = int(darat_air_cnt) if darat_air_cnt.isdigit() else 0
+
+    if da_val > 0:
+        teks_trans_id = f"Prasarana dan sarana transportasi antardesa di Kecamatan {nama_singkat} dilayani melalui jalur darat di {d_val} desa/kelurahan serta perpaduan jalur darat dan air di {da_val} desa/kelurahan."
+        teks_trans_en = f"Inter-village transportation infrastructure and facilities in {nama_en} District were served via land routes in {d_val} village(s) as well as combined land and water routes in {da_val} village(s)."
+    else:
+        teks_trans_id = f"Seluruh desa/kelurahan di Kecamatan {nama_singkat} ({d_val} desa/kelurahan) telah terhubung dan dapat diakses dengan mudah melalui prasarana dan sarana transportasi darat."
+        teks_trans_en = f"All villages in {nama_en} District ({d_val} village(s)) are connected and readily accessible through land transportation infrastructure and facilities."
+
+    rows_631 = get_kecamatan_tab_rows("6.3.1", nama_singkat)
+    pos_cnt = "0"
+    eksp_cnt = "0"
+    if len(rows_631) > 2:
+        for r in rows_631[2:]:
+            if r:
+                r_txt = r[0].lower()
+                if "kantor pos" in r_txt:
+                    pos_cnt = clean_cell_value(r[1] if len(r) > 1 else "0")
+                elif "ekspedisi" in r_txt:
+                    eksp_cnt = clean_cell_value(r[1] if len(r) > 1 else "0")
+
+    p_val = int(pos_cnt) if pos_cnt.isdigit() else 0
+    e_val = int(eksp_cnt) if eksp_cnt.isdigit() else 0
+
+    kom_id_parts = []
+    kom_en_parts = []
+    if p_val > 0:
+        kom_id_parts.append(f"{p_val} desa memiliki kantor pos/pos pembantu")
+        kom_en_parts.append(f"{p_val} village(s) had post office facilities")
+    if e_val > 0:
+        kom_id_parts.append(f"{e_val} desa dilayani agen ekspedisi swasta")
+        kom_en_parts.append(f"{e_val} village(s) served by private courier agencies")
+
+    if kom_id_parts:
+        teks_kom_id = f"Layanan komunikasi dan pengiriman logistik kian berkembang dengan {' serta '.join(kom_id_parts)} yang mempermudah sirkulasi barang dan perniagaan masyarakat."
+        teks_kom_en = f"Communication and courier logistics services continue to expand with {' and '.join(kom_en_parts)}, facilitating the flow of goods and local commerce."
+    else:
+        teks_kom_id = f"Jaringan telekomunikasi seluler dan layanan logistik terus diperluas guna memenuhi kebutuhan komunikasi dan perniagaan daring masyarakat antardesa."
+        teks_kom_en = f"Cellular telecommunication networks and delivery logistics continue to expand to fulfill inter-village communication and e-commerce needs."
+
+    ulasan_id = f"""#block[
+  #text(8pt, weight: "bold")[1. #h(2pt) Pariwisata dan Akomodasi] \\
+  #v(2pt)
+  {teks_akom_id}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold")[2. #h(2pt) Transportasi Antardesa] \\
+  #v(2pt)
+  {teks_trans_id}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold")[3. #h(2pt) Komunikasi dan Pos] \\
+  #v(2pt)
+  {teks_kom_id}
+]"""
+
+    ulasan_en = f"""#block[
+  #text(8pt, weight: "bold", style: "italic")[1. #h(2pt) Tourism and Accommodation] \\
+  #v(2pt)
+  {teks_akom_en}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold", style: "italic")[2. #h(2pt) Inter-Village Transportation] \\
+  #v(2pt)
+  {teks_trans_en}
+]
+#v(6pt)
+#block[
+  #text(8pt, weight: "bold", style: "italic")[3. #h(2pt) Communication and Postal Services] \\
+  #v(2pt)
+  {teks_kom_en}
+]"""
 
     technical_notes_bab6 = [
         (
