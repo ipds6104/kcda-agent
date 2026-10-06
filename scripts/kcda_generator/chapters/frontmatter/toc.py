@@ -42,8 +42,8 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #pagebreak()
 #metadata("daftar_isi") <daftar_isi>
 
-#set text(font: "Liberation Sans", size: 7.8pt, fill: rgb("#1F2937"), hyphenate: false)
-#set par(leading: 0.48em)
+#set text(font: "Liberation Sans", size: 7.4pt, fill: rgb("#1F2937"), hyphenate: false)
+#set par(leading: 0.42em)
 
 #let get_page_roman(lbl, default: "-") = context {{
   let elems = query(lbl)
@@ -193,34 +193,37 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
   #text(7.5pt)[{volume}]
 ]
 
-#v(6pt)
+#v(3pt)
 #align(right)[
   #text(7.5pt)[halaman] \
   #text(7pt, style: "italic")[page]
 ]
-#v(2pt)
+#v(1.5pt)
 
 #toc_section("Kata Pengantar", "Preface", get_page_roman(<kata_pengantar>))
-#v(2pt)
+#v(1.8pt)
 #toc_section("Daftar Isi", "Contents", get_page_roman(<daftar_isi>))
-#v(2pt)
+#v(1.8pt)
 #toc_section("Daftar Tabel", "List of Tables", get_page_roman(<daftar_tabel>))
-#v(2pt)
+#v(1.8pt)
 #toc_section("Daftar Gambar", "List of Figures", get_page_roman(<daftar_gambar>))
-#v(2pt)
+#v(1.8pt)
 #toc_section("Penjelasan Umum", "Explanatory Notes", get_page_roman(<penjelasan_umum>))
-#v(3pt)
 
+#v(4.5pt)
 #toc_chapter("1", "Geografi", "Geography", get_page_arabic(<bab1>))
-#v(2pt)
+
+#v(4.5pt)
 #toc_chapter("2", "Pemerintahan", "Government", get_page_arabic(<bab2>))
 #v(1.5pt)
 #toc_subchapter("2.1", "Wilayah Administratif", "Administrative Area", get_page_arabic(<tab_2_1_1>))
 #v(1.5pt)
 #toc_subchapter("2.2", "Sumber Daya Manusia", "Human Resources", get_page_arabic(<tab_2_2_1>))
-#v(2.5pt)
+
+#v(4.5pt)
 #toc_chapter("3", "Penduduk", "Population", get_page_arabic(<bab3>))
-#v(2.5pt)
+
+#v(4.5pt)
 #toc_chapter("4", "Sosial dan Kesejahteraan Rakyat", "Social And Welfare", get_page_arabic(<bab4>))
 #v(1.5pt)
 #toc_subchapter("4.1", "Pendidikan", "Education", get_page_arabic(<tab_4_1_1>))
@@ -230,9 +233,11 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #toc_subchapter("4.3", "Perumahan dan Lingkungan", "Housing and Environment", get_page_arabic(<tab_4_3_1>))
 #v(1.5pt)
 #toc_subchapter("4.4", "Sosial Lainnya", "Religion and Other Social Affairs", get_page_arabic(<tab_4_4_1>))
-#v(2.5pt)
+
+#v(4.5pt)
 #toc_chapter("5", "Pertanian", "Agriculture", get_page_arabic(<bab5>))
-#v(2.5pt)
+
+#v(4.5pt)
 #toc_chapter("6", "Pariwisata, Transportasi, dan Komunikasi", "Tourism, Transportation, and Communication", get_page_arabic(<bab6>))
 #v(1.5pt)
 #toc_subchapter("6.1", "Pariwisata", "Tourism", get_page_arabic(<tab_6_1_1>))
@@ -240,9 +245,11 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #toc_subchapter("6.2", "Transportasi", "Transportation", get_page_arabic(<tab_6_2_1>))
 #v(1.5pt)
 #toc_subchapter("6.3", "Komunikasi", "Communication", get_page_arabic(<tab_6_3_1>))
-#v(2.5pt)
+
+#v(4.5pt)
 #toc_chapter("7", "Perbankan, Koperasi, dan Perdagangan", "Banking, Cooperative, and Trade", get_page_arabic(<bab7>))
-#v(3pt)
+
+#v(4.5pt)
 #toc_section("Daftar Pustaka", "Bibliography", get_page_arabic(<daftar_pustaka>))
 
 #pagebreak()

@@ -4,7 +4,7 @@ from typing import Dict, Any, List, Optional
 from pathlib import Path
 from ..data_loader import get_kecamatan_tab_rows, clean_cell_value, match_village_row
 from ..table_renderer import render_typst_table
-from ..chart_generator import get_chapter1_charts
+from ..chart_generator import get_chapter1_charts, format_figure_header
 from ..config import get_regency_info
 from .narrative_helper import render_chapter_intro
 
@@ -23,23 +23,23 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
     peta_path = f"/assets/maps/{slug}.jpg"
 
+    fig1_header = format_figure_header(
+        "1",
+        f"Peta Wilayah Kecamatan {nama_singkat}, 2025",
+        f"Map of {nama_en} District, 2025"
+    )
+
     # --- Gambar 1: Peta Wilayah Kecamatan ---
     peta_section = f"""
-#metadata("fig_1") <fig_1>
 #metadata("fig_peta") <fig_peta>
-#v(0.5cm)
+#v(0.3cm)
 #align(center)[
-  #text(8.5pt, weight: "bold")[Gambar 1/]#text(8.5pt, weight: "bold", style: "italic")[Figure 1] \\
-  #v(2pt)
-  #text(9pt, weight: "bold")[Peta Wilayah Kecamatan {nama_singkat}, 2025] \\
-  #text(8pt, style: "italic")[Map of {nama_en} District, 2025] \\
-  #v(8pt)
   #box(width: 95%, stroke: 0.5pt + rgb("#CBD5E1"), radius: 4pt)[
     #image("{peta_path}", width: 100%)
-  ] \\
-  #v(4pt)
-  #text(6.5pt, fill: black)[Sumber/#text(style: "italic")[Source] : Badan Pusat Statistik/#text(style: "italic")[BPS-Statistics Indonesia]]
+  ]
 ]
+#v(6pt)
+{fig1_header}
 #pagebreak()
 """
 
