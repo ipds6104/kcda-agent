@@ -86,6 +86,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
             t212_rows.append([idx, camat, periode])
     if not t212_rows:
         t212_rows = [["1", "–", "–"]]
+    elif slug == "toho":
+        t212_rows[-1][2] = "Oktober 2025 - saat ini"
 
     t212_markup = render_typst_table(
         table_no="2.1.2",

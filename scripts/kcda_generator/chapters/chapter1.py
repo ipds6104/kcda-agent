@@ -148,12 +148,15 @@ def render_chapter1(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     # --- 1.4 Jarak Kantor Camat ke Tempat Penting ---
     rows_1_4_raw = get_kecamatan_tab_rows("1.4.", nama_singkat)
     t1_4_rows = []
+    idx_no = 1
     for r in rows_1_4_raw[3:]:
         if len(r) > 1 and r[1].strip() and not any(r[1].lower().startswith(x) for x in ['sumber', 'catatan']):
             tempat = clean_cell_value(r[1])
+            if "makam juang mandor" in tempat.lower() and slug in ["toho", "jongkat"]:
+                continue
             jarak = clean_cell_value(r[2] if len(r) > 2 else "–")
-            no_idx = clean_cell_value(r[0])
-            t1_4_rows.append([no_idx, tempat, jarak])
+            t1_4_rows.append([str(idx_no), tempat, jarak])
+            idx_no += 1
     if not t1_4_rows:
         t1_4_rows = [
             ["1", "Ibukota Provinsi / Provincial Capital", "–"],
