@@ -14,7 +14,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
     desa_list = cfg.get("desa_list", [])
     slug = cfg.get("slug", "")
 
-    year_213 = "2025" if slug == "toho" else "2026"
+    year_212 = "2026" if slug == "toho" else "2025"
     year_213 = "2025" if slug == "toho" else "2026"
     has_214 = slug not in ["mempawah-hilir", "sungai-pinyuh"]
 
@@ -89,8 +89,8 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
     t212_markup = render_typst_table(
         table_no="2.1.2",
-        title_id=f"Nama-Nama Camat yang Pernah/Masih Menjabat di {nama_resmi}, 2025",
-        title_en=f"Names of Last and Current Who Have/Still Served in {nama_en} District, 2025",
+        title_id=f"Nama-Nama Camat yang Pernah/Masih Menjabat di {nama_resmi}, {year_212}",
+        title_en=f"Names of Last and Current Who Have/Still Served in {nama_en} District, {year_212}",
         headers=["No", "Nama Camat\nName of District Head", "Periode Menjabat\nPeriod"],
         col_numbers=["(1)", "(2)", "(3)"],
         rows=t212_rows,
@@ -109,7 +109,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
 
     t213_rows = []
     for idx, d in enumerate(desa_list, 1):
-        kades = match_village_row(kades_map, d, "–")
+        kades = "..." if slug == "toho" else match_village_row(kades_map, d, "–")
         t213_rows.append([str(idx), d, kades])
 
     t213_markup = render_typst_table(
@@ -133,11 +133,11 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
                 no_d = clean_cell_value(r[0])
                 desa_d = clean_cell_value(r[1])
                 dusun_d = clean_cell_value(r[2])
-                nama_d = clean_cell_value(r[3])
+                nama_d = "..." if slug == "toho" else clean_cell_value(r[3])
                 if desa_d:
                     t214_rows.append([no_d, desa_d, dusun_d, nama_d])
         if not t214_rows:
-            t214_rows = [["1", "–", "–", "–"]]
+            t214_rows = [["1", "–", "–", "..." if slug == "toho" else "–"]]
 
         t214_markup = render_typst_table(
             table_no="2.1.4",
@@ -209,13 +209,16 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         for r in rows_221_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'pemerintah daerah\n', '(']):
                 pem = clean_cell_value(r[0])
-                lk = clean_cell_value(r[1] if len(r) > 1 else "–")
-                pr = clean_cell_value(r[2] if len(r) > 2 else "–")
-                tot = clean_cell_value(r[3] if len(r) > 3 else "–")
+                if slug == "toho":
+                    lk, pr, tot = "...", "...", "..."
+                else:
+                    lk = clean_cell_value(r[1] if len(r) > 1 else "–")
+                    pr = clean_cell_value(r[2] if len(r) > 2 else "–")
+                    tot = clean_cell_value(r[3] if len(r) > 3 else "–")
                 t221_rows.append([pem, lk, pr, tot])
     if not t221_rows:
         t221_rows = [
-            [f"Pemerintah Daerah Kecamatan {nama_singkat}\n{nama_en} District Government", "–", "–", "–"]
+            [f"Pemerintah Daerah Kecamatan {nama_singkat}\n{nama_en} District Government", "..." if slug == "toho" else "–", "..." if slug == "toho" else "–", "..." if slug == "toho" else "–"]
         ]
 
     t221_markup = render_typst_table(
@@ -236,9 +239,12 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
         for r in rows_222_raw[2:]:
             if r and r[0].strip() and not any(r[0].lower().startswith(x) for x in ['sumber', 'catatan', 'tingkat pendidikan', '(']):
                 pend = clean_cell_value(r[0])
-                lk = clean_cell_value(r[1] if len(r) > 1 else "–")
-                pr = clean_cell_value(r[2] if len(r) > 2 else "–")
-                tot = clean_cell_value(r[3] if len(r) > 3 else "–")
+                if slug == "toho":
+                    lk, pr, tot = "...", "...", "..."
+                else:
+                    lk = clean_cell_value(r[1] if len(r) > 1 else "–")
+                    pr = clean_cell_value(r[2] if len(r) > 2 else "–")
+                    tot = clean_cell_value(r[3] if len(r) > 3 else "–")
                 t222_rows.append([pend, lk, pr, tot])
     if not t222_rows:
         pend_list = [
@@ -250,7 +256,7 @@ def render_chapter2(cfg: Dict[str, Any], out_dir: Optional[Any] = None, fig_no: 
             "S2 / Master",
             "Jumlah / Total"
         ]
-        t222_rows = [[p, "–", "–", "–"] for p in pend_list]
+        t222_rows = [[p, "..." if slug == "toho" else "–", "..." if slug == "toho" else "–", "..." if slug == "toho" else "–"] for p in pend_list]
 
     t222_markup = render_typst_table(
         table_no="2.2.2",

@@ -17,6 +17,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
     issn_header = f"#align(right)[#text(8pt)[ISSN {issn}]]\n#v(4pt)\n" if issn else ""
 
     has_214 = slug not in ["mempawah-hilir", "sungai-pinyuh"]
+    year_212 = "2026" if slug == "toho" else "2025"
     year_213 = "2025" if slug == "toho" else "2026"
     year_214 = "2025" if slug == "toho" else "2026"
     tno_klas = "2.1.5" if has_214 else "2.1.4"
@@ -281,7 +282,7 @@ def render_toc_and_notes(cfg: Dict[str, Any]) -> str:
 #v(4pt)
 #toc_table_entry("2.1.1", "Jumlah Dusun, Rukun Warga (RW), dan Rukun Tetangga (RT) Menurut Desa/Kelurahan di Kecamatan {nama_singkat}, 2025", "Number of Hamlets, Rukun Warga and Rukun Tetangga by Villages/Subdistricts in {nama_en} District, 2025", get_page_arabic(<tab_2_1_1>))
 #v(5pt)
-#toc_table_entry("2.1.2", "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan {nama_singkat}, 2025", "Names of Last and Current Who Have/Still Served in {nama_en} District, 2025", get_page_arabic(<tab_2_1_2>))
+#toc_table_entry("2.1.2", "Nama-Nama Camat yang Pernah/Masih Menjabat di Kecamatan {nama_singkat}, {year_212}", "Names of Last and Current Who Have/Still Served in {nama_en} District, {year_212}", get_page_arabic(<tab_2_1_2>))
 #v(5pt)
 #toc_table_entry("2.1.3", "Nama-Nama Kepala Desa/Lurah di Kecamatan {nama_singkat}, {year_213}", "Names of Village Heads in {nama_en} District, {year_213}", get_page_arabic(<tab_2_1_3>))
 {toc_214_entry}
