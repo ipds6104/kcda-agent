@@ -12,7 +12,7 @@ def render_backcover(cfg: Dict[str, Any]) -> str:
     return f"""// ==========================================
 // KOVER BELAKANG (BACK COVER) - DESAIN VISUAL RESMI
 // ==========================================
-#pagebreak(to: "even")
+#pagebreak(to: "odd")
 #pagebreak()
 #set page(
   paper: "a5",
