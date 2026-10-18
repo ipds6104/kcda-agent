@@ -37,7 +37,7 @@ def render_chapter_intro(
 // ----------------------------------------------------
 // BAB {chapter_num}: {title_id} ({title_en})
 // ----------------------------------------------------
-#pagebreak()
+#pagebreak(to: "odd")
 {init_counter}#set page(margin: 0pt, header: none, footer: none)
 #metadata("bab{chapter_num}") <bab{chapter_num}>
 #image("/assets/dividers/Bab_{chapter_num}.jpg", width: 100%, height: 100%)
